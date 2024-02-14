@@ -1,0 +1,20 @@
+---
+permalink: sg5700/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: E2800 コントローラでの SANtricity OS ソフトウェアのアップグレード、 E5700SG コントローラのイーサネットリンク設定の変更、 E2800 コントローラまたは E5700SG コントローラの交換、または特定のコンポーネントの交換が必要になることがあります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。 
+---
+= SG5700 アプライアンスをメンテナンスする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E2800 コントローラでの SANtricity OS ソフトウェアのアップグレード、 E5700SG コントローラのイーサネットリンク設定の変更、 E2800 コントローラまたは E5700SG コントローラの交換、または特定のコンポーネントの交換が必要になることがあります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。
+
+ここでは、SG5700アプライアンスのメンテナンスに固有の手順について説明します。
+
+を参照してください link:../commonhardware/index.html["一般的な手順"] すべてのアプライアンスで使用するメンテナンス手順。
+
+を参照してください link:../installconfig/configuring-hardware.html["ハードウェアをセットアップする"] アプライアンスの初期インストールおよび設定時にも実行されるメンテナンス手順。

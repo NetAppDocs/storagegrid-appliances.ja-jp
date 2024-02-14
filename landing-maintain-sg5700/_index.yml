@@ -1,0 +1,19 @@
+---
+indexpage:
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: リンク設定を変更します
+      url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
+    - title: SANtricityのアップグレード
+      url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: ドライブファームウェアをアップグレードします
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: ハードウェアの手順
+    links:
+    - title: E2800シリーズストレージコントローラの交換
+      url: "../sg5700/replacing-e2800-controller.html"
+    - title: E5700SGコンピューティングコントローラの交換
+      url: "../sg5700/replacing-e5700sg-controller.html"
+    - title: 他のSG5700コンポーネントの交換
+      url: "../sg5700/replacing-other-hardware-components-sg5700.html"

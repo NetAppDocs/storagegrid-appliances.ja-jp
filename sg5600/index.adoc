@@ -1,0 +1,16 @@
+---
+permalink: sg5600/index.html 
+sidebar: sidebar 
+keywords: 'storagegrid, sg5600, storage node, storage appliance"' 
+summary: SG5600アプライアンスのサポートが終了しました。ハードウェア更新のオプションについては、ネットアップの営業担当者にお問い合わせください。 
+---
+= SG5600 アプライアンスのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG5600アプライアンスのサポートが終了しました。ハードウェア更新のオプションについては、ネットアップの営業担当者にお問い合わせください。
+
+SG5600ハードウェアのメンテナンス手順を実行する必要がある場合は、を使用してください https://docs.netapp.com/us-en/storagegrid-116/sg5600/maintaining-sg5600-appliance.html["StorageGRID 11.6の手順"^]。

@@ -1,0 +1,130 @@
+---
+permalink: sg6100/replace-cmos-in-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery 
+summary: この手順 を使用して、システム基板のCMOSコイン型電池を交換します。 
+---
+= SGF6112 CMOSバッテリの交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+この手順 を使用して、システム基板のCMOSコイン型電池を交換します。
+
+次の手順を実行します。
+
+* CMOSバッテリを取り外します
+* CMOSバッテリを取り付け直します
+
+
+
+
+== CMOSバッテリを取り外します
+
+.作業を開始する前に
+* これで完了です link:verify-component-to-replace.html["CMOSバッテリを交換する必要があるアプライアンスを確認"]。
+* これで完了です link:locating-sgf6112-in-data-center.html["SGF6112アプライアンスの物理的な場所"] データセンターのCMOSバッテリを交換する場所。
++
+
+NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["アプライアンスの通常のシャットダウン"] は、アプライアンスをラックから取り外す前に必要です。
+
+* すべてのケーブルと link:reinstalling-sgf6112-cover.html["アプライアンスカバーを取り外した"]。
+
+
+.このタスクについて
+サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
+
+
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、スケジュールされたメンテナンス時間にバッテリを交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
+
+.手順
+. ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
+. アプライアンスの背面にある2スロットライザーアセンブリの場所を確認します。
++
+image::../media/SGF6112-two-slot-riser-position.png[2スロットライザーの位置]
+
+. 青いマークの付いた穴を通してライザーアセンブリをつかみ、慎重に持ち上げます。ライザーアセンブリを持ち上げながらシャーシの前面方向に移動し、取り付けられているNICの外部コネクタがシャーシから外れるようにします。
+. ライザーを金属製フレームの面を下にして、静電気防止処置を施した平らな場所に置きます。
+. 取り外したライザーアセンブリの下にあるシステム基板上のCMOSバッテリの位置を確認します。
++
+image::../media/SGF6112-cmos-position.png[CMOSバッテリの位置]
+
+. 指またはプラスチック製のこじ開け工具を使用して、固定クリップ（強調表示されている）をバッテリから離して押し、ソケットからスプリングします。
++
+image::../media/SGF6112-battery-cmos.png[CMOSバッテリクリップ]
+
+. バッテリーを取り外し、適切に廃棄してください。
+
+
+
+
+== CMOSバッテリを取り付け直します
+
+交換用CMOSバッテリをシステム基板のソケットに取り付けます。
+
+.作業を開始する前に
+* 正しい交換用CMOSバッテリ（CR2032）を用意しておきます。
+* 障害が発生したCMOSバッテリを取り外しておきます。
+
+
+.手順
+. ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
+. CMOSバッテリをパッケージから取り出します。
+. バッテリがカチッと所定の位置に収まるまで、交換用バッテリをプラス（+）側を上にしてシステム基板の空のソケットに押し込みます。
+. 2スロットライザーアセンブリ（丸で囲んだ部分）の位置合わせ穴の位置をシステム基板のガイドピンに合わせて確認し、ライザーアセンブリが正しい位置にあることを確認します。
++
+image::../media/sgf6112_two-slot-riser_alignment_hole.png[大型ライザーアセンブリの位置合わせ穴]
+
+. システム基板上のガイドピンの位置を確認します。
++
+image::../media/sgf6112_two-slot-riser_guide-pin.png[2スロットライザーアセンブリ用のシステム基板上のガイドピン]
+
+. ライザーアセンブリがシステム基板のコネクタおよびガイドピンに揃うように、ライザーアセンブリをシャーシに配置します。
+. 2スロットライザーアセンブリを、青色のマークが付いた穴の横の中心線に沿って、完全に装着されるまで慎重に押し込みます。
+. アプライアンスで実行する他のメンテナンス手順がない場合は、アプライアンスのカバーを再度取り付け、アプライアンスをラックに戻してケーブルを接続し、電源を投入します。
+. 交換したアプライアンスでSEDドライブでドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["ドライブ暗号化パスフレーズを入力"] 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。
+. 交換したアプライアンスでノード暗号化の暗号化キーを管理するためにキー管理サーバ（KMS）を使用していた場合は、ノードをグリッドに追加するために追加の設定が必要になることがあります。ノードが自動的にグリッドに追加されない場合は、次の設定が新しいアプライアンスに転送されたことを確認し、想定される設定と異なる設定があれば手動で設定します。
++
+** link:../installconfig/accessing-storagegrid-appliance-installer.html["StorageGRID 接続を設定します"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["アプライアンスのノード暗号化を設定します"^]
+
+
+. アプライアンスにログインします。
++
+.. 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+.. 次のコマンドを入力してrootに切り替えます。 `su -`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+
+
+. 次のいずれかのオプションを使用して、アプライアンスのBMCネットワーク接続をリストアします。
++
+** 静的IP、ネットマスク、およびゲートウェイを使用します
+** DHCPを使用して、IP、ネットマスク、およびゲートウェイを取得します
++
+... 静的IP、ネットマスク、およびゲートウェイを使用するようにBMCの設定をリストアするには、次のコマンドを入力します。
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... DHCPを使用してIP、ネットマスク、およびゲートウェイを取得するようにBMCの設定を復元するには、次のコマンドを入力します。
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. BMCネットワーク接続をリストアしたら、BMCインターフェイスに接続して監査し、追加で適用したBMCのカスタム設定をリストアします。たとえば、SNMPトラップの送信先やEメール通知の設定を確認する必要があります。を参照してください link:../installconfig/configuring-bmc-interface.html["BMCインターフェイスの設定"]。
+. アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
+

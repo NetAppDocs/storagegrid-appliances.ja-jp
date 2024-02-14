@@ -1,0 +1,45 @@
+---
+indexpage:
+  tiles:
+  - title: クイックスタート
+    links:
+    - title: アプライアンスのインストールのクイックスタート
+      url: "../installconfig/index.html"
+    - title: アプライアンスのインストールと設定を自動化
+      url: "../installconfig/automating-appliance-installation-and-configuration.html"
+    - title: StorageGRID の設定を自動化
+      url: "../installconfig/automating-configuration-of-storagegrid.html"
+    - title: インストールREST API（上級ユーザ）
+      url: "../installconfig/overview-of-installation-rest-apis.html"
+  - title: 設置を準備
+    links:
+    - title: サイトを準備
+      url: "../installconfig/preparing-site.html"
+    - title: 箱を開梱します
+      url: "../installconfig/unpacking-boxes.html"
+    - title: 追加の機器と工具を入手します
+      url: "../installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: ネットワーク情報の収集
+    links:
+    - title: StorageGRID のネットワークタイプ
+      url: "../installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100およびSG1000
+      url: "../installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "../installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000を使用します
+      url: "../installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "../installconfig/gathering-installation-information-sg6100.html"
+  - title: ハードウェアを設置
+    links:
+    - title: ハードウェアを登録
+      url: "../installconfig/registering-hardware.html"
+    - title: アプライアンスをインストール
+      url: "../landing-install-hdwr/index.html"
+    - title: ハードウェアをセットアップする
+      url: "../installconfig/configuring-hardware.html"
+    - title: アプライアンスストレージノードを導入する
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: サービスアプライアンスノードを導入する
+      url: "../installconfig/deploying-services-appliance-node.html"

@@ -1,0 +1,38 @@
+---
+permalink: installconfig/optional-remapping-network-ports-for-appliance.html 
+sidebar: sidebar 
+keywords: remap appliance ports, network, internal to external port mapping 
+summary: 必要に応じて、アプライアンスノードの内部ポートを別の外部ポートに再マッピングできます。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。 
+---
+= オプション：アプライアンスのネットワークポートの再マッピング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必要に応じて、アプライアンスノードの内部ポートを別の外部ポートに再マッピングできます。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。
+
+.作業を開始する前に
+* 以前に StorageGRID アプライアンスインストーラにアクセスしていた場合。
+
+
+.このタスクについて
+再マッピングされたポートをロードバランサエンドポイントに使用することはできません。再マッピングされたポートを削除する必要がある場合は、の手順に従います https://docs.netapp.com/us-en/storagegrid-118/maintain/removing-port-remaps.html["ポートの再マッピングを削除"^]。
+
+.手順
+. StorageGRID アプライアンスインストーラで、*[ネットワークの設定]*>*[ポートの再マッピング]*を選択します。
++
+Remap Port ページが表示されます。
+
+. Network * ドロップダウンボックスから、再マッピングするポートのネットワーク（ Grid 、 Admin 、または Client ）を選択します。
+. [*Protocol*] ドロップダウンボックスから、 IP プロトコルとして [TCP] または [UDP] を選択します。
+. [* Remap Direction] * ドロップダウンボックスから、このポートに再マッピングするトラフィック方向（インバウンド、アウトバウンド、または双方向）を選択します。
+. 「 * Original Port * 」に、再マッピングするポートの番号を入力します。
+. 「 * mapped-to Port * 」には、代わりに使用するポートの番号を入力します。
+. [ルールの追加]*を選択します。
++
+新しいポートマッピングがテーブルに追加され、新しいマッピングがただちに有効になります。
+
+. ポートマッピングを削除するには、削除するルールのラジオボタンを選択し、*[Remove Selected Rule]*を選択します。
+

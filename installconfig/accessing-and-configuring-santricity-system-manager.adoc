@@ -1,0 +1,244 @@
+---
+permalink: installconfig/accessing-and-configuring-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
+summary: SANtricity System Manager を使用して、ストレージコントローラシェルフのストレージコントローラ、ストレージディスク、その他のハードウェアコンポーネントのステータスを監視できます。E シリーズ AutoSupport のプロキシを設定することもできます。管理ポートを使用せずにアプライアンスから AutoSupport メッセージを送信できます。 
+---
+= SANtricity システムマネージャの設定（SG6000およびSG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity System Manager を使用して、ストレージコントローラシェルフのストレージコントローラ、ストレージディスク、その他のハードウェアコンポーネントのステータスを監視できます。E シリーズ AutoSupport のプロキシを設定することもできます。管理ポートを使用せずにアプライアンスから AutoSupport メッセージを送信できます。
+
+
+
+== SANtricity System Manager をセットアップしてアクセスします
+
+ストレージコントローラシェルフのハードウェアを監視したり、 E シリーズ AutoSupport を設定したりするために、ストレージコントローラの SANtricity System Manager へのアクセスが必要になる場合があります。
+
+.作業を開始する前に
+* を使用している https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* グリッドマネージャからSANtricity システムマネージャにアクセスするには、StorageGRID をインストールし、ストレージアプライアンス管理者またはRootアクセス権限が必要です。
+* StorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
+* Webブラウザを使用してSANtricity System Managerに直接アクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
+
+
+
+NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。StorageGRID アプライアンス・インストーラを使用してファームウェアのバージョンを確認し、 * Help * > * About * を選択します。
+
+
+NOTE: グリッドマネージャまたはアプライアンスインストーラから SANtricity システムマネージャにアクセスする方法は、通常、ハードウェアを監視して E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、SANtricity System Managerの多くの機能や操作は、StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。
+
+.このタスクについて
+SANtricity System Manager にアクセスする方法は 3 種類あり、その方法はインストールおよび設定のどの段階にあるかによって異なります。
+
+* アプライアンスが StorageGRID システムにノードとして導入されていない場合は、 StorageGRID アプライアンスインストーラの Advanced タブを使用します。
++
+
+NOTE: 導入されたノードは、 StorageGRID アプライアンスインストーラを使用して SANtricity システムマネージャにアクセスできなくなります。
+
+* アプライアンスを StorageGRID システムにノードとして導入している場合は、グリッドマネージャのノードページにある SANtricity システムマネージャタブを使用します。
+* StorageGRID アプライアンスインストーラまたはグリッドマネージャを使用できない場合は、管理ポートに接続されたWebブラウザを使用してSANtricity システムマネージャに直接アクセスできます。
+
+
+この手順 には、 SANtricity システムマネージャに最初にアクセスする手順が含まれています。SANtricity System Manager をすでにセットアップしている場合は、に進みます  <<config_hardware_alerts_sg6000,ハードウェアアラートの設定手順>>。
+
+
+NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用すると、アプライアンスの管理ポートを設定または接続しなくても SANtricity System Manager にアクセスできます。
+
+SANtricity System Manager を使用して次の項目を監視します。
+
+* ストレージアレイレベルのパフォーマンス、 I/O レイテンシ、 CPU 利用率、スループットなどのパフォーマンスデータ
+* ハードウェアコンポーネントのステータス
+* 診断データの表示などの機能をサポートします
+
+
+SANtricity System Manager を使用して、次の設定を行うことができます。
+
+* ストレージコントローラシェルフのコンポーネントの E メールアラート、 SNMP アラート、または syslog アラート
+* ストレージコントローラシェルフのコンポーネントの E シリーズ AutoSupport の設定。
++
+E シリーズ AutoSupport の詳細については、を参照してください http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]。
+
+* セキュリティ保護されたドライブのロックを解除するために必要なドライブセキュリティキー（ドライブセキュリティ機能が有効になっている場合はロックの解除が必要）
+* SANtricity システムマネージャにアクセスするための管理者パスワード
+
+
+.手順
+. 次のいずれかを実行します。
++
+** StorageGRID アプライアンス・インストーラを使用して、 * アドバンスト * > * SANtricity システム・マネージャ * を選択します
+** Grid Managerを使用して、* nodes *>を選択します `*_appliance Storage Node_*` >* SANtricity システム・マネージャ*
+
+
++
+
+NOTE: これらのオプションが使用できない場合、またはログインページが表示されない場合は、を使用します <<StorageGRID アプライアンスインストーラを使用してストレージコントローラの IP アドレスを設定します,ストレージコントローラの IP アドレス>>。SANtricity System Manager にアクセスするには、ストレージコントローラの IP にアクセスします。
+
+. 管理者パスワードを設定または入力します。
++
+SANtricity System Manager では、すべてのユーザで共有する管理者パスワードを 1 つ使用します。
+
++
+image::../media/san_setup_wizard.gif[セットアップウィザードのキャンセルボタンを示すスクリーンショット]
+
+. 「 * キャンセル * 」を選択してウィザードを閉じます。
++
+
+NOTE: StorageGRID アプライアンスのセットアップ・ウィザードは実行しないでください。
+
++
+image::../media/sam_home_page.gif[SANtricity System Manager ホームページのスクリーンショット]
+
+. [[config_hardware_alerts_sg6000, start=4]] ハードウェアアラートを設定します。
++
+.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
+.. オンラインヘルプの「 * Settings * > * Alerts * 」（ * 設定 * > * アラート * ）セクションを使用して、アラートについて学習します。
+.. How To の指示に従って ' メール・アラート 'SNMP アラート ' または syslog アラートを設定します
+
+
+. ストレージコントローラシェルフのコンポーネントの AutoSupport を管理します。
++
+.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
+.. オンラインヘルプの「 * support * > * Support Center * 」セクションで、 AutoSupport 機能について学習します。
+.. 「 How To 」の指示に従って、 AutoSupport を管理します。
++
+管理ポートを使用せずにEシリーズAutoSupport メッセージを送信するためのStorageGRID プロキシを設定する具体的な手順については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-storage-proxy-settings.html["ストレージプロキシの設定手順"^]。
+
+
+
+. アプライアンスでドライブセキュリティ機能が有効になっている場合は、セキュリティキーを作成して管理します。
++
+.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
+.. オンラインヘルプの「 * Settings * > * System * > * Security key management * 」セクションでドライブセキュリティについて学習します。
+.. 「 How To 」の指示に従って、セキュリティキーを作成および管理します。
+
+
+. 必要に応じて、管理者パスワードを変更します。
++
+.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
+.. オンラインヘルプの * Home * > * Storage array administration * セクションで、管理者パスワードを確認してください。
+.. 「 How To 」の指示に従ってパスワードを変更します。
+
+
+
+
+
+
+== SANtricity システムマネージャでハードウェアステータスを確認します
+
+SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。
+
+.作業を開始する前に
+* を使用している https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* Grid ManagerからSANtricity System Managerにアクセスするには、ストレージアプライアンス管理者の権限またはRoot Access権限が必要です。
+* StorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
+* Webブラウザを使用してSANtricity System Managerに直接アクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
+
+
+
+NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+
+
+NOTE: グリッドマネージャまたはアプライアンスインストーラから SANtricity システムマネージャにアクセスする方法は、通常、ハードウェアを監視して E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、SANtricity System Managerの多くの機能や操作は、StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。
+
+.手順
+. <<SANtricity System Manager をセットアップしてアクセスします,SANtricity システムマネージャにアクセスします>>。
+. 必要に応じて、管理者のユーザ名とパスワードを入力します。
+. セットアップウィザードを閉じて SANtricity システムマネージャのホームページを表示するには、 * Cancel * をクリックします。
++
+SANtricity の System Manager ホームページが表示されます。SANtricity System Manager では、コントローラシェルフがストレージアレイと表示されます。
+
++
+image::../media/sam_home_page.gif[SANtricity System Manager ホームページのスクリーンショット]
+
+. アプライアンスハードウェアについて表示された情報を確認し、すべてのハードウェアコンポーネントのステータスが「 Optimal 」であることを確認します。
++
+.. [* ハードウェア * ] タブをクリックします。
+.. Show back of shelf* （シェルフの背面を表示）をクリックします。
++
+image::../media/sam_hardware_controllers_a_and_b.gif[SANtricity システムマネージャのハードウェアステータスタブ]
+
++
+シェルフの背面から、両方のストレージコントローラ、各ストレージコントローラのバッテリ、電源キャニスター 2 台、ファンキャニスター 2 台、および拡張シェルフ（ある場合）を確認できます。構成部品の温度を表示することもできます。
+
+.. 各ストレージコントローラの設定を表示するには、コントローラを選択し、コンテキストメニューから * 設定の表示 * を選択します。
+.. シェルフの背面にある他のコンポーネントの設定を確認するには、対象となるコンポーネントを選択します。
+.. [Show front of shelf* （シェルフの前面を表示） ] をクリックし、表示するコンポーネントを選択します。
++
+シェルフの前面からは、ストレージコントローラシェルフまたは拡張シェルフ（ある場合）のドライブとドライブドロワーを確認できます。
+
+
+
+
+
+ステータスが「 Needs Attention 」になっているコンポーネントがある場合は、 Recovery Guru に示される手順に従って問題 を解決するか、テクニカルサポートに連絡してください。
+
+
+
+== StorageGRID アプライアンスインストーラを使用してストレージコントローラの IP アドレスを設定します
+
+各ストレージコントローラの管理ポート 1 を使用して、アプライアンスを SANtricity System Manager の管理ネットワークに接続します。StorageGRID アプライアンスインストーラからSANtricity System Managerにアクセスできない場合は、コントローラシェルフのハードウェアおよびコントローラファームウェアとの管理接続が失われないように、各ストレージコントローラに静的IPアドレスを設定します。
+
+.作業を開始する前に
+* StorageGRID 管理ネットワークに接続できる管理クライアントを使用しているか、サービスラップトップを使用している必要があります。
+* クライアントまたはサービスラップトップに、サポートされている Web ブラウザをインストールしておきます。
+
+
+.このタスクについて
+DHCP によって割り当てられたアドレスは、いつ変更されるかわかりません。一貫したアクセスを確保するために、コントローラには静的 IP アドレスを割り当ててください。
+
+
+NOTE: この手順 は、StorageGRID アプライアンスインストーラ（*アドバンスト*>* SANtricity システムマネージャ*）またはグリッドマネージャ（* nodes *>* SANtricity システムマネージャ*）からSANtricity システムマネージャにアクセスできない場合にのみ使用してください。
+
+.手順
+. クライアントから、StorageGRID アプライアンスインストーラのURLを入力します：+
+`*https://_Appliance_Controller_IP_:8443*`
++
+の場合 `_Appliance_Controller_IP_`には、任意のStorageGRID ネットワーク上のアプライアンスのIPアドレスを使用します。
+
++
+StorageGRID アプライアンスインストーラのホームページが表示されます。
+
+. Configure Hardware * > * Storage Controller Network Configuration * を選択します。
++
+Storage Controller Network Configuration ページが表示されます。
+
+. ネットワーク構成に応じて、 IPv4 、 IPv6 、またはその両方で * Enabled * を選択します。
+. 自動的に表示される IPv4 アドレスを書き留めます。
++
+ストレージコントローラの管理ポートに IP アドレスを割り当てるためのデフォルトの方法は、 DHCP です。
+
++
+
+NOTE: DHCP 値が表示されるまでに数分かかる場合があります。
+
++
+image::../media/storage_controller_network_config_ipv4.gif[ストレージコントローラネットワークの IPv4 設定]
+
+. 必要に応じて、ストレージコントローラの管理ポートに静的 IP アドレスを設定します。
++
+
+NOTE: 管理ポートに静的 IP を割り当てるか、 DHCP サーバでアドレスの永久リースを割り当てる必要があります。
+
++
+.. 「 * Static * 」を選択します。
+.. CIDR 表記を使用して IPv4 アドレスを入力します。
+.. デフォルトゲートウェイを入力します。
++
+image::../media/storage_controller_ipv4_and_def_gateway.gif[ストレージコントローラネットワークの IPv4 設定とデフォルトのゲートウェイ]
+
+.. [ 保存（ Save ） ] をクリックします。
++
+変更が適用されるまで数分かかる場合があります。
+
++
+SANtricity System Managerに接続するときは、新しい静的IPアドレスをURL：+として使用します
+`*https://_Storage_Controller_IP_*`
+
+
+
+

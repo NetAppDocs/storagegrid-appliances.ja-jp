@@ -1,0 +1,76 @@
+---
+permalink: sg6000/replacing-hardware-components-in-storage-controller-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, storage controller shelf, Battery, Drive, Power canister, power supply, Fan canister, fan, Drive drawer 
+summary: ハードウェアの問題が発生した場合は、ストレージコントローラシェルフのコンポーネントの交換が必要となることがあります。 
+---
+= SG6000ストレージコントローラシェルフのハードウェアコンポーネントの交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアの問題が発生した場合は、ストレージコントローラシェルフのコンポーネントの交換が必要となることがあります。
+
+.作業を開始する前に
+* E シリーズハードウェアの交換用手順 を用意しておきます。
+* データセンターでストレージシェルフのハードウェアコンポーネントを交換するストレージアプライアンスを物理的に配置しておきます。
++
+link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+
+
+
+.このタスクについて
+ストレージコントローラのバッテリを交換するには、の手順を参照してください link:replacing-storage-controller-sg6000.html["ストレージコントローラの交換"]。これらの手順では、アプライアンスからのコントローラの取り外し、コントローラからのバッテリの取り外し、バッテリの取り付け、およびコントローラの交換の方法について説明します。
+
+コントローラシェルフの他のField Replaceable Unit（FRU；フィールド交換可能ユニット）の手順については、 http://mysupport.netapp.com/info/web/ECMP1658252.html["Eシリーズのシステムメンテナンス手順"^]。
+
+[cols="1a,3a"]
+|===
+| FRU | 手順を参照してください 
+
+
+ a| 
+バッテリー
+ a| 
+StorageGRID （以下の手順）：ストレージコントローラの交換
+
+
+
+ a| 
+ドライブ
+ a| 
+E シリーズ：
+
+* ドライブの交換（ 60 ドライブ）
+* ドライブの交換（ 12 ドライブまたは 24 ドライブ）
+
+
+
+
+ a| 
+電源キャニスター
+ a| 
+E シリーズ
+
+* 電源キャニスターの交換（ 60 ドライブ）
+* 電源装置の交換（ 12 ドライブまたは 24 ドライブ）
+
+
+
+
+ a| 
+ファンキャニスター（ 60 ドライブシェルフのみ）
+ a| 
+E シリーズ：ファンキャニスターの交換（ 60 ドライブ）
+
+
+
+ a| 
+ドライブドロワー（ 60 ドライブシェルフのみ）
+ a| 
+E シリーズ：ドライブドロワーの交換（ 60 ドライブ）
+
+|===
+部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。

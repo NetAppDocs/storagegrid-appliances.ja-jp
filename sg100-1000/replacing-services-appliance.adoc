@@ -1,0 +1,117 @@
+---
+permalink: sg100-1000/replacing-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, remove, removing, removal, install, installing, installation 
+summary: アプライアンスが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。 
+---
+= SG100またはSG1000の交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。
+
+.作業を開始する前に
+* 交換するアプライアンスと同じパーツ番号の交換用アプライアンスを用意しておきます。
+* アプライアンスに接続する各ケーブルを識別するためのラベルを用意しておきます。
+* これで完了です link:locating-controller-in-data-center.html["アプライアンスを物理的に設置します"]。
+
+
+.このタスクについて
+アプライアンスの交換中は、 StorageGRID ノードにアクセスできなくなります。アプライアンスが動作している場合は、この手順 の起動時に通常の方法でシャットダウンを実行できます。
+
+
+NOTE: StorageGRID ソフトウェアをインストールする前にアプライアンスを交換すると、この手順 の完了後すぐに StorageGRID アプライアンスインストーラにアクセスできない場合があります。StorageGRID アプライアンスインストーラには、アプライアンスと同じサブネット上の他のホストからはアクセスできますが、他のサブネット上のホストからはアクセスできません。この状態は 15 分以内に（元のアプライアンスのいずれかの ARP キャッシュエントリがタイムアウトした時点で）自動的に解消されます。あるいは、古い ARP キャッシュエントリをローカルルータまたはゲートウェイから手動でパージすれば、すぐにこの状態を解消できます。
+
+.手順
+. アプライアンスの現在の設定を表示して記録します。
++
+.. 交換するアプライアンスにログインします。
++
+... 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
+... 次のコマンドを入力してrootに切り替えます。 `su -`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+
+
+.. 入力するコマンド `*run-host-command ipmitool lan print*` をクリックして、アプライアンスの現在のBMC設定を表示します。
+
+
+. アプライアンスをシャットダウンします。 `shutdown -h now`
+. このStorageGRID アプライアンスのいずれかのネットワークインターフェイスがDHCP用に設定されている場合は、交換用アプライアンスのMACアドレスを参照するために、DHCPサーバの永続的なDHCPリース割り当てを更新する必要があります。この更新により、アプライアンスに想定されるIPアドレスが割り当てられます。を参照してください link:../commonhardware/locate-mac-address.html["MACアドレス参照を更新します"]。
+. アプライアンスを取り外して交換します。
++
+.. ケーブルにラベルを付け、ケーブルとネットワークトランシーバを取り外します。
++
+
+NOTE: パフォーマンスの低下を防ぐため、ケーブルをねじったり、折り曲げたり、挟んだり、踏んだりしないでください。
+
+.. 障害が発生したアプライアンスをキャビネットまたはラックから取り外します。
+.. 電源装置 2 台、冷却ファン 8 台、および SSD 2 台を障害が発生したアプライアンスから交換用アプライアンスに移します。
++
+次の図に示すように、2本のSSDがスロットに配置されます。
+
++
+image::../media/drive_locations_sg1000_front_with_ssds.png[ドライブの場所]
+
++
+HDD02またはHDD2は上部スロットのドライブを表し、HDD03またはHDD3は下部スロットのドライブを表します。
+
++
+これらのコンポーネントの交換手順に従ってください。
+
+.. 交換用アプライアンスをキャビネットまたはラックに設置します。
+.. ケーブルと光トランシーバを交換してください。
+.. アプライアンスの電源をオンにし、グリッドに再参加するまで待ちます。
+.. アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
+
+
+. 交換したアプライアンスにログインします。
++
+.. 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+.. 次のコマンドを入力してrootに切り替えます。 `su -`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+
+
+. 交換したアプライアンスのBMCネットワーク接続をリストアします。次の 2 つのオプションがあります。
++
+** 静的IP、ネットマスク、およびゲートウェイを使用します
+** DHCPを使用して、IP、ネットマスク、およびゲートウェイを取得します
++
+... 静的IP、ネットマスク、およびゲートウェイを使用するようにBMCの設定をリストアするには、次のコマンドを入力します。
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... DHCPを使用してIP、ネットマスク、およびゲートウェイを取得するようにBMCの設定を復元するには、次のコマンドを入力します。
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. BMCネットワーク接続をリストアしたら、BMCインターフェイスに接続して監査し、追加で適用したBMCのカスタム設定をリストアします。たとえば、SNMPトラップの送信先やEメール通知の設定を確認する必要があります。を参照してください link:../installconfig/configuring-bmc-interface.html["BMCインターフェイスの設定"]。
+. アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
+
+
+部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+
+.関連情報
+link:../installconfig/viewing-status-indicators.html["ステータスインジケータを表示します"]
+
+link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["アプライアンスのブート時のコードを確認します"]

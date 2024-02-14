@@ -1,0 +1,49 @@
+---
+section: sg6000
+title: SG6000ハードウェアのメンテナンス
+url: "/landing-maintain-sg6000/index.html"
+entries:
+- title: 概要
+  pdf-filename: SG6000ハードウェアのメンテナンス
+  url: "/sg6000/index.html"
+- title: メンテナンス設定手順
+  pdf-filename: メンテナンス設定手順- SG6000
+  entries:
+  - title: ストレージコントローラの SANtricity OS をアップグレードします
+    url: "/sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    entries:
+    - title: Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"
+    - title: ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
+  - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: コントローラ識別 LED のオンとオフを切り替えます
+    url: "/sg6000/turning-controller-identify-led-on-and-off.html"
+  - title: データセンターでコントローラを探します
+    url: "/sg6000/locating-controller-in-data-center.html"
+  - title: コントローラの電源のオン/オフ
+    url: "/sg6000/power-sg6000-cn-controller-off-on.html"
+  - title: SG6000-CN コントローラのリンク設定を変更します
+    url: "/sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
+- title: ハードウェアの手順
+  pdf-filename: ハードウェアの手順- SG6000
+  entries:
+  - title: 導入済み SG6060 に拡張シェルフを追加します
+    url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
+  - title: ストレージコントローラを交換します
+    url: "/sg6000/replacing-storage-controller-sg6000.html"
+  - title: ストレージコントローラシェルフのハードウェアコンポーネントを交換します
+    url: "/sg6000/replacing-hardware-components-in-storage-controller-shelf.html"
+  - title: オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します
+    url: "/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html"
+  - title: SG6000-CN コントローラを交換します
+    url: "/sg6000/replacing-sg6000-cn-controller.html"
+  - title: SG6000-CN コントローラの一方または両方の電源装置を交換します
+    url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: ラック内のコントローラを交換します
+    url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
+  - title: コントローラのカバーを取り付けます
+    url: "/sg6000/reinstalling-sg6000-cn-controller-cover.html"
+  - title: SG6000-CN コントローラの Fibre Channel HBA を交換します
+    url: "/sg6000/reinstalling-fibre-channel-hba.html"

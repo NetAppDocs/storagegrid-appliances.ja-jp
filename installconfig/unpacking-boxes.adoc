@@ -1,0 +1,324 @@
+---
+permalink: installconfig/unpacking-boxes.html 
+sidebar: sidebar 
+keywords: unpack, unbox, prepare, inventory, components, contents 
+summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
+---
+= 箱を開梱します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。
+
+[role="tabbed-block"]
+====
+.SG100およびSG1000
+--
+* * ハードウェア *
++
+SG100またはSG1000::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[前面ドライブ SG 100 または SG1000 サービスアプライアンス]
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+
+
+* *電源コード*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+
+
+--
+.SG5700
+--
+* * ハードウェア *
++
+12ドライブ搭載のSG5712アプライアンス::
++
+--
+image::../media/de212c_table_size.gif[SG5712 2U アプライアンス]
+
+--
+SG5760アプライアンス（ドライブなし::
++
+--
+image::../media/de460c_table_size.gif[SG5760 4Uアプライアンス]
+
+--
+アプライアンスの前面ベゼル::
++
+--
+image::../media/sg5700_front_bezels.gif[SG5712 と SG5760 のベゼル]
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+SG5760：60ドライブ::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+SG5760：ハンドル::
++
+--
+image::../media/handles.gif[SG5760 の取っ手]
+
+--
+SG5760：角穴ラックへの設置用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+--
+
+
+* *ケーブルとコネクタ*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+光ケーブルとSFPトランシーバ::
++
+--
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP]
+
+** FC インターコネクトポート用の光ケーブル × 2
+** 4 つの 16Gb/s FC インターコネクトポートおよび 4 つの 10GbE ネットワークポートの両方に対応した、 8 つの SFP+ トランシーバ
+
+
+--
+
+
+
+
+--
+.SG6000を使用します
+--
+* * SG6060ハードウェア*
++
+SG6000-CNコントローラ::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CNコントローラ]
+
+--
+E2860コントローラシェルフ（ドライブなし::
++
+--
+image::../media/de460c_table_size.gif[SG5760 4Uアプライアンス]
+
+--
+前面ベゼル2個::
++
+--
+image::../media/sg6000_front_bezels_for_table.gif[前面ベゼル]
+
+--
+レールキット×2（取扱説明書付き）::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+ドライブ×60（SSD×2、NL-SAS×58）::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[SG5760 の取っ手]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+--
+
+
+* * SG6060拡張シェルフ*
++
+拡張シェルフにドライブが取り付けられていません::
++
+--
+image::../media/de460c_table_size.gif[SG5760 4Uアプライアンス]
+
+--
+前面ベゼル::
++
+--
+image::../media/front_bezel_for_table_de460c.gif[前面ベゼル DE460C]
+
+--
+NL-SAS ドライブ × 60::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+レールキット（取扱説明書付き）×1::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[SG5760 の取っ手]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+--
+
+
+* * SGF6024ハードウェア*
++
+SG6000-CNコントローラ::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CNコントローラ]
+
+--
+ソリッドステート（フラッシュ）ドライブを24本搭載したEF570フラッシュアレイ::
++
+--
+image::../media/de224c_with_drives.gif[EF570 コントローラシェルフ]
+
+--
+前面ベゼル2個::
++
+--
+image::../media/sgf6024_front_bezels_for_table.png[SG6024 前面ベゼル]
+
+--
+レールキット×2（取扱説明書付き）::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+シェルフのエンドキャップ::
++
+--
+image::../media/endcaps.png[エンドキャップ]
+
+--
+
+
+* *ケーブルとコネクタ*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した4本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+光ケーブルとSFPトランシーバ::
++
+--
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP]
+
+** FC インターコネクトポート用の光ケーブル × 4
+** 16Gb/s FC 対応の SFP+ トランシーバ × 4
+
+
+--
+オプション：各SG6060拡張シェルフを接続するためのSASケーブル×2::
++
+--
+image::../media/sas_cable.gif[SAS ケーブル]
+
+--
+
+
+
+
+--
+.SG6100
+--
+* * ハードウェア *
++
+SGF6112を参照してください::
++
+--
+image::../media/sgf6112_front_with_ssds.png[SGF6112アプライアンスの前面]
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+前面ベゼル::
++
+--
+image::../media/sgf_6112_front_bezel.png[前面ベゼル]
+
+--
+
+
+* *電源コード*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+
+
+--
+====

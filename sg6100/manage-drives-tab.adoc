@@ -1,0 +1,96 @@
+---
+permalink: sg6100/manage-drives-tab.html 
+sidebar: sidebar 
+keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 'Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。' 
+---
+= [ドライブの管理]タブを使用する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。
+
+.作業を開始する前に
+* を使用して Grid Manager にサインインします https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+
+
+.このタスクについて
+SGF6112アプライアンスと https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
+
+[Manage Drives]タブには、次のビューがあります。
+
+レイアウト:: アプライアンス内のデータストレージドライブのレイアウト。ドライブの詳細を表示するドライブを選択してください。
++
+--
+image:../media/manage_drives_tab.png["[Manage Drives]タブのレイアウトビュー"]
+
+--
+表:: 各ドライブの情報が表示されます。ドライブの詳細を表示するドライブを選択してください。
++
+--
+image:../media/manage_drives_tab_table.png["[Manage Drives]タブのテーブルビュー"]
+
+--
+ドライブの詳細:: 各ドライブの概要。以下の手順に従って、適切なタスクボタンを選択します。
++
+--
+image:../media/manage_drives_tab_details.png["[Manage Drives]タブドライブの詳細"]
+
+--
+
+
+
+
+== ロケーターライトをオンまたはオフにする
+
+アプライアンス内のドライブの場所を物理的に確認するには
+
+. Grid Managerで、* nodes *>*_data center_*を選択します。
+. *_ appliance storage node_*>*[ドライブの管理]*>*[レイアウト]*>*_drive_*を選択します。
++
+ドライブの詳細パネルが表示されます。
+
+. [ロケーターライトをオンにする]*を選択します。
++
+** 電球アイコン image:../media/icon_drive-light-bulb.png["ドライブランプバルブ"] ドライブに対してと表示されます。
+** 物理ドライブのオレンジのLEDが点滅します。
+
+
+. ロケーターライトをオフにする場合は、*ロケーターライトをオフにする*を選択します。
+
+
+
+
+== [[logically-replace-drive]]ドライブの論理的な交換
+
+ストレージアプライアンスのドライブをリビルドまたは再初期化する必要がある場合は、次の手順を実行します。
+
+. Grid Managerで、* nodes *>*_data center_*を選択します。
+. *_ appliance storage node_*>*[ドライブの管理]*>*[レイアウト]*>*_drive_*を選択します。
++
+ドライブの詳細パネルが表示されます。
+
+. [Logically replace]*を選択します。
++
+ドライブの詳細パネルで、ドライブのステータスが_Rebuilding_と表示されます。ドライブの再構築には最大5分かかることがあります。
+
+
+
+
+
+== ドライブを使用停止にする
+
+トラブルシューティングのために、障害が発生していると思われるドライブを手動で「使用停止」することができます。この場合、システムはそのドライブなしで動作します。
+
+. Grid Managerで、* nodes *>*_data center_*を選択します。
+. *_ appliance storage node_*>*[ドライブの管理]*>*[レイアウト]*>*_drive_*を選択します。
++
+ドライブの詳細パネルが表示されます。
+
+. [ドライブの使用停止]*を選択します。
+
+
+ドライブを使用停止にしたら、ドライブを物理的に交換するか、または <<logically-replace-drive,ドライブを論理的に交換>>。

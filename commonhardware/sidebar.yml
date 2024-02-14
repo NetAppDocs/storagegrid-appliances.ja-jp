@@ -1,0 +1,17 @@
+---
+section: commonhardware
+title: アプライアンスの設定を保守します
+entries:
+- title: 概要
+  pdf-filename: アプライアンスの設定の保守（すべてのノード）
+  url: "/commonhardware/index.html"
+- title: アプライアンスをメンテナンスモードにします
+  url: "/commonhardware/placing-appliance-into-maintenance-mode.html"
+- title: MTU 設定を変更します
+  url: "/commonhardware/changing-mtu-setting.html"
+- title: DNS サーバの設定を確認します
+  url: "/commonhardware/checking-dns-server-configuration.html"
+- title: MACアドレス参照を更新します
+  url: "/commonhardware/locate-mac-address.html"
+- title: メンテナンスモードでノード暗号化を監視します
+  url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"

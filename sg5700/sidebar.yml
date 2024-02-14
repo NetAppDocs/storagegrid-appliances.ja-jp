@@ -1,0 +1,31 @@
+---
+section: sg5700
+title: SG5700ハードウェアのメンテナンス
+url: "/landing-maintain-sg5700/index.html"
+entries:
+- title: 概要
+  pdf-filename: SG5700ハードウェアメンテナンスガイド
+  url: "/sg5700/index.html"
+- title: メンテナンス設定手順
+  pdf-filename: メンテナンス設定手順- SG5700
+  entries:
+  - title: ストレージコントローラの SANtricity OS をアップグレードします
+    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
+    entries:
+    - title: Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+      url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
+    - title: E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします
+      url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
+  - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: E5700SG コントローラのリンク設定の変更
+    url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
+- title: ハードウェアの手順
+  pdf-filename: ハードウェアの手順- SG5700
+  entries:
+  - title: E2800ストレージコントローラの交換
+    url: "/sg5700/replacing-e2800-controller.html"
+  - title: E5700SGコンピューティングコントローラの交換
+    url: "/sg5700/replacing-e5700sg-controller.html"
+  - title: 他のハードウェアコンポーネントを交換します
+    url: "/sg5700/replacing-other-hardware-components-sg5700.html"

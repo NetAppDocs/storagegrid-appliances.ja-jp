@@ -1,0 +1,67 @@
+---
+permalink: installconfig/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: アプライアンスの電源を入れたら、StorageGRID で使用するネットワーク接続を設定します。  
+---
+= ハードウェアのセットアップ：概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスの電源を入れたら、StorageGRID で使用するネットワーク接続を設定します。
+
+
+
+== 必要なネットワーク接続を設定します
+
+すべてのアプライアンスで、次のようないくつかのタスクを実行して、必要なネットワーク接続を設定します。
+
+* アプライアンスインストーラにアクセスします
+* ネットワークリンクを設定する
+* ポートレベルのネットワーク接続を確認
+
+
+
+
+== 追加の設定が必要になる場合があります
+
+設定するアプライアンスのタイプによっては、ハードウェアの追加設定が必要になる場合があります。
+
+
+
+=== SANtricity システムマネージャ
+
+SG6000およびSG5700の場合は、SANtricity System Managerを設定します。SANtricity ソフトウェアを使用して、これらのアプライアンスのハードウェアを監視します。
+
+
+
+=== BMCインターフェイス
+
+次のアプライアンスには、BMCインターフェイスを設定する必要があります。
+
+* SG100
+* SG1000 からのアクセス
+* SG6000を使用します
+* SG6100
+
+
+
+
+== オプションの設定
+
+* ストレージアプライアンス
++
+** ハードウェアの監視に使用するSANtricity System Manager（SG5700およびSG6000）の設定
+** RAIDモードを変更します
+** SG6000-CNコントローラのBMCインターフェイスにアクセスします。
+
+
+* サービスアプライアンス
++
+** SG100またはSG1000のBMCインターフェイスにアクセスする
+
+
+

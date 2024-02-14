@@ -1,0 +1,81 @@
+---
+indexpage:
+  lead: NetApp StorageGRID は、ソフトウェアで定義されるオブジェクトストレージスイートで、パブリック、プライベート、ハイブリッドのマルチクラウド環境での幅広いユースケースに対応します。StorageGRID
+    はAmazon S3 APIをネイティブでサポートし、自動化されたライフサイクル管理などの業界をリードする革新的なテクノロジを提供して、非構造化データを長期にわたってコスト効率よく格納、保護、保持します。
+  tiles:
+  - title: はじめに
+    links:
+    - title: StorageGRID の詳細をご覧ください
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+    - title: StorageGRID クイックスタート
+      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+    - title: アプライアンスインストールのクイックスタート
+      url: "/installconfig/index.html"
+    - title: インストールと設定を自動化
+      url: "/installconfig/automating-appliance-installation-and-configuration.html"
+    - title: StorageGRID の設定を自動化
+      url: "/installconfig/automating-configuration-of-storagegrid.html"
+  - title: アプライアンスの概要
+    links:
+    - title: SG100およびSG1000
+      url: "/installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG5700
+      url: "/installconfig/hardware-description-sg5700.html"
+    - title: SG6000を使用します
+      url: "/installconfig/hardware-description-sg6000.html"
+    - title: SG6100（新規）
+      url: "/installconfig/hardware-description-sg6100.html"
+  - title: ハードウェアを設置
+    links:
+    - title: 設置を準備
+      url: "/landing-install-prep/index.html"
+    - title: ハードウェアを設置
+      url: "/landing-install-hdwr/index.html"
+    - title: ハードウェアをセットアップする
+      url: "/installconfig/configuring-hardware.html"
+    - title: アプライアンスノードを導入
+      url: "/landing-deploy-appliance/index.html"
+  - title: アプライアンスハードウェアのメンテナンス
+    links:
+    - title: SG100およびSG1000
+      url: "/landing-maintain-sg1000-100/index.html"
+    - title: SG5600
+      url: "/sg5600/index.html"
+    - title: SG5700
+      url: "/landing-maintain-sg5700/index.html"
+    - title: SG6000を使用します
+      url: "/landing-maintain-sg6000/index.html"
+    - title: SG6100
+      url: "/landing-maintain-sgf6112/index.html"
+  - title: StorageGRID ソフトウェア
+    links:
+    - title: StorageGRID 11.8ドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-118/index.html
+    - title: StorageGRID 11.7ドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-117/index.html
+    - title: StorageGRID 11.6のドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-116/index.html
+    - title: StorageGRID 11.5 のドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-115/index.html
+  - title: StorageGRID を有効にします
+    links:
+    - title: 他のアプリケーションの統合
+      url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
+  - title: デモとチュートリアル
+    links:
+    - title: StorageGRID ビデオライブラリ
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
+    - title: ネットアップラーニングサービス
+      url: https://www.netapp.com/support-and-training/netapp-university/
+  - title: リソースの追加
+    links:
+    - title: StorageGRID のサポートページ
+      url: https://mysupport.netapp.com/site/products/all/details/5d9f1107e01d9c0001ee50f6/downloads-tab
+    - title: ネットアップの Interoperability Matrix Tool （ IMT ）
+      url: https://imt.netapp.com/matrix/#welcome
+    - title: StorageGRID ナレッジベース
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID
+    - title: ネットアップのブログ
+      url: https://netapp.com/blog/
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/

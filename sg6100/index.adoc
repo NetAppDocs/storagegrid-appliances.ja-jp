@@ -1,0 +1,43 @@
+---
+permalink: sg6100/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100 storage appliance, SGF6112 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: アプライアンスのメンテナンス手順が必要になる場合があります。ここでは、SG6100アプライアンスのメンテナンスに固有の手順について説明します。 
+---
+= SG6100アプライアンスのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスのメンテナンス手順が必要になる場合があります。ここでは、SG6100アプライアンスのメンテナンスに固有の手順について説明します。
+
+このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。
+
+*設定のメンテナンス手順*は、アプライアンスインストーラ、Grid Manager、またはBMCのインターフェイスを使用して実行します。これらの手順は次のとおりです。
+
+* link:turning-sgf6112-identify-led-on-and-off.html["アプライアンスの識別LEDのオンとオフを切り替えます"]
+* link:locating-sgf6112-in-data-center.html["データセンターにアプライアンスを配置します"]
+* link:power-sgf6112-off-on.html["アプライアンスをシャットダウンします"]
+* link:changing-link-configuration-of-sgf6112-appliance.html["アプライアンスのリンク設定を変更します"]
+
+
+*ハードウェアのメンテナンス手順*特定のSGF6112コンポーネントを物理的に操作する必要があります。
+
+
+
+== ドライブファームウェアのアップグレード
+
+SGF6112のドライブ上のファームウェアは、アプライアンスをリブートするたびに自動的にチェックされます。必要に応じて、現在のStorageGRID リリースで想定されるバージョンにファームウェアが自動的にアップグレードされます。通常、ファームウェアのアップグレードはStorageGRID ソフトウェアのアップグレード中に実行されます。既存のStorageGRID バージョンに必要なドライブファームウェアのアップグレードは、ホットフィックスに含まれます。各ホットフィックスに付属の手順に従って、その影響を受ける可能性があるすべてのドライブにアップグレードが適用されていることを確認します。
+
+
+NOTE: SGF6112アプライアンスのメンテナンスにSANtricity System Managerは必要ありません。
+
+
+
+== 一般的なメンテナンス手順
+
+を参照してください link:../commonhardware/index.html["一般的なメンテナンス手順"] ホットフィックスの適用、ノードまたはサイトのリカバリ、ネットワークのメンテナンスなど、すべてのアプライアンスで同じ手順。
+
+を参照してください link:../installconfig/configuring-hardware.html["アプライアンスハードウェアをセットアップする"] アプライアンスの初期インストールおよび設定時にも実行されるアプライアンスのメンテナンス手順。

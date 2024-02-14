@@ -1,0 +1,21 @@
+---
+indexpage:
+  tiles:
+  - title: アプライアンスの導入
+    links:
+    - title: アプライアンスストレージノードを導入する
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: サービスアプライアンスノードを導入する
+      url: "../installconfig/deploying-services-appliance-node.html"
+    - title: アプライアンスの設置を監視する
+      url: "../installconfig/monitoring-appliance-installation.html"
+    - title: インストーラの実行中にアプライアンスをリブートする
+      url: "../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: アプライアンスの設置のトラブルシューティング
+    links:
+    - title: SG100およびSG1000
+      url: "../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+    - title: SG5700およびSG6000
+      url: "../installconfig/troubleshooting-hardware-installation.html"
+    - title: SG6100
+      url: "../installconfig/troubleshooting-hardware-installation-sg6100.html"

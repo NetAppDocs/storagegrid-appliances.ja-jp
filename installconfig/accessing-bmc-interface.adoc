@@ -1,0 +1,78 @@
+---
+permalink: installconfig/accessing-bmc-interface.html 
+sidebar: sidebar 
+keywords: BMC, baseboard management controller, access, open, login 
+summary: 次のアプライアンスモデルでは、BMC管理ポートのDHCPまたは静的IPアドレスを使用してBMCインターフェイスにアクセスできます。  
+---
+= BMC インターフェイスにアクセスします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+次のアプライアンスモデルでは、BMC管理ポートのDHCPまたは静的IPアドレスを使用してBMCインターフェイスにアクセスできます。
+
+* SG100
+* SG1000 からのアクセス
+* SG6000を使用します
+* SG6100
+
+
+.作業を開始する前に
+* 管理クライアントがを使用している必要があります https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* アプライアンスのBMC管理ポートを、使用する管理ネットワークに接続しておきます。
++
+[role="tabbed-block"]
+====
+.SG100
+--
+image::../media/sg100_bmc_management_port.png[SG100のBMC管理ポート]
+
+--
+.SG1000 からのアクセス
+--
+image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理ポート]
+
+--
+.SG6000を使用します
+--
+image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CNコントローラのBMC管理ポート]
+
+--
+.SG6100
+--
+image::../media/sgf6112_cn_bmc_management_port.png[SGF6112 BMC管理ポート]
+
+--
+====
+
+
+.手順
+. BMCインターフェイスのURLとして「+」を入力します
+`*https://_BMC_Port_IP_*`
++
+の場合 `_BMC_Port_IP_`BMC管理ポートのDHCPまたは静的IPアドレスを使用します。
+
++
+BMC のサインインページが表示されます。
+
++
+
+NOTE: をまだ構成していない場合 `BMC_Port_IP`の手順に従ってください link:configuring-bmc-interface.html["BMCインターフェイスの設定"]。  ハードウェアの問題が原因で手順 を使用できず、 BMC の IP アドレスを設定していない場合でも、 BMC にアクセスできる可能性があります。デフォルトでは、 BMC は DHCP を使用して IP アドレスを取得します。BMCネットワークでDHCPが有効になっている場合は、ネットワーク管理者からBMC MACに割り当てられたIPアドレスを指定できます。このIPアドレスは、アプライアンス前面のラベルに印刷されています。BMCネットワークでDHCPが有効になっていない場合、数分後にBMCが応答しなくなり、BMCにはデフォルトの静的IPが割り当てられます `192.168.0.120`。ラップトップをBMCポートに直接接続し、ネットワーク設定を変更してラップトップになどのIPを割り当てなければならない場合があります `192.168.0.200/24`をクリックしてを参照します `192.168.0.120`。
+
+. 管理者またはrootのユーザ名とパスワードを、 link:changing-root-password-for-bmc-interface.html["デフォルトのパスワードが変更されました"]：
++
+
+NOTE: デフォルトのユーザは、StorageGRIDアプライアンスのインストール時期によって異なります。デフォルトのユーザーは、新規インストールの場合は* admin *、古いインストールの場合は* root *です。
+
+. 「 * サインイン * 」を選択します。
++
+image::../media/bmc_dashboard.gif[BMCダッシュボード]
+
+. 必要に応じて、 *Settings*>*User Management* を選択し、「 disabled 」ユーザをクリックして、追加のユーザを作成します。
++
+
+NOTE: ユーザが初めてサインインすると、セキュリティを強化するためにパスワードの変更を求められる場合があります。
+
+

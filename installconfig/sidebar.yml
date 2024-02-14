@@ -1,0 +1,124 @@
+---
+section: installconfig
+title: アプライアンスをインストール
+url: "/landing-appl-install/index.html"
+entries:
+- title: クイックスタート
+  pdf-filename: StorageGRID アプライアンスハードウェアを設置
+  url: "/installconfig/index.html"
+- title: 設置を準備
+  url: "/landing-install-prep/index.html"
+  entries:
+  - title: サイトを準備
+    url: "/installconfig/preparing-site.html"
+  - title: 箱を開梱します
+    url: "/installconfig/unpacking-boxes.html"
+  - title: 追加の機器と工具を入手します
+    url: "/installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: ネットワーク情報の収集
+    entries:
+    - title: StorageGRID のネットワークタイプ
+      url: "/installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100およびSG1000
+      url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000を使用します
+      url: "/installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "/installconfig/gathering-installation-information-sg6100.html"
+- title: アプライアンスのインストールと設定を自動化
+  url: "/installconfig/automating-appliance-installation-and-configuration.html"
+- title: StorageGRID の設定を自動化
+  url: "/installconfig/automating-configuration-of-storagegrid.html"
+- title: インストール REST API の概要
+  url: "/installconfig/overview-of-installation-rest-apis.html"
+- title: アプライアンスハードウェアを設置
+  url: "/landing-install-hdwr/index.html"
+  entries:
+  - title: ハードウェアを登録
+    url: "/installconfig/registering-hardware.html"
+  - title: キャビネットまたはラックに設置します
+    entries:
+    - title: SG100およびSG1000
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SG6000を使用します
+      entries:
+      - title: 概要
+        pdf-filename: キャビネットまたはラックにSG6000を設置します
+        url: "/installconfig/installing-hardware-sg6000.html"
+      - title: 60ドライブシェルフの設置（SG6060）
+        url: "/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: ドライブの取り付け（SG6060）
+        url: "/installconfig/sg6060-installing-drives.html"
+      - title: 24ドライブシェルフの設置（SGF6024）
+        url: "/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
+      - title: SG6000-CNコントローラの設置（SG6024およびSG6060）
+        url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+    - title: SG6100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+  - title: アプライアンスをケーブル接続します
+    url: "/installconfig/cabling-appliance.html"
+  - title: 接続して電源を入れる
+    url: "/installconfig/connecting-power-cords-and-applying-power.html"
+  - title: ステータスインジケータとコードを表示します
+    url: "/installconfig/viewing-status-indicators.html"
+- title: ハードウェアをセットアップする
+  entries:
+  - title: 概要
+    url: "/installconfig/configuring-hardware.html"
+  - title: StorageGRID 接続を設定します
+    entries:
+    - title: StorageGRID アプライアンスインストーラにアクセスします
+      url: "/installconfig/accessing-storagegrid-appliance-installer.html"
+    - title: StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします
+      url: "/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: ネットワークリンクを設定する
+      url: "/installconfig/configuring-network-links.html"
+    - title: StorageGRID IP アドレスを設定する
+      url: "/installconfig/setting-ip-configuration.html"
+    - title: ネットワーク接続を確認します
+      url: "/installconfig/verifying-network-connections.html"
+    - title: ポートレベルのネットワーク接続を確認
+      url: "/installconfig/verifying-port-level-network-connections.html"
+  - title: SANtricityシステムマネージャのセットアップ（SG5700およびSG6000）
+    url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
+  - title: BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）
+    entries:
+    - title: 概要
+      url: "/installconfig/configuring-bmc-interface.html"
+    - title: rootパスワードを変更します
+      url: "/installconfig/changing-root-password-for-bmc-interface.html"
+    - title: BMC 管理ポートの IP アドレスを設定します
+      url: "/installconfig/setting-ip-address-for-bmc-management-port.html"
+    - title: BMC インターフェイスにアクセスします
+      url: "/installconfig/accessing-bmc-interface.html"
+    - title: SNMPを設定します
+      url: "/installconfig/configuring-snmp-settings-for-bmc.html"
+    - title: E メール通知を設定
+      url: "/installconfig/setting-up-email-notifications-for-alerts.html"
+  - title: オプション：ノードまたはドライブの暗号化を有効にする
+    url: "/installconfig/optional-enabling-node-encryption.html"
+  - title: オプション：RAIDモードを変更（SG5760およびSG6000）
+    url: "/installconfig/optional-changing-raid-mode.html"
+  - title: オプション：ネットワークポートを再マッピングします
+    url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
+- title: アプライアンスノードを導入
+  url: "/landing-deploy-appliance/index.html"
+  entries:
+  - title: アプライアンスストレージノードを導入する
+    url: "/installconfig/deploying-appliance-storage-node.html"
+  - title: サービスアプライアンスノードを導入する
+    url: "/installconfig/deploying-services-appliance-node.html"
+  - title: アプライアンスの設置を監視する
+    url: "/installconfig/monitoring-appliance-installation.html"
+  - title: StorageGRID アプライアンスインストーラの実行中にアプライアンスをリブートします
+    url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: インストールのトラブルシューティング（SG100およびSG1000）
+    url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: インストールのトラブルシューティング（SG5700またはSG6000）
+    url: "/installconfig/troubleshooting-hardware-installation.html"
+  - title: インストールのトラブルシューティング（SG6100）
+    url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"

@@ -1,0 +1,44 @@
+---
+permalink: installconfig/sg6000-cn-installing-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, rail, rails 
+summary: SG6000-CNコントローラ用のレール1組をキャビネットまたはラックに設置し、レールにコントローラをスライドさせます。 
+---
+= SG6000-CNコントローラの設置（SG6060およびSG6024）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CNコントローラ用のレール1組をキャビネットまたはラックに設置し、レールにコントローラをスライドさせます。
+
+.作業を開始する前に
+* 同梱されている安全上の注意に関するドキュメントを確認し、ハードウェアの移動と設置に関する注意事項を理解しておきます。
+* レールキットに手順書が同梱されていることを確認します。
+* E2860 コントローラシェルフとドライブまたは EF570 コントローラシェルフを取り付けておきます。
+
+
+.手順
+. キャビネットまたはラックにレールを取り付ける際には、レールキットの手順書に慎重に従ってください。
+. キャビネットまたはラックに取り付けた 2 本のレールで、カチッという音がするまでレールの可動部分を伸ばします。
++
+image::../media/rails_extended_out.gif[SG6000 のレール]
+
+. SG6000-CN コントローラをレールに挿入します。
+. コントローラをキャビネットまたはラックにスライドさせます。
++
+コントローラをこれ以上動かせない場合は、シャーシの両側にある青いラッチを引いて、コントローラを奥までスライドさせます。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000 のスライド式レール]
+
++
+
+NOTE: コントローラの電源を入れるまでは、前面ベゼルを取り付けないでください。
+
+. コントローラの前面パネルの非脱落型ネジを締めて、コントローラをラックに固定します。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 ラック固定ネジ]
+
+

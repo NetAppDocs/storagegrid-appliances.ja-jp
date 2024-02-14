@@ -1,0 +1,69 @@
+---
+permalink: sg6000/changing-link-configuration-of-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
+summary: SG6000-CN コントローラのイーサネットリンク設定を変更することができます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。 
+---
+= SG6000-CN コントローラのリンク設定を変更します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN コントローラのイーサネットリンク設定を変更することができます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。
+
+.作業を開始する前に
+アプライアンスは次のようになりました link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモードにしました"]。
+
+.このタスクについて
+SG6000-CN コントローラのイーサネットリンク設定を変更するオプションには、次のものがあります。
+
+* ポートボンディングモード * を「 Fixed 」から「 Aggregate 」または「 Aggregate 」から「 Fixed 」に変更します
+* ネットワークボンディングモード * を Active-Backup から LACP に、または LACP から Active-Backup に変更
+* VLAN タグを有効または無効にするか、 VLAN タグの値を変更します
+* リンク速度を変更する。
+
+
+.手順
+. StorageGRID アプライアンスインストーラから、 *Configure Networking*>*Link Configuration* を選択します。
++
+image::../media/link_configuration_option.gif[Link Configuration （リンク設定）]
+
+. [[link_config_changes,start=2]] リンク設定に必要な変更を加えます。
++
+オプションの詳細については、を参照してください link:../installconfig/configuring-network-links.html["ネットワークリンクを設定する"]。
+
+. 選択に問題がなければ、 * 保存 * をクリックします。
++
+
+NOTE: 接続しているネットワークまたはリンクを変更すると、接続が失われる可能性があります。1分以内に再接続されない場合は、アプライアンスに割り当てられている他のIPアドレスのいずれかを使用してStorageGRID アプライアンスインストーラのURLを再入力します：+
+`*https://_Appliance_Controller_IP_:8443*`
+
++
+VLAN 設定を変更した場合は、アプライアンスのサブネットが変更されている可能性があります。アプライアンスの IP アドレスを変更する必要がある場合は、に従います https://docs.netapp.com/us-en/storagegrid-118/maintain/configuring-ip-addresses.html["IP アドレスを設定する"^] 手順
+
++
+link:../installconfig/setting-ip-configuration.html["StorageGRID IP アドレスを設定する"]
+
+. メニューから [ ネットワークの設定 *>*Ping テスト *] を選択します。
+. ping テストツールを使用して、で行ったリンク設定の変更によって影響を受けた可能性のあるネットワーク上の IP アドレスへの接続を確認します <<link_config_changes,リンク設定の変更>> ステップ。
++
+最低でもプライマリ管理ノードのグリッドネットワーク IP アドレスと、 1 つ以上の他のストレージノードのグリッドネットワーク IP アドレスについて、 ping が通ることを確認します。必要に応じて、に戻ります <<link_config_changes,リンク設定の変更>> リンク設定の問題があれば手順を実行して修正します。
+
+. リンク設定の変更が問題なく機能しており、ノードがメンテナンスモードの間に実行する追加の手順がある場合は、ここで実行します。処理が完了した場合、または何らかの障害が発生して最初からやり直したい場合は、 * Advanced * > * Reboot Controller * を選択し、次のいずれかのオプションを選択します。
++
+** [Reboot into StorageGRID （の再起動） ] を選択します
+** メンテナンスモードを維持したままコントローラをリブートするには、 * Reboot into Maintenance Mode * を選択します。  手順 で障害が発生したために最初からやり直す場合は、このオプションを選択します。  ノードのリブートが完了したら、障害が発生した手順 の該当する手順から再起動します。
++
+image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+
++
+アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。nodes *ページに正常なステータス（緑色のチェックマークアイコン）が表示されます image:../media/icon_alert_green_checkmark.png["緑のチェックマーク"] （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
+
++
+image::../media/nodes_menu.png[アプライアンスノードがグリッドに再参加しました]
+
+
+
+

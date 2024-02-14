@@ -1,0 +1,58 @@
+---
+settings:
+  name: StorageGRID Appliances
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: false
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+    hide_language_selector: true
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: StorageGRIDアプライアンスドキュメント
+    url: "/index.html"
+  - title: はじめに
+    url: "/landing-learn-hdwr/index.html"
+    entries:
+    - title: アプライアンスの新機能アプライアンスノシンキノウ
+      url: "/whats-new-appliances.html"
+    - title: StorageGRIDアプライアンスの詳細
+      entries:
+      - title: SG100 および SG1000 サービスアプライアンス
+        url: "/installconfig/hardware-description-sg100-and-1000.html"
+      - title: SG5700ストレージアプライアンス
+        url: "/installconfig/hardware-description-sg5700.html"
+      - title: SG6000 ストレージアプライアンス
+        url: "/installconfig/hardware-description-sg6000.html"
+      - title: SG6100ストレージアプライアンス
+        url: "/installconfig/hardware-description-sg6100.html"
+  - section: installconfig
+  - title: アプライアンスハードウェアのメンテナンス
+    url: "/landing-maintain-hdwr/index.html"
+    entries:
+    - section: commonhardware
+    - title: アプライアンスノードのクローニング
+      entries:
+      - title: 概要
+        pdf-filename: アプライアンスノードのクローニング
+        url: "/commonhardware/how-appliance-node-cloning-works.html"
+      - title: アプライアンスノードのクローニングに関する考慮事項と要件
+        url: "/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html"
+      - title: アプライアンスノードをクローニングする
+        url: "/commonhardware/appliance-node-cloning-procedure.html"
+    - section: sg100-1000
+    - section: sg5600
+    - section: sg5700
+    - section: sg6000
+    - section: sg6100
+  - title: StorageGRIDソフトウェアのドキュメント
+    url: "/storagegrid-documentation.html"
+  - title: StorageGRID を有効にします
+    url: "/storagegrid-enable.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+product-family:
+  name: StorageGRID documentation
+  repo: storagegrid-family

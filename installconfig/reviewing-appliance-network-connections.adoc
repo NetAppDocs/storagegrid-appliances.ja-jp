@@ -1,0 +1,39 @@
+---
+permalink: installconfig/reviewing-appliance-network-connections.html 
+sidebar: sidebar 
+keywords: network connections, appliance, grid, admin, client, bmc, management 
+summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。 
+---
+= StorageGRID のネットワークタイプ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認し、各コントローラのポートがどのように使用されるかを把握する必要があります。StorageGRID のネットワーク要件については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/network/index.html["ネットワークのガイドライン"^]。
+
+必要な情報については、アプライアンスの手順書を参照してください。
+
+* link:gathering-installation-information-sg100-and-sg1000.html["SG100およびSG1000"]
+* link:gathering-installation-information-sg5700.html["SG5700"]
+* link:gathering-installation-information-sg6000.html["SG6000を使用します"]
+* link:gathering-installation-information-sg6100.html["SG6100"]
+
+
+また、ネットアッププロフェッショナルサービスのコンサルタントと連携して、NetApp ConfigBuilderツールを使用して設定手順を合理化、自動化することもできます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
+
+StorageGRID アプライアンスを StorageGRID システムのノードとして導入する場合は、次のネットワークに接続できます。
+
+* * StorageGRID のグリッドネットワーク * ：グリッドネットワークは、すべての内部 StorageGRID トラフィックに使用されます。このネットワークによって、グリッド内のすべてのノードが、すべてのサイトおよびサブネットにわたって相互に接続されます。グリッドネットワークは必須です。
+* * StorageGRID の管理ネットワーク * ：管理ネットワークは、システムの管理とメンテナンスに使用するクローズドネットワークです。管理ネットワークは通常はプライベートネットワークであり、サイト間でルーティング可能にする必要はありません。管理ネットワークはオプションです。
+* * StorageGRID のクライアントネットワーク： * クライアントネットワークは、 S3 や Swift などのクライアントアプリケーションへのアクセスを可能にするオープンネットワークです。クライアントネットワークはグリッドへのクライアントプロトコルアクセスを提供するため、グリッドネットワークを分離してセキュリティを確保できます。開くことを選択したポートだけを使用してこのネットワーク経由でアプライアンスにアクセスできるよう、クライアントネットワークを設定できます。クライアントネットワークはオプションです。
+* * SANtricityの管理ネットワーク*（ストレージアプライアンスの場合はオプションで、SG6100では不要）：このネットワークからSANtricity System Managerにアクセスして、アプライアンスおよびストレージコントローラシェルフのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。
+* * BMC管理ネットワーク*（SG100、SG1000、SG6000、SG6100の場合はオプション）：SG100、SG1000、SG6000、およびSG6100アプライアンスのベースボード管理コントローラにアクセスして、アプライアンスのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。
++
+オプションの BMC 管理ネットワークが接続されていないと、一部のサポート手順およびメンテナンス手順の実行が困難になります。BMC 管理ネットワークは、サポート目的で必要な場合を除き、接続しないでください。
+
+
+
+
+NOTE: StorageGRID ネットワークの詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/network/storagegrid-network-types.html["StorageGRID のネットワークタイプ"^]。

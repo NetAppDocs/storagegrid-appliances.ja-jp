@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: アプライアンスの新機能アプライアンスノシンキノウ
+      url: "../whats-new-appliances.html"
+    - title: StorageGRID の詳細をご覧ください
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+    - title: StorageGRID クイックスタート
+      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+    - title: アプライアンスのインストールのクイックスタート
+      url: "../installconfig/index.html"
+  - title: ストレージアプライアンスの詳細
+    links:
+    - title: SG5700ストレージアプライアンス
+      url: "../installconfig/hardware-description-sg5700.html"
+    - title: SG6000 ストレージアプライアンス
+      url: "../installconfig/hardware-description-sg6000.html"
+    - title: SG6100ストレージアプライアンス
+      url: "../installconfig/hardware-description-sg6100.html"
+  - title: サービスアプライアンスの詳細
+    links:
+    - title: SG100 および SG1000 サービスアプライアンス
+      url: "../installconfig/hardware-description-sg100-and-1000.html"

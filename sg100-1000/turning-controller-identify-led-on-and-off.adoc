@@ -1,0 +1,42 @@
+---
+permalink: sg100-1000/turning-controller-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
+summary: コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。 
+---
+= SG100またはSG1000の識別LEDのオンとオフの切り替え
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。
+
+.作業を開始する前に
+特定するコントローラのBMC IPアドレスを確認しておきます。
+
+.手順
+. アプライアンスのBMCインターフェイスにアクセスします。
+. 「 * サーバー識別 * 」を選択します。
++
+識別LEDの現在のステータスが選択されます。
+
+. *オン*または*オフ*を選択し、*操作の実行*を選択します。
++
+* on *を選択すると、アプライアンスの前面（図）と背面の青色の識別LEDが点灯します。
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[前面識別 LED オン]
+
++
+
+NOTE: コントローラにベゼルが取り付けられている場合、前面の識別 LED が見えにくいことがあります。
+
+. 必要に応じてLEDのオンとオフを切り替えます。
+
+
+.関連情報
+link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+
+link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]

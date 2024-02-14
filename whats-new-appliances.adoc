@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: whats-new-appliances.html 
+keywords: storagegrid, appliance, whats new 
+summary: このドキュメントサイトの新機能をご確認ください。 
+---
+= アプライアンスの新機能アプライアンスノシンキノウ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+StorageGRIDアプライアンスの新機能をご紹介します。
+
+
+
+== SGF6112オールフラッシュアプライアンス
+
+新しいStorageGRID SGF6112ストレージアプライアンスは、1Uシャーシにコンピューティングコントローラとストレージコントローラを統合したコンパクトな設計を特徴としています。アプライアンスは12本のSSD NVMeドライブをサポートし、ドライブあたり最大15.3TBのストレージ容量を実現します。SSDドライブは、耐障害性に優れたオブジェクトストレージを提供するRAIDに組み込まれています。を参照してください link:installconfig/hardware-description-sg6100.html["SGF6112アプライアンス：概要"]。

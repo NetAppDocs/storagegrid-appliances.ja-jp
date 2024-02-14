@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: ロケーションLEDのオン/オフ
+      url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
+    - title: データセンターにアプライアンスを配置します
+      url: "../sg100-1000/locating-controller-in-data-center.html"
+    - title: アプライアンスの電源をオフにする
+      url: "../sg100-1000/shut-down-sg100-and-sg1000.html"
+    - title: リンク設定を変更します
+      url: "../sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: ラックの手順
+    links:
+    - title: アプライアンスの交換
+      url: "../sg100-1000/replacing-services-appliance.html"
+  - title: ハードウェアの手順
+    links:
+    - title: 電源装置を交換してください
+      url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+    - title: ファンを交換します
+      url: "../sg100-1000/replacing-fan-in-services-appliance.html"
+    - title: ドライブを交換します
+      url: "../sg100-1000/replacing-drive-in-services-appliance.html"

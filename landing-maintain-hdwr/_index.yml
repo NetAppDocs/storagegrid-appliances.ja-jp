@@ -1,0 +1,33 @@
+---
+indexpage:
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: アプライアンスをメンテナンスモードにする
+      url: "../commonhardware/placing-appliance-into-maintenance-mode.html"
+    - title: MTU 設定を変更します
+      url: "../commonhardware/changing-mtu-setting.html"
+    - title: DNS設定の確認
+      url: "../commonhardware/checking-dns-server-configuration.html"
+    - title: MACアドレスの更新
+      url: "../commonhardware/locate-mac-address.html"
+    - title: ノード暗号化の監視
+      url: "../commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
+  - title: ノードのクローニング
+    links:
+    - title: ノードクローニングの要件
+      url: "../commonhardware/considerations-and-requirements-for-appliance-node-cloning.html"
+    - title: アプライアンスノードをクローニングする
+      url: "../commonhardware/appliance-node-cloning-procedure.html"
+  - title: アプライアンス固有のメンテナンス
+    links:
+    - title: SG1000およびSG100
+      url: "../landing-maintain-sg1000-100/index.html"
+    - title: SG5600
+      url: "../sg5600/index.html"
+    - title: SG5700
+      url: "../landing-maintain-sg5700/index.html"
+    - title: SG6000を使用します
+      url: "../landing-maintain-sg6000/index.html"
+    - title: SG6100
+      url: "../landing-maintain-sgf6112/index.html"

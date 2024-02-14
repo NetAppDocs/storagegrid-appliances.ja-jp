@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: commonhardware/software-based-node-maintenance.html 
+keywords: software based node maintenance 
+summary: ソフトウェアベースのノードメンテナンス： 
+---
+= ソフトウェアベースのノードメンテナンス
+:allow-uri-read: 
+
+
+[role="lead"]
+ソフトウェアベースのノードメンテナンス：ここに何かありますか。

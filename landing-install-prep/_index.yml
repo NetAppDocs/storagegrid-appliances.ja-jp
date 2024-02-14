@@ -1,0 +1,23 @@
+---
+indexpage:
+  tiles:
+  - title: 準備
+    links:
+    - title: サイトを準備
+      url: "../installconfig/preparing-site.html"
+    - title: 箱を開梱します
+      url: "../installconfig/unpacking-boxes.html"
+    - title: 追加の機器と工具を入手します
+      url: "../installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: ネットワーク情報の収集
+    links:
+    - title: StorageGRIDネットワークタイプの詳細
+      url: "../installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100およびSG1000のネットワーク情報
+      url: "../installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700のネットワーク情報
+      url: "../installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000のネットワーク情報
+      url: "../installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100のネットワーク情報
+      url: "../installconfig/gathering-installation-information-sg6100.html"

@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
+summary: 拡張シェルフの入出力モジュール、電源装置、またはファンの交換が必要になることがあります。 
+---
+= オプションのSG6000 60ドライブ拡張シェルフのハードウェアコンポーネントの交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+拡張シェルフの入出力モジュール、電源装置、またはファンの交換が必要になることがあります。
+
+.作業を開始する前に
+* E シリーズハードウェアの交換用手順 を用意しておきます。
+* データセンターの拡張シェルフのハードウェアコンポーネントを交換するストレージアプライアンスが物理的に配置されている。
++
+link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+
+
+
+.このタスクについて
+60ドライブ拡張シェルフの入出力モジュール（IOM）を交換するには、の手順書の手順を参照してください link:replacing-storage-controller-sg6000.html["ストレージコントローラの交換"]。
+
+60 ドライブ拡張シェルフの電源装置またはファンを交換するには、 60 ドライブハードウェアのメンテナンスに関する E シリーズの手順書を参照してください。
+
+|===
+| FRU | については、 E シリーズの手順書を参照してください 
+
+
+ a| 
+入出力モジュール（ IOM ）
+ a| 
+IOM の交換
+
+
+
+ a| 
+電源キャニスター
+ a| 
+電源キャニスターの交換（ 60 ドライブ）
+
+
+
+ a| 
+ファンキャニスター
+ a| 
+ファンキャニスターの交換（ 60 ドライブ）
+
+|===

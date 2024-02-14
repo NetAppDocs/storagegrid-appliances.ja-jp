@@ -1,0 +1,39 @@
+---
+permalink: installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installing, installation, cabinet, rack, rail, rails 
+summary: キャビネットまたはラックにアプライアンス用のレール1組を取り付け、レールにアプライアンスをスライドさせます。 
+---
+= キャビネットまたはラックへの設置（SG100およびSG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+キャビネットまたはラックにアプライアンス用のレール1組を取り付け、レールにアプライアンスをスライドさせます。
+
+.作業を開始する前に
+* 同梱されている安全上の注意に関するドキュメントを確認し、ハードウェアの移動と設置に関する注意事項を理解しておきます。
+* レールキットに手順書が同梱されていることを確認します。
+
+
+.手順
+. キャビネットまたはラックにレールを取り付ける際には、レールキットの手順書に慎重に従ってください。
+. キャビネットまたはラックに取り付けた 2 本のレールで、カチッという音がするまでレールの可動部分を伸ばします。
++
+image::../media/rails_extended_out.gif[SG100 および SG 1000 Rails]
+
+. アプライアンスをレールに挿入します。
+. キャビネットまたはラックにアプライアンスをスライドさせます。
++
+アプライアンスをこれ以上動かせない場合は、シャーシの両側にある青色のラッチを引いて、アプライアンスを奥までスライドさせます。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG 100 と SG1000 のスライド式のレール]
+
++
+
+NOTE: アプライアンスの電源をオンにするまでは、前面ベゼルを取り付けないでください。
+
+

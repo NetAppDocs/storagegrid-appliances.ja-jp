@@ -1,0 +1,43 @@
+---
+permalink: sg6100/turning-sgf6112-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
+summary: アプライアンスの前面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスを見つけやすくなります。 
+---
+= SGF6112アプライアンスの識別LEDのオンとオフの切り替え
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンターでアプライアンスの場所を特定できます。
+
+.作業を開始する前に
+特定するアプライアンスのBMC IPアドレスを確認しておきます。
+
+.手順
+. link:../installconfig/accessing-bmc-interface.html["アプライアンスのBMCインターフェイスへのアクセス"]。
+. 「 * サーバー識別 * 」を選択します。
++
+識別LEDの現在のステータスが選択されます。
+
+. *オン*または*オフ*を選択し、*操作の実行*を選択します。
++
+* on *を選択すると、アプライアンスの前面と背面の青色の識別LEDが点灯します。
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[前面識別 LED オン]
+
++
+
+NOTE: コントローラにベゼルが取り付けられている場合、前面の識別 LED が見えにくいことがあります。
+
++
+背面の識別LEDは、アプライアンスの中央にあるMicro-SDスロットの下にあります。
+
+. 必要に応じて、識別LEDのオンとオフを切り替えます。
+
+
+.関連情報
+link:locating-sgf6112-in-data-center.html["データセンターにアプライアンスを配置します"]

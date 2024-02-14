@@ -1,0 +1,55 @@
+---
+permalink: installconfig/installing-hardware-sg6000.html 
+sidebar: sidebar 
+keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
+summary: SG6060およびSGF6024の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。SG6060の場合は、シェルフを設置するまで各シェルフにドライブを取り付けないでください。 
+---
+= キャビネットまたはラックへの設置（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6060およびSGF6024の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。SG6060の場合は、シェルフを設置するまで各シェルフにドライブを取り付けないでください。
+
+[cols="1a,2a,2a"]
+|===
+| モデル | をインストールします | を参照してください 
+
+
+ a| 
+SG6060 の設計
+ a| 
+60ドライブコントローラシェルフと60ドライブ拡張シェルフ
+ a| 
+link:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html["60ドライブシェルフを設置"]
+
+
+
+ a| 
+SG6060 の設計
+ a| 
+各シェルフに60本のドライブを挿入します
+ a| 
+link:sg6060-installing-drives.html["ドライブを取り付けます"]
+
+
+
+ a| 
+SGF6024
+ a| 
+24ドライブのコントローラシェルフ
+ a| 
+link:sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html["24ドライブシェルフの設置"]
+
+
+
+ a| 
+SG6060およびSGF6024
+ a| 
+SG6000-CNコンピューティングコントローラ
+ a| 
+link:sg6000-cn-installing-into-cabinet-or-rack.html["SG6000-CNコントローラを設置します"]
+
+|===

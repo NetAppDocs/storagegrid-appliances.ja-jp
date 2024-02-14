@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: storagegrid-documentation.html 
+keywords: storagegrid, software, grid 
+summary: StorageGRIDシステムの構成と使用方法について説明します。 
+---
+= StorageGRIDソフトウェアのドキュメント
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+に進みます https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8ドキュメント"^] を参照して、StorageGRID 11.8システムの設定および使用方法を確認してください。
+
+StorageGRIDのドキュメントサイトには、次のような情報が含まれています。
+
+* ネットワークのガイドライン。
+* LinuxノードとVMwareノードのインストール手順。
+* StorageGRIDのアップグレードとホットフィックスの手順
+* 情報ライフサイクル管理（ILM）を使用したオブジェクトデータの保護など、システムを設定するための管理手順。
+* StorageGRIDテナントアカウントとS3 REST APIを使用する手順。
+* 監視とトラブルシューティングの手順（アラート、監査メッセージ、システムログに関する情報など）
+* StorageGRIDシステムのメンテナンス手順（新しいStorageGRIDボリューム、ノード、またはサイトの追加、障害が発生したノードとボリュームのリカバリ、ノードまたはサイトの運用停止、グリッドでのその他のメンテナンスの実行など）。
+
+
+
+
+== その他のバージョン
+
+他のバージョンのNetApp StorageGRIDソフトウェアのマニュアルは、次のURLから入手できます。
+
+* https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7ドキュメント"^]
+* https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6のドキュメント"^]
+* https://docs.netapp.com/us-en/storagegrid-115/index.html["StorageGRID 11.5 のドキュメント"^]
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61023["StorageGRID 11.4 ドキュメント"^]
+

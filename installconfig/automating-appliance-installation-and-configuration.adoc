@@ -1,0 +1,268 @@
+---
+permalink: installconfig/automating-appliance-installation-and-configuration.html 
+sidebar: sidebar 
+keywords: automate, automating, automation, automatic, install, installation, configuration, configure 
+summary: インストールと設定を自動化すると、複数の StorageGRID インスタンス、または大規模で複雑な StorageGRID インスタンスを 1 つ導入する場合に便利です。 
+---
+= アプライアンスのインストールと設定を自動化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+インストールと設定を自動化すると、複数の StorageGRID インスタンス、または大規模で複雑な StorageGRID インスタンスを 1 つ導入する場合に便利です。
+
+NetApp StorageGRID ツールを使用すると、StorageGRID アプライアンスのインストールと設定を自動化できます。アプライアンスを設置して設定したら、を実行できます link:automating-configuration-of-storagegrid.html["StorageGRID システム全体の設定を自動化します"]。
+
+次の設定を自動化できます。
+
+* グリッドネットワーク、管理ネットワーク、およびクライアントネットワークの IP アドレス
+* BMCインターフェイス
+* ネットワークリンク
++
+** ポートボンディングモード
+** ネットワークボンディングモード
+** リンク速度
+
+
+
+
+
+
+== 自動化オプション
+
+アプライアンスのインストールと設定を自動化するには、次のオプションを1つ以上使用します。
+
+* 設定の詳細を含むJSONファイルを生成します。を使用するには、ネットアッププロフェッショナルサービスのコンサルタントにご相談ください link:https://configbuilder.netapp.com/index.aspx["NetApp ConfigBuilderツール"^] 次の手順を実行します。
++
+.. 受注確認番号については、NetAppプロフェッショナルサービスにお問い合わせください。
+.. ConfigBuilderからワークブックを入手する。
+.. プロフェッショナルサービスに相談してワークブックを完成させてください。
+.. ConfigBuilderを使用してワークブックをアップロードする。
+.. ConfigBuilderを使用してJSONファイルを生成する。
+.. JSONファイルをアプライアンスにアップロードするには、プロフェッショナルサービスに相談してください。
++
+を参照してください <<automate-with-appliance-installer,アプライアンスインストーラを使用して自動化します>>。
+
++
+
+NOTE: 同じJSONファイルを使用して複数のアプライアンスを設定できます。
+
+
+
++
+多くのノードを設定する必要がある場合は特に、アップロードしたJSONファイルを使用してアプライアンスを設定する方が、手動で設定するよりも効率的です。設定を手動で実行するには、StorageGRID アプライアンスインストーラの複数のページを使用し、ノードごとに構成ファイルを一度に1つずつ適用する必要があります。
+
+* 上級ユーザの場合は、次のStorageGRID Pythonスクリプトを使用してシステムをインストールおよび設定できます。
++
+** `configure-sga.py`：アプライアンスのインストールと設定を自動化します。を参照してください <<automate-with-configure-sga-py-script,configure-sga.pyスクリプトを使用して、アプライアンスのインストールと設定を自動化します>>。
+** `configure-storagegrid.py`：StorageGRID システム全体の他のコンポーネント（「グリッド」）を設定します。を参照してください link:automating-configuration-of-storagegrid.html["StorageGRID の設定を自動化"]。
+
+
++
+
+NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください https://docs.netapp.com/us-en/storagegrid-118/maintain/downloading-and-extracting-storagegrid-installation-files.html["StorageGRID インストールファイルのダウンロードと展開"^]。
+
+
+
+
+
+== StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する
+
+JSONファイルを生成したら、StorageGRID アプライアンスインストーラを使用してJSONファイルをアップロードすることで、1つ以上のアプライアンスの設定を自動化できます。
+
+.作業を開始する前に
+* アプライアンスをラックに設置し、ネットワークに接続し、電源を投入しておきます。
+* これで完了です <<automation-options,JSONファイルが生成されました>> ネットアッププロフェッショナルサービスコンサルタントが指導します。
+* アプライアンスに、StorageGRID 11.5以降と互換性のある最新のファームウェアが搭載されています。
+* を使用して設定するアプライアンス上のStorageGRID アプライアンスインストーラに接続します https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+
+
+.手順
+. StorageGRID アプライアンスインストーラで、*[アドバンスト]*>*[アプライアンス構成の更新]*を選択します。[Update Appliance Configuration] ページが表示されます。
+. アップロードする設定を含むJSONファイルを参照して選択します。
++
+ファイルがアップロードされて検証されます。検証プロセスが完了すると、ファイル名が緑色のチェックマークの横に表示されます。
+
++
+
+NOTE: JSONファイルの設定にのセクションが含まれている場合は、アプライアンスへの接続が失われる可能性があります `link_config`、 `networks`またはその両方。1分以内に再接続されない場合は、アプライアンスに割り当てられている他のIPアドレスのいずれかを使用してアプライアンスのURLを再入力します。
+
++
+image::../media/update_appliance_configuration_valid_json.png[アプライアンス設定の JSON がアップロードされました]
+
++
+ノード名 * ドロップダウンには、 JSON ファイルで定義された最上位のノード名が表示されます。
+
++
+
+NOTE: ファイルが有効でない場合、ファイル名は赤色で表示され、黄色のバナーにエラーメッセージが表示されます。無効なファイルはアプライアンスに適用されません。ConfigBuilderで有効なJSONファイルがあるかどうかが検証されます。
+
+. ノード名 * ドロップダウンのリストからノードを選択します。
++
+[JSON構成の適用]*ボタンが有効になります。
+
+. Apply JSON configuration * を選択します。
++
+選択したノードに構成が適用されます。
+
+
+
+
+
+== configure-sga.pyスクリプトを使用して、アプライアンスのインストールと設定を自動化します
+
+上級ユーザは、を使用できます `configure-sga.py` プライマリ管理ノードのインストールや設定など、StorageGRID アプライアンスノードのインストールタスクや設定タスクの多くを自動化するスクリプトです。このスクリプトは、設定するアプライアンスが多数ある場合に役立ちます。
+
+スクリプトを使用して、アプライアンスの設定情報を含む JSON ファイルを生成することもできます。JSONファイルをStorageGRID アプライアンスインストーラにアップロードして、すべてのアプライアンスノードを同時に設定できます。JSONファイルを編集してアップロードし、1つ以上のアプライアンスに新しい設定を適用することもできます。
+
+
+NOTE: この手順 は、コマンドラインインターフェイスの使用経験がある上級ユーザ向けです。または、を使用することもできます <<automate-with-appliance-installer,設定を自動化するには、 StorageGRID アプライアンスインストーラを使用します>>。
+
+.作業を開始する前に
+* アプライアンスをラックに設置し、ネットワークに接続し、電源を投入しておきます。
+* これで完了です <<automation-options,JSONファイルが生成されました>> ネットアッププロフェッショナルサービスコンサルタントが指導します。
+* アプライアンスに、StorageGRID 11.5以降と互換性のある最新のファームウェアが搭載されています。
+* アプライアンスの管理ネットワークのIPアドレスを設定しておきます。
+* をダウンロードしておきます `configure-sga.py` ファイル。このファイルはインストール・アーカイブに含まれています。または、 StorageGRID アプライアンス・インストーラの * Help * > * Appliance Installation Script * をクリックしてアクセスできます。
+
+
+.手順
+. Python スクリプトを実行するために使用する Linux マシンにログインします。
+. スクリプト構文に関する一般的なヘルプおよび使用可能なパラメータの一覧を表示するには、次のように入力します。
++
+[listing]
+----
+configure-sga.py --help
+----
++
+。 `configure-sga.py` スクリプトでは、次の5つのサブコマンド
+
++
+** `advanced` BMCの設定、アプライアンスの現在の設定を含むJSONファイルの作成など、StorageGRID アプライアンスの高度な操作用
+** `configure` RAIDモード、ノード名、およびネットワークパラメータを設定するために使用します
+** `install` StorageGRID のインストールを開始する場合に使用します
+** `monitor` StorageGRID インストールの監視用です
+** `reboot` アプライアンスのリブート用です
++
+サブコマンド（advanced、configure、install、monitor、またはreboot）引数のあとにを入力すると `--help` オプションを指定すると、そのサブコマンド内で使用可能なオプションの詳細を示すヘルプテキストが表示されます
+`configure-sga.py _subcommand_ --help`
+
++
+よろしければ <<back-up-appliance-config,アプライアンスの設定をJSONファイルにバックアップします>>で、ノード名が次の要件に従っていることを確認します。
+
++
+*** JSONファイルを使用してすべてのアプライアンスノードを自動的に設定する場合は、各ノード名が一意になります。
+*** 1文字以上32文字以下の有効なホスト名を指定する必要があります。
+*** アルファベット、数字、およびハイフンを使用できます。
+*** 先頭または末尾をハイフンにすることはできません。
+*** 数字だけを含めることはできません。
+
+
+
+
+. JSONファイルの設定をアプライアンスに適用するには、次のように入力します `_SGA-INSTALL-IP_` は、アプライアンスの管理ネットワークIPアドレスです。 `_json-file-name_` はJSONファイルの名前です `_node-name-inside-json-file_` は、設定が適用されているノードの名前です：+
+`configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
+. アプライアンスノードの現在の設定を確認するには、以下のコマンドをどこに入力するかを確認します `_SGA-INSTALL-IP_` は、アプライアンスの管理ネットワークのIPアドレスです。+
+`configure-sga.py configure _SGA-INSTALL-IP_`
++
+この結果には、プライマリ管理ノードの IP アドレスや管理、グリッド、クライアントネットワークに関する情報など、アプライアンスの現在の IP 情報が表示されます。
+
++
+[listing]
+----
+Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
+2021/02/25 16:25:11: Performing GET on /api/versions... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-info... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/admin-connection... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/link-config... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/networks... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-config... Received 200
+
+  StorageGRID Appliance
+    Name:        LAB-SGA-2-30
+    Node type:   storage
+
+  StorageGRID primary Admin Node
+    IP:        172.16.1.170
+    State:     unknown
+    Message:   Initializing...
+    Version:   Unknown
+
+  Network Link Configuration
+    Link Status
+          Link      State      Speed (Gbps)
+          ----      -----      -----
+          1         Up         10
+          2         Up         10
+          3         Up         10
+          4         Up         10
+          5         Up         1
+          6         Down       N/A
+
+    Link Settings
+        Port bond mode:      FIXED
+        Link speed:          10GBE
+
+        Grid Network:        ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:8a  00:a0:98:59:8e:82
+
+        Admin Network:       ENABLED
+            Bonding mode:    no-bond
+            MAC Addresses:   00:80:e5:29:70:f4
+
+        Client Network:      ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:89  00:a0:98:59:8e:81
+
+  Grid Network
+    CIDR:      172.16.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:8A
+    Gateway:   172.16.0.1
+    Subnets:   172.17.0.0/21
+               172.18.0.0/21
+               192.168.0.0/21
+    MTU:       1500
+
+  Admin Network
+    CIDR:      10.224.2.30/21 (Static)
+    MAC:       00:80:E5:29:70:F4
+    Gateway:   10.224.0.1
+    Subnets:   10.0.0.0/8
+               172.19.0.0/16
+               172.21.0.0/16
+    MTU:       1500
+
+  Client Network
+    CIDR:      47.47.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:89
+    Gateway:   47.47.0.1
+    MTU:       2000
+
+##############################################################
+#####   If you are satisfied with this configuration,    #####
+##### execute the script with the "install" sub-command. #####
+##############################################################
+----
+. 現在の設定のいずれかの値を変更する必要がある場合は、を使用します `configure` サブコマンドを使用して更新します。たとえば、アプライアンスがプライマリ管理ノードへの接続に使用するIPアドレスをに変更する場合などです `172.16.2.99`次のように入力します。
++
+`configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
+
+. [[back-up-appliance-config]]アプライアンス設定をJSONファイルにバックアップする場合は、高度なおよびを使用します `backup-file` サブコマンド。たとえば、IPアドレスを持つアプライアンスの設定をバックアップする場合などです `_SGA-INSTALL-IP_` を指定します `appliance-SG1000.json`をクリックし、「+」と入力します
+`configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
++
+設定情報が格納された JSON ファイルは、スクリプトの実行元と同じディレクトリに書き込まれます。
+
++
+
+CAUTION: 生成された JSON ファイルの最上位のノード名がアプライアンス名と一致していることを確認します。経験豊富なユーザーで、StorageGRID APIを十分に理解している場合を除き、このファイルに変更を加えないでください。
+
+. アプライアンスの設定に問題がなければ、を使用します `install` および `monitor` アプライアンスをインストールするためのサブコマンド：+
+`configure-sga.py install --monitor _SGA-INSTALL-IP_`
+. アプライアンスをリブートする場合は、「+」を入力します
+`configure-sga.py reboot _SGA-INSTALL-IP_`
+

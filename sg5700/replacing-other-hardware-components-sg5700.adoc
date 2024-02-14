@@ -1,0 +1,83 @@
+---
+permalink: sg5700/replacing-other-hardware-components-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, controller battery, battery, drive, fan, power supply 
+summary: StorageGRID アプライアンスのコントローラバッテリ、ドライブ、ファン、または電源装置の交換が必要になることがあります。 
+---
+= SG5700の他のハードウェアコンポーネントの交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスのコントローラバッテリ、ドライブ、ファン、または電源装置の交換が必要になることがあります。
+
+.作業を開始する前に
+* E シリーズハードウェアの交換用手順 を用意しておきます。
+* アプライアンスは次のようになりました link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモードに切り替えられます"] コンポーネントの交換用手順 でアプライアンスをシャットダウンする必要がある場合。
+
+
+.このタスクについて
+E2800コントローラのバッテリを交換するには、次の手順を参照してください： link:replacing-e2800-controller.html["E2800コントローラの交換"]。これらの手順では、アプライアンスからのコントローラの取り外し、コントローラからのバッテリの取り外し、バッテリの取り付け、およびコントローラの交換の方法について説明します。
+
+アプライアンスのドライブ、電源/ファンキャニスター、ファンキャニスター、電源キャニスター、またはドライブドロワーを交換するには、 http://mysupport.netapp.com/info/web/ECMP1658252.html["EシリーズでのE2800ハードウェアのメンテナンス手順"^]。
+
+
+
+== SG5712 コンポーネントの交換手順
+
+[cols="1a,3a"]
+|===
+| FRU | については、 E シリーズの手順書を参照してください 
+
+
+ a| 
+ドライブ
+ a| 
+E2800 12 ドライブまたは 24 ドライブシェルフのドライブの交換
+
+
+
+ a| 
+電源 / ファンキャニスター
+ a| 
+E2800 シェルフの電源 / ファンキャニスターの交換
+
+|===
+
+
+== SG5760 のコンポーネントの交換手順
+
+[cols="1a,3a"]
+|===
+| FRU | については、 E シリーズの手順書を参照してください 
+
+
+ a| 
+ドライブ
+ a| 
+E2860 シェルフのドライブの交換
+
+
+
+ a| 
+電源キャニスター
+ a| 
+E2860 シェルフの電源キャニスターの交換
+
+
+
+ a| 
+ファンキャニスター
+ a| 
+E2860 シェルフのファンキャニスターの交換
+
+
+
+ a| 
+ドライブドロワー
+ a| 
+E2860 シェルフのドライブドロワーの交換
+
+|===

@@ -1,0 +1,45 @@
+---
+permalink: commonhardware/index.html 
+sidebar: sidebar 
+keywords: maintain overview, maintenance overview, about maintain, about maintenance 
+summary: StorageGRID システムのメンテナンスには、次の手順を使用してください。 
+---
+= ノードの一般的なメンテナンス手順：概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムのメンテナンスには、次の手順を使用してください。
+
+
+
+== これらの手順について
+
+ここでは、ソフトウェアホットフィックスの適用、グリッドノードのリカバリ、障害が発生したサイトのリカバリ、グリッドノードまたはサイト全体の運用停止、ネットワークメンテナンスの実行、ホストレベルおよびミドルウェアのメンテナンス手順の実行、グリッドノードの手順の実行など、すべてのノードに共通の手順について説明します。
+
+
+NOTE: ここで説明する「Linux」とは、Red Hat®Enterprise Linux®、Ubuntu®、またはDebian®環境を指します。を使用します https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+
+
+
+== 作業を開始する前に
+
+* StorageGRID システムを幅広く理解している。
+* StorageGRID システムのトポロジを確認し、グリッドの設定を把握しておきます。
+* すべての指示に厳密に従い、すべての警告に注意する必要があります。
+* ここで説明していないメンテナンス手順がサポートされていないか、サービス契約が必要であることを理解しておきます。
+
+
+
+
+== アプライアンスのメンテナンス手順
+
+StorageGRID アプライアンスのタイプごとに固有のメンテナンス手順については、アプライアンスのメンテナンスセクションを参照してください。
+
+* link:../sg6100/index.html["SG6100アプライアンスのメンテナンス"]
+* link:../sg6000/index.html["SG6000アプライアンスのメンテナンス"]
+* link:../sg5700/index.html["SG5700 アプライアンスをメンテナンスする"]
+* link:../sg100-1000/index.html["SG100およびSG1000アプライアンスのメンテナンス"]
+
