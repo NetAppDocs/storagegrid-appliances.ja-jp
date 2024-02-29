@@ -14,11 +14,11 @@ summary: 'Grid Managerの[Manage Drives]タブを使用して、SGF6112アプラ
 Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。
 
 .作業を開始する前に
-* を使用して Grid Manager にサインインします https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 
 
 .このタスクについて
-SGF6112アプライアンスと https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
+SGF6112アプライアンスと https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
 
 [Manage Drives]タブには、次のビューがあります。
 

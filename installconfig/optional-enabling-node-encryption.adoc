@@ -19,7 +19,7 @@ summary: ノードレベルおよびディスクレベルで暗号化を有効�
 
 セキュリティを強化するために、サポートされているドライブで両方の暗号化レベルを実行できます。
 
-を参照してください https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^] StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。
+を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^] StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。
 
 
 
@@ -100,7 +100,7 @@ NOTE: アプライアンスは、最初に各ディスクボリュームにラ�
 Grid Managerをロードする前に、アプライアンスの初回インストール時にドライブ暗号化を有効にすることができます。アプライアンスをメンテナンスモードにして、ノード暗号化を有効にしたり、パスフレーズを変更したりすることもできます。
 
 .作業を開始する前に
-に関する情報を確認します https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^]。
+に関する情報を確認します https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^]。
 
 .このタスクについて
 パスフレーズは、ドライブ暗号化を最初に有効にしたときに設定されます。コンピューティングノードを交換した場合や暗号化されたSEDを新しいコンピューティングノードに移動した場合は、パスフレーズを手動で再入力する必要があります。

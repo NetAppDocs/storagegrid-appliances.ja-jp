@@ -1837,7 +1837,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="05c9534a4968bb692db6c477bda3216e" category="list-text"><block ref="af9633264dfe5a57796032ab701180e5" category="inline-xref-macro-rx"></block> ハードウェア暗号化を使用して、連邦情報処理標準（FIPS）に準拠したドライブを含め、Full Disk Encryption（FED）ドライブとも呼ばれる自己暗号化ドライブ（SED）を保護します。ドライブの暗号化は、StorageGRIDキー管理ツールで管理される暗号化キーを使用して、各ドライブ内で実行されます。</block>
   <block id="0f8b6d1e008864add25c54498d52b95d" category="paragraph">セキュリティを強化するために、サポートされているドライブで両方の暗号化レベルを実行できます。</block>
   <block id="3222848370401de62a0389566cdc6e45" category="inline-link">StorageGRID暗号化方式</block>
-  <block id="d2ff273ea38e1c87a7e75159cbc94cb5" category="paragraph">を参照してください<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block> StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。</block>
   <block id="18c6ba3c5dc613670300302d6b6e13e8" category="section-title">ノード暗号化を有効にします</block>
   <block id="1c2a7c57450bd0841ba8af585da8e2e7" category="paragraph">ノードの暗号化を有効にすると、アプライアンス内のディスクを安全なキー管理サーバ（ KMS ）暗号化によってサイト内での物理的な損失やデータの削除から保護することができます。アプライアンスのインストール時に、ノード暗号化を選択して有効にする必要があります。KMS暗号化プロセスの開始後は、ノード暗号化を無効にすることはできません。</block>
   <block id="df20a5800890fb9c6f211a466c532c76" category="paragraph">ConfigBuilderを使用してJSONファイルを生成する場合は、ノード暗号化を自動的に有効にすることができます。を参照してください <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -1865,7 +1864,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f4b6f694a5501888787381e6a815ab2e" category="paragraph">暗号化されたSEDは、アプライアンスの電源をオフにするか、ドライブをアプライアンスから取り外すと、自動的にロックされます。暗号化されたSEDは、電源が復旧しても正しいパスフレーズが入力されるまでロックされたままです。パスフレーズを手動で再入力せずにドライブにアクセスできるようにするには、パスフレーズがStorageGRIDアプライアンスに保存され、アプライアンスの再起動時にアプライアンスに残っている暗号化ドライブのロックが解除されます。SEDパスフレーズで暗号化されたドライブには、パスフレーズを知っている人なら誰でもアクセスできます。</block>
   <block id="0ffb3b992e7b67a3cf4b6e86c5e6d58e" category="paragraph">ドライブ暗号化はSANtricity管理ドライブには適用されません。SEDとSANtricityコントローラを搭載したStorageGRIDアプライアンスを使用している場合は、 <block ref="26de6fd427efcc81f7ad7cd6aad9003d" category="inline-link-macro-rx"></block>。</block>
   <block id="0fb0c001659e1b8d7876247f8c4b3eac" category="paragraph">Grid Managerをロードする前に、アプライアンスの初回インストール時にドライブ暗号化を有効にすることができます。アプライアンスをメンテナンスモードにして、ノード暗号化を有効にしたり、パスフレーズを変更したりすることもできます。</block>
-  <block id="fd8cd1fe2d84ec18c3b56eff1070e866" category="paragraph">に関する情報を確認します<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block>。</block>
   <block id="d112382db4537727ec6a38fd83f7931d" category="paragraph">パスフレーズは、ドライブ暗号化を最初に有効にしたときに設定されます。コンピューティングノードを交換した場合や暗号化されたSEDを新しいコンピューティングノードに移動した場合は、パスフレーズを手動で再入力する必要があります。</block>
   <block id="68054e05b3829648df9f1eed60b84a85" category="admonition">ドライブ暗号化パスフレーズは、安全な場所に保存してください。別のStorageGRIDアプライアンスにインストールされている場合、暗号化されたSEDにアクセスするには、同じパスフレーズを手動で入力する必要があります。</block>
   <block id="a7168e3fce65db38199c759024bcc6ad" category="section-title">ドライブ暗号化の有効化</block>
@@ -3499,9 +3497,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="8a319d9f1f8fa62d913f59ab432b8f1a" category="list-text">次のコマンドを入力します。<block ref="604b3aa6831925c337f9cec38597d65a" prefix=" " category="inline-code"></block></block>
   <block id="4a4df9fcde02f4c20df662c4d87783a1" category="summary">Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。</block>
   <block id="e525b6b4f718b6369b2fa00ac33b215b" category="doc">[ドライブの管理]タブを使用する</block>
-  <block id="dd646486f335d66fb3729899cbdd1d43" category="list-text">を使用して Grid Manager にサインインします<block ref="42eb699be885105e5a08932567501037" category="inline-link-rx"></block>。</block>
   <block id="bf8542827bf52ff1d2d3ca74de649b6a" category="inline-link">ストレージアプライアンス管理者またはRoot Access権限</block>
-  <block id="4b1bc73909f0b7b1282d782289068051" category="paragraph">SGF6112アプライアンスと<block ref="3b6eef8d5dca76558b5505ffa4aa79b9" category="inline-link-rx"></block>アプライアンスの詳細ページに[Manage Drives]タブが表示されます。</block>
   <block id="bf5f327428f0175033f3cbe43e6e7b3e" category="paragraph">[Manage Drives]タブには、次のビューがあります。</block>
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">レイアウト</block>
   <block id="a92cd291617f14a6abada995fa7b9a3f" category="list-text">アプライアンス内のデータストレージドライブのレイアウト。ドライブの詳細を表示するドライブを選択してください。</block>
@@ -4230,4 +4226,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">SG6000-CN コントローラの Fibre Channel HBA を交換します</block>
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
+  <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">を参照してください<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。</block>
+  <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">に関する情報を確認します<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
+  <block id="00480567d9c91f7b7ba44e21f754f737" category="paragraph">SGF6112アプライアンスと<block ref="646dc3cd3bd62a6be1690aac96e1dd08" category="inline-link-rx"></block>アプライアンスの詳細ページに[Manage Drives]タブが表示されます。</block>
 </blocks>
