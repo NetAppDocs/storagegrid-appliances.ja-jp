@@ -18,7 +18,7 @@ Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアン�
 
 
 .このタスクについて
-SGF6112アプライアンスと https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
+SGF6112アプライアンスと https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"^]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
 
 [Manage Drives]タブには、次のビューがあります。
 
