@@ -2984,7 +2984,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f9df26f43e7cbb8a8facb5017b47ccbe" category="list-text">システム基板上のガイドピンの位置を確認します。</block>
   <block id="e2ca2c1368ac8b9d1d8e5571f1857efd" category="image-alt">2スロットライザーアセンブリ用のシステム基板上のガイドピン</block>
   <block id="f456f175997595ccbac05b05c7dbc0d8" category="inline-link-macro">ドライブ暗号化パスフレーズを入力</block>
-  <block id="2961ad31d988fa2e014040d6361c363e" category="list-text">交換したアプライアンスでSEDドライブでドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">交換したアプライアンスでノード暗号化の暗号化キーを管理するためにキー管理サーバ（KMS）を使用していた場合は、ノードをグリッドに追加するために追加の設定が必要になることがあります。ノードが自動的にグリッドに追加されない場合は、次の設定が新しいアプライアンスに転送されたことを確認し、想定される設定と異なる設定があれば手動で設定します。</block>
   <block id="7deed07135df9d94ea323d9469e424d3" category="list-text"><block ref="7deed07135df9d94ea323d9469e424d3" category="inline-link-macro-rx"></block></block>
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">アプライアンスのノード暗号化を設定します</block>
@@ -3388,7 +3387,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="fadc88cd0b2f17c2130cb8814db82929" category="inline-link-macro">交換用アプライアンスをキャビネットまたはラックに設置する</block>
   <block id="a4c24c1e4a12470715433d6f6a22590b" category="list-text"><block ref="e863dd214d46a90fc51854e24b3dd0fd" category="inline-link-macro-rx"></block>。</block>
   <block id="05af8dc3b0588fc5c9ecb2b6c178bee0" category="list-text">アプライアンスの電源をオンにします。</block>
-  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">交換したアプライアンスでSEDドライブでハードウェアドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="4245635d62a9242eb35a7e4ec5a56abd" category="list-text">アプライアンスがグリッドに再参加するまで待ちます。アプライアンスがグリッドに再参加しない場合は、StorageGRID アプライアンスインストーラのホームページのガイダンスに従って問題に対処してください。</block>
   <block id="a7c99d1b44c3cfef060bab2387eba42e" category="admonition">ディスクドライブを別のスロットに移動するなど、物理ハードウェアの変更が必要であることがアプライアンスインストーラによって示された場合は、ハードウェアを変更する前にアプライアンスの電源をオフにしてください。</block>
   <block id="ca2048aa7418bfc8c45e3193b5be5e0d" category="paragraph"><block ref="ca2048aa7418bfc8c45e3193b5be5e0d" category="inline-link-macro-rx"></block></block>
@@ -4237,4 +4235,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">コントローラシェルフの電源をオンにします。</block>
   <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">手順1：交換用コントローラを準備する</block>
   <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">障害が発生したコントローラを取り外してオフラインにする準備をします。</block>
+  <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">交換したアプライアンスでSEDドライブでハードウェアドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
+  <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">交換したアプライアンスでSEDドライブでドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
 </blocks>
