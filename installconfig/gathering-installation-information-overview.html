@@ -1,0 +1,3224 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/storagegrid-appliances/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/ja-jp/storagegrid-appliances/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/storagegrid-appliances/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ja-jp/storagegrid-appliances/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/storagegrid-appliances/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/storagegrid-appliances/installconfig/gathering-installation-information-overview.html" />
+  <!-- Top level site integrations --><script>
+    pageRedirect("https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/reviewing-appliance-network-connections.html");
+    function pageRedirect(url) { location.href = url; }
+  </script>
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/storagegrid-appliances/js/na-search.js'></script><script src='/ja-jp/storagegrid-appliances/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ja-jp/storagegrid-appliances/js/custom-dropdown.js'></script>
+  <script src='/ja-jp/storagegrid-appliances/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/storagegrid-appliances/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/storagegrid-appliances/js/jszip.min.js'></script><script src='/ja-jp/storagegrid-appliances/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ja-jp/storagegrid-appliances/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/ja/">
+                <image id="ie-header-logo" src="/ja-jp/storagegrid-appliances/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/ja/support-and-training/documentation/">ドキュメント</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ja-jp/storagegrid-appliances/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">日本語</span>
+                    <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/storagegrid-appliances/installconfig/gathering-installation-information-overview.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ja-jp/storagegrid-appliances/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">すべてのNetApp</span>
+                    <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/ja/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">サポート</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb-ja.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">ナレッジ ベース</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">トレーニング</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ja-jp/storagegrid-appliances/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ja-jp/storagegrid-appliances/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">すべてのドキュメント</a>
+    </li>
+    
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ja-jp/storagegrid-family/">
+        StorageGRID documentation
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ja-jp/storagegrid-appliances/">-->
+      StorageGRID Appliances
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ja-jp/storagegrid-appliances/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ja-jp/storagegrid-appliances/search.html" 
+        data-type="widget"
+        data-placeholder="ドキュメントを検索"
+        data-no-results-found="{query}に一致する結果は見つかりませんでした"
+        data-did-you-mean="{suggestion}で検索しています。"
+        data-no-results-found-did-you-mean="{query}に一致する結果は見つかりませんでした。{suggestion}で検索しますか？"
+        data-results-found="{hitCount}件の結果が見つかりました"
+        data-error-message="エラーが発生しました。もう一度お試しください。"
+        data-error-reset="検索をリセット"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRIDアプライアンスドキュメント"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/index.html">
+        StorageGRIDアプライアンスドキュメント
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRIDソフトウェアのドキュメント"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/storagegrid-documentation.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/storagegrid-documentation.html">
+        StorageGRIDソフトウェアのドキュメント
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="はじめに"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-learn-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/landing-learn-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> はじめに</div>-->
+         はじめに
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの新機能アプライアンスノシンキノウ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/whats-new-appliances.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/whats-new-appliances.html">
+        アプライアンスの新機能アプライアンスノシンキノウ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRIDアプライアンスの詳細"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> StorageGRIDアプライアンスの詳細</div>-->
+         StorageGRIDアプライアンスの詳細
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100 および SG1000 サービスアプライアンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/hardware-description-sg100-and-1000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/hardware-description-sg100-and-1000.html">
+        SG100 および SG1000 サービスアプライアンス
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700ストレージアプライアンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/hardware-description-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/hardware-description-sg5700.html">
+        SG5700ストレージアプライアンス
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000 ストレージアプライアンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/hardware-description-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/hardware-description-sg6000.html">
+        SG6000 ストレージアプライアンス
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100ストレージアプライアンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/hardware-description-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/hardware-description-sg6100.html">
+        SG6100ストレージアプライアンス
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスをインストール"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-appl-install/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/landing-appl-install/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスをインストール</div>-->
+         アプライアンスをインストール
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID アプライアンスハードウェアを設置"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/installconfig/index.html">
+        クイックスタート
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設置を準備"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-install-prep/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-install-prep/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 設置を準備</div>-->
+         設置を準備
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サイトを準備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/preparing-site.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/preparing-site.html">
+        サイトを準備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="箱を開梱します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/unpacking-boxes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/unpacking-boxes.html">
+        箱を開梱します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="追加の機器と工具を入手します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/obtaining-additional-equipment-and-tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/obtaining-additional-equipment-and-tools.html">
+        追加の機器と工具を入手します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ネットワーク情報の収集"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ネットワーク情報の収集</div>-->
+         ネットワーク情報の収集
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID のネットワークタイプ"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/reviewing-appliance-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/reviewing-appliance-network-connections.html">
+        StorageGRID のネットワークタイプ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100およびSG1000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-sg100-and-sg1000.html">
+        SG100およびSG1000
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-sg5700.html">
+        SG5700
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000を使用します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-sg6000.html">
+        SG6000を使用します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-sg6100.html">
+        SG6100
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスのインストールと設定を自動化"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/automating-appliance-installation-and-configuration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/installconfig/automating-appliance-installation-and-configuration.html">
+        アプライアンスのインストールと設定を自動化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID の設定を自動化"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/automating-configuration-of-storagegrid.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/installconfig/automating-configuration-of-storagegrid.html">
+        StorageGRID の設定を自動化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="インストール REST API の概要"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/overview-of-installation-rest-apis.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/installconfig/overview-of-installation-rest-apis.html">
+        インストール REST API の概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスハードウェアを設置"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-install-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-install-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスハードウェアを設置</div>-->
+         アプライアンスハードウェアを設置
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアを登録"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/registering-hardware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/registering-hardware.html">
+        ハードウェアを登録
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="キャビネットまたはラックに設置します"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> キャビネットまたはラックに設置します</div>-->
+         キャビネットまたはラックに設置します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100およびSG1000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html">
+        SG100およびSG1000
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html">
+        SG5700
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000を使用します"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG6000を使用します</div>-->
+         SG6000を使用します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="キャビネットまたはラックにSG6000を設置します"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/installing-hardware-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/installconfig/installing-hardware-sg6000.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="60ドライブシェルフの設置（SG6060）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
+        60ドライブシェルフの設置（SG6060）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ドライブの取り付け（SG6060）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/sg6060-installing-drives.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/installconfig/sg6060-installing-drives.html">
+        ドライブの取り付け（SG6060）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="24ドライブシェルフの設置（SGF6024）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
+        24ドライブシェルフの設置（SGF6024）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000-CNコントローラの設置（SG6024およびSG6060）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html">
+        SG6000-CNコントローラの設置（SG6024およびSG6060）
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html">
+        SG6100
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスをケーブル接続します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/cabling-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/cabling-appliance.html">
+        アプライアンスをケーブル接続します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接続して電源を入れる"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/connecting-power-cords-and-applying-power.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/connecting-power-cords-and-applying-power.html">
+        接続して電源を入れる
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ステータスインジケータとコードを表示します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/viewing-status-indicators.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/viewing-status-indicators.html">
+        ステータスインジケータとコードを表示します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアをセットアップする"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ハードウェアをセットアップする</div>-->
+         ハードウェアをセットアップする
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/configuring-hardware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/configuring-hardware.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID 接続を設定します"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> StorageGRID 接続を設定します</div>-->
+         StorageGRID 接続を設定します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID アプライアンスインストーラにアクセスします"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/accessing-storagegrid-appliance-installer.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/accessing-storagegrid-appliance-installer.html">
+        StorageGRID アプライアンスインストーラにアクセスします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html">
+        StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ネットワークリンクを設定する"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/configuring-network-links.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/configuring-network-links.html">
+        ネットワークリンクを設定する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID IP アドレスを設定する"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/setting-ip-configuration.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/setting-ip-configuration.html">
+        StorageGRID IP アドレスを設定する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ネットワーク接続を確認します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/verifying-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/verifying-network-connections.html">
+        ネットワーク接続を確認します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ポートレベルのネットワーク接続を確認"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/verifying-port-level-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/verifying-port-level-network-connections.html">
+        ポートレベルのネットワーク接続を確認
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SANtricityシステムマネージャのセットアップ（SG5700およびSG6000）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/accessing-and-configuring-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html">
+        SANtricityシステムマネージャのセットアップ（SG5700およびSG6000）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）</div>-->
+         BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/configuring-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/configuring-bmc-interface.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="rootパスワードを変更します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/changing-root-password-for-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/changing-root-password-for-bmc-interface.html">
+        rootパスワードを変更します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BMC 管理ポートの IP アドレスを設定します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/setting-ip-address-for-bmc-management-port.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/setting-ip-address-for-bmc-management-port.html">
+        BMC 管理ポートの IP アドレスを設定します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BMC インターフェイスにアクセスします"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/accessing-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/accessing-bmc-interface.html">
+        BMC インターフェイスにアクセスします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SNMPを設定します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/configuring-snmp-settings-for-bmc.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/configuring-snmp-settings-for-bmc.html">
+        SNMPを設定します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E メール通知を設定"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/setting-up-email-notifications-for-alerts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/installconfig/setting-up-email-notifications-for-alerts.html">
+        E メール通知を設定
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オプション：ノードまたはドライブの暗号化を有効にする"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/optional-enabling-node-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html">
+        オプション：ノードまたはドライブの暗号化を有効にする
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オプション：RAIDモードを変更（SG5760およびSG6000）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/optional-changing-raid-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/optional-changing-raid-mode.html">
+        オプション：RAIDモードを変更（SG5760およびSG6000）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オプション：ネットワークポートを再マッピングします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/optional-remapping-network-ports-for-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html">
+        オプション：ネットワークポートを再マッピングします
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスノードを導入"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-deploy-appliance/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-deploy-appliance/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスノードを導入</div>-->
+         アプライアンスノードを導入
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスストレージノードを導入する"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/deploying-appliance-storage-node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/deploying-appliance-storage-node.html">
+        アプライアンスストレージノードを導入する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サービスアプライアンスノードを導入する"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/deploying-services-appliance-node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/deploying-services-appliance-node.html">
+        サービスアプライアンスノードを導入する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの設置を監視する"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/monitoring-appliance-installation.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/monitoring-appliance-installation.html">
+        アプライアンスの設置を監視する
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID アプライアンスインストーラの実行中にアプライアンスをリブートします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html">
+        StorageGRID アプライアンスインストーラの実行中にアプライアンスをリブートします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="インストールのトラブルシューティング（SG100およびSG1000）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html">
+        インストールのトラブルシューティング（SG100およびSG1000）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="インストールのトラブルシューティング（SG5700またはSG6000）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/troubleshooting-hardware-installation.html">
+        インストールのトラブルシューティング（SG5700またはSG6000）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="インストールのトラブルシューティング（SG6100）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/installconfig/troubleshooting-hardware-installation-sg6100.html">
+        インストールのトラブルシューティング（SG6100）
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスハードウェアのメンテナンス"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-maintain-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/landing-maintain-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスハードウェアのメンテナンス</div>-->
+         アプライアンスハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの設定を保守します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスの設定を保守します</div>-->
+         アプライアンスの設定を保守します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの設定の保守（すべてのノード）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/index.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスをメンテナンスモードにします"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/placing-appliance-into-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html">
+        アプライアンスをメンテナンスモードにします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MTU 設定を変更します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/changing-mtu-setting.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/changing-mtu-setting.html">
+        MTU 設定を変更します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="DNS サーバの設定を確認します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/checking-dns-server-configuration.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/checking-dns-server-configuration.html">
+        DNS サーバの設定を確認します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MACアドレス参照を更新します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/locate-mac-address.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/locate-mac-address.html">
+        MACアドレス参照を更新します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="メンテナンスモードでノード暗号化を監視します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/monitoring-node-encryption-in-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/monitoring-node-encryption-in-maintenance-mode.html">
+        メンテナンスモードでノード暗号化を監視します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスノードのクローニング"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> アプライアンスノードのクローニング</div>-->
+         アプライアンスノードのクローニング
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスノードのクローニング"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/how-appliance-node-cloning-works.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/how-appliance-node-cloning-works.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスノードのクローニングに関する考慮事項と要件"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html">
+        アプライアンスノードのクローニングに関する考慮事項と要件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスノードをクローニングする"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/commonhardware/appliance-node-cloning-procedure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/commonhardware/appliance-node-cloning-procedure.html">
+        アプライアンスノードをクローニングする
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100およびSG1000ハードウェアのメンテナンス"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-maintain-sg1000-100/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-maintain-sg1000-100/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG100およびSG1000ハードウェアのメンテナンス</div>-->
+         SG100およびSG1000ハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100およびSG1000ハードウェアのメンテナンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/sg100-1000/index.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="メンテナンス設定手順- SG100およびSG1000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> メンテナンス設定手順</div>-->
+         メンテナンス設定手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="識別LEDのオン/オフ"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/turning-controller-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/turning-controller-identify-led-on-and-off.html">
+        識別LEDのオン/オフ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="データセンターでコントローラを探します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/locating-controller-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/locating-controller-in-data-center.html">
+        データセンターでコントローラを探します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスをシャットダウンします。"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/shut-down-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/shut-down-sg100-and-sg1000.html">
+        アプライアンスをシャットダウンします。
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リンク設定を変更します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/changing-link-configuration-of-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/changing-link-configuration-of-services-appliance.html">
+        リンク設定を変更します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアの手順- SG100およびSG1000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ハードウェアの手順</div>-->
+         ハードウェアの手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="一方または両方の電源装置を交換してください"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html">
+        一方または両方の電源装置を交換してください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ファンを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/replacing-fan-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/replacing-fan-in-services-appliance.html">
+        ファンを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ドライブを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/replacing-drive-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/replacing-drive-in-services-appliance.html">
+        ドライブを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの交換"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg100-1000/replacing-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg100-1000/replacing-services-appliance.html">
+        アプライアンスの交換
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5600ハードウェアのメンテナンス"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG5600ハードウェアのメンテナンス</div>-->
+         SG5600ハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="sg6100ハードウェアのメンテナンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5600/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/sg5600/index.html">
+        概要
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700ハードウェアのメンテナンス"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-maintain-sg5700/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-maintain-sg5700/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG5700ハードウェアのメンテナンス</div>-->
+         SG5700ハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700ハードウェアメンテナンスガイド"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/sg5700/index.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="メンテナンス設定手順- SG5700"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> メンテナンス設定手順</div>-->
+         メンテナンス設定手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ストレージコントローラの SANtricity OS をアップグレードします"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-storage-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/upgrading-santricity-os-on-storage-controller.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ストレージコントローラの SANtricity OS をアップグレードします</div>-->
+         ストレージコントローラの SANtricity OS をアップグレードします
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html">
+        Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html">
+        E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SANtricity System Manager を使用してドライブファームウェアをアップグレードします"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html">
+        SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E5700SG コントローラのリンク設定の変更"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/changing-link-configuration-of-e5700sg-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/changing-link-configuration-of-e5700sg-controller.html">
+        E5700SG コントローラのリンク設定の変更
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアの手順- SG5700"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ハードウェアの手順</div>-->
+         ハードウェアの手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E2800ストレージコントローラの交換"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/replacing-e2800-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/replacing-e2800-controller.html">
+        E2800ストレージコントローラの交換
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E5700SGコンピューティングコントローラの交換"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/replacing-e5700sg-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/replacing-e5700sg-controller.html">
+        E5700SGコンピューティングコントローラの交換
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="他のハードウェアコンポーネントを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg5700/replacing-other-hardware-components-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg5700/replacing-other-hardware-components-sg5700.html">
+        他のハードウェアコンポーネントを交換します
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000ハードウェアのメンテナンス"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-maintain-sg6000/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-maintain-sg6000/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG6000ハードウェアのメンテナンス</div>-->
+         SG6000ハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000ハードウェアのメンテナンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/sg6000/index.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="メンテナンス設定手順- SG6000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> メンテナンス設定手順</div>-->
+         メンテナンス設定手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ストレージコントローラの SANtricity OS をアップグレードします"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ストレージコントローラの SANtricity OS をアップグレードします</div>-->
+         ストレージコントローラの SANtricity OS をアップグレードします
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html">
+        Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ja-jp/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html">
+        ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SANtricity System Manager を使用してドライブファームウェアをアップグレードします"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html">
+        SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コントローラ識別 LED のオンとオフを切り替えます"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/turning-controller-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/turning-controller-identify-led-on-and-off.html">
+        コントローラ識別 LED のオンとオフを切り替えます
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="データセンターでコントローラを探します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/locating-controller-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/locating-controller-in-data-center.html">
+        データセンターでコントローラを探します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コントローラの電源のオン/オフ"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/power-sg6000-cn-controller-off-on.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/power-sg6000-cn-controller-off-on.html">
+        コントローラの電源のオン/オフ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000-CN コントローラのリンク設定を変更します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/changing-link-configuration-of-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html">
+        SG6000-CN コントローラのリンク設定を変更します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアの手順- SG6000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ハードウェアの手順</div>-->
+         ハードウェアの手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="導入済み SG6060 に拡張シェルフを追加します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/adding-expansion-shelf-to-deployed-sg6060.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/adding-expansion-shelf-to-deployed-sg6060.html">
+        導入済み SG6060 に拡張シェルフを追加します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ストレージコントローラを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/replacing-storage-controller-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/replacing-storage-controller-sg6000.html">
+        ストレージコントローラを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ストレージコントローラシェルフのハードウェアコンポーネントを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/replacing-hardware-components-in-storage-controller-shelf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/replacing-hardware-components-in-storage-controller-shelf.html">
+        ストレージコントローラシェルフのハードウェアコンポーネントを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html">
+        オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000-CN コントローラを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/replacing-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/replacing-sg6000-cn-controller.html">
+        SG6000-CN コントローラを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000-CN コントローラの一方または両方の電源装置を交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html">
+        SG6000-CN コントローラの一方または両方の電源装置を交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ラック内のコントローラを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html">
+        ラック内のコントローラを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="コントローラのカバーを取り付けます"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/reinstalling-sg6000-cn-controller-cover.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/reinstalling-sg6000-cn-controller-cover.html">
+        コントローラのカバーを取り付けます
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000-CN コントローラの Fibre Channel HBA を交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6000/reinstalling-fibre-channel-hba.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6000/reinstalling-fibre-channel-hba.html">
+        SG6000-CN コントローラの Fibre Channel HBA を交換します
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100ハードウェアのメンテナンス"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/landing-maintain-sgf6112/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/storagegrid-appliances/landing-maintain-sgf6112/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG6100ハードウェアのメンテナンス</div>-->
+         SG6100ハードウェアのメンテナンス
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100ハードウェアのメンテナンス"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/storagegrid-appliances/sg6100/index.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定メンテナンス手順- SG6100"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 設定のメンテナンス手順</div>-->
+         設定のメンテナンス手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="[ドライブの管理]タブを使用"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/manage-drives-tab.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/manage-drives-tab.html">
+        [ドライブの管理]タブを使用
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="識別LEDのオン/オフ"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/turning-sgf6112-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/turning-sgf6112-identify-led-on-and-off.html">
+        識別LEDのオン/オフ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="データセンターにアプライアンスを配置します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/locating-sgf6112-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/locating-sgf6112-in-data-center.html">
+        データセンターにアプライアンスを配置します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アプライアンスの電源をオフにしてオンにします。"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/power-sgf6112-off-on.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/power-sgf6112-off-on.html">
+        アプライアンスの電源をオフにしてオンにします。
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リンク設定を変更します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/changing-link-configuration-of-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html">
+        リンク設定を変更します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ハードウェアのメンテナンス手順- SG6100"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> ハードウェアのメンテナンス手順</div>-->
+         ハードウェアのメンテナンス手順
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="交換するコンポーネントを確認します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/verify-component-to-replace.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/verify-component-to-replace.html">
+        交換するコンポーネントを確認します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="1つ以上の電源装置を交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html">
+        1つ以上の電源装置を交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ファンを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replacing-fan-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replacing-fan-in-sgf6112.html">
+        ファンを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ドライブを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replacing-drive-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replacing-drive-in-sgf6112.html">
+        ドライブを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NICを交換してください"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replace-nic-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replace-nic-in-sgf6112.html">
+        NICを交換してください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CMOSバッテリを交換してください"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replace-cmos-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replace-cmos-in-sgf6112.html">
+        CMOSバッテリを交換してください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="カバーを交換します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/reinstalling-sgf6112-cover.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/reinstalling-sgf6112-cover.html">
+        カバーを交換します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SGF6112アプライアンスを交換してください"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/replacing-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/replacing-sgf6112-appliance.html">
+        SGF6112アプライアンスを交換してください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ラック内のSGF6112を移動します"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ja-jp/storagegrid-appliances/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html">
+        ラック内のSGF6112を移動します
+      </a></li></ul></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID を有効にします"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/storagegrid-enable.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/storagegrid-enable.html">
+        StorageGRID を有効にします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法的通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/gathering-installation-information-overview.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/storagegrid-appliances/legal-notices.html">
+        法的通知
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ja-jp/storagegrid-appliances"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ja-jp/storagegrid-appliances"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ja-jp/storagegrid-appliances/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading"></h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-02-14 19:51:57 +0000">02/14/2024</time>
+        
+    
+    
+        <span>共同作成者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ja-jp/storagegrid-appliances/images/discuss-sm.svg" alt="" class="github-icon" />変更を提案</span>
+        <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/storagegrid-appliances.ja-jp/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/gathering-installation-information-overview.html&page-title=" class="page-nav-contribute-link" role="button">ドキュメントの変更をリクエスト</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/storagegrid-appliances/blob/main/redirect/gathering-installation-information-overview.adoc" class="page-nav-contribute-link" role="button">このページを編集</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >フィードバックを送るには</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ja-jp/storagegrid-appliances/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ja-jp/storagegrid-appliances/pdfs/fullsite-sidebar/StorageGRIDアプライアンスのマニュアル.pdf" >
+                    <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>このドキュメント ページのPDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/はじめに.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            はじめに
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/StorageGRIDアプライアンスの詳細.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            StorageGRIDアプライアンスの詳細
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスをインストール.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスをインストール
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/設置を準備.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設置を準備
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ネットワーク情報の収集.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ネットワーク情報の収集
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスハードウェアを設置.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスハードウェアを設置
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/キャビネットまたはラックに設置します.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            キャビネットまたはラックに設置します
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG6000を使用します.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG6000を使用します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ハードウェアをセットアップする.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ハードウェアをセットアップする
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/StorageGRID_接続を設定します.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            StorageGRID 接続を設定します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/BMCインターフェイスの設定_SG100_SG1000_SG6000_SG6100_.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスノードを導入.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスノードを導入
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスハードウェアのメンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスの設定を保守します.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスの設定を保守します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/アプライアンスノードのクローニング.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            アプライアンスノードのクローニング
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG100およびSG1000ハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG100およびSG1000ハードウェアのメンテナンス
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/メンテナンス設定手順__SG100およびSG1000.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            メンテナンス設定手順
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ハードウェアの手順__SG100およびSG1000.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ハードウェアの手順
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG5600ハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG5600ハードウェアのメンテナンス
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG5700ハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG5700ハードウェアのメンテナンス
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/メンテナンス設定手順__SG5700.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            メンテナンス設定手順
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ストレージコントローラの_SANtricity_OS_をアップグレードします.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ストレージコントローラの SANtricity OS をアップグレードします
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ハードウェアの手順__SG5700.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ハードウェアの手順
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG6000ハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG6000ハードウェアのメンテナンス
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/メンテナンス設定手順__SG6000.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            メンテナンス設定手順
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ストレージコントローラの_SANtricity_OS_をアップグレードします.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ストレージコントローラの SANtricity OS をアップグレードします
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ハードウェアの手順__SG6000.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ハードウェアの手順
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/SG6100ハードウェアのメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG6100ハードウェアのメンテナンス
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/設定メンテナンス手順__SG6100.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設定のメンテナンス手順
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/storagegrid-appliances/pdfs/sidebar/ハードウェアのメンテナンス手順__SG6100.pdf" 
+            
+          >
+            <img src="/ja-jp/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            ハードウェアのメンテナンス手順
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ja-jp/storagegrid-appliances/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>PDF版ドキュメントのセット<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph">
+<p>=
+:allow-uri-read:</p>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ja-jp/storagegrid-appliances/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ja-jp/storagegrid-appliances/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">このページ</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">ご利用規約</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">このページに関するフィードバックをお寄せください</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/storagegrid-appliances/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/storagegrid-appliances/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/storagegrid-appliances/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/storagegrid-appliances/js/ie-tabbed-blocks.js'></script>
+    <script src='/ja-jp/storagegrid-appliances/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
