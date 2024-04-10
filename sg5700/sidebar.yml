@@ -17,7 +17,13 @@ entries:
     - title: E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします
       url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
   - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
-    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    entries:
+    - title: オンライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード
+      url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: オフライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード
+      url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: ドライブファームウェアのアップグレードエラーのトラブルシューティング
+      url: "/sg5700/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: E5700SG コントローラのリンク設定の変更
     url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
 - title: ハードウェアの手順

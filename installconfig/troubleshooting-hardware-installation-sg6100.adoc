@@ -90,7 +90,7 @@ KVM の略
 +
 .. BMC の IP アドレスとログインクレデンシャルを使用して IPMI SOL に接続します。
 +
-`ipmitool -I lanplus -H _BMC_Port_IP_ -U root -P _Password_ sol activate`
+`ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
 
 .. 仮想シリアルターミナルのコードを確認します。
 

@@ -17,7 +17,13 @@ entries:
     - title: ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
   - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
-    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    entries:
+    - title: オンライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: オフライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: ドライブファームウェアのアップグレードエラーのトラブルシューティング
+      url: "/sg6000/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: コントローラ識別 LED のオンとオフを切り替えます
     url: "/sg6000/turning-controller-identify-led-on-and-off.html"
   - title: データセンターでコントローラを探します

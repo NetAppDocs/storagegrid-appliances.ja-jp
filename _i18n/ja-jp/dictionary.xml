@@ -884,7 +884,6 @@
   <block id="532f1eabdf9572d662db693bd6024975" category="list-text">シリアルターミナルに印刷されているコードを確認します。</block>
   <block id="1c50599d41fa9baecb0f79415f317fa0" category="list-text">SOL を使用する場合は、次の手順を実行します。</block>
   <block id="3ccdf5c6e76f58fd6100f7ed8e88affc" category="list-text">BMC の IP アドレスとログインクレデンシャルを使用して IPMI SOL に接続します。</block>
-  <block id="837cfb97b4b28245eab4fffee9afc6d7" category="paragraph"><block ref="e3ef784e466a2956434c1314bc0c8c92" prefix="" category="inline-code"></block></block>
   <block id="8616d487e1c6ff81c8864e2a135bbe1e" category="list-text">仮想シリアルターミナルのコードを確認します。</block>
   <block id="04c09c27e0c49faff7ca3ce108551c35" category="list-text">次の表を使用して、アプライアンスのコードを確認します。</block>
   <block id="ca0dbad92a874b2f69b549293387925e" category="cell">コード</block>
@@ -2651,24 +2650,15 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ecf8f63fe854bea3831662088ff39904" category="doc">StorageGRID アプライアンスハードウェアを設置</block>
   <block id="b10621ed96edfed5cdab0c30e0006f79" category="list-text">ストレージアプライアンスのステータスが「最適」であることを確認します。</block>
   <block id="fe21a4b4c7370b73210cfa79500a95c9" category="list-text">すべてのドライブのステータスが最適な状態である必要があります</block>
-  <block id="9d79fd2a808d6d51325f70313848f133" category="list-text">最新バージョンの SANtricity System Manager がインストールされていて、 StorageGRID のバージョンと互換性があることを確認します。</block>
   <block id="d17d9f037dcc2d2d241386f00f4e3609" category="inline-link-macro">StorageGRID アプライアンスをメンテナンスモードに切り替えました</block>
-  <block id="c345855b8f8d83367a2de1cda2598e99" category="list-text">オフラインアップグレードを実行する場合は、が必要です <block ref="f1498071811ca85523b2ec754ee6c485" category="inline-link-macro-rx"></block>。</block>
   <block id="7febdef0cdb15c201490043bc7ace805" category="admonition">アプライアンスがメンテナンスモードの間は、停止を伴うストレージ処理を安全に行うために、ストレージコントローラへのI/O（入出力）アクティビティが停止します。</block>
   <block id="a321ee9b0855a42051df0e349020c2cf" category="admonition">一度に複数のStorageGRID アプライアンスでドライブファームウェアをアップグレードしないでください。ご使用の導入モデルとILMポリシーによっては、原因 のデータを使用できなくなる可能性があります。</block>
-  <block id="0227eb2f55e7efdf58515d93d828ea21" category="paragraph">アプライアンスのドライブファームウェアは、次の2つの方法でアップグレードできます。</block>
-  <block id="5e424c3d56c6826b69a49c64e17ca91d" category="paragraph">*オンライン*：アプライアンスでI/Oが実行されている間に、ドライブが一度に1つずつアップグレードされます。この方法では、アプライアンスをメンテナンスモードにする必要はありません。ただし、システムのパフォーマンスに影響が出る可能性があり、アップグレードにはオフラインの場合よりも数時間かかることがあります。</block>
-  <block id="e0b00cbbb97321c9cfb68296540d2723" category="admonition">冗長性がないボリュームに属するドライブは、オフライン方式を使用して更新する必要があります。フラッシュ読み取りキャッシュに関連付けられているドライブ（SG6060のSSDドライブなど）、またはデグレード状態のプールやボリュームグループには、オフライン方式を使用する必要があります。</block>
-  <block id="8d684a689754ce30d3d896184c7c0626" category="paragraph">*オフライン*：
-アプライアンスがメンテナンスモードのときに、ドライブが並行してアップグレードされます。プールまたはボリュームグループで冗長性がサポートされていない場合、またはデグレード状態の場合は、オフライン方式を使用してドライブファームウェアをアップグレードする必要があります。オフライン方式では、アップグレード対象のドライブですべてのI/Oアクティビティが停止している間にのみファームウェアがアップグレードされます。I/Oアクティビティを停止するには、ノードをメンテナンスモードにします。</block>
   <block id="e3e28c9e2c25ece123da9282852c9b83" category="paragraph">オフライン方式はオンライン方式よりも高速で、1台のアプライアンス内の多数のドライブをアップグレードする必要がある場合は、はるかに高速です。ただし、ノードを停止する必要があるため、メンテナンス時間のスケジュール設定や進捗状況の監視が必要になる場合があります。運用手順とアップグレードが必要なドライブの数に最も適した方法を選択します。</block>
   <block id="56b2e4e7468b36806c62948d07b62d6f" category="admonition">ドライブにはSSDとHDDの2種類があります。SSDのファームウェアをアップグレードするには、オフライン方式を使用する必要があります（SG6060のSSDドライブなど）。オンライン方式またはオフライン方式を使用して、HDDのファームウェアをアップグレードできます。</block>
   <block id="3663bc32267b225ac55e52a4e99f2b3c" category="inline-link-macro">メンテナンスモード</block>
-  <block id="14e78dd7a6bf63815621996dac2b2b3c" category="list-text">オフラインアップグレードを実行する場合は、アプライアンスが配置されていることを確認します <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>。</block>
   <block id="23fca754d51c4552272900db046a2257" category="admonition">キャッシュグループに含まれているSSDドライブのファームウェアをアップグレードする場合は、アップグレードの実行中にキャッシュされたボリュームにI/Oが送信されないようにする必要があります。アプライアンスがメンテナンスモードの場合、アップグレードの実行中はボリュームにI/Oは送信されません。</block>
   <block id="3533a2b46e125d041913c72fd9f48d9b" category="list-text">次のいずれかの方法で SANtricity System Manager にアクセスします。</block>
   <block id="c56d4e4921ea0ed69b79633149e26878" category="list-text">グリッドマネージャを使用して、* nodes *&gt;*_ Storage Node_*&gt;* SANtricity System Manager *を選択します</block>
-  <block id="c59447485ddcd454e0e9b781e0be3a75" category="list-text">SANtricity System ManagerでストレージコントローラのIP：+にアクセスします<block ref="29c66d4541758aec7932976994c3319a" prefix=" " category="inline-code"></block></block>
   <block id="f5ee914d9142f81b048a6516338e60ca" category="list-text">必要に応じて、 SANtricity System Manager 管理者のユーザ名とパスワードを入力します。</block>
   <block id="f81fb88b20f58263d5a52f1cbfbe31e3" category="list-text">ストレージアプライアンスに現在インストールされているドライブファームウェアのバージョンを確認します。</block>
   <block id="07319dd8bf09119fbc5d52b0bb6984e9" category="list-text">SANtricity システムマネージャで、 * support * &gt; * Upgrade Center * を選択します。</block>
@@ -2694,17 +2684,12 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="593f83d9cf94fc9e4031f35b23f927cf" category="list-text">ドライブファームウェアのアップグレードをインストールします。</block>
   <block id="6bb75f0716ac77d29c4d070efd7a3b0e" category="list-text">SANtricity システムマネージャのドライブファームウェアアップグレードで、 * アップグレードの開始 * を選択します。</block>
   <block id="9cf2ba623b48d0e58d46e28f82bf71ca" category="list-text">[* Browse] を選択し、サポートサイトからダウンロードした新しいドライブファームウェアファイルを選択します。</block>
-  <block id="df1cc8cc2566b5dd45677a005e2f1077" category="paragraph">ドライブファームウェアファイルの名前は、+のようになります<block ref="2bd3efd42bd30bf5ec268aab489d4777" prefix=" " category="inline-code"></block>。</block>
   <block id="7afa0bc9a63233cfb2803e627f142755" category="paragraph">ドライブファームウェアファイルは一度に 1 つずつ、最大 4 つまで選択できます。同じドライブに複数のドライブファームウェアファイルが対応している場合は、ファイル競合エラーが発生します。アップグレードに使用するドライブファームウェアファイルを決定し、それ以外のファイルは削除します。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">「 * 次へ * 」を選択します。</block>
   <block id="a1703a841c581af0f963bfddf68f1b1f" category="paragraph">* ドライブの選択 * には、選択したファームウェアファイルでアップグレードできるドライブがリストされています。</block>
   <block id="b1ef9db159b982facfd06f4136b894a6" category="paragraph">対応しているドライブのみが表示されます。</block>
   <block id="b49b59c1154ee27d9bd3b082c8ee80f7" category="paragraph">ドライブに対して選択したファームウェアが* Proposed Firmware *列に表示されます。このファームウェアを変更する必要がある場合は、 * 戻る * を選択します。</block>
-  <block id="8ab56797e6a951964b009438fa948d06" category="list-text">実行するアップグレードのタイプを選択します。</block>
-  <block id="c17efd8dcb0ae0a11cac56c271bd4586" category="admonition">SSDドライブをアップグレードする場合は、オフライン方式を使用する必要があります。</block>
-  <block id="a1090ec1faf8dd09db64054e3199e583" category="list-text">*すべてのドライブをオンラインにアップグレード*—ストレージアレイがI/Oを処理している間に、ファームウェアのダウンロードをサポートできるドライブをアップグレードします。このアップグレード方式を選択した場合、これらのドライブを使用している関連ボリュームへのI/Oを停止する必要はありません。</block>
   <block id="4d849ca8d43b5f8df234fb4e1c51c74a" category="admonition">オンラインアップグレードは、オフラインアップグレードよりも数時間かかることがあります。</block>
-  <block id="6921b552dce9414d5231ec346e80d09e" category="list-text">*すべてのドライブをオフライン（並行処理）にアップグレード*—ドライブを使用するすべてのボリュームですべてのI/Oアクティビティが停止している間にのみファームウェアのダウンロードが可能なドライブをアップグレードします。</block>
   <block id="508d403f48503f597190c1dee1523822" category="admonition">この方法を使用する前に、アプライアンスをメンテナンスモードにする必要があります。ドライブファームウェアをアップグレードするには、*オフライン*方式を使用する必要があります。</block>
   <block id="9d2a3994759c657f99dff4c9cfaee2d4" category="admonition">オフライン（並行）アップグレードを使用する場合は、アプライアンスがメンテナンスモードであることが確実でないかぎり、次の手順に進まないでください。オフラインのドライブファームウェア更新を開始する前にアプライアンスをメンテナンスモードにしないと、原因 のデータが失われる可能性があります。</block>
   <block id="d6b31a472516977ccb3c97418ca027ec" category="list-text">テーブルの最初の列で、アップグレードするドライブを選択します。</block>
@@ -2714,7 +2699,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a9ff48bbddf3556580ff1235b8cf5255" category="admonition">ドライブファームウェアのアップグレードを停止すると、データが失われたり、ドライブを使用できなくなったりする可能性があります。</block>
   <block id="374d6314a1686bfc77fd70aa617d4603" category="list-text">（オプション）アップグレードされた内容のリストを表示するには、 * ログを保存 * を選択します。</block>
   <block id="965c5385647c1db79a963fc0e272b417" category="paragraph">ログファイルは、ブラウザのダウンロードフォルダにという名前で保存されます<block ref="7b20dd0821a6fa35d7122bbe44821a99" prefix=" " category="inline-code"></block>。</block>
-  <block id="b91fa802062f28fac56759ae259d9238" category="paragraph">手順のアップグレード中に次のいずれかのエラーが発生した場合は、推奨される対処方法を実行してください。</block>
   <block id="8cb89ad108e36babae43be3f4185a474" category="list-text">* 割り当て済みドライブの障害 *</block>
   <block id="4f9ee96ae43fa01d3e278eb1f74f4ff2" category="paragraph">エラーの理由の 1 つとして、ドライブに適切な署名がない可能性があります。該当するドライブが認定済みのドライブであることを確認します。詳細については、テクニカルサポートにお問い合わせください。</block>
   <block id="ac4c4beee0bb0fda6868f9f6414e4055" category="paragraph">ドライブを交換する場合は、交換用ドライブの容量が交換する障害ドライブと同じかそれよりも大きいことを確認してください。</block>
@@ -2745,7 +2729,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="4dcf00638af3c697ee6b99e40e1f9bfb" category="list-text">* 過去 7 日間に 2 ページ 2C 重大 MEL イベントが報告されました *</block>
   <block id="fd136850ef1b651365146688fa8d9610" category="list-text">* 過去 7 日間に 2 個以上の低下したドライブチャネル重大 MEL イベントが報告されました *</block>
   <block id="235328827141e650f44c482c6868c490" category="list-text">* 過去 7 日間に 4 個を超える重大 MEL エントリがあります *</block>
-  <block id="b5b75e18eedafacec87d4709e34209fc" category="list-text">オフライン*アップグレードを使用していて、この手順 が正常に完了した場合は、ノードがメンテナンスモードになっている間に追加のメンテナンス手順を実行してください。完了したら、または障害が発生してやり直したい場合は、StorageGRID アプライアンスインストーラで*[アドバンスト]*&gt;*[コントローラのリブート]*を選択します。次に、次のいずれかのオプションを選択します。</block>
   <block id="6b108eb8b08f0ff8a5a6e884a1ac6474" category="list-text">* StorageGRID *で再起動します。</block>
   <block id="ff893ef835261129935a9f82f297a8d3" category="list-text">*メンテナンスモードで再起動します*。コントローラをリブートし、ノードをメンテナンスモードのままにします。手順 の実行中に障害が発生し、最初からやり直す場合は、このオプションを選択します。ノードのリブートが完了したら、障害が発生した手順 の該当する手順から再起動します。</block>
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。[Nodes]ページに正常なステータス（緑のチェックマークアイコン）が表示されます <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。</block>
@@ -3573,8 +3556,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="3645999a212db12122a0446a162ce8f6" category="inline-link">StorageGRID 11.6の手順</block>
   <block id="acbf3b183ab51488b99731f4cd2624cc" category="paragraph">SG5600ハードウェアのメンテナンス手順を実行する必要がある場合は、を使用してください<block ref="8db8ba3162a617a8ac29af904a66dd12" category="inline-link-rx"></block>。</block>
   <block id="5de42bbee7ead1d6edca50bd265907c7" category="summary">ドライブファームウェアをアップグレードして、最新の機能とバグ修正をすべて適用します。</block>
-  <block id="d45c51446dc757d7fa15d2b4c4d24e0a" category="doc">SANtricity System Managerを使用したSG5700ドライブファームウェアのアップグレード</block>
-  <block id="f92e54d30593fb7cc6d4478240b8477c" category="paragraph">アプライアンスのドライブのファームウェアをアップグレードして、最新の機能とバグ修正をすべて適用します。</block>
   <block id="76139fd62644e42b86c5b06a4f1ce82e" category="summary">E2800コントローラが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。</block>
   <block id="791aa87e4eb427affe98e6094ceb6472" category="doc">SG5700内のE2800シリーズストレージコントローラを交換します</block>
   <block id="d09a95cf80cc21d53aa1e5648d98d38c" category="paragraph">E2800シリーズのコントローラが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。</block>
@@ -3735,7 +3716,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="57e1c48b034af2352e5a69534ab37dd2" category="list-text"><block ref="57e1c48b034af2352e5a69534ab37dd2" category="inline-link-rx"></block></block>
   <block id="9ccd79e77976b22b2105fd27f98d48e7" category="inline-link">StorageGRID 11.4 ドキュメント</block>
   <block id="a4236c1e626cbb1d83748576ab2ec1fc" category="list-text"><block ref="a4236c1e626cbb1d83748576ab2ec1fc" category="inline-link-rx"></block></block>
-  <block id="b29310bba22c58ffb795bf7adbc20683" category="doc">SANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
   <block id="acb67fba627fa95707ed1eb195bb4ba3" category="summary">ストレージ容量を増やすには、 StorageGRID システムに導入されている SG6060 に拡張シェルフを 1 台または 2 台追加します。</block>
   <block id="80c41098192177786ef3a9e33a7ee233" category="doc">導入済み SG6060 に拡張シェルフを追加します</block>
   <block id="7adedd5165bb23901a8b93ba3c4c2dd1" category="paragraph">ストレージ容量を増やすには、 StorageGRID システムにすでに導入されている SG6060 に拡張シェルフを 1 台または 2 台追加します。</block>
@@ -4216,7 +4196,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="doc">手順3：コントローラを取り外す</block>
   <block id="73c449311895c44cdc2cb9f82f1d86a8" category="paragraph">障害が発生したコントローラをアプライアンスから取り外します。</block>
   <block id="41cead6208beaab4753fef7eb16b7b3d" category="doc">手順5：必要に応じて新しいコントローラにHICを移動する</block>
-  <block id="52cea5d7c14ce5a1a352ae36b02fc89c" category="paragraph">障害が発生したコントローラにHICが搭載されている場合は、障害が発生したコントローラから交換用コントローラにHICを移動します。</block>
   <block id="f2323bfac4b2b6c0bed61a2782d7b2a3" category="open-title">E2800A</block>
   <block id="c7c61e2e49b4848eb04ef9166c62112e" category="paragraph">E2800AコントローラにはHICは搭載されていません。</block>
   <block id="66e02a6be1542a6c5ab5b6e835ace031" category="inline-xref">手順6：コントローラを交換する</block>
@@ -4237,4 +4216,38 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">障害が発生したコントローラを取り外してオフラインにする準備をします。</block>
   <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">交換したアプライアンスでSEDドライブでハードウェアドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">交換したアプライアンスでSEDドライブでドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
+  <block id="f98925abc6cb4377ae64ff1ac4820659" category="paragraph">障害が発生したコントローラにホストインターフェイスカード（HIC）が搭載されている場合は、障害が発生したコントローラから交換用コントローラにHICを移動します。</block>
+  <block id="7af2ad8f1c1832bab54905bcdc6524a2" category="doc">オフライン方式を使用したSANtricity System Managerを使用したSG5700ドライブファームウェアのアップグレード</block>
+  <block id="3a22cf5ffbbef9ad0472a7712f64b5dc" category="paragraph">SANtricity System Managerオンライン方式を使用してアプライアンスのドライブのファームウェアをアップグレードし、最新の機能とバグ修正をすべて適用します。</block>
+  <block id="c1a7b1836ac9b78ef73ce5d2ba26103d" category="list-text">これで完了です <block ref="f1498071811ca85523b2ec754ee6c485" category="inline-link-macro-rx"></block>。</block>
+  <block id="c30246932f5c5ea4ba8f6f003970db66" category="paragraph">アプライアンスがメンテナンスモードのときに、ドライブが並行してアップグレードされます。プールまたはボリュームグループで冗長性がサポートされていない場合、またはデグレード状態の場合は、オフライン方式を使用してドライブファームウェアをアップグレードする必要があります。フラッシュ読み取りキャッシュに関連付けられたドライブ、またはデグレード状態のプールやボリュームグループにも、オフライン方式を使用する必要があります。オフライン方式では、アップグレード対象のドライブですべてのI/Oアクティビティが停止している間にのみファームウェアがアップグレードされます。I/Oアクティビティを停止するには、ノードをメンテナンスモードにします。</block>
+  <block id="697411ab196a4e576f519c144e18349f" category="list-text">SANtricity System ManagerでストレージコントローラのIPにアクセスします。</block>
+  <block id="2b0459c48aff623978ca6ec879fbd493" category="paragraph"><block ref="29c66d4541758aec7932976994c3319a" prefix="" category="inline-code"></block></block>
+  <block id="22170e910c05e5c31a0de895e8044b8f" category="paragraph">ドライブファームウェアファイルの名前は次のようになります。<block ref="2bd3efd42bd30bf5ec268aab489d4777" prefix=" " category="inline-code"></block>。</block>
+  <block id="a95e1d2d9b824c52c94876fa7b357f9c" category="list-text">[すべてのドライブをオフライン（並行処理）にアップグレード]*を選択します。ドライブを使用するすべてのボリュームですべてのI/Oアクティビティが停止している間にのみ、ファームウェアのダウンロードが可能なドライブをアップグレードします。</block>
+  <block id="619ff1dd97a438dc0f6a1a6394d8c4d6" category="inline-link-macro">必要に応じて、ドライバファームウェアのアップグレードエラーのトラブルシューティングを行う</block>
+  <block id="0fc13834523d64672cf1aa2e9bc111e1" category="paragraph"><block ref="5b03de720114c37b7b00609700972858" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4d34d80331e19b08caebc4630076e07" category="list-text">手順が正常に完了したら、ノードをメンテナンスモードにして、追加のメンテナンス手順を実行します。完了したら、または障害が発生してやり直したい場合は、StorageGRID アプライアンスインストーラで*[アドバンスト]*&gt;*[コントローラのリブート]*を選択します。次に、次のいずれかのオプションを選択します。</block>
+  <block id="7591dbb01a12fdb3c9be4cce45eb9564" category="doc">SANtricity System Managerオンライン方式を使用したSG5700ドライブファームウェアのアップグレード</block>
+  <block id="b97550a7ba7658ac15b58d0871af7a09" category="paragraph">ドライブは、アプライアンスのI/O実行中に一度に1つずつアップグレードされます。この方法では、アプライアンスをメンテナンスモードにする必要はありません。ただし、システムのパフォーマンスに影響が出る可能性があり、アップグレードにはオフラインの場合よりも数時間かかることがあります。</block>
+  <block id="5d6600c8dfd04cdcb53bfff3d3e91de4" category="inline-link-macro">オフラインホウシキ</block>
+  <block id="d349e214e8190b56a034686080f6a647" category="paragraph">冗長性がないボリュームに属するドライブは、を使用して更新する必要があります。 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。フラッシュ読み取りキャッシュに関連付けられているドライブ、またはデグレード状態のプールやボリュームグループには、オフライン方式を使用する必要があります。</block>
+  <block id="e2d5d64348676cf446dfd44a976e3c5a" category="paragraph">を使用する必要があります <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> SSDドライブのアップグレード時。</block>
+  <block id="eb0c0381a2ecab0a05e0025157eeb4e5" category="list-text">[すべてのドライブをオンラインにアップグレード]*を選択します。ストレージアレイでのI/O処理中に、ファームウェアのダウンロードが可能なドライブをアップグレードします。このアップグレード方式を選択した場合、これらのドライブを使用している関連ボリュームへのI/Oを停止する必要はありません。</block>
+  <block id="c4d9a9dd7264b95bcd49edb9e5bd0c34" category="summary">SANtricity System Managerを使用してアプライアンスのドライブのファームウェアをアップグレードするときに発生する可能性があるエラーのトラブルシューティングを行います。</block>
+  <block id="912f976f5b0e46bfc619bc9483a112fb" category="doc">ドライブファームウェアのアップグレードエラーのトラブルシューティング</block>
+  <block id="21c8cbcec0776ab0bc610690be3de7ee" category="paragraph"><block ref="91368ba22effffa53db65fac249d9d1e" prefix="" category="inline-code"></block></block>
+  <block id="d6ca29319276400384e46c43e0c2ae97" category="admonition">場合によっては、デフォルトのユーザ名が<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> ではなく<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
+  <block id="c619fcb628f35e62cb7bb98416137cc8" category="admonition">場合によっては、SG6000アプライアンスのデフォルトのユーザ名が<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> ではなく<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
+  <block id="d6d8d6f4809b0387fbc44576f4668758" category="paragraph">交換用E2800AまたはE2800Bコントローラを準備します。</block>
+  <block id="6c12c6aae31e7fd9ba612c37c1094d29" category="doc">オフライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
+  <block id="29c80a5eecad431fd9f823a496f5eb82" category="paragraph">SANtricity System Managerのオフライン方式を使用してアプライアンスのドライブのファームウェアをアップグレードし、最新の機能とバグ修正をすべて適用します。</block>
+  <block id="b159728d4a7cd93ff2e7263dbf47963d" category="doc">online方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
+  <block id="8d9fcf04a3a7be30342afeddfd41ed3a" category="paragraph">冗長性がないボリュームに属するドライブは、を使用して更新する必要があります。 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。フラッシュ読み取りキャッシュに関連付けられているドライブ（SG6060のSSDドライブなど）、またはデグレード状態のプールやボリュームグループには、オフライン方式を使用する必要があります。</block>
+  <block id="a6fb2a2e13e13dac5d52711f459def92" category="paragraph">ドライブにはSSDとHDDの2種類があります。を使用する必要があります <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> SSDのファームウェア（SG6060のSSDドライブなど）をアップグレードするため。オンライン方式またはオフライン方式を使用して、HDDのファームウェアをアップグレードできます。</block>
+  <block id="085a1cecc32954931f9c4a478c4b081b" category="paragraph">を使用する必要があります <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block> をクリックしてSSDのファームウェアをアップグレードします。</block>
+  <block id="3631dcd2ec8f8e84f2dc4ff1264bb5ba" category="sidebar">オンライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード</block>
+  <block id="0007bed3a39900ca535cccaada9a4349" category="sidebar">オフライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード</block>
+  <block id="9429703a81cb2b5231db7d0db68e388d" category="sidebar">オンライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
+  <block id="afcfd0f4a9cd1a59c01ff3ab1b52a9b5" category="sidebar">オフライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
 </blocks>
