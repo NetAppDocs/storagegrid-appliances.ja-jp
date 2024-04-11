@@ -134,7 +134,7 @@ NOTE: この手順 は、コマンドラインインターフェイスの使用�
 +
 [listing]
 ----
-configure-sga.py --help
+./configure-sga.py --help
 ----
 +
 。 `configure-sga.py` スクリプトでは、次の5つのサブコマンド
@@ -147,7 +147,7 @@ configure-sga.py --help
 ** `reboot` アプライアンスのリブート用です
 +
 サブコマンド（advanced、configure、install、monitor、またはreboot）引数のあとにを入力すると `--help` オプションを指定すると、そのサブコマンド内で使用可能なオプションの詳細を示すヘルプテキストが表示されます
-`configure-sga.py _subcommand_ --help`
+`./configure-sga.py _subcommand_ --help`
 
 +
 よろしければ <<back-up-appliance-config,アプライアンスの設定をJSONファイルにバックアップします>>で、ノード名が次の要件に従っていることを確認します。
@@ -163,9 +163,9 @@ configure-sga.py --help
 
 
 . JSONファイルの設定をアプライアンスに適用するには、次のように入力します `_SGA-INSTALL-IP_` は、アプライアンスの管理ネットワークIPアドレスです。 `_json-file-name_` はJSONファイルの名前です `_node-name-inside-json-file_` は、設定が適用されているノードの名前です：+
-`configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
+`./configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
 . アプライアンスノードの現在の設定を確認するには、以下のコマンドをどこに入力するかを確認します `_SGA-INSTALL-IP_` は、アプライアンスの管理ネットワークのIPアドレスです。+
-`configure-sga.py configure _SGA-INSTALL-IP_`
+`./configure-sga.py configure _SGA-INSTALL-IP_`
 +
 この結果には、プライマリ管理ノードの IP アドレスや管理、グリッド、クライアントネットワークに関する情報など、アプライアンスの現在の IP 情報が表示されます。
 
@@ -250,19 +250,20 @@ Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
 ----
 . 現在の設定のいずれかの値を変更する必要がある場合は、を使用します `configure` サブコマンドを使用して更新します。たとえば、アプライアンスがプライマリ管理ノードへの接続に使用するIPアドレスをに変更する場合などです `172.16.2.99`次のように入力します。
 +
-`configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
+`./configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
 
 . [[back-up-appliance-config]]アプライアンス設定をJSONファイルにバックアップする場合は、高度なおよびを使用します `backup-file` サブコマンド。たとえば、IPアドレスを持つアプライアンスの設定をバックアップする場合などです `_SGA-INSTALL-IP_` を指定します `appliance-SG1000.json`をクリックし、「+」と入力します
-`configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
+`./configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
 +
-設定情報が格納された JSON ファイルは、スクリプトの実行元と同じディレクトリに書き込まれます。
+設定情報を含むJSONファイルは、指定された出力ファイルのパス（この場合はファイルの相対パス）に書き込まれます。 `appliance-SG1000.json`。
 
 +
 
 CAUTION: 生成された JSON ファイルの最上位のノード名がアプライアンス名と一致していることを確認します。経験豊富なユーザーで、StorageGRID APIを十分に理解している場合を除き、このファイルに変更を加えないでください。
 
 . アプライアンスの設定に問題がなければ、を使用します `install` および `monitor` アプライアンスをインストールするためのサブコマンド：+
-`configure-sga.py install --monitor _SGA-INSTALL-IP_`
+`./configure-sga.py install --monitor _SGA-INSTALL-IP_` [+]
+`./configure-sga.py monitor --monitor-storagegrid-install _SGA-INSTALL-IP_`
 . アプライアンスをリブートする場合は、「+」を入力します
-`configure-sga.py reboot _SGA-INSTALL-IP_`
+`./configure-sga.py reboot _SGA-INSTALL-IP_`
 

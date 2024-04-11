@@ -245,13 +245,10 @@
   <block id="1ff855ab55729ae4063274c6d17a385f" category="list-text">別のバージョンの StorageGRID ソフトウェアをインストールする必要がある場合は、次の手順を実行します。</block>
   <block id="dbe5f4e4fad5c126ea669e2f792699b4" category="list-text">インストールアーカイブをダウンロードします。</block>
   <block id="523d60582e8bbde2c5ff4ae6f84b599e" category="inline-link">ネットアップのダウンロード：StorageGRID アプライアンス</block>
-  <block id="08f7204e1ce8ade983fb10a402400949" category="paragraph"><block ref="08f7204e1ce8ade983fb10a402400949" category="inline-link-rx"></block></block>
   <block id="3befe165a449c2011ecba00696c3f4ab" category="list-text">アーカイブを展開します。</block>
   <block id="1d24290d8f4a79eeaafbecffc1f4a350" category="list-text">StorageGRID アプライアンス・インストーラから、 * アドバンスト * &gt; * StorageGRID ソフトウェアのアップロード * を選択します。</block>
   <block id="6fd2b0d88a0ea6f057348837593e1cf4" category="list-text">[ 削除 ] をクリックして、現在のソフトウェアパッケージを削除します。</block>
   <block id="1f288c0ba3f88bf0912012d36eb9d7dd" category="image-alt">アプライアンスインストーラ - 現在のソフトウェアを削除します</block>
-  <block id="712777b5e9d637ccfae5b04a415653d3" category="list-text">ダウンロードして解凍したソフトウェアパッケージの [*Browse*]( 参照 ) をクリックし、チェックサムファイルの [*Browse*]( 参照 ) をクリックします。</block>
-  <block id="79e56e0389e10379e27bca8568ffa4c6" category="image-alt">アプライアンスインストーラ - SG ソフトウェアのアップロード</block>
   <block id="59773e84f2479ffeb34ba9422edf9f9c" category="list-text">ホームページに戻るには、「 * Home * 」（ホーム）を選択します。</block>
   <block id="2d636e90bd2e05a13f9a7e54cc9ff4de" category="list-text">現在の状態が「 Ready to start installation of primary Admin Node name with software version x.y' 」であり、「 Start Installation * 」ボタンが有効になっていることを確認します。</block>
   <block id="34aaa9f52a702ada229db511977b71dd" category="inline-link-macro">ノードクローニングの手順</block>
@@ -268,7 +265,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">StorageGRID をサービスアプライアンスノードにインストールするには、次の手順を実行します。</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">プライマリ管理ノードの IP アドレスおよびアプライアンスノードの名前を指定または確認します。</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">インストールを開始し、ソフトウェアがインストールされるまで待ちます。</block>
-  <block id="ca5a02495af6bdb0a0ecd42075778723" category="paragraph">アプライアンスゲートウェイノードのインストールが一時停止します。インストールを再開するには、 Grid Manager にサインインし、グリッドノードをすべて承認し、 StorageGRID のインストールプロセスを完了します。非プライマリ管理ノードをインストールする場合、承認は必要ありません。</block>
   <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">SG100とSG1000サービスアプライアンスを同じサイトに導入しないでください。パフォーマンスが予測不能になる可能性があります</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">アプライアンスのインストールと設定を自動化</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">一度に複数のアプライアンスノードを導入する必要がある場合は、インストールプロセスを自動化できます。を参照してください <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -292,7 +288,6 @@
   <block id="859aba5803f535249e29a8ffe2c32c6d" category="paragraph">ここに表示される名前は、アプライアンスノードのシステム名です。システム名は内部StorageGRID 処理に必要であり、変更することはできません。</block>
   <block id="06f9cb221f1c7b35766aeb533e33b69c" category="list-text">Installation（インストール）セクションで、現在の状態がのインストール開始準備完了（Ready to start installation）であることを確認します<block ref="b63eb060814c4999e77b01e66538f258" prefix=" " category="inline-code"></block> をプライマリ管理ノードでグリッドに追加します<block ref="2f9ba536b02b69b5417cd803edfcffc0" prefix=" " category="inline-code"></block> "*インストールの開始*ボタンが有効になっていることを確認します。</block>
   <block id="94ec460361fb2b4faa500cbfe2736123" category="paragraph">[Start Installation* （インストールの開始） ] ボタンが有効になっていない場合は、ネットワーク設定またはポート設定の変更が必要になることがあります。手順については、アプライアンスのメンテナンス手順を参照してください。</block>
-  <block id="dd3c49a5e1ad35a1fcdc49631b4a489a" category="image-alt">Appliance Installer Home - 非プライマリ管理ノードをインストールします</block>
   <block id="7219d53a2c987afebdf600ccc504d1ab" category="list-text">グリッドに複数のアプライアンスノードがある場合は、アプライアンスごとに上記の手順を繰り返します。</block>
   <block id="c3354d84393c7f9e023fdee83bcf8cef" category="summary">一部のアプライアンスモデルでは、ストレージとリカバリの要件に合わせてアプライアンス上で別のRAIDモードに変更できます。モードを変更できるのは、アプライアンスストレージノードを導入する前だけです。</block>
   <block id="b622ae5ae8ee031b50aeb341c3285846" category="doc">オプション：RAIDモードを変更（SG5760およびSG6000）</block>
@@ -541,7 +536,6 @@
   <block id="ace910911ef51c55674dbf6f48ce7fcd" category="list-text"><block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix="" category="inline-code"></block> StorageGRID のインストールを開始する場合に使用します</block>
   <block id="6d7f123732611773aab7984540e31afb" category="list-text"><block ref="08b5411f848a2581a41672a759c87380" prefix="" category="inline-code"></block> StorageGRID インストールの監視用です</block>
   <block id="1ef8ccf581606e90386c341184ef576d" category="list-text"><block ref="2b755b30293f2f9f79ec1c86ab0943f2" prefix="" category="inline-code"></block> アプライアンスのリブート用です</block>
-  <block id="f13b14db9b01252edf0db47324d40bf1" category="paragraph">サブコマンド（advanced、configure、install、monitor、またはreboot）引数のあとにを入力すると<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> オプションを指定すると、そのサブコマンド内で使用可能なオプションの詳細を示すヘルプテキストが表示されます<block ref="3baa4d8695a2207be4bec335382496cf" prefix=" " category="inline-code"></block></block>
   <block id="2daf25e905cf2b4f568f33c41d07fc54" category="inline-xref">アプライアンスの設定をJSONファイルにバックアップします</block>
   <block id="52c400008e7d7e44e433cef62ee51f8c" category="paragraph">よろしければ <block ref="7c894e4a9f4c54a88d21d72ba2ad4233" category="inline-xref-macro-rx"></block>で、ノード名が次の要件に従っていることを確認します。</block>
   <block id="2ca0bbbd7ba6b72c27e210190991793b" category="list-text">JSONファイルを使用してすべてのアプライアンスノードを自動的に設定する場合は、各ノード名が一意になります。</block>
@@ -549,16 +543,9 @@
   <block id="b9bac70b4e160b588ff797b4dd555d64" category="list-text">アルファベット、数字、およびハイフンを使用できます。</block>
   <block id="4741eb6218531a2c54badadb3f2e570f" category="list-text">先頭または末尾をハイフンにすることはできません。</block>
   <block id="f357f23d1a01d52046c340be89709e6f" category="list-text">数字だけを含めることはできません。</block>
-  <block id="ef82d471d6b50961b884d7aa1b26102c" category="list-text">JSONファイルの設定をアプライアンスに適用するには、次のように入力します<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> は、アプライアンスの管理ネットワークIPアドレスです。<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> はJSONファイルの名前です<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> は、設定が適用されているノードの名前です：+<block ref="040ff3550a0b6f11b7460ac4e31970ed" prefix=" " category="inline-code"></block></block>
-  <block id="db62ec11b4b43c3342d18ffab91804f9" category="list-text">アプライアンスノードの現在の設定を確認するには、以下のコマンドをどこに入力するかを確認します<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> は、アプライアンスの管理ネットワークのIPアドレスです。+<block ref="3fb681cb4749044501b9ad23526cdd73" prefix=" " category="inline-code"></block></block>
   <block id="b93f3c962c043bc12c18889a1269cb5a" category="paragraph">この結果には、プライマリ管理ノードの IP アドレスや管理、グリッド、クライアントネットワークに関する情報など、アプライアンスの現在の IP 情報が表示されます。</block>
   <block id="7cac38cc118871061c8dce3db7f75d40" category="list-text">現在の設定のいずれかの値を変更する必要がある場合は、を使用します<block ref="e2d5a00791bce9a01f99bc6fd613a39d" prefix=" " category="inline-code"></block> サブコマンドを使用して更新します。たとえば、アプライアンスがプライマリ管理ノードへの接続に使用するIPアドレスをに変更する場合などです<block ref="af76ef14733d250246586b58ebb85e3c" prefix=" " category="inline-code"></block>次のように入力します。</block>
-  <block id="026fd20bc8239191cee6649680d8c461" category="paragraph"><block ref="e8639c293a4dafb411d7f6edac1ea3dc" prefix="" category="inline-code"></block></block>
-  <block id="de0b47054a413aea610d4cd3a1bfff4c" category="list-text">[[back-up-appliance-config]]アプライアンス設定をJSONファイルにバックアップする場合は、高度なおよびを使用します<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> サブコマンド。たとえば、IPアドレスを持つアプライアンスの設定をバックアップする場合などです<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> を指定します<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>をクリックし、「+」と入力します<block ref="84dd9435ce5db7632c67ee7a6e4298d6" prefix=" " category="inline-code"></block></block>
-  <block id="e53aecfa06819693ed2430744f8362d7" category="paragraph">設定情報が格納された JSON ファイルは、スクリプトの実行元と同じディレクトリに書き込まれます。</block>
   <block id="153a65bebff9401a2458b1201a2b601c" category="admonition">生成された JSON ファイルの最上位のノード名がアプライアンス名と一致していることを確認します。経験豊富なユーザーで、StorageGRID APIを十分に理解している場合を除き、このファイルに変更を加えないでください。</block>
-  <block id="4c7861efb51e2ffd5c6238cbfd8aa793" category="list-text">アプライアンスの設定に問題がなければ、を使用します<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> および<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> アプライアンスをインストールするためのサブコマンド：+<block ref="288c5b1187d2f3aee29b2d8b74b6c709" prefix=" " category="inline-code"></block></block>
-  <block id="68a5e627b481792d9346927bcbb09b79" category="list-text">アプライアンスをリブートする場合は、「+」を入力します<block ref="df863f526a7c46aa917c77164b61ecce" prefix=" " category="inline-code"></block></block>
   <block id="0de1a3196dd60bc820a86bf37f8d4fa1" category="summary">アプライアンスをグリッドネットワーク、クライアントネットワーク、および管理ネットワークに接続するために使用するポートのネットワークリンクを設定できます。リンク速度およびポートボンディングモードとネットワークボンディングモードを設定できます。</block>
   <block id="ec1ee0ee02ad6851c9644ca45c776776" category="admonition">ConfigBuilderを使用してJSONファイルを生成する場合は、ネットワークリンクを自動的に設定できます。を参照してください <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="dde0e2ccbf0ec5a8bfed2d3b9519cb4e" category="inline-link-macro">追加機器を入手した</block>
@@ -1156,10 +1143,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="c9336d7080bc57d338b2bad2efe38313" category="list-text">インストールの最初の 2 つのステージの進行状況を確認します。</block>
   <block id="ca24497a603bbc47076b2ca3cbe5a2ac" category="paragraph">インストーラがアプライアンスのドライブから既存の設定を消去し、ホストを設定します。</block>
   <block id="90f6370ccbecc973aa1553afa395b729" category="list-text">次のいずれかのプロセスが実行されるまで、インストールの進行状況を監視します。</block>
-  <block id="247f3d17e4317101acecf503110544b0" category="list-text">プライマリ管理ノードを除くすべてのアプライアンスノードで、 Install StorageGRID ステージが一時停止し、組み込みのコンソールにメッセージが表示されて、グリッドマネージャを使用して管理ノードでこのノードを承認するように求められます。次の手順に進みます。</block>
   <block id="8a8aaccc64167e205ae2e772ed0fe5b4" category="list-text">アプライアンスプライマリ管理ノードをインストールする場合は、ノードを承認する必要はありません。アプライアンスがリブートされます。次の手順は省略できます。</block>
-  <block id="ca2089a4125ab586b2ca81b4d4a9340b" category="admonition">アプライアンスプライマリ管理ノードをインストールしている場合、 5 つ目のステージが表示されます（ 4 つのフェーズを示すスクリーンショットの例を参照）。第 5 フェーズが 10 分以上たっても完了しない場合は、 Web ページを手動で更新してください。</block>
-  <block id="a502699e7fa49618892585a8980922d7" category="list-text">プライマリ管理ノードのグリッドマネージャに移動し、保留中のグリッドノードを承認して、 StorageGRID のインストールプロセスを完了します。</block>
   <block id="6ac1a7d9832a500687085e0cf66a46ec" category="paragraph">Grid Manager から * Install * をクリックすると、ステージ 3 が完了し、ステージ 4 * Finalize Installation * が開始されます。ステージ 4 が完了すると、アプライアンスがリブートされます。</block>
   <block id="5f29d84a72d56fbb6bc236e691044453" category="summary">ネットワーク・ケーブルを接続したら、アプライアンスに電源を投入できます。</block>
   <block id="bcc960cf3e9ec18999ff121dde627158" category="doc">電源コードを接続し、電源を投入します</block>
@@ -2614,7 +2598,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="39477ba4c8468b4da04da4f855e9785e" category="list-text">プライマリ管理ノードの IP アドレスおよびストレージノードの名前を指定または確認します。</block>
   <block id="d5c1f2658aaba7f3605752bb1f4cfa22" category="list-text">導入を開始し、ボリュームの設定とソフトウェアのインストールが完了するまで待機します。</block>
   <block id="26ea01749d8fe9ba54d34006d7b711eb" category="list-text">アプライアンスインストールタスクの途中でインストールが一時停止した場合は、 Grid Manager にサインインしてすべてのグリッドノードを承認し、 StorageGRID のインストールプロセスと導入プロセスを完了すると、インストールを再開できます。</block>
-  <block id="4e4a7a07939d8db1c2a9cc0463cd01b6" category="admonition">一度に複数のアプライアンスノードを導入する必要がある場合は、を使用してインストールプロセスを自動化できます<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> アプライアンスインストールスクリプト。</block>
   <block id="3da6a7d0bb47cd64f8de58da564ed961" category="list-text">拡張またはリカバリ処理を実行する場合は、該当する手順に従います。</block>
   <block id="3b485651b0f8c9bae0428480b41d029a" category="inline-link">グリッドノードを追加しています</block>
   <block id="99ff77ddad436b4aa4cfe20cc0b05ade" category="list-text">既存のStorageGRID システムにアプライアンスストレージノードを追加するには、の手順を参照してください<block ref="f2b9f2a623f458b464404f68e70d646c" category="inline-link-rx"></block>。</block>
@@ -2628,7 +2611,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
 <block ref="87d967605804492a459cd5cfc0edb4e9" category="inline-link-macro-rx"></block>。</block>
   <block id="0205d951b300647dabcd3e7f7910a010" category="admonition">モニタのインストールページに手動でアクセスする必要がある場合は、 * モニタのインストール * をクリックします。</block>
   <block id="6782fad0edf81ef678da67ab11346ff5" category="list-text">グリッドに複数のアプライアンスストレージノードがある場合は、アプライアンスごとに上記の手順を繰り返します。</block>
-  <block id="4e2e50dcffb626790688f13c3a94265b" category="admonition">一度に複数のアプライアンスストレージノードを導入する必要がある場合は、を使用してインストールプロセスを自動化できます<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> アプライアンスインストールスクリプト。</block>
   <block id="2e091809aa4488fefb86c669cb8f1914" category="summary">E2860コントローラシェルフ用のレール1組をキャビネットまたはラックに取り付け、レールにコントローラシェルフをスライドさせます。60 ドライブ拡張シェルフを設置する場合は、同じ手順 が適用されます。</block>
   <block id="554505334c66fad08a4452516a02e8f6" category="doc">60ドライブシェルフの設置（SG6060）</block>
   <block id="0835dd05e1a77d417056577f207cbfb1" category="admonition">ドライブが取り付けられていない状態の 60 ドライブシェルフの重量は、約 60kg （ 132 ポンド）です。シェルフを安全に移動するには、 4 名の人員または電動リフトが必要です。</block>
@@ -3068,7 +3050,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="3cffdaddf1d95ec3c052fcf96560a030" category="paragraph">クローニングの開始 * が有効になっている場合、 * 現在の状態 * は、トラフィックのクローニングに選択された StorageGRID ネットワークと、そのネットワーク接続の使用に関する情報を示します。を参照してください <block ref="54e13ce1c122f0b18d12f8e7a211ecbf" category="inline-link-macro-rx"></block>。</block>
   <block id="d081af9c1bc1822369d68ca6df434792" category="list-text">ソースノードで * クローニングを開始 * を選択します。</block>
   <block id="41f39a54349270e6f7a3ec7e34353a95" category="list-text">ソースノードまたはターゲットノードで StorageGRID アプライアンスインストーラを使用して、クローニングの進行状況を監視します。</block>
-  <block id="9ea8162d17432f7b9bc858b79e65f413" category="paragraph">ソースノードとターゲットノードの両方で StorageGRID アプライアンスインストーラのステータスが同じであることを確認します。</block>
   <block id="f19c0dcdf0806f3540561c4ac08be4b4" category="image-alt">クローニングの進捗状況</block>
   <block id="98c6d1132a15d72d0dc9e50596f25fb1" category="paragraph">クローニングの監視ページでは、クローニングプロセスの各ステージについて詳細な進捗状況を確認できます。</block>
   <block id="b2fdb0b814b9eb6027f8fdbc3554f684" category="list-text">* クローンピア関係の確立 * に、クローニングのセットアップと設定の進捗状況が表示されます。</block>
@@ -3086,8 +3067,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="7b94aafd236e4ceea865c931a85dfffa" category="list-text">ターゲットノードはメンテナンスモードを終了し、ソースノードに代わって StorageGRID に参加します。</block>
   <block id="2d19d406fa4b8c7f970985fd245d9c26" category="inline-link">再インストールのための準備をした</block>
   <block id="11f0130e9caa644f96bf62e2f723dca8" category="list-text">ソースアプライアンスは、以前と同様に事前にインストールされた状態になります<block ref="9808e60ae6558350cc51bc72520015f6" category="inline-link-rx"></block>。</block>
-  <block id="5cd537a6dae618d366a854e49d455bba" category="admonition">アプライアンスがグリッドに再参加しない場合は、ソースノードの StorageGRID アプライアンスインストーラのホームページで * アドバンスト * &gt; * コントローラのリブート * を選択し、 * メンテナンスモードでリブート * を選択します。ソースノードが保守モードでリブートしたら、手順 のクローニングを繰り返します。</block>
-  <block id="b39d313e6b319e6703372c12e765f24f" category="list-text">ターゲットノードで想定外の問題 が発生した場合、ユーザデータはリカバリオプションとしてソースアプライアンスに残ります。ターゲットノードが StorageGRID に正常に再参加すると、ソースアプライアンスのユーザデータは古くなり、不要になります。</block>
   <block id="7943ed1a95e98b8db345a9a611617fc2" category="paragraph">ソースアプライアンスを別のグリッドに新しいノードとしてインストールまたは拡張すると、古いユーザデータが上書きされます。</block>
   <block id="e2e3ccf7097647279c88916257208b9b" category="paragraph">ソースアプライアンスのコントローラ設定をリセットして、このデータにアクセスできないようにすることもできます。</block>
   <block id="b96c8101a1845adc76ac9c16a415d845" category="inline-link-macro">StorageGRID アプライアンスインストーラ</block>
@@ -3178,9 +3157,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="af11eea53677ab5b08aa19cdcafd56ee" category="list-text">ソースノード（交換するアプライアンス）とターゲット（新しい）アプライアンスは、同じタイプのアプライアンスである必要があります。</block>
   <block id="2dfbae24004209154659df1bc8fa2a85" category="list-text">クローニングできるのは、管理ノードアプライアンスまたはゲートウェイノードアプライアンスだけです。</block>
   <block id="3ed00b5839a316ad99941cddc347868b" category="list-text">クローニングできるのは、新しいストレージアプライアンスに対してのみです。</block>
-  <block id="0734b0f73d20ce09674f65cd7aa84344" category="list-text">管理ノードまたはゲートウェイノードのアプライアンスの場合、ソースノードのアプライアンスとターゲットのアプライアンスが同じタイプである必要はありませんが、アプライアンスのタイプを変更するには、ケーブルまたはSFPモジュールの交換が必要になることがあります。</block>
   <block id="481d4b10597e9f9335c607d5115fd3db" category="paragraph">たとえば、 SG1000 ノードアプライアンスを SG100 に交換したり、 SG100 アプライアンスを SG1000 アプライアンスに交換したりできます。</block>
-  <block id="a75ead1838e1da94925b9f44a527a0d7" category="list-text">ストレージノードアプライアンスの場合、ソースノードアプライアンスとターゲットアプライアンスが同じタイプのアプライアンスである必要はありませんが、ターゲットアプライアンスのストレージ容量はソースアプライアンスよりも大きくする必要があります。</block>
   <block id="ad3b23cccdc3e368ff647e8b569cfd36" category="paragraph">たとえば、SG5700ノードアプライアンスをSG6000アプライアンスと交換できます。</block>
   <block id="aabbed64734c33f6c7a61d74e334625a" category="paragraph">StorageGRID 環境の特定のアプライアンスノードをクローニングする互換性のある交換用アプライアンスを選択する方法については、 StorageGRID の営業担当者にお問い合わせください。</block>
   <block id="832fb35230dc87b9117894fb35395cc7" category="section-title">アプライアンスノードのクローンを作成する準備をします</block>
@@ -3191,7 +3168,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="abfec6d1f524b72ccd15f918c923008f" category="inline-link-macro">ノード暗号化を有効にします</block>
   <block id="8d4954f7887339a90dbe76578b481ffe" category="list-text">ターゲットアプライアンスでキー管理サーバ（ KMS ）を使用したノード暗号化が使用されるかどうかを確認し、クローニングを実行する前に最初のターゲットアプライアンスインストール時にノードの暗号化を有効にできるようにします。ソースアプライアンスノードでノード暗号化が有効になっているかどうかを確認できます（を参照） <block ref="6bd92e423fc3e97f612a11738e3a3c13" category="inline-link-macro-rx"></block>。</block>
   <block id="f3547558aa9eeb591224d3b73c6fe1f6" category="paragraph">ソースノードとターゲットアプライアンスで、異なるノード暗号化設定を使用できます。データの復号化と暗号化は、データ転送中、およびターゲットノードが再起動してグリッドに参加したときに自動的に実行されます。</block>
-  <block id="da6305932b07f9de0f22a2c5db4c22a5" category="list-text">ターゲット・アプライアンスの RAID モードをデフォルト設定から変更するかどうかを決定します。このため、この情報は、クローニングの前にターゲット・アプライアンスを最初にインストールするときに指定できます。ソースアプライアンスノードの現在の RAID モードに関する情報は、 Grid Manager の * nodes * ページで確認できます。アプライアンスの [*Storage*] タブを選択します。</block>
   <block id="760f793060ea29dfdd18f4fc69ab4f9d" category="paragraph">ソースノードとターゲットアプライアンスでは、 RAID 設定が異なる場合があります。</block>
   <block id="665b2ee84b3ce1addec753e47812a753" category="list-text">ノードのクローニングプロセスを完了するための十分な時間を計画します。稼働中のストレージノードからターゲットアプライアンスにデータを転送するために、数日かかる場合があります。クローニングのスケジュールを一度に設定して、ビジネスへの影響を最小限に抑えることができます。</block>
   <block id="ed44cdb4d3e080dee6b895b78592b4b8" category="list-text">クローニングするアプライアンスノードは一度に 1 つだけにしてください。クローニングによって、 StorageGRID の他のメンテナンス機能を同時に実行することはできません。</block>
@@ -4250,4 +4226,35 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="0007bed3a39900ca535cccaada9a4349" category="sidebar">オフライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード</block>
   <block id="9429703a81cb2b5231db7d0db68e388d" category="sidebar">オンライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
   <block id="afcfd0f4a9cd1a59c01ff3ab1b52a9b5" category="sidebar">オフライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード</block>
+  <block id="08f1abb5178bd37fc6e2a13d8dcd8107" category="inline-link">ネットアップのダウンロード： StorageGRID</block>
+  <block id="f40a09f3e194689e4082cf7a66952b7f" category="paragraph"><block ref="f40a09f3e194689e4082cf7a66952b7f" category="inline-link-rx"></block></block>
+  <block id="df0509510227d21cac530cb79de147a1" category="list-text">[参照]*をクリックして、ダウンロードして展開したソフトウェアパッケージを指定します。を選択します<block ref="058f15d63233f30a1fbded9223deceff" prefix=" " category="inline-code"></block> パッケージ。</block>
+  <block id="78f7e8f6f1fdf69e2de119bb3d1ffa87" category="paragraph">アプライアンスゲートウェイノードのインストールが一時停止します。インストールを再開するには、 Grid Manager にサインインし、グリッドノードをすべて承認し、 StorageGRID のインストールプロセスを完了します。</block>
+  <block id="d244eb2a1ebf7c5e6ddf7ea8d3527359" category="inline-link-macro">[Monitor Installation]ページ</block>
+  <block id="5b15e37bf7099b2456b9ab4c777b6be1" category="paragraph">現在の状態が「Installation is in progress」に変わり、 <block ref="2cfee2cef53c21fa5832e8cabef926ef" category="inline-link-macro-rx"></block> が表示されます</block>
+  <block id="0bb60b0faed71ce3cf81fbafd38b6eae" category="admonition">一度に複数のアプライアンスノードを導入する必要がある場合は、リンクを使用してインストールプロセスを自動化できます。../installconfig/automating-appliance-installation-and-configuration.html#automate-with-configure-sga-py-script<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> アプライアンスインストールスクリプト]をクリックします。</block>
+  <block id="be0e8fe07ca77469afbcaeb6936ac72e" category="admonition">一度に複数のアプライアンスストレージノードを導入する必要がある場合は、リンク：../installconfig/automating-appliance-installation-and-configuration.html#automate-with-configure-sga-py-scriptを使用してインストールプロセスを自動化できます。<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> アプライアンスインストールスクリプト]をクリックします。</block>
+  <block id="1ea73989dbbe2cb9ac1b4778d6cb6df2" category="paragraph">サブコマンド（advanced、configure、install、monitor、またはreboot）引数のあとにを入力すると<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> オプションを指定すると、そのサブコマンド内で使用可能なオプションの詳細を示すヘルプテキストが表示されます<block ref="03f70e4532276b94a664b1d785b02c4e" prefix=" " category="inline-code"></block></block>
+  <block id="55d7a1be3a048285630cdbdf27b5ba9a" category="list-text">JSONファイルの設定をアプライアンスに適用するには、次のように入力します<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> は、アプライアンスの管理ネットワークIPアドレスです。<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> はJSONファイルの名前です<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> は、設定が適用されているノードの名前です：+<block ref="72f183908dc340cee1fdefb7e5840ddd" prefix=" " category="inline-code"></block></block>
+  <block id="0462f7fa69ff4f54c3348f93f3720a04" category="list-text">アプライアンスノードの現在の設定を確認するには、以下のコマンドをどこに入力するかを確認します<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> は、アプライアンスの管理ネットワークのIPアドレスです。+<block ref="dac188db9f50e30c0f7f05f233f8d5f2" prefix=" " category="inline-code"></block></block>
+  <block id="6f3d4af284a7a3940430119fbf61e17f" category="paragraph"><block ref="e369ddd0be0bded8e17f8b7cb2011be2" prefix="" category="inline-code"></block></block>
+  <block id="f5a6ca817f28eecc69c2db93975bef5b" category="list-text">[[back-up-appliance-config]]アプライアンス設定をJSONファイルにバックアップする場合は、高度なおよびを使用します<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> サブコマンド。たとえば、IPアドレスを持つアプライアンスの設定をバックアップする場合などです<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> を指定します<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>をクリックし、「+」と入力します<block ref="eb560d2a69d32904f571582f5bed3014" prefix=" " category="inline-code"></block></block>
+  <block id="69b9312512cdc6f76fc57562e424544e" category="paragraph">設定情報を含むJSONファイルは、指定された出力ファイルのパス（この場合はファイルの相対パス）に書き込まれます。<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>。</block>
+  <block id="fd5bba691683ef3a201e310f70f6d8e4" category="list-text">アプライアンスの設定に問題がなければ、を使用します<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> および<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> アプライアンスをインストールするためのサブコマンド：+<block ref="cb22ba99985d4320f9b56e53345a6646" prefix=" " category="inline-code"></block> [+]<block ref="09148fb6c91acb8535552973f29c5302" prefix=" " category="inline-code"></block></block>
+  <block id="c931565ed17682d74235819a1b30dffd" category="list-text">アプライアンスをリブートする場合は、「+」を入力します<block ref="8c1be57a6b5e4d6606e9b616bc4b786c" prefix=" " category="inline-code"></block></block>
+  <block id="21f8809422673987244d000d11281874" category="paragraph">すべてのインストール段階が完了したら、ウィンドウを閉じます。</block>
+  <block id="a7beb022c93acd3d0673dc51befd93b8" category="list-text">アプライアンスがプライマリ管理ノードを除くすべてのノードでは、[Install StorageGRID Stage]ステージが一時停止し、を使用して管理ノードでこのノードを承認するよう求めるメッセージが組み込みのコンソールに表示されます。<block ref="e3d100a9dd7fc524c056b793772558c8" category="inline-link-rx"></block>。次の手順に進みます。</block>
+  <block id="42af9b60b35d6bca9c17ff477c884ccc" category="admonition">アプライアンスプライマリ管理ノードのインストール中に、StorageGRIDインストーラをロードするための第5フェーズが表示されます（このスクリーンショットは最初の4つのフェーズのみを示しています）。StorageGRIDインストーラのロード（第5フェーズ）が10分以上進行中の場合は、Webページを手動で更新します。</block>
+  <block id="cc6d0074c1cc81f39341600a31c22eea" category="inline-link">Grid Managerに移動</block>
+  <block id="2402f41c48e7f4bce703c793014a7f2b" category="list-text"><block ref="6f57cab9a4fe2b585805d3a0181ee3a1" category="inline-link-rx"></block> プライマリ管理ノードで、保留中のグリッドノードを承認し、StorageGRIDのインストールプロセスを完了します。</block>
+  <block id="cc721c163db74d07c83f165fac1cbd51" category="list-text">管理ノードまたはゲートウェイノードのアプライアンスの場合、ソースノードのアプライアンスとターゲットアプライアンスが同じアプライアンスモデルである必要はありませんが、アプライアンスのモデルを変更するには、ケーブルまたはSFPモジュールの交換が必要になることがあります。</block>
+  <block id="186e64d4b1a267ec9b06d82dfc3ea37a" category="list-text">ストレージノードアプライアンスの場合、ソースノードアプライアンスとターゲットアプライアンスが同じタイプのアプライアンスである必要はありませんが、次の点に注意してください。</block>
+  <block id="28cb9e1a7b17557df2dab7da635677b4" category="list-text">ターゲットアプライアンスには、ソースアプライアンスよりも大きなストレージ容量が必要です。</block>
+  <block id="765e8dcfe93408233d1db737b46e3c4b" category="list-text">ターゲットアプライアンスには、ソースアプライアンスと同数以上のオブジェクトストレージボリュームが必要です。</block>
+  <block id="a407ca9605b77abba5ba2f3dd9568e9b" category="paragraph">たとえば、SG6000ノードアプライアンス（オブジェクトストアボリューム16個）をSGF6112アプライアンス（オブジェクトストアボリューム12個）に置き換えることはできません。</block>
+  <block id="544c640a61781fbf87772d3bf0e70c8b" category="list-text">ターゲット・アプライアンスの RAID モードをデフォルト設定から変更するかどうかを決定します。このため、この情報は、クローニングの前にターゲット・アプライアンスを最初にインストールするときに指定できます。ソースアプライアンスノードの現在の RAID モードに関する情報は、 Grid Manager の * nodes * ページで確認できます。アプライアンスの*[ハードウェア]*タブを選択します。</block>
+  <block id="d5d17dfc38d13ef9b05b43e504f88d75" category="list-text">ターゲットストレージアプライアンスのボリューム数は、ソースノードのボリューム数以上である必要があります。16個のオブジェクトストアボリューム（rangedb）を含むソースノードを、12個のオブジェクトストアボリュームを含むターゲットストレージアプライアンスにクローニングすることはできません。これは、ターゲットアプライアンスの容量がソースノードよりも大きい場合でも同様です。ほとんどのストレージアプライアンスにはオブジェクトストアボリュームが16個ありますが、オブジェクトストアボリュームが12個しかないSGF6112ストレージアプライアンスは除きます。</block>
+  <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">ソースとターゲットの両方のノードでStorageGRIDアプライアンスインストーラのステータスがほぼ同じであることを示しています。</block>
+  <block id="dbfeead225216a2d779b955a8689e759" category="admonition">ターゲットアプライアンスがグリッドに参加しない場合は、StorageGRIDアプライアンスインストーラのホームページでソースノードの*[アドバンスト]*&gt;*[コントローラのリブート]*を選択し、*[メンテナンスモードでのリブート]*を選択します。ソースノードが保守モードでリブートしたら、手順 のクローニングを繰り返します。</block>
+  <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">ターゲットノードで想定外の問題 が発生した場合、ユーザデータはリカバリオプションとしてソースアプライアンスに残ります。ターゲットノードがStorageGRIDに正常に参加すると、ソースアプライアンスのユーザデータは古くなり、不要になります。</block>
 </blocks>

@@ -34,7 +34,7 @@ StorageGRID システムにアプライアンスストレージノードを導�
 
 
 
-NOTE: 一度に複数のアプライアンスノードを導入する必要がある場合は、を使用してインストールプロセスを自動化できます `configure-sga.py` アプライアンスインストールスクリプト。
+NOTE: 一度に複数のアプライアンスノードを導入する必要がある場合は、リンクを使用してインストールプロセスを自動化できます。../installconfig/automating-appliance-installation-and-configuration.html#automate-with-configure-sga-py-script[`configure-sga.py` アプライアンスインストールスクリプト]をクリックします。
 
 * 拡張またはリカバリ処理を実行する場合は、該当する手順に従います。
 +
@@ -101,7 +101,7 @@ link:../commonhardware/appliance-node-cloning-procedure.html["ノードクロー
 
 . StorageGRID アプライアンスインストーラのホームページで、 * インストールの開始 * をクリックします。
 +
-現在の状態が「 Installation is in progress 」に変わり、「 Monitor Installation 」ページが表示されます。
+現在の状態が「Installation is in progress」に変わり、 link:../installconfig/monitoring-appliance-installation.html["[Monitor Installation]ページ"] が表示されます
 
 +
 
@@ -110,6 +110,6 @@ NOTE: モニタのインストールページに手動でアクセスする必�
 . グリッドに複数のアプライアンスストレージノードがある場合は、アプライアンスごとに上記の手順を繰り返します。
 +
 
-NOTE: 一度に複数のアプライアンスストレージノードを導入する必要がある場合は、を使用してインストールプロセスを自動化できます `configure-sga.py` アプライアンスインストールスクリプト。
+NOTE: 一度に複数のアプライアンスストレージノードを導入する必要がある場合は、リンク：../installconfig/automating-appliance-installation-and-configuration.html#automate-with-configure-sga-py-scriptを使用してインストールプロセスを自動化できます。[`configure-sga.py` アプライアンスインストールスクリプト]をクリックします。
 
 

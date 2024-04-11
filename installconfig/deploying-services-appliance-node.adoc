@@ -49,7 +49,7 @@ StorageGRID アプライアンスインストーラのホームページが表�
 +
 .. インストールアーカイブをダウンロードします。
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
 
 .. アーカイブを展開します。
 .. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
@@ -57,10 +57,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[アプライアンスインストーラ - 現在のソフトウェアを削除します]
 
-.. ダウンロードして解凍したソフトウェアパッケージの [*Browse*]( 参照 ) をクリックし、チェックサムファイルの [*Browse*]( 参照 ) をクリックします。
-+
-image::../media/appliance_installer_upload_sg_software.png[アプライアンスインストーラ - SG ソフトウェアのアップロード]
-
+.. [参照]*をクリックして、ダウンロードして展開したソフトウェアパッケージを指定します。を選択します `storagegrid-webscale-images-_version_.deb` パッケージ。
 .. ホームページに戻るには、「 * Home * 」（ホーム）を選択します。
 
 
@@ -103,7 +100,7 @@ StorageGRID をサービスアプライアンスノードにインストール�
 * プライマリ管理ノードの IP アドレスおよびアプライアンスノードの名前を指定または確認します。
 * インストールを開始し、ソフトウェアがインストールされるまで待ちます。
 +
-アプライアンスゲートウェイノードのインストールが一時停止します。インストールを再開するには、 Grid Manager にサインインし、グリッドノードをすべて承認し、 StorageGRID のインストールプロセスを完了します。非プライマリ管理ノードをインストールする場合、承認は必要ありません。
+アプライアンスゲートウェイノードのインストールが一時停止します。インストールを再開するには、 Grid Manager にサインインし、グリッドノードをすべて承認し、 StorageGRID のインストールプロセスを完了します。
 
 
 
@@ -162,7 +159,7 @@ IP を手動で入力します
 +
 .. インストールアーカイブをダウンロードします。
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
 
 .. アーカイブを展開します。
 .. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
@@ -170,10 +167,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[アプライアンスインストーラ - 現在のソフトウェアを削除します]
 
-.. ダウンロードして解凍したソフトウェアパッケージの [*Browse*]( 参照 ) をクリックし、チェックサムファイルの [*Browse*]( 参照 ) をクリックします。
-+
-image::../media/appliance_installer_upload_sg_software.png[アプライアンスインストーラ - SG ソフトウェアのアップロード]
-
+.. [参照]*をクリックして、ダウンロードして展開したソフトウェアパッケージを指定します。を選択します `storagegrid-webscale-images-_version_.deb` パッケージ。
 .. ホームページに戻るには、「 * Home * 」（ホーム）を選択します。
 
 
@@ -183,10 +177,7 @@ image::../media/appliance_installer_upload_sg_software.png[アプライアンス
 
 . StorageGRID アプライアンスインストーラのホームページで、 * インストールの開始 * をクリックします。
 +
-image::../media/appliance_installer_services_appliance_non_pan.png[Appliance Installer Home - 非プライマリ管理ノードをインストールします]
-
-+
-現在の状態が「 Installation is in progress 」に変わり、「 Monitor Installation 」ページが表示されます。
+現在の状態が「Installation is in progress」に変わり、 link:../installconfig/monitoring-appliance-installation.html["[Monitor Installation]ページ"] が表示されます
 
 +
 
