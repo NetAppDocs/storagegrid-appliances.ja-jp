@@ -46,7 +46,7 @@ image::../media/SGF6112-battery-cmos.png[CMOSバッテリクリップ]
 +
 image::../media/sgf6112_two-slot-riser_alignment_hole.png[大型ライザーアセンブリの位置合わせ穴]
 
-. システム基板上のガイドピンの位置を確認します。
+. システム基板上のガイドピンの位置を確認します
 +
 image::../media/sgf6112_two-slot-riser_guide-pin.png[2スロットライザーアセンブリ用のシステム基板上のガイドピン]
 
@@ -68,7 +68,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[2スロットライザー�
 .. に記載されているパスワードを入力します `Passwords.txt` ファイル。
 
 
-. 次のいずれかのオプションを使用して、アプライアンスのBMCネットワーク接続をリストアします。
+. アプライアンスのBMCネットワーク接続をリストアします。次の 2 つのオプションがあります。
 +
 ** 静的IP、ネットマスク、およびゲートウェイを使用します
 ** DHCPを使用して、IP、ネットマスク、およびゲートウェイを取得します

@@ -34,9 +34,19 @@ StorageGRIDアプライアンスインストーラに最初にアクセスする
 image::../media/sg100_admin_network_port.png[SG100 上の管理ネットワークポート]
 
 --
+.SG110
+--
+image::../media/sg6100_admin_network_port.png[SG110の管理ネットワークポート]
+
+--
 .SG1000 からのアクセス
 --
 image::../media/sg1000_admin_network_port.png[SG1000 の管理ネットワークポート]
+
+--
+.SG1100
+--
+image::../media/sg1100_admin_network_port.png[SG1100の管理ネットワークポート]
 
 --
 .E5700SG
@@ -105,11 +115,25 @@ image::../media/appliance_installer_home_5700_5600.png[StorageGRID Webscale ア�
 image::../media/sg100_link_local_port.png[SG100 リンク - ローカル接続]
 
 --
+.SG110
+--
+イーサネットケーブルを使用して、サービスラップトップをアプライアンスの右端のRJ-45ポートに直接接続します。
+
+image::../media/sg6100_link_local_port.png[SG110のリンクローカル接続]
+
+--
 .SG1000 からのアクセス
 --
 イーサネットケーブルを使用して、サービスラップトップをサービスアプライアンスの右端の RJ-45 ポートに直接接続します。
 
 image::../media/sg1000_link_local_port.png[SG1000のリンクローカル接続]
+
+--
+.SG1100
+--
+イーサネットケーブルを使用して、サービスラップトップをアプライアンスの右端のRJ-45ポートに直接接続します。
+
+image::../media/sg1100_link_local_port.png[SG1100のリンクローカル接続]
 
 --
 .E5700SG

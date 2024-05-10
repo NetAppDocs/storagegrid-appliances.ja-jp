@@ -21,6 +21,8 @@ entries:
       url: "/installconfig/reviewing-appliance-network-connections.html"
     - title: SG100およびSG1000
       url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG110およびSG1100
+      url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
     - title: SG6000を使用します
@@ -42,6 +44,8 @@ entries:
     entries:
     - title: SG100およびSG1000
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG110およびSG1100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
     - title: SG6000を使用します
@@ -85,7 +89,7 @@ entries:
       url: "/installconfig/verifying-port-level-network-connections.html"
   - title: SANtricityシステムマネージャのセットアップ（SG5700およびSG6000）
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
-  - title: BMCインターフェイスの設定（SG100、SG1000、SG6000、SG6100）
+  - title: BMCインターフェイスの設定（SG100、SG110、SG1000、SG1100、SG6000、 およびSG6100）
     entries:
     - title: 概要
       url: "/installconfig/configuring-bmc-interface.html"
@@ -118,6 +122,8 @@ entries:
     url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
   - title: インストールのトラブルシューティング（SG100およびSG1000）
     url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: インストールのトラブルシューティング（SG110およびSG1100）
+    url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
   - title: インストールのトラブルシューティング（SG5700またはSG6000）
     url: "/installconfig/troubleshooting-hardware-installation.html"
   - title: インストールのトラブルシューティング（SG6100）

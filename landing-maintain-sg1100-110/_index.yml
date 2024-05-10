@@ -1,0 +1,33 @@
+---
+indexpage:
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: ロケーションLEDのオン/オフ
+      url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
+    - title: データセンターにアプライアンスを配置します
+      url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"
+    - title: アプライアンスの電源のオン/オフ
+      url: "../sg110-1100/power-sg110-and-sg1100-off-on.html"
+    - title: リンク設定を変更します
+      url: "../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html"
+  - title: ラックの手順
+    links:
+    - title: SG110またはSG1100アプライアンスの交換
+      url: "../sg110-1100/replacing-sg110-and-sg1100-appliance.html"
+    - title: ラック内のSG110またはSG1100の再配置
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html"
+  - title: ハードウェアの手順
+    links:
+    - title: カバーを交換します
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-cover.html"
+    - title: 電源装置を交換してください
+      url: "../sg110-1100/replacing-one-or-more-power-supplies-in-sg110-and-sg1100-appliance.html"
+    - title: ファンを交換します
+      url: "../sg110-1100/replacing-fan-in-sg110-and-sg1100.html"
+    - title: ドライブを交換します
+      url: "../sg110-1100/replacing-drive-in-sg110-and-sg1100.html"
+    - title: NICを交換してください
+      url: "../sg110-1100/replace-nic-in-sg110-and-sg1100.html"
+    - title: CMOSバッテリを交換してください
+      url: "../sg110-1100/replace-cmos-in-sg110-and-sg1100.html"

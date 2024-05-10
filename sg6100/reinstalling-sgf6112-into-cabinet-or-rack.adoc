@@ -81,4 +81,4 @@ NOTE: パフォーマンスの低下を防ぐため、ケーブルをねじっ�
 
 
 .完了後
-link:powering-on-sgf6112-and-verifying-operation.html["アプライアンスの再起動"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["アプライアンスの再起動"]。

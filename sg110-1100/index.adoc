@@ -1,0 +1,20 @@
+---
+permalink: sg110-1100/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, maintain, maintaining, hardware, procedures, tasks 
+summary: アプライアンスのメンテナンス作業が必要になることがあります。このセクションの手順は、アプライアンスが StorageGRID システムにゲートウェイノードまたは管理ノードとしてすでに導入されていることを前提としています。 
+---
+= SG110およびSG1100アプライアンスのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスのメンテナンス作業が必要になることがあります。このセクションの手順は、アプライアンスが StorageGRID システムにゲートウェイノードまたは管理ノードとしてすでに導入されていることを前提としています。
+
+ここでは、SG110またはSG1100アプライアンスのメンテナンスに固有の手順について説明します。
+
+を参照してください link:../commonhardware/index.html["一般的な手順"] すべてのアプライアンスで使用するメンテナンス手順。
+
+を参照してください link:../installconfig/configuring-hardware.html["ハードウェアをセットアップする"] アプライアンスの初期インストールおよび設定時にも実行されるメンテナンス手順。

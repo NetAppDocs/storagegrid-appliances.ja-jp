@@ -6,8 +6,8 @@ entries:
 - title: 概要
   pdf-filename: SG6100ハードウェアのメンテナンス
   url: "/sg6100/index.html"
-- title: 設定のメンテナンス手順
-  pdf-filename: 設定メンテナンス手順- SG6100
+- title: メンテナンス設定手順
+  pdf-filename: メンテナンス設定手順- SG6100
   entries:
   - title: "[ドライブの管理]タブを使用"
     url: "/sg6100/manage-drives-tab.html"

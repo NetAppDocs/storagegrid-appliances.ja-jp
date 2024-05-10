@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: BMC, baseboard management controller, configure, setup, set up 
 summary: SG6100、SG6000、またはサービスアプライアンスのベースボード管理コントローラ（BMC\）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、アプライアンスのSNMP設定やその他のオプションを設定できます。 
 ---
-= BMCインターフェイス：概要（SG100、SG1000、SG6000、SG6100）
+= BMCインターフェイス：概要（SG100、SG110、SG1000、SG1100、SG6000、 およびSG6100）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

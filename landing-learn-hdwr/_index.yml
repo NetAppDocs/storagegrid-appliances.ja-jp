@@ -8,7 +8,7 @@ indexpage:
     - title: StorageGRID の詳細をご覧ください
       url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
     - title: StorageGRID クイックスタート
-      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
     - title: アプライアンスのインストールのクイックスタート
       url: "../installconfig/index.html"
   - title: ストレージアプライアンスの詳細
@@ -23,3 +23,5 @@ indexpage:
     links:
     - title: SG100 および SG1000 サービスアプライアンス
       url: "../installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG110およびSG1100サービスアプライアンス
+      url: "../installconfig/hardware-description-sg110-and-1100.html"

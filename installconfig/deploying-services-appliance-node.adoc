@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
-keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。すべてのサービスアプライアンスは、ゲートウェイノードと管理ノード\（プライマリまたは非プライマリ\）として同時に動作できます。 
 ---
 = サービスアプライアンスノードを導入する
@@ -105,7 +105,7 @@ StorageGRID をサービスアプライアンスノードにインストール�
 
 
 
-NOTE: SG100とSG1000サービスアプライアンスを同じサイトに導入しないでください。パフォーマンスが予測不能になる可能性があります
+IMPORTANT: パフォーマンスレベルの異なるサービスアプライアンス（SG100またはSG110とSG1000またはSG1100など）を同じサイトに混在させると、ハイアベイラビリティグループで複数のノードを使用したり、複数のサービスアプライアンス間でクライアント負荷を分散したりした場合に、原因で予測不可能で一貫性のない結果が生じる可能性があります。
 
 
 NOTE: 一度に複数のアプライアンスノードを導入する必要がある場合は、インストールプロセスを自動化できます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。

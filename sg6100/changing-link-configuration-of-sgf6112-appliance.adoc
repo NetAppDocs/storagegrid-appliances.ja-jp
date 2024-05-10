@@ -28,7 +28,8 @@ NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモー�
 
 +
 
-NOTE: アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。リンク../Maintain/changing-nodes-network-configuration.htmlを実行します。[`change-ip` Command）アプライアンスをStorageGRIDでリブートしたあとに、
+NOTE: アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。を実行します
+[`change-ip` Command）アプライアンスをStorageGRIDでリブートしたあとに、
 
 . 選択に問題がなければ、 * 保存 * をクリックします。
 +

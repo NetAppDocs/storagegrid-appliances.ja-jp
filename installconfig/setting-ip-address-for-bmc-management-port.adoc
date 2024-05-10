@@ -27,9 +27,19 @@ ConfigBuilderを使用してJSONファイルを生成する場合は、IPアド�
 image::../media/sg100_bmc_management_port.png[SG100のBMC管理ポート]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[BMC管理ポートSG110]
+
+--
 .SG1000 からのアクセス
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理ポート]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[BMC管理ポートSG1100]
 
 --
 .SG6000を使用します

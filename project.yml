@@ -25,6 +25,8 @@ sidebar:
       entries:
       - title: SG100 および SG1000 サービスアプライアンス
         url: "/installconfig/hardware-description-sg100-and-1000.html"
+      - title: SG110およびSG1100サービスアプライアンス
+        url: "/installconfig/hardware-description-sg110-and-1100.html"
       - title: SG5700ストレージアプライアンス
         url: "/installconfig/hardware-description-sg5700.html"
       - title: SG6000 ストレージアプライアンス
@@ -46,6 +48,7 @@ sidebar:
       - title: アプライアンスノードをクローニングする
         url: "/commonhardware/appliance-node-cloning-procedure.html"
     - section: sg100-1000
+    - section: sg110-1100
     - section: sg5600
     - section: sg5700
     - section: sg6000
