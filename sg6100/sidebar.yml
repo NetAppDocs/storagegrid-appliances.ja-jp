@@ -83,8 +83,4 @@ entries:
     - title: E4000コントローラ（SG6160）
       url: "/sg6100/replace-controller-e4000-duplex.html"
   - title: ラック内での再配置
-    entries:
-    - title: SGF6112を参照してください
-      url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
-    - title: SG6100-CNコントローラ（SG6160）
-      url: "/sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
