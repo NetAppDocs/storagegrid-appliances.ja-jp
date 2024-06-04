@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、アプライアンスの場所を確認します。 
 ---
-= データセンターでSGF6112アプライアンスの場所を確認します
+= データセンターでのSGF6112アプライアンスまたはSG6100-CNコントローラの場所の確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,6 +38,6 @@ image::../media/sgf6112_front_panel_service_led_on.png[前面識別 LED オン]
 
 
 .完了後
-link:turning-sgf6112-identify-led-on-and-off.html["青色の識別LEDを消灯します。"] アプライアンスの場所を確認するために使用した場合。
+link:turning-sgf6112-identify-led-on-and-off.html["青色の識別LEDを消灯します。"] アプライアンスの場所を確認するには、次のいずれかの方法を使用します。
  **アプライアンスの前面パネルにある識別LEDスイッチを押します。
  **アプライアンスのBMCインターフェイスを使用します。

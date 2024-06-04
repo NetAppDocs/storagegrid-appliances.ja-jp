@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112 
 summary: アプライアンス内で交換するハードウェアコンポーネントが不明な場合は、この手順 に記入して、データセンター内のアプライアンスのコンポーネントと場所を特定します。 
 ---
-= SGF6112で交換するコンポーネントを確認します
+= SGF6112またはSG6100-CNで交換するコンポーネントを確認します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -40,6 +40,7 @@ StorageGRID アプライアンスのタイプごとに固有のメンテナン�
 
 * link:../sg6100/index.html["SG6100アプライアンスのメンテナンス"]
 * link:../sg6000/index.html["SG6000アプライアンスのメンテナンス"]
+* link:../sg5800/index.html["SG5800アプライアンスのメンテナンス"]
 * link:../sg5700/index.html["SG5700 アプライアンスをメンテナンスする"]
 * link:../sg110-1100/index.html["SG110およびSG1100アプライアンスのメンテナンス"]
 * link:../sg100-1000/index.html["SG100およびSG1000アプライアンスのメンテナンス"]

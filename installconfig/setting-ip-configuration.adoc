@@ -23,6 +23,7 @@ ConfigBuilderを使用してJSONファイルを生成する場合は、IPアド�
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["SG100またはSG1000サービスアプライアンスのリンク設定を変更します"]
 * link:../sg110-1100/changing-link-configuration-of-services-appliance.html["SG110またはSG1100サービスアプライアンスのリンク設定を変更する"]
 * link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["E5700SG コントローラのリンク設定の変更"]
+* link:../sg5800/changing-link-configuration-of-sg5800-controller.html["SG5800コントローラのリンク設定を変更する"]
 * link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["SG6000-CNコントローラのリンク設定を変更します"]
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["SG6100アプライアンスのリンク設定を変更します。"]
 

@@ -1,0 +1,29 @@
+---
+indexpage:
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: リンク設定を変更します
+      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+    - title: SANtricityのアップグレード
+      url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
+    - title: ドライブファームウェアをアップグレードします
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: ハードウェアの手順
+    links:
+    - title: SG5800コンピューティングコントローラの交換
+      url: "../sg5800/replace-controller-sg5800.html"
+    - title: E4000ストレージコントローラの交換
+      url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: ファンキャニスターの交換
+      url: "../sg5800/replace-fan-canister.html"
+    - title: 電源キャニスターの交換
+      url: "../sg5800/replace-power-canister.html"
+    - title: バッテリの交換
+      url: "../sg5800/replace-battery-e4000.html"
+    - title: DIMM を交換します
+      url: "../sg5800/replace-dimms-e4000.html"
+    - title: ドライブを交換
+      url: "../sg5800/replace-drive-e4000.html"
+    - title: 電源装置
+      url: "../sg5800/replace-power-supply.html"

@@ -1,0 +1,20 @@
+---
+permalink: sg5800/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= SG5800アプライアンスのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E4000コントローラのSANtricity OSソフトウェアのアップグレード、SG5800コントローラのイーサネットリンク設定の変更、E4000コントローラまたはSG5800コントローラの交換、または特定のコンポーネントの交換が必要になる場合があります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。
+
+ここでは、SG5800アプライアンスのメンテナンスに固有の手順について説明します。
+
+を参照してください link:../commonhardware/index.html["一般的な手順"] すべてのアプライアンスで使用するメンテナンス手順。
+
+を参照してください link:../installconfig/configuring-hardware.html["ハードウェアをセットアップする"] アプライアンスの初期インストールおよび設定時にも実行されるメンテナンス手順。

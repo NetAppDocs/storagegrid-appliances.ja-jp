@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: ポートボンディングモード、ネットワークボンディングモード、リンク速度など、アプライアンスのイーサネットリンク設定を変更できます。 
 ---
-= SGF6112アプライアンスのリンク設定を変更します
+= SGF6112アプライアンスまたはSG6100-CNコントローラのリンク設定を変更
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

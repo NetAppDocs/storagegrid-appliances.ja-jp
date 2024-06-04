@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
 summary: メンテナンスのためにアプライアンスのカバーを取り外して内部コンポーネントにアクセスし、作業が完了したらカバーを元に戻します。 
 ---
-= SGF6112カバーを交換してください
+= SGF6112またはSG6100-CNカバーの交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

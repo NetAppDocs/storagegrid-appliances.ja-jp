@@ -9,6 +9,20 @@ entries:
 - title: メンテナンス設定手順
   pdf-filename: メンテナンス設定手順- SG6100
   entries:
+  - title: Upgrade SANtricity（SG6160）
+    entries:
+    - title: Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+      url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
+    - title: メンテナンスモードを使用したSG6160コントローラのSANtricity OSのアップグレード
+      url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html"
+  - title: SANtricity System Managerを使用したドライブファームウェアのアップグレード（SG6160）
+    entries:
+    - title: SANtricity System Managerオンライン方式を使用したSG6100ドライブファームウェアのアップグレード
+      url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: SANtricity System Managerオフライン方式を使用したSG6100ドライブファームウェアのアップグレード
+      url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: ドライブファームウェアのアップグレードエラーのトラブルシューティング
+      url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: "[ドライブの管理]タブを使用"
     url: "/sg6100/manage-drives-tab.html"
   - title: 識別LEDのオン/オフ
@@ -24,19 +38,53 @@ entries:
   entries:
   - title: 交換するコンポーネントを確認します
     url: "/sg6100/verify-component-to-replace.html"
-  - title: 1つ以上の電源装置を交換します
-    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
   - title: ファンを交換します
-    url: "/sg6100/replacing-fan-in-sgf6112.html"
+    entries:
+    - title: SGF6112またはSG6100-CN（SG6160）
+      url: "/sg6100/replacing-fan-in-sgf6112.html"
+    - title: ストレージコントローラシェルフまたは拡張シェルフ（SG6160）
+      url: "/sg6100/replace-e4000-fan-canister.html"
+  - title: 電源装置を交換してください
+    entries:
+    - title: SGF6112またはSG6100-CN（SG6160）
+      url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+    - title: ストレージコントローラシェルフまたは拡張シェルフ（SG6160）
+      url: "/sg6100/replace-6100-cn-power-canister.html"
   - title: ドライブを交換します
-    url: "/sg6100/replacing-drive-in-sgf6112.html"
+    entries:
+    - title: SGF6112を参照してください
+      url: "/sg6100/replacing-drive-in-sgf6112.html"
+    - title: SG6100-CN（SG6160）
+      url: "/sg6100/replace-drive-sg6100-cn.html"
+    - title: ストレージコントローラシェルフまたは拡張シェルフ（SG6160）
+      url: "/sg6100/replace-6160-drives-60.html"
   - title: NICを交換してください
-    url: "/sg6100/replace-nic-in-sgf6112.html"
+    entries:
+    - title: 内蔵NIC（SGF6112およびSG6160）
+      url: "/sg6100/replace-nic-in-sgf6112.html"
+    - title: 外部NIC（SG6160）
+      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
   - title: CMOSバッテリを交換してください
     url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: DIMM を交換します
+    url: "/sg6100/replace-dimms-e4000.html"
+  - title: バッテリの交換
+    url: "/sg6100/replace-battery-e4000.html"
   - title: カバーを交換します
     url: "/sg6100/reinstalling-sgf6112-cover.html"
-  - title: SGF6112アプライアンスを交換してください
-    url: "/sg6100/replacing-sgf6112-appliance.html"
-  - title: ラック内のSGF6112を移動します
-    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+  - title: 導入したSG6160に拡張シェルフを追加
+    url: "/sg6100/adding-expansion-shelf-to-deployed-sg6160.html"
+  - title: アプライアンスの交換
+    entries:
+    - title: SGF6112を参照してください
+      url: "/sg6100/replacing-sgf6112-appliance.html"
+    - title: SG6100-CNコントローラ（SG6160）
+      url: "/sg6100/replacing-sg6100-cn-controller.html"
+    - title: E4000コントローラ（SG6160）
+      url: "/sg6100/replace-controller-e4000-duplex.html"
+  - title: ラック内での再配置
+    entries:
+    - title: SGF6112を参照してください
+      url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+    - title: SG6100-CNコントローラ（SG6160）
+      url: "/sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"

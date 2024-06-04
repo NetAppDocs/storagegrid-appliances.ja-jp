@@ -3,15 +3,14 @@
 
 
 .作業を開始する前に
-* を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
+* アップグレードするSANtricity OSのバージョンを取得していない場合 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]、あなたは相談しました https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^] または https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
 * を使用することができます https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance権限またはRoot Access権限"^]。
 * を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 * プロビジョニングパスフレーズを用意します。
-* にアクセスできます https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 
 
 .このタスクについて
-SANtricity OSのアップグレードプロセスが完了するまで、他のソフトウェア更新（StorageGRID ソフトウェアのアップグレードまたはホットフィックス）を実行することはできません。SANtricity OS のアップグレードプロセスが完了する前にホットフィックスや StorageGRID ソフトウェアのアップグレードを開始しようとすると、 SANtricity OS のアップグレードページが表示されます。
+SANtricity OSのアップグレード中は、他のソフトウェアの更新（StorageGRIDソフトウェアのアップグレードまたはホットフィックス）を実行することはできません。SANtricity OS のアップグレードプロセスが完了する前にホットフィックスや StorageGRID ソフトウェアのアップグレードを開始しようとすると、 SANtricity OS のアップグレードページが表示されます。
 
 手順 は、アップグレード対象として選択されたすべての該当ノードに SANtricity OS のアップグレードが正常に適用されるまでは完了しません。各ノードの SANtricity OS を（順次）ロードする場合は 30 分以上、各 StorageGRID ストレージアプライアンスをリブートする場合は最大 90 分かかることがあります。グリッド内のSANtricity OSを使用していないノードは、この手順 の影響を受けません。
 

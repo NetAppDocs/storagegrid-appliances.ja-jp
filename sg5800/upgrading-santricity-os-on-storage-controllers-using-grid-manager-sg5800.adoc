@@ -1,0 +1,200 @@
+---
+permalink: sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 現在 SANtricity OS 08.42.20.00 \ （ 11.42 \ ）以降を使用しているストレージコントローラの場合、 Grid Manager を使用してアップグレードを適用する必要があります。 
+---
+= Grid Managerを使用してSG5800ストレージコントローラのSANtricity OSをアップグレードする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity OS 08.42.20.00（11.42）以降を現在使用しているストレージコントローラでは、Grid Managerを使用してアップグレードを適用できます。また可能です link:upgrading-santricity-os-on-storage-controller.html["メンテナンスモードを使用してアップグレードを適用する"]。
+
+.作業を開始する前に
+* アップグレードするSANtricity OSのバージョンを取得していない場合 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]、あなたは相談しました https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^] または https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
+* を使用することができます https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance権限またはRoot Access権限"^]。
+* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* プロビジョニングパスフレーズを用意します。
+
+
+.このタスクについて
+SANtricity OSのアップグレード中は、他のソフトウェアの更新（StorageGRIDソフトウェアのアップグレードまたはホットフィックス）を実行することはできません。SANtricity OS のアップグレードプロセスが完了する前にホットフィックスや StorageGRID ソフトウェアのアップグレードを開始しようとすると、 SANtricity OS のアップグレードページが表示されます。
+
+手順 は、アップグレード対象として選択されたすべての該当ノードに SANtricity OS のアップグレードが正常に適用されるまでは完了しません。各ノードの SANtricity OS を（順次）ロードする場合は 30 分以上、各 StorageGRID ストレージアプライアンスをリブートする場合は最大 90 分かかることがあります。グリッド内のSANtricity OSを使用していないノードは、この手順 の影響を受けません。
+
+
+CAUTION: 次の手順は、 Grid Manager を使用してアップグレードを実行する場合にのみ実行できます。08.42.20.00（11.42）より前のSANtricity OSをコントローラで使用している場合、アプライアンスのストレージコントローラをGrid Managerを使用してアップグレードできません。
+
+
+NOTE: この手順 は、 SANtricity OS のアップグレードに関連付けられた最新バージョンに NVSRAM を自動的にアップグレードします。NVSRAMのアップグレードファイルを別途適用する必要はありません。
+
+
+NOTE: この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。を参照してください https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"^] を参照してください。
+
+.手順
+. [download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
++
+ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。
+
+. 「 * maintenance * > * System * > * Software update * 」を選択します。
++
+image::../media/software_update_landing.png[ソフトウェアアップデートのランディングページ]
+
+. SANtricity OS アップデートセクションで、 * アップデート * を選択します。
++
+SANtricity OSのアップグレードページが表示され、各アプライアンスノードの次の詳細が表示されます。
+
++
+** ノード名
+** サイト
+** アプライアンスのモデル
+** SANtricity OSのバージョン
+** ステータス
+** 前回のアップグレードステータス
+
+
+. アップグレード可能なすべてのアプライアンスの表の情報を確認します。すべてのストレージコントローラのステータスが「Nominal」であることを確認します。いずれかのコントローラのステータスが* Unknown *である場合は、* Nodes *>*_appliance node_*>* Hardware *に移動して問題 を調査し、解決してください。
+. NetApp Support Site からダウンロードしたSANtricity OSアップグレードファイルを選択します。
++
+.. [ * 参照 * ] を選択します。
+.. ファイルを探して選択します。
+.. 「 * 開く * 」を選択します。
+
+
++
+ファイルがアップロードされて検証されます。検証プロセスが完了すると、* Browse *ボタンの横に緑色のチェックマークが付いたファイル名が表示されます。ファイル名は検証プロセスの一部であるため、変更しないでください。
+
+. プロビジョニングパスフレーズを入力し、* Continue *を選択します。
++
+アップグレードされたノードのサービスを再起動するとブラウザの接続が一時的に失われる可能性があることを示す警告ボックスが表示されます。
+
+. [はい]*を選択して、SANtricity OSのアップグレードファイルをプライマリ管理ノードにステージングします。
++
+SANtricity OS のアップグレードを開始すると、次の処理が行わ
+
++
+.. 健全性チェックが実行されます。このプロセスにより、ステータスが「 Needs Attention 」になっているノードがないかどうかが確認されます。
++
+
+NOTE: エラーが報告された場合は、エラーを解決してから、「 * Start * （開始）」を再度選択します。
+
+.. SANtricity OS Upgrade Progress テーブルが表示されます。この表には、グリッド内のすべてのストレージノードと、各ノードのアップグレードの現在のステージが表示されます。
++
+
+NOTE: すべてのアプライアンスストレージノードが表に表示されます。ソフトウェアベースのストレージノードは表示されません。アップグレードが必要なすべてのノードに対して「 * 承認」を選択します。
+
++
+image::../media/santricity_upgrade_progress_table.png[SANtricity OS のアップグレードページの「 SANtricity OS のアップグレードの進捗状況」部分を示すスクリーンショット]
+
+
+
+. 必要に応じて、リストのノードを昇順または降順でソートします。
++
+** ノード名
+** 現在のバージョン
+** 進捗状況
+** 段階
+** ステータス
+
+
++
+[検索（Search）]ボックスに用語を入力して、特定のノードを検索することもできます。
+
+. アップグレードキューに追加する準備ができたグリッドノードを承認します。承認されたノードは一度に1つずつアップグレードされます。
++
+
+CAUTION: アプライアンスストレージノードを停止およびリブートする準備ができていることを確認するまでは、そのノードのSANtricity OSのアップグレードを承認しないでください。ノードで SANtricity OS のアップグレードが承認されると、そのノードのサービスが停止し、アップグレードプロセスが開始されます。その後、ノードのアップグレードが完了すると、アプライアンスノードがリブートされます。このような処理を実行すると、ノードと通信しているクライアントで原因 サービスが中断する可能性があります。
+
++
+** すべてのストレージノードをSANtricity OSのアップグレードキューに追加するには、*[すべてを承認]*ボタンを選択します。
++
+
+NOTE: ノードのアップグレード順序が重要な場合は、ノードまたはノードのグループを1つずつ承認し、各ノードでアップグレードが完了するまで待ってから次のノードを承認します。
+
+** 1 つ以上の * 承認 * ボタンを選択して、 SANtricity OS アップグレードキューに 1 つ以上のノードを追加します。[Status]が[Nominal]でない場合、[Approve]*ボタンは無効になります。
++
+[* Approve * （承認） ] を選択すると、アップグレードプロセスによってノードをアップグレードできるかどうかが決定されます。ノードをアップグレード可能な場合は、アップグレードキューに追加されます。
+
++
+ノードによっては、選択したアップグレードファイルが意図的に適用されていないため、これらのノードをアップグレードせずにアップグレードプロセスを完了することができます。ノードが意図的にアップグレードされていない状態になると、「 complete 」（アップグレード試行）と表示され、ノードがアップグレードされなかった理由が Details 列に表示されます。
+
+
+
+. SANtricity OS アップグレードキューからノードまたはすべてのノードを削除する必要がある場合は、「 * Remove * 」または「 * Remove All * 」を選択します。
++
+ステージが Queued を超えると、「 * Remove * 」ボタンは非表示になり、 SANtricity OS のアップグレード処理からノードを削除できなくなります。
+
+. 承認された各グリッドノードに SANtricity OS のアップグレードが適用されるまで待ちます。
++
+** SANtricity OSのアップグレードの適用中にいずれかのノードの[Stage]列が「Error」になっている場合、そのノードのアップグレードは失敗しています。テクニカルサポートの助言を受けて、アプライアンスをリカバリするためにメンテナンスモードに切り替えることが必要になる場合があります。
+** ノードのファームウェアが古すぎてGrid Managerを使用してアップグレードできない場合は、[Stage]列に「Error」と表示され、ノードのSANtricity OSをアップグレードするにはメンテナンスモードを使用する必要があるという詳細情報が表示されます。エラーを解決するには、次の手順を実行します。
++
+... メンテナンスモードを使用して、「エラー」のステージが表示されるノードの SANtricity OS をアップグレードします。
+... Grid Manager を使用して、 SANtricity OS のアップグレードを再起動して完了します。
+
+
+
+
++
+承認済みのすべてのノードでSANtricity OSのアップグレードが完了すると、SANtricity OS Upgrade Progress]テーブルが閉じ、アップグレードされたノード数とアップグレードが完了した日時を示す緑のバナーが表示されます。
+
+. ノードをアップグレードできない場合は、[Details]列に表示された理由をメモして適切に対処します。
++
+
+NOTE: 表示されたすべてのストレージノードで SANtricity OS のアップグレードを承認するまで、 SANtricity OS のアップグレードプロセスは完了しません。
+
++
+[cols="1a,2a"]
+|===
+| 理由 | 推奨される対処方法 
+
+
+ a| 
+ストレージノードはすでにアップグレードされています。
+ a| 
+これ以上の操作は必要ありません。
+
+
+
+ a| 
+このノードではSANtricity OSのアップグレードは実行できません。
+ a| 
+StorageGRID システムで管理できるストレージコントローラがノードにありません。このメッセージが表示されているノードをアップグレードせずに、アップグレードプロセスを完了します。
+
+
+
+ a| 
+SANtricity OSファイルがこのノードに対応していません。
+ a| 
+ノードには、選択したファイルとは別のSANtricity OSファイルが必要です。
+現在のアップグレードが完了したら、ノードの正しい SANtricity OS ファイルをダウンロードして、アップグレードプロセスを繰り返します。
+
+|===
+. ノードの承認を終了し、 SANtricity OS ページに戻って新しい SANtricity OS ファイルのアップロードを許可する場合は、次の手順を実行します。
++
+.. [ ノードをスキップして終了 ] を選択します。
++
+該当するすべてのノードをアップグレードせずにアップグレードプロセスを終了するかどうかを確認する警告が表示されます。
+
+.. 「 * OK * 」を選択して、「 * SANtricity OS * 」ページに戻ります。
+.. ノードの承認を続行する準備ができたら、 <<download-santricity-os,SANtricity OSをダウンロードします>> をクリックしてアップグレードプロセスを再開してください。
++
+
+NOTE: すでに承認され、エラーなしでアップグレードされたノードはアップグレードされたまま
+
+
+
+. 別の SANtricity OS アップグレードファイルが必要な、完了段階のノードすべてについて、このアップグレード手順 を繰り返します。
++
+
+NOTE: ステータスが「 Needs Attention 」のノードがある場合は、メンテナンスモードを使用してアップグレードを実行します。
+
+
+
+.関連情報
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
+
+link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["メンテナンスモードを使用したE4000コントローラのSANtricity OSのアップグレード"]

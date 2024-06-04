@@ -1,0 +1,67 @@
+---
+permalink: sg5800/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, controller, e2800, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
+summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているストレージコントローラの場合、アップグレードを適用するにはメンテナンスモードの手順 を使用する必要があります。 
+---
+= メンテナンスモードを使用したE4000コントローラのSANtricity OSのアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスモードを使用して、E4000コントローラのSANtricity OSをアップグレードできます。
+
+08.42.20.00 （ 11.42 ）より前の SANtricity OS を使用しているストレージコントローラの場合、メンテナンスモード手順 を使用してアップグレードを適用する必要があります。
+
+
+NOTE: 08.42.20.00（11.42）よりも新しいSANtricity OSを現在使用しているストレージコントローラの場合は、 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Grid Managerを使用してアップグレードを適用する"]。ただし、保守モードの手順は、必要に応じて使用することも、テクニカルサポートから指示があった場合に使用することもできます。
+
+.作業を開始する前に
+* を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
+* SG5800コントローラは次の場所に配置する必要があります。 link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモード"]E4000コントローラへの接続を中断します。
++
+
+NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。
+
+
+
+.このタスクについて
+一度に複数のStorageGRID アプライアンスでEシリーズコントローラのSANtricity OSまたはNVSRAMをアップグレードしないでください。
+
+
+CAUTION: 一度に複数の StorageGRID アプライアンスをアップグレードすると、導入モデルや ILM ポリシーによっては、原因 データを使用できなくなる可能性があります。
+
+.手順
+. アプライアンスがに接続されていることを確認します link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモード"]。
+. サービスラップトップから、 SANtricity System Manager にアクセスしてサインインします。
+. 新しい SANtricity OS ソフトウェアファイルと NVSRAM ファイルを管理クライアントにダウンロードします。
++
+
+CAUTION: NVSRAM は、 StorageGRID アプライアンスに固有です。標準のNVSRAMダウンロードは使用しないでください。
+
+. SANtricityソフトウェアおよびファームウェアのアップグレードガイド_またはSANtricityシステムマネージャのオンラインヘルプに記載されている手順に従って、E4000コントローラのファームウェアとNVSRAMをアップグレードします。
++
+
+NOTE: アップグレードファイルはただちにアクティブ化する必要があります。アクティベーションを延期しないでください。
+
+. この手順 が正常に完了し、ノードを保守モードにしている間に実行する追加の手順がある場合は、すぐに実行します。処理が完了した場合、または何らかの障害が発生して最初からやり直したい場合は、 * Advanced * > * Reboot Controller * を選択し、次のいずれかのオプションを選択します。
++
+** [Reboot into StorageGRID （の再起動） ] を選択します
+** メンテナンスモードを維持したままコントローラをリブートするには、 * Reboot into Maintenance Mode * を選択します。  手順 で障害が発生したために最初からやり直す場合は、このオプションを選択します。  ノードのリブートが完了したら、障害が発生した手順 の該当する手順から再起動します。
++
+image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+
++
+アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。[Nodes]ページに正常なステータス（緑のチェックマークアイコン）が表示されます image:../media/icon_alert_green_checkmark.png["緑のチェックマーク"] （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
+
++
+image::../media/nodes_menu.png[アプライアンスノードがグリッドに再参加しました]
+
+
+
+
+
+.関連情報
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード"]

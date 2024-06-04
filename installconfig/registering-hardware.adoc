@@ -25,7 +25,7 @@ image::../media/appliance_label.gif[シリアル番号を含むラベル]
 
 NOTE: SG6000ストレージアプライアンスには複数のシリアル番号があります。SG6000アプライアンスのサービスやサポートを依頼する場合は、ストレージコントローラシェルフのシリアル番号を登録して使用する必要があります。
 
-. NetApp Support Siteにアクセスします http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. にアクセスします http://mysupport.netapp.com/["NetApp Support Site"^]。
 . ハードウェアの登録が必要かどうかを確認します。
 +
 [cols="1a,2a"]

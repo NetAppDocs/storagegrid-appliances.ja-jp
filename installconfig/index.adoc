@@ -34,8 +34,15 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100およびSG1000"]
 ** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110およびSG1100"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
+** link:installing-appliance-in-cabinet-or-rack-sg5800.html["SG5800"]
 ** link:installing-hardware-sg6000.html["SG6000を使用します"]
-** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
+** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SGF6112を参照してください"]
+** SG6160：
++
+*** link:sg6100-cn-installing-into-cabinet-or-rack.html["SG6100-CNコントローラ"]
+*** link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["60ドライブシェルフ"]
+
+
 
 
 . link:cabling-appliance.html["アプライアンスをケーブル接続します"]
@@ -57,12 +64,12 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 ** link:verifying-port-level-network-connections.html["ポートレベルのネットワーク接続を確認"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["SANtricity システムマネージャにアクセスして設定します"] （SG5700およびSG6000）
+. link:accessing-and-configuring-santricity-system-manager.html["SANtricity システムマネージャにアクセスして設定します"] （SG6160、SG5700、SG5800、SG6000）
 . link:configuring-bmc-interface.html["BMCインターフェイスを設定します"] （SG6000、SG6100、およびサービスアプライアンス）
 . オプションのセットアップ手順を実行します
 +
 ** link:optional-enabling-node-encryption.html["ノードまたはドライブの暗号化を有効にする"]
-** link:optional-changing-raid-mode.html["RAIDモードの変更（SG6000およびSG5700）"]
+** link:optional-changing-raid-mode.html["RAIDモードの変更（SG6160、SG6000、SG5860、およびSG5760）"]
 ** link:optional-remapping-network-ports-for-appliance.html["ネットワークポートを再マッピングします"]
 
 

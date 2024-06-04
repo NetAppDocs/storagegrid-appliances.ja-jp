@@ -1,10 +1,10 @@
 ---
 permalink: installconfig/troubleshooting-hardware-installation-sg6100.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6100, sgf6112,troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
+keywords: storagegrid, sg6100, sgf6112, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection, sg6160, sg5800, e4000 
 summary: 設置作業で問題が発生した場合は、ハードウェアのセットアップや接続の問題に関するトラブルシューティング情報を確認すると役立つことがあります。 
 ---
-= ハードウェアの設置に関するトラブルシューティング（SG6100）
+= ハードウェアの設置に関するトラブルシューティング（SG5800またはSG6100）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 設置作業で問題が発生した場合は、ハードウェアの�
 
 
 
-== ブート時のコードの表示
+== ブート時のコードの表示（SGF6112およびSG6160のみ）
 
 アプライアンスに電源を投入すると、 BMC に一連のブート時コードが記録されます。BMC 管理ポートに接続されているグラフィカルコンソールでこれらのコードを確認できます。
 
@@ -52,7 +52,7 @@ KVM の略
  a| 
 シリアルポート
  a| 
-** DB-9 シリアルケーブル
+** USBケーブル
 ** 仮想シリアルターミナル
 
 
@@ -91,6 +91,10 @@ KVM の略
 .. BMC の IP アドレスとログインクレデンシャルを使用して IPMI SOL に接続します。
 +
 `ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 場合によっては、デフォルトのユーザ名が「admin」ではなく「root」になることがあります。
 
 .. 仮想シリアルターミナルのコードを確認します。
 
@@ -131,6 +135,22 @@ FP
 
 
  a| 
+彼
+ a| 
+SG6160のみ：
+
+システムがストレージコントローラとの接続待ちで、 SANtricity オペレーティングシステムと同期しています。
+
+*注*：ブート手順がこの段階を過ぎない場合は、次の手順を実行します。
+
+.. SG6100-CNコントローラと2台のストレージコントローラの間の4本のインターコネクトケーブルがしっかりと接続されていることを確認します。
+.. 必要に応じて、 1 本以上のケーブルを交換し、再試行します。
+.. この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+
+
+
+
+ a| 
 HC
  a| 
 既存の StorageGRID のインストールデータがチェックされています。
@@ -154,7 +174,7 @@ StorageGRID が実行されています。
 
 
 
-== エラーコードの表示
+== エラーコードを確認する（SGF6112およびSG6160のみ）
 
 アプライアンスのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。
 
@@ -525,7 +545,7 @@ MRC ： ERR_interleave_failure
 ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。
 
 .手順
-. アプライアンスの LED と、 BMC に表示されるブートコードとエラーコードを確認します。
+. アプライアンスのLED、またはBMCに表示されるブートコードとエラーコード（装備している場合）を確認します。
 . 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
 
 
@@ -533,11 +553,41 @@ MRC ： ERR_interleave_failure
 
 == セツソクノモンタイ
 
-アプライアンスに接続できない場合は、ネットワーク問題 があるか、ハードウェアの設置が正常に完了していない可能性があります。
+
+
+=== 拡張シェルフがアプライアンスインストーラに表示されない（SG6160）
+
+設置済みの拡張シェルフがStorageGRIDアプライアンスインストーラに表示されない場合は、シェルフの設置が完了し、電源がオンになっていることを確認する必要があります。
+
+.このタスクについて
+拡張シェルフがアプライアンスに接続されていることを確認するには、 StorageGRID アプライアンスインストーラで次の情報を表示します。
+
+* ホーム * ページには、拡張シェルフに関するメッセージが表示されます。
++
+image::../media/expansion_shelf_home_page_msg.png[拡張シェルフに関するメッセージ]
+
+* Advanced * > * RAID Mode * ページには、アプライアンスに拡張シェルフが含まれているかどうかをドライブ数で示します。
+
+
+StorageGRID アプライアンスインストーラのページに拡張シェルフが表示されない場合は、この手順 に従ってください。
+
+.手順
+. 必要なすべてのケーブルがしっかりと接続されていることを確認します。を参照してください link:cabling-appliance.html["アプライアンスをケーブル接続します"]。
+. 拡張シェルフの電源がオンになっていることを確認します。を参照してください link:connecting-power-cords-and-applying-power.html["電源コードを接続して電源を投入（SG6100）"]。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+
+
+
+=== アプライアンスに接続できません
+
+ストレージアプライアンスに接続できない場合は、ネットワーク問題があるか、ハードウェアの設置が正常に完了していない可能性があります。
 
 .手順
 . アプライアンスのIPアドレスを使用してアプライアンスにpingを送信します。+
-`*ping _appliance_IP_*`
++
+`*ping _appliance/controller_IP_*`
+
 . ping からの応答がない場合は、正しい IP アドレスを使用していることを確認します。
 +
 グリッドネットワーク、管理ネットワーク、またはクライアントネットワークでのアプライアンスの IP アドレスを使用できます。
@@ -548,7 +598,7 @@ MRC ： ERR_interleave_failure
 この手順で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
 
 . ping が成功した場合は、 Web ブラウザを開きます。
-. StorageGRID アプライアンスインストーラのURLとして「+」を入力します
+. StorageGRIDアプライアンスインストーラまたはSANtricityシステムマネージャのURLを入力します。+
 `*https://_appliances_controller_IP_:8443*`
 +
 ホームページが表示されます。

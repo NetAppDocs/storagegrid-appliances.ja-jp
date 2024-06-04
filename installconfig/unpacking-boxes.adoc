@@ -166,6 +166,80 @@ image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP]
 
 
 --
+.SG5800
+--
+* * ハードウェア *
++
+SG5812アプライアンス（12ドライブ搭載）::
++
+--
+image::../media/de212c_table_size.gif[SG5812 2Uアプライアンス]
+
+--
+SG5860アプライアンス（ドライブなし）::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4Uアプライアンス]
+
+--
+アプライアンスの前面ベゼル::
++
+--
+image::../media/sg5700_front_bezels.gif[SG5812およびSG5860のベゼル]
+
+
+NOTE: あなたのベゼルは違って見えるかもしれません。
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+SG5860：NL-SASドライブ×60::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+SG5860：ハンドル::
++
+--
+image::../media/handles.gif[SG5860のハンドル]
+
+--
+SG5860：角穴ラックへの設置用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860の背面ブラケットとケージナット]
+
+--
+
+
+* *ケーブルとコネクタ*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+25GbE SFP28ケーブル×2（コントローラインターコネクト（iSCSI）用）::
++
+--
+image::../media/sg5800_25gbe_sfp28_cable.png[25GbE SFP28ケーブル]
+
+--
+
+
+
+
+--
 .SG6000を使用します
 --
 * * SG6060ハードウェア*
@@ -323,7 +397,108 @@ image::../media/sas_cable.gif[SAS ケーブル]
 --
 .SG6100
 --
-* * ハードウェア *
+* * SG6160ハードウェア*
++
+SG6100-CNコントローラ::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[SG6100-CNコントローラ]
+
+--
+E4000コントローラシェルフ（ドライブなし）::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4Uアプライアンス]
+
+--
+前面ベゼル2個::
++
+--
+image::../media/sg6000_front_bezels_for_table.gif[前面ベゼル]
+
+
+NOTE: あなたのベゼルは違って見えるかもしれません。
+
+--
+レールキット×2（取扱説明書付き）::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+NL-SAS ドライブ × 60::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[SG5860のハンドル]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860の背面ブラケットとケージナット]
+
+--
+100GbE~4x25GbEブレークアウトインターコネクトケーブル×1::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100GbE~4x25GbEブレークアウトケーブル]
+
+--
+お住まいの国に対応した4本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+* * SG6160拡張シェルフ*
++
+拡張シェルフにドライブが取り付けられていません::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4Uアプライアンス]
+
+--
+前面ベゼル::
++
+--
+image::../media/front_bezel_for_table_de460c.gif[前面ベゼル DE460C]
+
+--
+NL-SAS ドライブ × 60::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+レールキット（取扱説明書付き）×1::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[SG5860のハンドル]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860の背面ブラケットとケージナット]
+
+--
+
+
+* * SGF6112ハードウェア*
 +
 SGF6112を参照してください::
 +

@@ -34,7 +34,7 @@ summary: アプライアンスの電源を入れたら、StorageGRID で使用�
 
 === SANtricity システムマネージャ
 
-SG6000およびSG5700の場合は、SANtricity System Managerを設定します。SANtricity ソフトウェアを使用して、これらのアプライアンスのハードウェアを監視します。
+SG6160、SG6000、SG5800、およびSG5700の場合は、SANtricity System Managerを設定します。SANtricity ソフトウェアを使用して、これらのアプライアンスのハードウェアを監視します。
 
 
 
@@ -56,9 +56,9 @@ SG6000およびSG5700の場合は、SANtricity System Managerを設定します�
 
 * ストレージアプライアンス
 +
-** ハードウェアの監視に使用するSANtricity System Manager（SG5700およびSG6000）の設定
+** ハードウェアの監視に使用するSANtricity System Manager（SG5700、SG5800、SG6000、およびSG6100）の設定
 ** RAIDモードを変更します
-** SG6000-CNコントローラのBMCインターフェイスにアクセスします。
+** SG6000-CNまたはSG6100-CNコントローラのBMCインターフェイスにアクセスします。
 
 
 * サービスアプライアンス

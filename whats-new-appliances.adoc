@@ -18,6 +18,18 @@ StorageGRIDアプライアンスの新機能をご紹介します。
 
 
 
+== SG5812およびSG5860アプライアンス
+
+新しいStorageGRID SG5812およびSG5860アプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。を参照してください https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg5800.html["SG5800アプライアンス：概要"] をクリックしてください。
+
+
+
+== SG6160アプライアンス
+
+新しいStorageGRID SG6160アプライアンスには、コンピューティングコントローラ、2台のストレージコントローラと60本のドライブを搭載したストレージコントローラシェルフ、およびキャッシング用のNVMe SSDドライブが2本搭載されています。必要に応じて、60ドライブ拡張シェルフをSG6160に追加できます。を参照してください link:installconfig/hardware-description-sg6100.html["SGF6100アプライアンス：概要"] をクリックしてください。
+
+
+
 == SG110およびSG1100サービスアプライアンス
 
-新しいStorageGRID SG110およびSG1100サービスアプライアンスは、管理とロードバランシングのパフォーマンスを向上させる、進化したハードウェアアップデートです。を参照してください link:./installconfig/hardware-description-sg110-and-1100.html["SG110およびSG1100サービスアプライアンス：概要"]。
+新しいStorageGRID SG110およびSG1100サービスアプライアンスは、進化したハードウェアアップデートであり、管理とロードバランシングのパフォーマンスが向上しています。を参照してください link:./installconfig/hardware-description-sg110-and-1100.html["SG110およびSG1100サービスアプライアンス：概要"]。

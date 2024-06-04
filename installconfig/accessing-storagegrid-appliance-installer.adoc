@@ -74,9 +74,19 @@ NOTE: DHCP を使用して IP アドレスを割り当てることができな�
 
 
 --
+.SG5800
+--
+image::../media/sg5800_admin_network_port.png[SG5800コントローラの管理ネットワークポート]
+
+--
 .SG6000-CN の情報
 --
 image::../media/sg6000_cn_admin_network_port.png[SG6000-CN コントローラの管理ネットワークポート]
+
+--
+.SG6100-CN
+--
+image::../media/sg6100_cn_admin_network_port.png[SG6000-CN コントローラの管理ネットワークポート]
 
 --
 .SGF6112を参照してください
@@ -143,11 +153,25 @@ image::../media/sg1100_link_local_port.png[SG1100のリンクローカル接続]
 image::../media/e5700sg_mgmt_port_2.gif[E5700SG コントローラの管理ポート 2 の場所]
 
 --
+.SG5800
+--
+イーサネットケーブルを使用して、サービスラップトップをSG5800コントローラの管理ポート1に接続します。
+
+image::../media/sg5800_mgmt_port.png[SG5800コントローラの管理ポート1の場所]
+
+--
 .SG6000-CN の情報
 --
 イーサネットケーブルを使用して、サービスラップトップを SG6000-CN コントローラの右端の RJ-45 ポートに直接接続します。
 
 image::../media/sg6000_cn_link_local_port.png[SG6000-CN の管理ポートの場所]
+
+--
+.SG6100-CN
+--
+イーサネットケーブルを使用して、サービスラップトップをSG6100-CNコントローラの右端のRJ-45ポートに直接接続します。
+
+image::../media/sg6100_cn_link_local_port.png[SG6100-CNの管理ポートの場所]
 
 --
 .SGF6112を参照してください

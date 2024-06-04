@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg6100.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6100, sgf6112, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup 
+keywords: storagegrid, sg6100, sgf6112, SG6160, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup 
 summary: 次の表を使用して、アプライアンスに接続する各ネットワークについて必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。 
 ---
 = ネットワーク情報の収集（SG6100）
@@ -20,7 +20,7 @@ TIP: 表を使用する代わりに、ConfigBuilderに付属のワークブッ�
 
 == StorageGRID のバージョンを確認します
 
-SGF6112アプライアンスを設置する前に、StorageGRID システムで必要なバージョンのStorageGRID ソフトウェアが使用されていることを確認してください。
+SGF6112またはSG6160アプライアンスを設置する前に、StorageGRIDシステムで必要なバージョンのStorageGRIDソフトウェアが使用されていることを確認してください。
 
 [cols="1a,2a"]
 |===
@@ -32,6 +32,113 @@ SGF6112を参照してください
  a| 
 11.7以降（最新のホットフィックスを推奨）
 
+
+
+ a| 
+SG6160
+ a| 
+11.8以降（最新のホットフィックスを推奨）
+
+|===
+
+
+== SANtricityシステムマネージャへの接続
+
+SG6160アプライアンスの両方のストレージコントローラを、SANtricity System Managerで使用する管理ネットワークに接続します。上がコントローラA、下がコントローラBです。
+
+[cols="2a,1a,1a"]
+|===
+| 必要な情報 | コントローラ A の値 | コントローラ B の値 
+
+
+ a| 
+管理ポート 1 （コントローラの P1 ポート）に接続するイーサネットスイッチポート
+ a| 
+ a| 
+
+
+
+ a| 
+管理ポート 1 の MAC アドレス（ポート P1 のラベルに記載）
+ a| 
+ a| 
+
+
+
+ a| 
+DHCP によって管理ポート 1 に割り当てられた IP アドレス（電源投入後に使用可能な場合）
+
+* 注： * ストレージコントローラに接続するネットワークに DHCP サーバがある場合、ネットワーク管理者は MAC アドレスを使用して DHCP サーバによって割り当てられた IP アドレスを特定できます。
+ a| 
+ a| 
+
+
+
+ a| 
+管理ネットワークでアプライアンスに使用する静的 IP アドレス
+ a| 
+IPv4 の場合：
+
+* IPv4 アドレス：
+* サブネットマスク：
+* ゲートウェイ
+
+
+IPv6の場合：
+
+* IPv6アドレス：
+* ルーティング可能な IP アドレス：
+* ストレージコントローラルータの IP アドレス：
+
+ a| 
+IPv4 の場合：
+
+* IPv4 アドレス：
+* サブネットマスク：
+* ゲートウェイ
+
+
+IPv6の場合：
+
+* IPv6アドレス：
+* ルーティング可能な IP アドレス：
+* ストレージコントローラルータの IP アドレス：
+
+
+
+
+ a| 
+IP アドレスの形式
+ a| 
+1 つ選択してください：
+
+* IPv4
+* IPv6
+
+ a| 
+1 つ選択してください：
+
+* IPv4
+* IPv6
+
+
+
+
+ a| 
+速度と二重モード
+
+* 注： SANtricity システムマネージャ管理ネットワークのイーサネットスイッチが自動ネゴシエーションに設定されていることを確認してください。
+ a| 
+次の値でなければなりません
+
+* Autonegotiate （デフォルト）
+
+ a| 
+次の値でなければなりません
+
+* Autonegotiate （デフォルト）
+
+
 |===
 
 
@@ -39,9 +146,13 @@ SGF6112を参照してください
 
 StorageGRID の管理ネットワークは、システムの管理とメンテナンスに使用するオプションのネットワークです。アプライアンスは、アプライアンスの次の1 / 10GbEポートを使用して管理ネットワークに接続します。
 
-次の図に、SGF6112アプライアンスのRJ-45ポートを示します。
+SGF6112アプライアンスのRJ-45ポート：
 
 image::../media/sg6100_rj_45_ports_circled.png[SGF6112 RJ-45ポート]
+
+SG6100-CNコントローラのRJ-45ポート：
+
+image::../media/sg6100_cn_rj_45_ports_circled.png[SG6100-CNのRJ-45ポート]
 
 [cols="2a,1a"]
 |===
@@ -123,11 +234,12 @@ DHCP によって割り当てられた管理ネットワークポートの IP �
  a| 
 リンク速度
  a| 
-SGF6112の場合は、次のいずれかを選択します。
+1 つ選択してください：
 
 * auto （デフォルト）
 * 10GbE の場合
 * 25GbE
+* 100GbE（SG6160のみ）
 
 
 
@@ -282,7 +394,7 @@ VLAN タギングが有効です
 
 
  a| 
-VLAN タグ（ VLAN タギングが有効な場合）
+VLANタグ（VLANタギングが有効な場合）
  a| 
 0~4095 の値を入力してください：
 
@@ -318,9 +430,15 @@ NOTE: BMCを含むすべてのアプライアンスに対してリモートIPMI�
 Grid Managerで、* configuration *>* Security *>* Security settings *>* Appliances *に移動し、* Enable remote IPMI access *チェックボックスをオフにします。[+]
 グリッド管理APIで、プライベートエンドポイントを使用します。 `PUT /private/bmc`。
 
-次の図に、SGF6112アプライアンスのBMC管理ポートを示します。
+次の図は、SGF6112およびSG6100-CNのBMC管理ポートを示しています。
 
-image::../media/sgf6112_cn_bmc_management_port.png[SG6100の管理ポート]
+SGF6112_
+
+image::../media/sgf6112_cn_bmc_management_port.png[SGF6112の管理ポート]
+
+SG6100-CN_
+
+image::../media/sg6100_cn_bmc_management_port.png[SG6100-CNの管理ポート]
 
 [cols="2a,1a"]
 |===
@@ -368,7 +486,13 @@ BMC 管理ポートに使用する静的 IP アドレス
 
 Fixed ポートボンディングモードは、ネットワークポートのデフォルトの設定です。
 
+SGF6112：_
+
 image::../media/sgf6112_fixed_port.png[SGF6112 Fixed Port Bond Mode（固定ポートボンディングモード）の略]
+
+SG6100-CN：_
+
+image::../media/sg6100_cn_fixed_port.png[SG6100-CN Fixedポートボンディングモード]
 
 [cols="1a,3a"]
 |===
@@ -403,7 +527,13 @@ NOTE: 冗長接続が必要ない場合は、ネットワークごとに1つの�
 
 アグリゲートポートボンディングモードを使用すると、各 StorageGRID ネットワークのスループットが大幅に向上し、追加のフェイルオーバーパスも確保されます。
 
-image::../media/sgf6112_aggregate_ports.png[SGF6100のアグリゲートポートボンディングモード]
+SGF6112：_
+
+image::../media/sgf6112_aggregate_ports.png[SGF6112のアグリゲートポートボンディングモード]
+
+SG6100-CN：_
+
+image::../media/sg6100_cn_aggregate_ports.png[SG6100-CNのアグリゲートポートボンディングモード]
 
 [cols="1a,3a"]
 |===
@@ -435,7 +565,13 @@ NOTE: ネットワークポートを 4 つ未満にすると、アプライア�
 
 2つの1 / 10GbE管理ポートでは、オプションの管理ネットワークに接続するためのネットワークボンディングモードとして、[Independent]または[Active-Backup]を選択できます。
 
-image::../media/sgf6112_bonded_management_ports.png[ネットワーク管理ポート]
+SGF6112：_
+
+image::../media/sgf6112_bonded_management_ports.png[SGF6112のネットワーク管理ポート]
+
+SG6100-CN：_
+
+image::../media/sg6100_cn_bonded_management_ports.png[SG6100-CNのネットワーク管理ポート]
 
 [cols="1a,3a"]
 |===

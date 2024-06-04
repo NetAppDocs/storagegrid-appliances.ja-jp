@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 'Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。' 
 ---
-= [ドライブの管理]タブを使用する
+= [Manage Drives]タブを使用（SGF6112）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

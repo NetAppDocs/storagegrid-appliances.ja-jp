@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, mac, mac address 
 summary: 場合によっては、アプライアンスの交換後にMACアドレス参照の更新が必要になることがあります。 
 ---
-= MACアドレス参照を更新します
+= MACアドレス参照を更新（SG100、SG1000、SGF6024、およびSG6060）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
