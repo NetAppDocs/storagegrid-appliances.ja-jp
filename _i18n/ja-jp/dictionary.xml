@@ -4921,7 +4921,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f3a0ab2289e5d894b80255c441fc9f46" category="list-text">各ストレージコントローラに2つの10 / 25GbEポート</block>
   <block id="2e869104086dd4cd2c4b722cc80e77b6" category="paragraph">各ストレージコントローラをSG6100-CNコントローラに接続します。</block>
   <block id="776053d9d5cca53346c2eb33c73396bf" category="paragraph">5（SG6160のみ）</block>
-  <block id="d14bfbc5b95f245a7cd1ac38c7f3ce2d" category="list-text">100GbE GSFP28~4本の25GbE SFP28ケーブルを1本使用して、各ストレージコントローラの2つのインターコネクトポートをSG6100-CNコントローラの100GbEポートに接続します。</block>
   <block id="fcb7aea9a14248650fc2b4195b723923" category="cell">リンク速度（ GbE ）</block>
   <block id="20d4ad7302d59cc00a8fda9a9f549883" category="list-text">グリッドネットワークポートとクライアントネットワークポートを異なる速度で実行できるのは、リンク速度として自動ネゴシエーションが選択され、ポートボンディングモードとして[Fixed]が選択されている場合のみです。そうしないと、4つのポートすべてが同じ速度で実行されます。</block>
   <block id="76caeddfbf7a30108ac0c230c0790b19" category="paragraph">SG6160、SG6000、SG5800、およびSG5700の場合は、SANtricity System Managerを設定します。SANtricity ソフトウェアを使用して、これらのアプライアンスのハードウェアを監視します。</block>
@@ -5506,4 +5505,5 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">ラック内での再配置</block>
   <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">SG6100-CNコントローラが動作していて通常の方法でシャットダウンできる場合は、 <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>。</block>
   <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">アプライアンスコントローラには、アプライアンスコントローラのステータスを確認するためのインジケータがあります。この情報を参考にしてください <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0fdf2c022cdb2b6d6cca277318ea2b2" category="list-text">100GbE QSFP28~4本の25GbE SFP28ケーブルを1本使用して、各ストレージコントローラの2つのインターコネクトポートをSG6100-CNコントローラの100GbEポートに接続します。</block>
 </blocks>
