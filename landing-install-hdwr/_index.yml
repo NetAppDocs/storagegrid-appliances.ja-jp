@@ -10,7 +10,7 @@ indexpage:
     - title: SG6000を使用します
       url: "../installconfig/installing-hardware-sg6000.html"
     - title: SG6100
-      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+      url: "../installconfig/installing-hardware-sg6100.html"
   - title: キャビネットまたはラックへのサービスアプライアンスの設置
     links:
     - title: SG100およびSG1000

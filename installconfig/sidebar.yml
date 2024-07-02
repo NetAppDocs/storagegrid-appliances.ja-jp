@@ -67,6 +67,9 @@ entries:
         url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
     - title: SG6100
       entries:
+      - title: 概要
+        pdf-filename: SG6100をキャビネットまたはラックに設置します
+        url: "/installconfig/installing-hardware-sg6100.html"
       - title: 60ドライブシェルフの設置（SG6160）
         url: "/installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html"
       - title: 12ドライブシェルフの設置（SGF6112）
