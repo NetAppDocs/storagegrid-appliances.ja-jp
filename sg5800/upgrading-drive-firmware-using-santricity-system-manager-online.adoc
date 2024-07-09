@@ -26,9 +26,7 @@ CAUTION: 一度に複数のStorageGRID アプライアンスでドライブフ�
 
 [NOTE]
 ====
-冗長性がないボリュームに属するドライブは、を使用して更新する必要があります。 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["オフラインホウシキ"]。現在デグレード状態のプールまたはボリュームグループには、オフライン方式を使用する必要があります。
-
-を使用する必要があります link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["オフラインホウシキ"] SSDドライブのアップグレード時。
+冗長性がないボリュームに属するドライブは、を使用して更新する必要があります link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["オフラインホウシキ"]。
 
 ====
 .手順

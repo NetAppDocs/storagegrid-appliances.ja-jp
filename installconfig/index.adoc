@@ -59,7 +59,7 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 
 
 . link:accessing-and-configuring-santricity-system-manager.html["SANtricity システムマネージャにアクセスして設定します"] （SG6160、SG5700、SG5800、SG6000）
-. link:configuring-bmc-interface.html["BMCインターフェイスを設定します"] （SG6000、SG6100、およびサービスアプライアンス）
+. link:configuring-bmc-interface.html["BMCインターフェイスを設定します"] （SG6100、SG6000、およびサービスアプライアンス）
 . オプションのセットアップ手順を実行します
 +
 ** link:optional-enabling-node-encryption.html["ノードまたはドライブの暗号化を有効にする"]

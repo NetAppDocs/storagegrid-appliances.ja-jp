@@ -19,8 +19,8 @@ summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているス�
 NOTE: 08.42.20.00（11.42）よりも新しいSANtricity OSを現在使用しているストレージコントローラの場合は、 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Grid Managerを使用してアップグレードを適用する"]。ただし、保守モードの手順は、必要に応じて使用することも、テクニカルサポートから指示があった場合に使用することもできます。
 
 .作業を開始する前に
-* を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
-* SG5800コントローラは次の場所に配置する必要があります。 link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモード"]E4000コントローラへの接続を中断します。
+* アップグレードするSANtricity OSのバージョンを取得していない場合 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]、あなたは相談しました https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^] または https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
+* SG5800コントローラはに取り付ける必要があり link:../commonhardware/placing-appliance-into-maintenance-mode.html["メンテナンスモード"]ます。これにより、E4000コントローラへのI/Oがすべて停止します。
 +
 
 NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。

@@ -25,7 +25,7 @@ SG5800コントローラのイーサネットリンク設定を変更するオ�
 * ポートボンディングモード * を「 Fixed 」から「 Aggregate 」または「 Aggregate 」から「 Fixed 」に変更します
 * ネットワークボンディングモード * を Active-Backup から LACP に、または LACP から Active-Backup に変更
 * VLAN タグを有効または無効にするか、 VLAN タグの値を変更します
-* リンク速度を 10GbE から 25GbE に、または 25GbE から 10GbE に変更する
+* リンク速度を自動（推奨）、10GbE、または25GbEに変更する。
 
 
 .手順

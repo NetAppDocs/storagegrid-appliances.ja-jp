@@ -11,13 +11,13 @@ summary: SG5800 StorageGRIDアプライアンスは、StorageGRIDグリッドに
 
 
 [role="lead"]
-SG5800 StorageGRIDアプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。
+SG5800シリーズStorageGRIDアプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。
 
 StorageGRID SG5800シリーズアプライアンスには次のような特長があります。
 
 * StorageGRID ストレージノードのストレージ要素とコンピューティング要素を統合します。
 * ストレージノードの導入と設定を簡易化するために、 StorageGRID アプライアンスインストーラが搭載されています。
-* ハードウェアの管理と監視に使用する E シリーズ SANtricity System Manager が搭載されています。
+* ハードウェアの管理と監視には、EシリーズSANtricity System Managerが搭載されています。
 * StorageGRID のグリッドネットワークとクライアントネットワークとの 10GbE または 25GbE 接続を最大 4 つサポートします。
 * Full Disk Encryption（FDE）ドライブまたはFIPSドライブをサポートします。これらのドライブを SANtricity System Manager のドライブセキュリティ機能と併用すると、データへの不正アクセスを防止できます。
 
@@ -274,7 +274,7 @@ image::../media/e4000_controller_with_callouts.png[E4000コントローラのコ
 
 *注*：管理ポートを未配線のままにする場合、正確なログタイムスタンプのためのNTP同期など、一部のオプションのSANtricity機能は使用できません。
 
-*注*：管理を有線にしない場合は、StorageGRID 11.8以降およびSANtricity 11.8以降が必要です。
+*注*：管理ポートを配線しないままにする場合は、StorageGRID 11.8以降およびSANtricity 11.8以降が必要です。
 
 
 
