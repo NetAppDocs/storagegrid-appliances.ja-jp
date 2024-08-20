@@ -2650,7 +2650,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。[Nodes]ページに正常なステータス（緑のチェックマークアイコン）が表示されます <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">コンポーネントを交換する必要があるストレージアプライアンスのシリアル番号を確認しておきます。</block>
   <block id="fe96bb389ae099a3c5dcdd5b5427e3bc" category="list-text">を使用して Grid Manager にサインインします<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
-  <block id="7aa733436808f3ef7dbb843f0bfd7537" category="paragraph">この手順を使用して、ハードウェアに障害が発生したアプライアンスを特定し、交換可能なハードウェアコンポーネントのうち、適切に動作していないものを特定します。交換対象として特定される可能性のあるコンポーネントは次のとおりです。</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">電源装置</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">ファン</block>
   <block id="3907a0fffff4b13006f3069d9186c0d5" category="list-text">ソリッドステートドライブ（SSD）</block>
@@ -5517,4 +5516,58 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="32560f7f516484a70333e63586d49ee8" category="list-text">アプライアンスの前面パネルにある識別LEDスイッチを押します。</block>
   <block id="84f9f6b07fa3b7c2043dcb10969d9836" category="list-text">アプライアンスのBMCインターフェイスを使用します。</block>
   <block id="c3767fd24594af27204c85f38e6485de" category="admonition">アプライアンスがメンテナンスモードの間は、停止を伴うストレージ処理を安全に行うために、ストレージコントローラへのI/O（入出力）アクティビティが停止します。</block>
+  <block id="a5c480dfbb1146eeb42a0bcc0d8bbbb4" category="paragraph">この手順を使用して、ハードウェアに障害が発生したアプライアンスを特定し、交換可能なハードウェアコンポーネントのうち、適切に動作していないものを特定します。交換対象として特定される可能性のあるコンポーネントには、次のものがあります。</block>
+  <block id="a26cdf0f1745cbb76eb5328668e38b6f" category="image-alt">ライザーアセンブリの位置</block>
+  <block id="48588d23b204532125483be8736cc62b" category="list-text">指またはプラスチック製のこじ開け工具を使用して、固定クリップをバッテリから押し出し、ソケットからスプリングします。</block>
+  <block id="65dc474701428334be6aca7529908454" category="image-alt">ライザーアセンブリの位置合わせ穴</block>
+  <block id="665f25079cb5accd5eb43f2913b6c37f" category="doc">SG100またはSG1000アプライアンスのカバーの交換</block>
+  <block id="f1d6d43707540812eb946d45ccef5ec4" category="section-title">SG100またはSG1000アプライアンスのカバーの取り外し</block>
+  <block id="64e8eab7438cec59cd0671f1a5e3dbb6" category="paragraph">アプライアンスのカバーを取り外して、メンテナンスのために内部コンポーネントにアクセスします。</block>
+  <block id="b1d5df074b99621759036a9121b85e98" category="paragraph">上部カバーに手が届くように、キャビネットまたはラックからアプライアンスを取り外します。</block>
+  <block id="511c877284f772f66774598abeeea6f5" category="inline-link-macro">キャビネットまたはラックからのSG100またはSG1000アプライアンスの取り外し</block>
+  <block id="2285eddd6702074129ac0f1ecda4b2f4" category="paragraph"><block ref="2285eddd6702074129ac0f1ecda4b2f4" category="inline-link-macro-rx"></block></block>
+  <block id="b0e7c1ff76e24cb7116c6fb8b809271c" category="image-alt">カバーラッチが開いている</block>
+  <block id="827c9e961d14d7b5f5337e655b29df10" category="section-title">SG100またはSG1000アプライアンスカバーの再取り付け</block>
+  <block id="e1095c022f98a1bb69eb7e440dbb0ced" category="paragraph">内部ハードウェアのメンテナンスが完了したら、アプライアンスのカバーを再度取り付けます。</block>
+  <block id="7b6a35b28349993ccb044f99d3cb9c05" category="image-alt">カバーラッチアライメントピン</block>
+  <block id="77e20811baef645173a9afd272aed5f2" category="inline-link-macro">キャビネットまたはラックにアプライアンスを再度取り付けます。</block>
+  <block id="fee143211358506f5958deb39267a94d" category="paragraph"><block ref="fee143211358506f5958deb39267a94d" category="inline-link-macro-rx"></block></block>
+  <block id="8d74142d0d3a9120da2ba9c70236cdd6" category="summary">ハードウェアのメンテナンスが完了したら、キャビネットまたはラックからSG100またはSG1000を取り外して上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。</block>
+  <block id="a5b8a777a1b08a83ca76ba17d2003033" category="doc">キャビネットまたはラック内のSG100またはSG1000の移動</block>
+  <block id="5fc59c0417d710999eccabc5f2b53e54" category="paragraph">SG100またはSG1000アプライアンスをキャビネットまたはラックから取り外して上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。ハードウェアのメンテナンスが完了したら、アプライアンスをキャビネットまたはラックに再度取り付けます。</block>
+  <block id="4faf0e30b4acd7fb71c04eecc674f9bb" category="section-title">キャビネットまたはラックからのSG100またはSG1000の取り外し</block>
+  <block id="1e2dad3dc1303cb9c34342a08ac369c2" category="paragraph">キャビネットまたはラックからSG100またはSG1000を取り外して、上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。</block>
+  <block id="fd4bc1e04629aac76e335abbe4b95110" category="list-text">SG100またはSG1000アプライアンスに接続する各ケーブルを識別するためのラベルを用意しておきます。</block>
+  <block id="00265604d07e83e9fa37acfb58aea0a6" category="list-text">データセンターでメンテナンスを実施するSG100またはSG1000アプライアンスの物理的な場所を確認しておきます。</block>
+  <block id="e062f7e106df68638e79abdb18fac222" category="paragraph"><block ref="e062f7e106df68638e79abdb18fac222" category="inline-link-macro-rx"></block></block>
+  <block id="0fcf830f0c15b1400c1db9718be45ada" category="inline-link-macro">SG100またはSG1000アプライアンスをシャットダウンする</block>
+  <block id="5c1320f429c4112c2bba2f8f6cb8fa01" category="list-text">そうだな <block ref="f1505d4606b132b8853f29fe0a332652" category="inline-link-macro-rx"></block></block>
+  <block id="9b0bec7300d43ef7de3808046f83438c" category="list-text">マウント・レールが完全に伸び、両側のラッチがカチッという音がするまで、アプライアンスをラックから前方にスライドさせます。</block>
+  <block id="72c93dbd5f5d24a30424f10682ce2429" category="section-title">キャビネットまたはラックへのSG100またはSG1000の再取り付け</block>
+  <block id="605201180c8af58706d2950dc2815425" category="paragraph">ハードウェアのメンテナンスが完了したら、アプライアンスをキャビネットまたはラックに再度取り付けます。</block>
+  <block id="185e5b18a157d76176305c8be330d521" category="inline-link-macro">SG100またはSG1000のカバーを再度取り付けます。</block>
+  <block id="134ec335795fdd11457bc3cf0025baf5" category="paragraph"><block ref="134ec335795fdd11457bc3cf0025baf5" category="inline-link-macro-rx"></block></block>
+  <block id="e3cda821d00824f87e103cfa79fa642c" category="list-text">青色のレールを押して両方のラックレールを同時に外し、完全に装着されるまでアプライアンスをラックにスライドさせます。</block>
+  <block id="684fc7e3b4be959ee39744c82078ef0c" category="image-alt">ラック固定ネジ</block>
+  <block id="c934d158cd3ec0bfbf3cbdd7b7827955" category="list-text">アプライアンスの電源ケーブルを再接続します。</block>
+  <block id="05c9535932e03bb8444cfbfc967af3e2" category="inline-link-macro">電源コードを接続して電源を投入（SG100またはSG1000）</block>
+  <block id="a76302d15eb6041c12b94bdbf80ddf79" category="paragraph"><block ref="a76302d15eb6041c12b94bdbf80ddf79" category="inline-link-macro-rx"></block></block>
+  <block id="bbbfb5089b20d2a9a438d1f300dc3951" category="paragraph">アプライアンスを再起動できます。</block>
+  <block id="1aab7af93e422001302d3d72d844aa68" category="doc">SG100またはSG1000のCMOSバッテリの交換</block>
+  <block id="2de23f109c4b7a2ebaf85dfa94d803d2" category="inline-link-macro">CMOSバッテリを交換する必要があるSG100またはSG1000を確認</block>
+  <block id="d31100686fc52b53392732b7d3ae0dbb" category="list-text">そうだな <block ref="fcfad0bf3ec87a01189dcc7ef62e31e5" category="inline-link-macro-rx"></block></block>
+  <block id="76dc6b7b32167d9bd3a9ee4280cd472c" category="inline-link-macro">SG100またはSG1000アプライアンスの物理的な場所</block>
+  <block id="295f39bc37ea49d39fdef10ffc386a4d" category="list-text">データセンターのCMOSバッテリを交換する場所を用意しておきます <block ref="1c34acfb2667f43feb9d3c66f2b8ed39" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7d406e9712f1c209336e5e697cc447ef" category="admonition">アプライアンスをラックから取り外す前に、が <block ref="db7c721060dced196b796faf173aec6a" category="inline-link-macro-rx"></block> 必要です。</block>
+  <block id="126a827d213a0e5e13049b3f4047c548" category="list-text">すべてのケーブルとを外しておき <block ref="b4ae088a94cfd6b68a1d3b21b7e66f50" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="20015455ab5d561bb2f053becbe04427" category="doc">SG100またはSG1000で交換するコンポーネントを確認します。</block>
+  <block id="155f05305b468da8a62a625c5bb46d08" category="paragraph"><block ref="155f05305b468da8a62a625c5bb46d08" category="inline-link-macro-rx"></block></block>
+  <block id="a3920e91582773914df89ce69b0b4103" category="doc">SG6000-CN CMOSバッテリの交換</block>
+  <block id="b3b2dfaac1200c3b68a403bd40179bdf" category="list-text">そうだな <block ref="1ec8c115f0c3870ab94b38ffe7b9d363" category="inline-link-macro-rx"></block></block>
+  <block id="52f39f79f4d9a5685bc2024f2a087065" category="list-text">データセンターのCMOSバッテリを交換する場所を用意しておきます <block ref="f706bf55d44d59c0b4f06acfce2f61ee" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a1294f5ec4aea9551adb3b8c8723fea7" category="admonition">アプライアンスをラックから取り外す前に、が <block ref="01cb3624578c0b6333a3e47dc48ec415" category="inline-link-macro-rx"></block> 必要です。</block>
+  <block id="27a168d0228d72534f07ee949d2796ff" category="list-text">すべてのケーブルとを外しておき <block ref="15196f495d147a32d6ddc13b14aad025" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="10fa39edb4e5d5fc91498d5271535f37" category="doc">SG6000-CNで交換するコンポーネントを確認します</block>
+  <block id="ca37341c514b082d1be600ae89827bce" category="sidebar">ラック内のSG100またはSG1000の再配置</block>
+  <block id="530a7cab0d75789e4984b34660953995" category="sidebar">SG6000-CNコントローラのCMOSバッテリの交換</block>
 </blocks>

@@ -1,6 +1,17 @@
-= 
+---
+permalink: sg6000/verify-component-to-replace-sg6000cn.html 
+sidebar: sidebar 
+keywords: sg6000-cn 
+summary: アプライアンス内で交換するハードウェアコンポーネントが不明な場合は、この手順 に記入して、データセンター内のアプライアンスのコンポーネントと場所を特定します。 
+---
+= SG6000-CNで交換するコンポーネントを確認します
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
+
+[role="lead"]
+アプライアンス内で交換するハードウェアコンポーネントが不明な場合は、この手順 に記入して、データセンター内のアプライアンスのコンポーネントと場所を特定します。
 
 .作業を開始する前に
 * コンポーネントを交換する必要があるストレージアプライアンスのシリアル番号を確認しておきます。
@@ -55,3 +66,6 @@ image::../media/nic-alert-sgf6112.jpg[コンポーネントIDのアラート]
 データセンターでアプライアンスの場所を確認するには、BMCのIPアドレスを使用してアプライアンスの識別LEDを点灯します。
 
 
+
+.関連情報
+link:turning-controller-identify-led-on-and-off.html["アプライアンスの識別LEDをオンにする"]

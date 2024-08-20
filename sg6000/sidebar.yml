@@ -35,6 +35,8 @@ entries:
 - title: ハードウェアの手順
   pdf-filename: ハードウェアの手順- SG6000
   entries:
+  - title: 交換するコンポーネントを確認します
+    url: "/sg6000/verify-component-to-replace-sg6000cn.html"
   - title: 導入済み SG6060 に拡張シェルフを追加します
     url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
   - title: ストレージコントローラを交換します
@@ -47,6 +49,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: SG6000-CN コントローラの一方または両方の電源装置を交換します
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: SG6000-CNコントローラのCMOSバッテリの交換
+    url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: ラック内のコントローラを交換します
     url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
   - title: コントローラのカバーを取り付けます

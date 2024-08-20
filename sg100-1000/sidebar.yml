@@ -20,11 +20,19 @@ entries:
 - title: ハードウェアの手順
   pdf-filename: ハードウェアの手順- SG100およびSG1000
   entries:
+  - title: 交換するコンポーネントを確認します
+    url: "/sg100-1000/verify-component-to-replace-sg100-and-sg1000.html"
+  - title: カバーを交換します
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
   - title: 一方または両方の電源装置を交換してください
     url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
   - title: ファンを交換します
     url: "/sg100-1000/replacing-fan-in-services-appliance.html"
   - title: ドライブを交換します
     url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: CMOSバッテリを交換してください
+    url: "/sg100-1000/replace-cmos-in-sg100-and-sg1000.html"
   - title: アプライアンスの交換
     url: "/sg100-1000/replacing-services-appliance.html"
+  - title: ラック内のアプライアンスの再配置
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"
