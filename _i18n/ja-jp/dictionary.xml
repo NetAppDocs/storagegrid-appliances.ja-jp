@@ -5691,7 +5691,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="6caee75b38d61d4801420e3aec0b9ea6" category="paragraph">次の図は、SG6100アプライアンス前面のインジケータとボタンを示しています。</block>
   <block id="fe624da545a0997cc5d2c3d30f369af3" category="paragraph">次の図に、SGF6112およびSG6100-CNの背面にある電源装置の場所とLEDを示します。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
   <block id="f95ca0912808abe2270cd1f418b6e89a" category="image-alt">SGF6112およびSG6100-CNの背面LED</block>
-  <block id="0f47986745ce840c10499664283d7b6b" category="paragraph"><block ref="0f47986745ce840c10499664283d7b6b" category="inline-link-rx"></block></block>
   <block id="810b48be331213357ad3b610c2ba8a84" category="paragraph">サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
   <block id="ae08639bb3ed33f2b9c5b58d9cddd031" category="list-text">交換するアプライアンスと同じパーツ番号の交換用アプライアンスを用意しておきます。アプライアンスの前面に取り付けられているタグを調べて、パーツ番号が一致していることを確認します。</block>
   <block id="4a9949b1653a4c2d26a04be273526cc5" category="list-text">そうだな <block ref="1f3a73fe731b4a5896a19ff9b9d6fda4" category="inline-link-macro-rx"></block></block>
@@ -5761,4 +5760,5 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="51130a506eed4d61508de06399ef34da" category="sidebar">ラック内のSGF6112またはSG6100-CNの再配置</block>
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">ドライブの管理（SG110、SG1100、SGF6112、SG6160）</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">BMCインターフェイスの使用</block>
+  <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
 </blocks>
