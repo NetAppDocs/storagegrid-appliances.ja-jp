@@ -4,8 +4,8 @@
 
 .作業を開始する前に
 * アップグレードするSANtricity OSのバージョンを取得していない場合 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]、あなたは相談しました https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^] または https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
-* を使用することができます https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance権限またはRoot Access権限"^]。
-* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* あなたはを持っています https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["Maintenance権限またはRoot Access権限"^]。
+* Grid Managerにサインインしておきます https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 * プロビジョニングパスフレーズを用意します。
 
 
@@ -21,7 +21,7 @@ CAUTION: 次の手順は、 Grid Manager を使用してアップグレードを
 NOTE: この手順 は、 SANtricity OS のアップグレードに関連付けられた最新バージョンに NVSRAM を自動的にアップグレードします。NVSRAMのアップグレードファイルを別途適用する必要はありません。
 
 
-NOTE: この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。を参照してください https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"^] を参照してください。
+NOTE: この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。詳細は、を参照してください https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"^]。
 
 .手順
 . [download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。

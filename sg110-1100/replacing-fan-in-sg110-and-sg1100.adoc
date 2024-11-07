@@ -26,14 +26,11 @@ NOTE: A link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-ap
 
 
 .このタスクについて
-サービスの中断を防ぐには、ファンの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、スケジュールされたメンテナンス期間中にサービスの中断が許容される時間帯にファンを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
-
-
-CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にファンを交換する必要があります。については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
+サービスの中断を防ぐには、ファンの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、スケジュールされたメンテナンス期間中にサービスの中断が許容される時間帯にファンを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
 
 ファンの交換中は、アプライアンスノードにアクセスできなくなります。
 
-次の図は、アプライアンスのファンを示しています。コネクタが強調表示されます。アプライアンスの上部カバーを取り外すと、冷却ファンがあります。
+図は、電気コネクタが強調表示されたアプライアンスのファンを示しています。アプライアンスの上部カバーを取り外すと、冷却ファンがあります。
 
 
 NOTE: 2 つの電源装置にもそれぞれファンが搭載されています。電源装置ファンは、この手順 には含まれていません。
@@ -49,11 +46,8 @@ image::../media/sgf6112_fan_fru.png[ファン FRU]
 +
 image::../media/SGF6112-fan-locations.png[ファンの場所]
 
-
-
++
 |===
-
-
 |  | ファンユニット 
 
 

@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: StorageGRID アプライアンスハードウェアを設置
+  summary: StorageGRIDシステムにストレージアプライアンスまたはサービスアプライアンスを追加するには、アプライアンスハードウェアを設置して設定します。次に、各アプライアンスにStorageGRIDソフトウェアをインストールし、アプライアンスノードをグリッドに接続します。
+  keywords: storagegrid appliance install, storagegrid hardware install
+  lead: StorageGRIDシステムにストレージアプライアンスまたはサービスアプライアンスを追加するには、アプライアンスハードウェアを設置して設定します。次に、各アプライアンスにStorageGRIDソフトウェアをインストールし、アプライアンスノードをグリッドに接続します。
   tiles:
   - title: クイックスタート
     links:

@@ -1,0 +1,94 @@
+---
+permalink: commonhardware/use-bmc.html 
+sidebar: sidebar 
+keywords: storagegrid, bmc 
+summary: 一部のStorageGRIDアプライアンスには、ベースボード管理コントローラ（BMC）が搭載されており、アプライアンスの設定、監視、診断のための下位レベルのハードウェアアクセスが可能です。 
+---
+= StorageGRIDアプライアンスのベースボード管理コントローラ（BMC）の使用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一部のStorageGRIDアプライアンスには、ベースボード管理コントローラ（BMC）が搭載されており、アプライアンスの設定、監視、診断のための下位レベルのハードウェアアクセスが可能です。
+
+BMCインターフェイスは、次のStorageGRIDアプライアンスモデルでサポートされています。
+
+* SG100
+* SG110
+* SG1000 からのアクセス
+* SG1100
+* SG6000を使用します
+* SG6100
+
+
+これらのアプライアンスでのBMCインターフェイスの使用の詳細については、を参照して https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]ください。テクニカルサポートから指示があった場合にのみ、StorageGRIDのドキュメントに_not_documentedのBMC機能にアクセスしてください。
+
+このBMCユーザーガイドは、一部のStorageGRIDアプライアンスで使用可能なBMCファームウェアの最新バージョンを対象としています。StorageGRIDアプライアンスのBMCファームウェアのバージョンが若干異なる場合があります。
+
+* StorageGRIDソフトウェアのアップグレード中にBMCファームウェアが更新されます。最新バージョンのStorageGRIDソフトウェアを実行していない場合は、アプライアンスを最新バージョンのStorageGRIDに更新してをインストールできます https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["アプライアンスで使用可能な最新のBMCファームウェアバージョン"]。
+* StorageGRIDの更新前と更新後にBMCの表示が異なる場合は、の情報を https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]参照して、使用しているBMCのバージョンに応じた手順を変更することができます。
+
+
+
+
+== StorageGRIDアプライアンスでのBMCの使用
+
+サポートされているStorageGRIDアプライアンスで使用するBMCの手順は、次のとおりです。
+
+* link:../installconfig/accessing-bmc-interface.html["BMCのダッシュボードへのアクセス"]
+* link:../installconfig/configuring-snmp-settings-for-bmc.html["BMC SNMPの設定"]
+* link:../installconfig/setting-up-email-notifications-for-alerts.html["Eメールアラート通知の設定"]
+* ハードウェアの設置に関するトラブルシューティング：
++
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000およびSG100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100およびSG110"]
+** link:../installconfig/troubleshooting-hardware-installation.html["SG6000を使用します"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+
+
+* アプライアンスの電源状態を確認します。
++
+** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000およびSG100"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100およびSG110"]
+** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000を使用します"]
+** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+
+
+* アプライアンスの識別LEDのオンとオフを切り替えます。
++
+** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000およびSG100"]
+** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100およびSG110"]
+** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000を使用します"]
+** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+
+
+
+
+
+
+== BMCの機能はStorageGRIDアプライアンスでサポートされない
+
+次のBMC機能はStorageGRID固有の設定と競合するため、使用しないでください。
+
+* 設定
++
+** RAID管理
+** SAS IT管理
+** IPMIインターフェイス
+** コールド冗長性
+** NICの選択
+
+
+* イメージのリダイレクト
+* ホストシステムの診断
+* メンテナンス
++
+** デュアルイメージ構成
+** ファームウェア情報
+** ファームウェアの更新
+** 工場出荷時のデフォルトに戻す
+
+
+

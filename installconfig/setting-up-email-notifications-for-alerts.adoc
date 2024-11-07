@@ -14,10 +14,51 @@ summary: アラート発生時にEメール通知が送信されるようにす�
 アラート発生時にEメール通知が送信されるようにするには、BMCインターフェイスを使用してSMTP設定、ユーザ、LANデスティネーション、アラートポリシー、およびイベントフィルタを設定します。
 
 
-NOTE: SG6000-CNコントローラまたはサービスアプライアンスに障害が発生して交換が必要になった場合、この手順 で行ったBMC設定が保持されないことがあります。適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。
+NOTE: この手順で行ったBMC設定は、コントローラまたはアプライアンスに障害が発生して交換が必要になった場合に保持されないことがあります。適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。
 
+[role="tabbed-block"]
+====
+.StorageGRID 11.9以降
+--
 .作業を開始する前に
-BMC ダッシュボードへのアクセス方法を確認しておく必要があります。
+どうすればいいか知ってるだろう link:../installconfig/accessing-bmc-interface.html["BMCダッシュボードへのアクセス"]。
+
+.このタスクについて
+BMCインターフェイスで、設定ページの*ユーザー管理*および*プラットフォームイベントフィルタ*オプションを使用して、電子メール通知を設定します。
+
+ここでは、一部のStorageGRIDアプライアンスで利用可能なBMCファームウェアの最新バージョンを示します。StorageGRIDアプライアンスのBMCファームウェアのバージョンが若干異なる場合があります。
+
+* StorageGRIDソフトウェアのアップグレード中にBMCファームウェアが更新されます。最新バージョンのStorageGRIDソフトウェアを実行していない場合は、アプライアンスを最新バージョンのStorageGRIDに更新してをインストールできます https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["アプライアンスで使用可能な最新のBMCファームウェアバージョン"]。
+* StorageGRIDの更新前または更新後にBMCが異なる場合は、次の手順を実行します。
++
+** StorageGRID 11.8タブの手順を参照してください。
+** link:../commonhardware/use-bmc.html["StorageGRID BMCの使用"]また、これらの手順をBMCのバージョンに合わせて変更するのに役立つ情報も含まれている場合があります。
+
+
+
+
+.手順
+. Eメール通知を1つ以上のLAN宛先として設定します。
++
+.. BMCのダッシュボードで、*[設定]*>*[プラットフォームイベントフィルタ]*>*[LAN送信先]*を選択します。
+.. [Destination Type]で、*[E-Mail]*を選択します。
+.. BMCユーザのリストからEメールアラートを受信するBMCユーザ名を選択します。このユーザに設定されたEメールアドレスにアラートEメールが送信されます。注：BMCユーザを設定するには、*[設定]*>*[ユーザ管理]*を選択します。詳細については、『』の「ユーザ管理」セクションを参照してください https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]。
+.. EメールアラートのEメール件名とEメールメッセージを入力します。
++
+
+NOTE: 電子メールの件名と電子メールメッセージは、AMI形式の電子メールユーザーには使用されません。
+
+.. [ 保存（ Save ） ] を選択します。
+
+
+. BMCを使用してアラートポリシーおよびイベントフィルタを設定する方法については、『』のプラットフォームイベントフィルタの項を参照してください https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]。
+
+
+--
+.StorageGRID 11.8
+--
+.作業を開始する前に
+どうすればいいか知ってるだろう link:../installconfig/accessing-bmc-interface.html["BMCダッシュボードへのアクセス"]。
 
 .このタスクについて
 BMC インターフェイスでは、 [ 設定 ] ページの *SMTP 設定 * 、 * ユーザー管理 * 、および * プラットフォーム・イベント・フィルタ * オプションを使用して、電子メール通知を設定します。
@@ -25,7 +66,7 @@ BMC インターフェイスでは、 [ 設定 ] ページの *SMTP 設定 * 、
 image::../media/bmc_settings_menu.png[BMC Settings （ BMC 設定）メニュー]
 
 .手順
-. link:configuring-snmp-settings-for-bmc.html["BMCのSNMP設定を行います"]。
+. BMCのSMTPを設定します。
 +
 .. [ * 設定 * > * SMTP 設定 * ] を選択します。
 .. [ 送信者電子メール ID] に、有効な電子メールアドレスを入力します。
@@ -82,3 +123,6 @@ image::../media/bmc_settings_menu.png[BMC Settings （ BMC 設定）メニュー
 
 
 
+
+--
+====

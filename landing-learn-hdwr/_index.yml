@@ -1,14 +1,18 @@
 ---
 indexpage:
+  title: StorageGRIDアプライアンスの使用を開始する
+  summary: StorageGRIDシステムのストレージアプライアンスまたはサービスアプライアンスについて説明します。
+  keywords: learn storagegrid appliances
+  lead: StorageGRIDシステムのストレージアプライアンスまたはサービスアプライアンスについて説明します。
   tiles:
   - title: はじめに
     links:
     - title: アプライアンスの新機能アプライアンスノシンキノウ
       url: "../whats-new-appliances.html"
     - title: StorageGRID の詳細をご覧ください
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/index.html
     - title: StorageGRID クイックスタート
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/quick-start.html
     - title: アプライアンスのインストールのクイックスタート
       url: "../installconfig/index.html"
   - title: ストレージアプライアンスの詳細

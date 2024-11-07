@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
 summary: ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。 
 ---
-= SG5800ストレージコントローラでのSANtricity OSのアップグレード
+= SG5800ストレージコントローラでのSANtricity OSのアップグレードについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: ストレージコントローラが最適に機能するようにす�
 [role="lead"]
 ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。
 
-StorageGRIDアプライアンスでの使用が確認されている最新のSANtricity OSバージョンを確認するには、 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"] 必要に応じてダウンロードします。
+StorageGRIDアプライアンスでの使用が確認されている最新のSANtricity OSバージョンを確認し、 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]必要に応じてダウンロードします。
 
 から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 

@@ -14,7 +14,7 @@ summary: StorageGRIDシステムの構成と使用方法について説明しま
 
 
 [role="lead"]
-に進みます https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8ドキュメント"^] を参照して、StorageGRID 11.8システムの設定および使用方法を確認してください。
+StorageGRID 11.9システムの設定および使用方法については、を参照してください https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 11.9ドキュメント"^]。
 
 StorageGRIDのドキュメントサイトには、次のような情報が含まれています。
 
@@ -33,6 +33,7 @@ StorageGRIDのドキュメントサイトには、次のような情報が含ま
 
 他のバージョンのNetApp StorageGRIDソフトウェアのマニュアルは、次のURLから入手できます。
 
+* https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8ドキュメント"^]
 * https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7ドキュメント"^]
 * https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6のドキュメント"^]
 * https://docs.netapp.com/us-en/storagegrid-115/index.html["StorageGRID 11.5 のドキュメント"^]

@@ -15,7 +15,7 @@ summary: アプライアンス内で交換するハードウェアコンポー�
 
 .作業を開始する前に
 * コンポーネントを交換する必要があるストレージアプライアンスのシリアル番号を確認しておきます。
-* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* Grid Managerにサインインしておきます https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 
 
 .このタスクについて
@@ -42,7 +42,7 @@ NOTE: アラートグループの見出しではなく、アラートを選択�
 
 .. 障害が発生したコンポーネントのノード名と一意の識別ラベルを記録します。
 +
-image::../media/nic-alert-sgf6112.jpg[コンポーネントIDのアラート]
+image::../media/nic-alert-sgf6112.png[コンポーネントIDのアラート]
 
 
 

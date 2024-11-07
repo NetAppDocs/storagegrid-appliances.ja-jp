@@ -13,5 +13,9 @@ entries:
   url: "/commonhardware/checking-dns-server-configuration.html"
 - title: MACアドレス参照を更新（SG100、SG1000、SGF6024、およびSG6060）
   url: "/commonhardware/locate-mac-address.html"
+- title: ドライブの管理（SG110、SG1100、SGF6112、SG6160）
+  url: "/commonhardware/manage-drives-tab.html"
 - title: メンテナンスモードでノード暗号化を監視します
   url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
+- title: BMCインターフェイスの使用
+  url: "/commonhardware/use-bmc.html"

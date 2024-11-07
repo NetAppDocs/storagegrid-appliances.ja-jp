@@ -53,7 +53,6 @@
   <block id="1f5543fb79e26322727f6814659efacf" category="list-text">コントローラの BMC インターフェイスを使用します。</block>
   <block id="6833d1fb2aff8ca0a43fc5ee98dc0434" category="summary">アプライアンスが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。</block>
   <block id="4ec9c61fe2a3dd50a4c235c04b5791be" category="doc">SG100またはSG1000の交換</block>
-  <block id="c3d9da76bc60daa886782280178ca9ba" category="list-text">交換するアプライアンスと同じパーツ番号の交換用アプライアンスを用意しておきます。</block>
   <block id="4b526ad126631aeb936c11f22d031fad" category="list-text">アプライアンスに接続する各ケーブルを識別するためのラベルを用意しておきます。</block>
   <block id="61684fbac4cfcc8514f86489f29dde1c" category="inline-link-macro">アプライアンスを物理的に設置します</block>
   <block id="5be2b457b6eaee65a28ec4df1db076e4" category="list-text">これで完了です <block ref="da5df71c7a92c3ba4b4a026832aaae10" category="inline-link-macro-rx"></block>。</block>
@@ -105,7 +104,6 @@
   <block id="0f6ea7c46381331636d17142aee5ff44" category="summary">コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。</block>
   <block id="ffd19bdfda142b2e42f2011318104bfa" category="doc">SG100またはSG1000の識別LEDのオンとオフの切り替え</block>
   <block id="d5fb6a1b1cd32e5cd68ae8b3c4df0cff" category="paragraph">特定するコントローラのBMC IPアドレスを確認しておきます。</block>
-  <block id="15a469ca542791fd77f65608926c9d94" category="list-text">アプライアンスのBMCインターフェイスにアクセスします。</block>
   <block id="f33a24fc68a182cd20809d4f943f7acc" category="list-text">「 * サーバー識別 * 」を選択します。</block>
   <block id="5eefe070ba5b220909a2deb53522a7b6" category="paragraph">識別LEDの現在のステータスが選択されます。</block>
   <block id="55ed6b7c403af83a38c4c6a71ef7f233" category="list-text">*オン*または*オフ*を選択し、*操作の実行*を選択します。</block>
@@ -227,7 +225,6 @@
   <block id="c3c0c5e67f70ef84a493ef3942629e66" category="list-text">アプライアンスをラックまたはキャビネットに設置し、ネットワークに接続し、電源を投入しておきます。</block>
   <block id="f2c92a34032f7d433f7be68580f796da" category="list-text">StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。</block>
   <block id="5f3a27ea8c400c6170dfd23f8f4ad06a" category="inline-link">サポートされている Web ブラウザ</block>
-  <block id="02b4ef414fc134933730fbee3c07a260" category="list-text">を搭載したサービスラップトップを用意します<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="7affba66ef4869b80f35788b21790843" category="list-text">アプライアンスに割り当てられている IP アドレスのいずれかを確認しておきます。接続されているどの StorageGRID ネットワークの IP アドレスでも使用できます。</block>
   <block id="584bec36fb27133ce8a721515dfb572d" category="paragraph">アプライアンスプライマリ管理ノードに StorageGRID をインストールするには、次の手順を実行します。</block>
   <block id="25a9aabada9e76a8d6ff5b35a1c21f72" category="list-text">StorageGRID ソフトウェアをインストールするには、 StorageGRID アプライアンスインストーラを使用します。別のバージョンのソフトウェアをインストールする場合は、まず StorageGRID アプライアンスインストーラを使用してソフトウェアをアップロードします。</block>
@@ -287,25 +284,20 @@
   <block id="c3354d84393c7f9e023fdee83bcf8cef" category="summary">一部のアプライアンスモデルでは、ストレージとリカバリの要件に合わせてアプライアンス上で別のRAIDモードに変更できます。モードを変更できるのは、アプライアンスストレージノードを導入する前だけです。</block>
   <block id="a65525d2672da7612dd2225d09c7630d" category="paragraph">ConfigBuilderを使用してJSONファイルを生成する場合は、RAIDモードを自動的に変更できます。を参照してください <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="dcd58c6c307af73eb2d54c28eb5aece3" category="paragraph">アプライアンスでサポートされている場合は、次のいずれかのボリューム構成オプションを選択できます。</block>
-  <block id="614ac3bc6b71e66c8c790d54848fdcae" category="admonition">SG6060アプライアンスではSSDが2本あるため、DDPはドロワー損失からの保護を提供しません。ドロワー損失の保護は、SG6060に追加するすべての拡張シェルフで有効です。</block>
-  <block id="5717f9383a4d8109c6b2573864de8a9d" category="list-text">* DDP16 * ：このモードはデータドライブ 16 本につきパリティドライブを 2 本使用するため、 DDP よりもストレージ効率が高くなります。RAID 6と比較すると、システムパフォーマンスが向上し、ドライブ障害が発生したあとのリビルド時間が短縮され、管理が容易になり、ストレージ効率も同等に向上します。DDP16 モードを使用するには、構成にドライブが 20 本以上含まれている必要があります。ドロワー損失からの保護は提供しません。</block>
   <block id="353ce17a6b113e0d3e118b781dec37fe" category="list-text">*RAID6 *: このモードは 16 台以上のデータドライブごとに 2 本のパリティドライブを使用します。これは、各ディスクでパリティストライプを使用するハードウェア保護方式であり、データが失われる前にRAIDセット内の2つのディスク障害を許容します。RAID 6 モードを使用するには、構成にドライブが 20 本以上含まれている必要があります。RAID 6はDDPよりもアプライアンスのストレージ効率を高めることができますが、ほとんどのStorageGRID 環境では推奨されません。</block>
   <block id="b796cc0a751a74024ed8fce1cada225c" category="admonition">ボリュームがすでに構成されている場合や StorageGRID が事前にインストールされている場合に RAID モードを変更すると、ボリュームが削除されて置き換えられます。対象となったボリュームのデータはすべて失われます。</block>
   <block id="08737855a7278096a93baafac39de5b0" category="open-title">SG5760</block>
   <block id="d64347d12e2b4767f06a434d5520f6c0" category="list-text">60本のドライブを搭載したSG5760があります。SG5712を使用している場合は、デフォルトのDDPモードを使用する必要があります。</block>
   <block id="99d42fc5dc10f749a2048142ea5def8c" category="list-text">StorageGRID に接続できるクライアントを使用している必要があります。</block>
-  <block id="7fee251548feeae9604038084a5a9dc2" category="list-text">クライアントにはがあります<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="3e64f994ec0b627c0d555b08876e3c52" category="list-text">サービスラップトップでWebブラウザを開き、StorageGRID アプライアンスインストーラの+にアクセスします<block ref="ac4c7fede3b81431cd1939fa909e07c1" prefix=" " category="inline-code"></block></block>
   <block id="d4478243cc0b93aac668f030ac3e5673" category="paragraph">ここで<block ref="2b02c7982db310b39f121c968f93deb9" prefix=" " category="inline-code"></block> E5700SGコントローラのいずれかのIPアドレスです。</block>
   <block id="ead65ee0d5026af449d4c30c565225ea" category="list-text">「 * アドバンスト * 」 &gt; 「 * RAID モード * 」の順に選択します。</block>
   <block id="1819ccab2ff2adb23392fc1927874be2" category="list-text">[Configure RAID Mode*] ページで、 [Mode] ドロップダウンリストから目的の RAID モードを選択します。</block>
   <block id="863f3ce437e8c6b6439536e138a5b1df" category="open-title">SG6000を使用します</block>
-  <block id="5e17e2d0c3a20e9b9ecec4f947d35990" category="list-text">クライアントにはがあります <block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="bf1e3f625a7e8b038f170de3cb7d3145" category="list-text">ブラウザを開き、アプライアンスのコンピューティングコントローラの IP アドレスのいずれかを入力します。</block>
   <block id="d6037c87870edda3b6af0ad1f10e8dfb" category="paragraph"><block ref="c1058eb2de79f5382be517d28ca54115" prefix="" category="inline-code"></block> は、3つのStorageGRID ネットワークのいずれかでのコンピューティングコントローラ（ストレージコントローラではない）のIPアドレスです。</block>
   <block id="23cc87b4dbb02f0a2b3ad6acdc107e38" category="summary">セキュリティを確保するため、BMCの管理者ユーザまたはrootユーザのパスワードを変更する必要があります。</block>
   <block id="28abc30754fbafc3d9f1a840416d928b" category="doc">BMCインターフェイスの管理者パスワードまたはrootパスワードの変更</block>
-  <block id="8ae94beade5703d7a791e6742e938eeb" category="paragraph">管理クライアントがを使用している必要があります<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="8a16fbc661b9c58ecf6a53a89f41993b" category="paragraph">アプライアンスの初回インストール時には、BMCではadminユーザまたはrootユーザのデフォルトのパスワードが使用されます。システムを保護するために、adminユーザまたはrootユーザのパスワードを変更する必要があります。</block>
   <block id="c61e0232b459caabc491ba6a4f815414" category="paragraph">デフォルトのユーザは、StorageGRIDアプライアンスのインストール時期によって異なります。デフォルトのユーザーは、新規インストールの場合は* admin *、古いインストールの場合は* root *です。</block>
   <block id="f9134265b9e9dad038e250b899e568ae" category="list-text">クライアントから、StorageGRIDアプライアンスインストーラのURLを入力します。</block>
@@ -326,7 +318,6 @@
   <block id="f5facf78cd580be6cde15b363186372d" category="list-text">静電気防止用リストストラップ</block>
   <block id="62715b1df64a67b740fd02965ae708e9" category="list-text">サービスラップトップ</block>
   <block id="c415834f3a2736a528e1cf60b3d0601c" category="inline-link">サポートされている Web ブラウザ</block>
-  <block id="55a4c790323c17bde846add095bd6aa2" category="list-text"><block ref="55a4c790323c17bde846add095bd6aa2" category="inline-link-rx"></block></block>
   <block id="c7dc3f6e76727117a01a4abf420b9c2f" category="list-text">PuTTY などの SSH クライアント</block>
   <block id="e6959787543d4b7988a7e67a400cbaae" category="list-text">1GbE （ RJ-45 ）ポート</block>
   <block id="46b0e50dee424029f576bd12783b5158" category="admonition">一部のポートでは 10/100 イーサネット速度がサポートされない場合があります。</block>
@@ -363,7 +354,6 @@
   <block id="c33dd574af6de69373bec97cc709ade1" category="open-title">SG6100</block>
   <block id="a84eec93e893fadf2d8ab7a8d588ddbb" category="summary">キャビネットまたはラックにアプライアンス用のレール1組を取り付け、レールにアプライアンスをスライドさせます。</block>
   <block id="867aaffd62f4541bca34095b90796def" category="doc">キャビネットまたはラックへの設置（SG100およびSG1000）</block>
-  <block id="68dfe6c342417b20bb690f11deb80f37" category="list-text">同梱されている安全上の注意に関するドキュメントを確認し、ハードウェアの移動と設置に関する注意事項を理解しておきます。</block>
   <block id="11647aec414507136a081808dc1a184c" category="list-text">レールキットに手順書が同梱されていることを確認します。</block>
   <block id="e0226b31d854fbd4e1cac6c67058ab4c" category="list-text">キャビネットまたはラックにレールを取り付ける際には、レールキットの手順書に慎重に従ってください。</block>
   <block id="68a9da8ccd6fd1e485fe708d994a9f57" category="list-text">キャビネットまたはラックに取り付けた 2 本のレールで、カチッという音がするまでレールの可動部分を伸ばします。</block>
@@ -394,7 +384,6 @@
   <block id="cf044a27a40c12faa07475d6c92d1c93" category="paragraph">API ドキュメントにアクセスするには、アプライアンスの StorageGRID アプライアンスインストーラのメニューバーから * Help * &gt; * API Docs * を選択します。</block>
   <block id="c9a246094a3f0ddf1fca26edf0919c6d" category="paragraph">StorageGRID アプライアンスインストーラ API には、次のセクションがあります。</block>
   <block id="0f7268e87dda74f7c0f6de08f8a5deab" category="list-text">*clone *:ノードクローニングを設定および制御する処理。</block>
-  <block id="ee30ac151194512491459d978496a0eb" category="list-text">*暗号化*：暗号化を管理し、暗号化ステータスを表示する処理。</block>
   <block id="915078eacb9e975de2c84733ad43178a" category="list-text">* hardware config *：接続されているハードウェアのシステム設定を構成する操作。</block>
   <block id="e827fc7e65b6336415bcff1a013d4008" category="list-text">* installation *：アプライアンスのインストールを開始し、インストールステータスを監視する処理。</block>
   <block id="132c615b1b3a897b8e6a80418be9e233" category="list-text">* networking *：StorageGRID アプライアンスのグリッドネットワーク、管理ネットワーク、クライアントネットワークの設定、およびアプライアンスのポート設定に関連する処理。</block>
@@ -483,14 +472,12 @@
   <block id="c8b861feb18d64efe8a6454baf68f1f9" category="inline-link-macro">StorageGRID の設定を自動化</block>
   <block id="41263ba50e3c2460c36d2a032f4617c2" category="list-text"><block ref="01e989045e9f58aada43d013823e4520" prefix="" category="inline-code"></block>：StorageGRID システム全体の他のコンポーネント（「グリッド」）を設定します。を参照してください <block ref="8f1d6652a5389fe4ed67c47ad0c42669" category="inline-link-macro-rx"></block>。</block>
   <block id="ff7cf14f8cb80fe5e854050d8a52ba67" category="inline-link">StorageGRID インストールファイルのダウンロードと展開</block>
-  <block id="0a4ca3868ccff9a18e635f0f41d21001" category="admonition">Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください<block ref="0dc6afeb7353a302ce7a12b587e43c1b" category="inline-link-rx"></block>。</block>
   <block id="229ec837e1e7b0d423b18d71a52dcc5c" category="section-title">StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する</block>
   <block id="507a921416adb0b4fc562b170c38110b" category="paragraph">JSONファイルを生成したら、StorageGRID アプライアンスインストーラを使用してJSONファイルをアップロードすることで、1つ以上のアプライアンスの設定を自動化できます。</block>
   <block id="50d937a00009c6c6b4bf6fe8178e25a6" category="list-text">アプライアンスをラックに設置し、ネットワークに接続し、電源を投入しておきます。</block>
   <block id="fb882869e2db2c6be540e8988d5861bb" category="inline-xref">JSONファイルが生成されました</block>
   <block id="6ff6544aaa51426d71952e2ebef91b73" category="list-text">これで完了です <block ref="ed5233e808c737b997a7ac8b5adf83e3" category="inline-xref-macro-rx"></block> ネットアッププロフェッショナルサービスコンサルタントが指導します。</block>
   <block id="392bd3f83fb497794f409fa5908887f0" category="list-text">アプライアンスに、StorageGRID 11.5以降と互換性のある最新のファームウェアが搭載されています。</block>
-  <block id="0f35bbde0e42ae70f1e2305f6f54c3b5" category="list-text">を使用して設定するアプライアンス上のStorageGRID アプライアンスインストーラに接続します<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="6989c71b2a87387280764a414d928c27" category="list-text">StorageGRID アプライアンスインストーラで、*[アドバンスト]*&gt;*[アプライアンス構成の更新]*を選択します。[Update Appliance Configuration] ページが表示されます。</block>
   <block id="cbe31f798cc3e7c32cac515491c124dd" category="list-text">アップロードする設定を含むJSONファイルを参照して選択します。</block>
   <block id="d46a96ea002a2622b5221351849dc6b1" category="paragraph">ファイルがアップロードされて検証されます。検証プロセスが完了すると、ファイル名が緑色のチェックマークの横に表示されます。</block>
@@ -637,18 +624,14 @@
   <block id="9faa5f32fa9c79795fce93a0477e6036" category="paragraph">たとえば、アプライアンスノードと別のサイトのノードの間のパスをテストできます。</block>
   <block id="3042ee61d33b4d3bb987ef8d189f1c84" category="list-text">[ 接続のテスト * ] をクリックします。</block>
   <block id="a86ce482981834e0bbcc54755bde4f04" category="paragraph">ネットワーク接続が有効な場合は、「 Ping test passed 」メッセージと ping コマンドの出力が表示されます。</block>
-  <block id="645dec9b79a5bdef727721ed35439f34" category="image-alt">StorageGRID Webscale アプライアンスインストーラでの ping テストの結果を示すスクリーンショット</block>
   <block id="38e98d02875963692f88c8bf6f2c088a" category="list-text"><block ref="38e98d02875963692f88c8bf6f2c088a" category="inline-link-macro-rx"></block></block>
   <block id="b885d9cf5b831999956568cb8e05db9b" category="inline-link-macro">MTU 設定を変更します</block>
   <block id="658de6056c8650ac6849a076a3fcbf7e" category="list-text"><block ref="658de6056c8650ac6849a076a3fcbf7e" category="inline-link-macro-rx"></block></block>
   <block id="af5e2c725312cc9f9d189977289a6c5c" category="summary">アラート発生時にEメール通知が送信されるようにするには、BMCインターフェイスを使用してSMTP設定、ユーザ、LANデスティネーション、アラートポリシー、およびイベントフィルタを設定します。</block>
   <block id="1d46ac87d12ade0475315e467619d84f" category="doc">BMCアラートのEメール通知を設定する</block>
-  <block id="783ec4be4313fa6a1b402772064f5aaf" category="admonition">SG6000-CNコントローラまたはサービスアプライアンスに障害が発生して交換が必要になった場合、この手順 で行ったBMC設定が保持されないことがあります。適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。</block>
-  <block id="b8f1814f76171b0e01680b9ba48147be" category="paragraph">BMC ダッシュボードへのアクセス方法を確認しておく必要があります。</block>
   <block id="44d97ae9b656932a0ec0c337f1322020" category="paragraph">BMC インターフェイスでは、 [ 設定 ] ページの *SMTP 設定 * 、 * ユーザー管理 * 、および * プラットフォーム・イベント・フィルタ * オプションを使用して、電子メール通知を設定します。</block>
   <block id="eb164878e3a11cd967b58b9804f069bd" category="image-alt">BMC Settings （ BMC 設定）メニュー</block>
   <block id="8c40c4c139d612d7304b70e6f0cb8c7c" category="inline-link-macro">BMCのSNMP設定を行います</block>
-  <block id="2feb0f58aaa9a4cecd164fb75ae4785d" category="list-text"><block ref="20ad94357ba686d39119bb8d845884fd" category="inline-link-macro-rx"></block>。</block>
   <block id="916ef707e474d612e9085b3576c42e8c" category="list-text">[ * 設定 * &gt; * SMTP 設定 * ] を選択します。</block>
   <block id="cc6f5de01b92b29440802debeadd4111" category="list-text">[ 送信者電子メール ID] に、有効な電子メールアドレスを入力します。</block>
   <block id="f75177d1ff1ad48df8b75f8b77482961" category="paragraph">この E メールアドレスは、 BMC が E メールを送信したときの送信元アドレスとして提供されます。</block>
@@ -788,8 +771,6 @@
   <block id="54d7ecac4234801a52c82cee53356b93" category="list-text">ポート 2 はテクニカルサポート専用です。</block>
   <block id="575f5da1297a9d208194e631fe305bac" category="paragraph">ドライブ拡張ポート</block>
   <block id="101f1e2a12ec321beceff04a62a441c5" category="paragraph">使用されません。</block>
-  <block id="f8b90d96568b5e455a92272a8f48020b" category="inline-link">NetApp E シリーズシステムのドキュメントのサイト</block>
-  <block id="75491f732985b7a2a5168dd19e83a632" category="paragraph"><block ref="75491f732985b7a2a5168dd19e83a632" category="inline-link-rx"></block></block>
   <block id="55a91a9330c6accb5c6508466f5423c6" category="summary">SG6060およびSGF6024の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。SG6060の場合は、シェルフを設置するまで各シェルフにドライブを取り付けないでください。</block>
   <block id="f9729bf75bc01b504ec3ff0ab45026be" category="doc">キャビネットまたはラックへの設置（SG6000）</block>
   <block id="1be03eea429e62b9b7874dc3decb447a" category="paragraph">SG6060およびSGF6024の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。SG6060の場合は、シェルフを設置するまで各シェルフにドライブを取り付けないでください。</block>
@@ -862,7 +843,6 @@
   <block id="594c16ca0695f6665d7cf4971707adf6" category="paragraph">高可用性</block>
   <block id="dcc5169074d0d5a456ef3db5c8c66312" category="paragraph">StorageGRID が実行されています。</block>
   <block id="4e8874997097501758be968ae3c10689" category="section-title">エラーコードの表示</block>
-  <block id="4d68799e6493045c7f569164b82a0d54" category="paragraph">アプライアンスのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。</block>
   <block id="3021b3010c48f0d2b7c748318d470b7f" category="list-text">BMC ダッシュボードで、 * BIOS POST Code * を選択します。</block>
   <block id="9f6a064ac619f66aaa322807a61dad16" category="list-text">現在のコードと前のコードについて表示された情報を確認します。</block>
   <block id="af35dde73503f0e72952654c019cc720" category="paragraph">次のいずれかのエラーコードが表示された場合は、テクニカルサポートに連絡して問題 を解決してください。</block>
@@ -1202,7 +1182,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="aa91301685926dd0c6c99a07550217f5" category="summary">SANtricity System Manager を使用して、ストレージコントローラシェルフのストレージコントローラ、ストレージディスク、その他のハードウェアコンポーネントのステータスを監視できます。E シリーズ AutoSupport のプロキシを設定することもできます。管理ポートを使用せずにアプライアンスから AutoSupport メッセージを送信できます。</block>
   <block id="cbc817df49c13d2739e53c6f3ab21240" category="section-title">SANtricity System Manager をセットアップしてアクセスします</block>
   <block id="61781e904419d0ca3e48179b7b7cfa09" category="paragraph">ストレージコントローラシェルフのハードウェアを監視したり、 E シリーズ AutoSupport を設定したりするために、ストレージコントローラの SANtricity System Manager へのアクセスが必要になる場合があります。</block>
-  <block id="ba653269166989e83e8fe34212db15e5" category="list-text">を使用している<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="49fd84925fee54ee512108fa4b5aa65a" category="list-text">グリッドマネージャからSANtricity システムマネージャにアクセスするには、StorageGRID をインストールし、ストレージアプライアンス管理者またはRootアクセス権限が必要です。</block>
   <block id="8e90c30fe589baf25a4c585b9f6587f0" category="list-text">StorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。</block>
   <block id="d70f6ae01455ba2962ff54c59769ebfd" category="list-text">Webブラウザを使用してSANtricity System Managerに直接アクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。</block>
@@ -1223,7 +1202,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ccff858e243f2d310a8c9501d4e241f9" category="paragraph">SANtricity System Manager を使用して、次の設定を行うことができます。</block>
   <block id="7480b3d5b96758e9706895f9f09074a6" category="list-text">ストレージコントローラシェルフのコンポーネントの E メールアラート、 SNMP アラート、または syslog アラート</block>
   <block id="2afb5eeba8ea3c04fefb11c5aac8aaa0" category="list-text">ストレージコントローラシェルフのコンポーネントの E シリーズ AutoSupport の設定。</block>
-  <block id="3da56d2c04159b3c87b6ab07507f1fb4" category="paragraph">E シリーズ AutoSupport の詳細については、を参照してください<block ref="432706f834f68f529b4dbc054bb2fb4a" category="inline-link-rx"></block>。</block>
   <block id="0d50ff542a20edfdc030f87225abed8a" category="list-text">セキュリティ保護されたドライブのロックを解除するために必要なドライブセキュリティキー（ドライブセキュリティ機能が有効になっている場合はロックの解除が必要）</block>
   <block id="ee9d34135078ea9745c7862276886545" category="list-text">SANtricity システムマネージャにアクセスするための管理者パスワード</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">次のいずれかを実行します。</block>
@@ -1245,13 +1223,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="61e433e53a32c40d973d908b38f4ca93" category="list-text">オンラインヘルプの「 * support * &gt; * Support Center * 」セクションで、 AutoSupport 機能について学習します。</block>
   <block id="5aa00be3ad448a2ed48c323ac961c4b9" category="list-text">「 How To 」の指示に従って、 AutoSupport を管理します。</block>
   <block id="2732059bfabd55c422e68f46cd2e2e88" category="inline-link">ストレージプロキシの設定手順</block>
-  <block id="16c255e34e565703bc9b2912a9f5f837" category="paragraph">管理ポートを使用せずにEシリーズAutoSupport メッセージを送信するためのStorageGRID プロキシを設定する具体的な手順については、を参照してください<block ref="630c32d588e4f8353f6a2bf9f10b6c87" category="inline-link-rx"></block>。</block>
-  <block id="aac4810e3f8c8188aa452c67fec614a8" category="list-text">アプライアンスでドライブセキュリティ機能が有効になっている場合は、セキュリティキーを作成して管理します。</block>
-  <block id="3fc6d456ccf489281c9c2361f35f8701" category="list-text">オンラインヘルプの「 * Settings * &gt; * System * &gt; * Security key management * 」セクションでドライブセキュリティについて学習します。</block>
-  <block id="7db12020fee27b780f4c5f155b24e026" category="list-text">「 How To 」の指示に従って、セキュリティキーを作成および管理します。</block>
-  <block id="8079c27884feb1d3043cc71127616cb8" category="list-text">必要に応じて、管理者パスワードを変更します。</block>
-  <block id="a4942a1fef1513691f788747dfb0e3a5" category="list-text">オンラインヘルプの * Home * &gt; * Storage array administration * セクションで、管理者パスワードを確認してください。</block>
-  <block id="4557b71ada8c2459a71a1bddebf48c48" category="list-text">「 How To 」の指示に従ってパスワードを変更します。</block>
   <block id="1f8ef647eb7454b535c5f38cc21488f4" category="section-title">SANtricity システムマネージャでハードウェアステータスを確認します</block>
   <block id="c529dc6bdd0e3119dcb50fae08002932" category="paragraph">SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。</block>
   <block id="3c974ef9fcfeb4afff838906bb3bb69d" category="list-text">Grid ManagerからSANtricity System Managerにアクセスするには、ストレージアプライアンス管理者の権限またはRoot Access権限が必要です。</block>
@@ -1328,11 +1299,9 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="792d1be3fbe8d0f4a7750b3710ef9c41" category="paragraph">アプライアンスでは、 S3 または Swift データパス接続に対し、ハイアベイラビリティ（ HA ）グループとインテリジェントなロードバランシングを実装できます。</block>
   <block id="a80993ad4d9595044e2bb99659e13da9" category="paragraph">次に、アプライアンスの機能を最大限に活用する例を示します。</block>
   <block id="599b3e861c0fc282e1c17e2ac2a0cae4" category="list-text">2 台の SG1000 アプライアンスをゲートウェイノードとして設定して、ゲートウェイサービスを提供するには、 2 台の SG100 または 2 台の SG1000 アプライアンスを使用します。</block>
-  <block id="3bc25583a9956f468ca393ff09f1ce40" category="admonition">SG100とSG1000サービスアプライアンスを同じサイトに導入しないでください。パフォーマンスが予測不能になる可能性があります</block>
   <block id="05ec0cccf1a620c91d02122834efabd5" category="list-text">一部のグリッド管理サービスの冗長性を確保するには、 2 台の SG100 または 2 台の SG1000 アプライアンスを使用します。そのためには、各アプライアンスを管理ノードとして設定します。</block>
   <block id="2f9c95fc4e3ccbe2083cecf3223335a4" category="list-text">2 台の SG1000 アプライアンスを使用して、 1 つ以上の仮想 IP アドレス経由でアクセスする可用性の高いロードバランシングサービスとトラフィックシェーピングサービスを提供します。そのためには、アプライアンスを管理ノードまたはゲートウェイノードの任意の組み合わせとして設定し、両方のノードを同じ HA グループに追加します。</block>
   <block id="09364c9c0c9f9ee4525254510fbd39cb" category="inline-link">HAグループを設定しています</block>
-  <block id="bb3a5df0194808e82820c19b55e02589" category="admonition">同じHAグループの管理ノードとゲートウェイノードを使用する場合、管理ノードのみのポートはフェイルオーバーしません。の手順を参照してください<block ref="25133cf4ceacd5d3f14c06b415041f45" category="inline-link-rx"></block>。</block>
   <block id="ab213d2e85f6a2233d40369c0c2f5cbc" category="paragraph">StorageGRID ストレージアプライアンスとともに使用すると、 SG100 と SG1000 サービスアプライアンスの両方で、外部のハイパーバイザーやコンピューティングハードウェアに依存しないアプライアンスのみのグリッドを導入できます。</block>
   <block id="8792008c29e38db22b5d5fd7f32aa580" category="summary">次の表を使用して、アプライアンスに接続する各ネットワークに必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。</block>
   <block id="807819ac8145c3624026f45cc5ef715b" category="doc">ネットワーク情報の収集（SG100およびSG1000）</block>
@@ -1385,7 +1354,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="b1b79961123a39efb142dcfdd5b03450" category="list-text"><block ref="b1b79961123a39efb142dcfdd5b03450" category="inline-link-macro-rx"></block></block>
   <block id="c651e19de5b37d91430510e18dd4dd17" category="list-text"><block ref="c651e19de5b37d91430510e18dd4dd17" category="inline-link-macro-rx"></block></block>
   <block id="7b629ae6d19ce0c50c29745a4e020a0f" category="inline-link">Webブラウザの要件を確認します</block>
-  <block id="95687fb6e3dd759f3ee28253d20cc282" category="list-text"><block ref="95687fb6e3dd759f3ee28253d20cc282" category="inline-link-rx"></block></block>
   <block id="5b3bc2041b779a6eb06cd20122f89cea" category="inline-link-macro">ネットワーク情報の収集</block>
   <block id="adb08abc85034bf5521a8cf194dd40f7" category="list-text"><block ref="adb08abc85034bf5521a8cf194dd40f7" category="inline-link-macro-rx"></block></block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
@@ -1421,7 +1389,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="c1d39a1019e538dbace4710b28fbd450" category="list-text"><block ref="c1d39a1019e538dbace4710b28fbd450" category="inline-link-macro-rx"></block></block>
   <block id="1f9351567c2f8233f56447909d961f4b" category="list-text"><block ref="1f9351567c2f8233f56447909d961f4b" category="inline-link-macro-rx"></block></block>
   <block id="f0f8af5b248f2922f69167322927d507" category="doc">キャビネットまたはラックへの設置（SGF6112）</block>
-  <block id="821a9732c77d0b7de4abdcd137524986" category="list-text">同梱されている安全上の注意事項を確認し、ハードウェアの移動および設置に関する注意事項を理解しておきます。</block>
   <block id="78b14e5728c83580a81b321e2deaa3a6" category="image-alt">アプライアンスのレールを拡張</block>
   <block id="a1fecb511770b8949a257d9905a2a832" category="image-alt">レール上でスライドするアプライアンス</block>
   <block id="43dc80353c743a5e60543a489d0fdb2c" category="list-text">アプライアンスの前面パネルの非脱落型ネジを締めて、アプライアンスをラックに固定します。</block>
@@ -1553,7 +1520,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="78c43d469c133b7dfbfba9ad0ed00449" category="summary">StorageGRID アプライアンスインストーラとその他のノードの間のアクセスがファイアウォールの妨げにならないように、 StorageGRID アプライアンスインストーラが指定した IP アドレスまたはアドレス範囲にある特定の TCP ポートまたはポートセットに接続できることを確認します。</block>
   <block id="0167c112190737841a7ea1f6e738f5a1" category="paragraph">StorageGRID アプライアンスインストーラに付属のポートのリストを使用して、アプライアンスとグリッドネットワーク内の他のノードの間の接続をテストできます。</block>
   <block id="050d9a071fca955d512832a42dc9cb05" category="inline-link">ネットワークポート参照</block>
-  <block id="042a80c375a9d7e54685401cbc21bb34" category="paragraph">また、外部 NFS サーバや DNS サーバで使用されるポートなど、管理ネットワークとクライアントネットワーク、および UDP ポートで接続をテストすることもできます。これらのポートのリストについては、を参照してください<block ref="5a3bbdd854b59940da18aa72ac09f01a" category="inline-link-rx"></block>。</block>
   <block id="ceb5de02541531ec508a57b924a944dc" category="admonition">ポート接続テーブルに表示されているグリッドネットワークポートは、StorageGRIDバージョン11.7以降でのみ有効です。各ノードタイプに適したポートを確認するには、使用している StorageGRID のバージョンに対応したネットワークガイドラインを確認する必要があります。</block>
   <block id="f087314807378665fcdf2fee64364906" category="list-text">StorageGRID アプライアンスインストーラから、 *Configure Networking *&gt;* Port Connectivity Test (nmap)* をクリックします。</block>
   <block id="61d74d33db48b2a546cb5b31093e26ec" category="paragraph">Port Connectivity Test ページが表示されます。</block>
@@ -1577,7 +1543,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="31b7f4afaff44d97bd4507909ce7925a" category="summary">StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。</block>
   <block id="aeefff382472953c95a40e851dbe0e88" category="doc">StorageGRID のネットワークタイプ</block>
   <block id="5fd0ea78f1f4110e6a664eae5cf78486" category="inline-link">ネットワークのガイドライン</block>
-  <block id="57190bc27f1842e60d5ee25949089ffa" category="paragraph">StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認し、各コントローラのポートがどのように使用されるかを把握する必要があります。StorageGRID のネットワーク要件については、を参照してください<block ref="8a63850c76a22308599ec34d045cd58e" category="inline-link-rx"></block>。</block>
   <block id="f497dcd7e6afbe3711c00f9ffabc7fc8" category="paragraph">必要な情報については、アプライアンスの手順書を参照してください。</block>
   <block id="c49cb635a83332e10e60e5608fdd2527" category="list-text"><block ref="c49cb635a83332e10e60e5608fdd2527" category="inline-link-macro-rx"></block></block>
   <block id="13926d4b69e4eccdfdbcea01177b2381" category="list-text"><block ref="13926d4b69e4eccdfdbcea01177b2381" category="inline-link-macro-rx"></block></block>
@@ -1588,9 +1553,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="d64650c12bf02a6d6b6e1ac4dbdeafd4" category="list-text">* StorageGRID のグリッドネットワーク * ：グリッドネットワークは、すべての内部 StorageGRID トラフィックに使用されます。このネットワークによって、グリッド内のすべてのノードが、すべてのサイトおよびサブネットにわたって相互に接続されます。グリッドネットワークは必須です。</block>
   <block id="edc8f42c5d3c1c2a2922bf75112aa76a" category="list-text">* StorageGRID の管理ネットワーク * ：管理ネットワークは、システムの管理とメンテナンスに使用するクローズドネットワークです。管理ネットワークは通常はプライベートネットワークであり、サイト間でルーティング可能にする必要はありません。管理ネットワークはオプションです。</block>
   <block id="a43ab4ec6314775efb16fdcbad06d69a" category="list-text">* StorageGRID のクライアントネットワーク： * クライアントネットワークは、 S3 や Swift などのクライアントアプリケーションへのアクセスを可能にするオープンネットワークです。クライアントネットワークはグリッドへのクライアントプロトコルアクセスを提供するため、グリッドネットワークを分離してセキュリティを確保できます。開くことを選択したポートだけを使用してこのネットワーク経由でアプライアンスにアクセスできるよう、クライアントネットワークを設定できます。クライアントネットワークはオプションです。</block>
-  <block id="7ac9f844973adf1cc467bcd4a52f52d5" category="list-text">* SANtricityの管理ネットワーク*（ストレージアプライアンスの場合はオプションで、SG6100では不要）：このネットワークからSANtricity System Managerにアクセスして、アプライアンスおよびストレージコントローラシェルフのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。</block>
   <block id="660fc24fc18dd99919bb0bc5149a6c14" category="paragraph">オプションの BMC 管理ネットワークが接続されていないと、一部のサポート手順およびメンテナンス手順の実行が困難になります。BMC 管理ネットワークは、サポート目的で必要な場合を除き、接続しないでください。</block>
-  <block id="735397a80f406e1834aa096854796f06" category="admonition">StorageGRID ネットワークの詳細については、を参照してください<block ref="37d143d6aa4e97202e0da5da8774331d" category="inline-link-rx"></block>。</block>
   <block id="536913eab1d549cf61908a5576a405e6" category="summary">グリッドノードのインストールと設定が完了したら、StorageGRID システムの設定を自動化できます。</block>
   <block id="b8cb767b6fdae1386ae4afb50465e070" category="list-text">インストールアーカイブにある次のファイルの場所を確認しておきます。</block>
   <block id="1351017ac6423911223bc19a8cb7c653" category="cell">ファイル名</block>
@@ -1604,7 +1567,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="3372b21cc5906955ba38346b8206fac3" category="paragraph">を使用できます<block ref="01e989045e9f58aada43d013823e4520" prefix=" " category="inline-code"></block> Pythonスクリプトおよび<block ref="3b39322b4d4c4cc0e164289cecbf36f4" prefix=" " category="inline-code"></block> StorageGRID システムの設定を自動化するための構成ファイル。</block>
   <block id="0ac82a4db71d617117af13f25d1a6782" category="inline-link-macro">インストール API</block>
   <block id="62679f22de916e22b6c9e82c446561ef" category="inline-link">Grid Manager の略</block>
-  <block id="f6feb1022725f4cba9fb67516f837ee4" category="admonition">を使用してシステムを設定することもできます<block ref="71410fb1664e68d96b4fc98c9e2f536a" category="inline-link-rx"></block> または <block ref="2b9b559fdbf6b83dc49f82aaedacac2d" category="inline-link-macro-rx"></block>。</block>
   <block id="91e4d99fdfc5bddf43cc25c3cc260ff4" category="list-text">インストールアーカイブを展開したディレクトリに移動します。</block>
   <block id="67412df734f463a9dbfeb08c102473fa" category="paragraph">たとえば、「+」と入力します<block ref="19edd275687ad0cb7767c268469e0a88" prefix=" " category="inline-code"></block></block>
   <block id="c432843c569d7c3f7c69b4b7db76d04d" category="paragraph">ここで、<block ref="cb51dcc55f66c5706124e4cf1a9ec33b" prefix=" " category="inline-code"></block> はです<block ref="4dda8d74681cb71c1e0677e6f5e04d4c" prefix=" " category="inline-code"></block>、<block ref="e95483cbc482269e355de71394f14c10" prefix=" " category="inline-code"></block>または<block ref="02a5f48e1cd0ce4c6f422a86f2a186ca" prefix=" " category="inline-code"></block>。</block>
@@ -1634,7 +1596,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a80345b07ff6f31d32eea0e7a8662cd5" category="doc">オプション：アプライアンスのネットワークポートの再マッピング</block>
   <block id="e90a0912e7b857d931e7475bb0ba5ed0" category="list-text">以前に StorageGRID アプライアンスインストーラにアクセスしていた場合。</block>
   <block id="848e39eb47ccc59c68034fb5231b5793" category="inline-link">ポートの再マッピングを削除</block>
-  <block id="09772aab5f539188dbee2e664460c53d" category="paragraph">再マッピングされたポートをロードバランサエンドポイントに使用することはできません。再マッピングされたポートを削除する必要がある場合は、の手順に従います<block ref="91c707b97ee972c146077db4fbe6e89b" category="inline-link-rx"></block>。</block>
   <block id="0d9cc8f6f4c8730251efe65fff93cce5" category="list-text">StorageGRID アプライアンスインストーラで、*[ネットワークの設定]*&gt;*[ポートの再マッピング]*を選択します。</block>
   <block id="fb5e82922f1a41cc1cdad9c4675eb592" category="paragraph">Remap Port ページが表示されます。</block>
   <block id="ca17720cd81c640ab82bfdd670d867a4" category="list-text">Network * ドロップダウンボックスから、再マッピングするポートのネットワーク（ Grid 、 Admin 、または Client ）を選択します。</block>
@@ -1769,13 +1730,11 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="1c2a7c57450bd0841ba8af585da8e2e7" category="paragraph">ノードの暗号化を有効にすると、アプライアンス内のディスクを安全なキー管理サーバ（ KMS ）暗号化によってサイト内での物理的な損失やデータの削除から保護することができます。アプライアンスのインストール時に、ノード暗号化を選択して有効にする必要があります。KMS暗号化プロセスの開始後は、ノード暗号化を無効にすることはできません。</block>
   <block id="df20a5800890fb9c6f211a466c532c76" category="paragraph">ConfigBuilderを使用してJSONファイルを生成する場合は、ノード暗号化を自動的に有効にすることができます。を参照してください <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="1b5f13d8e622fb6f0981440cd6075b6c" category="inline-link">KMSを設定しています</block>
-  <block id="6e47468511627246c8919def6a32b5f3" category="paragraph">に関する情報を確認します<block ref="7b9746056ee5aea2ea4215ef97e0afd2" category="inline-link-rx"></block>。</block>
   <block id="2d45ca949e89f1cdd1768b30b0448d87" category="paragraph">ノード暗号化が有効になっているアプライアンスは、 StorageGRID サイト用に設定されている外部キー管理サーバ（ KMS ）に接続します。各 KMS （または KMS クラスタ）は、サイトにあるすべてのアプライアンスノードの暗号化キーを管理します。これらのキーは、ノード暗号化が有効なアプライアンスで、各ディスク上のデータを暗号化および復号化します。</block>
   <block id="5c71973a7592fd31c81277cf8963c0b1" category="paragraph">Grid Manager StorageGRID では、アプライアンスのインストール前またはインストール後に KMS を設定できます。詳細については、 StorageGRID の管理手順の KMS とアプライアンスの設定に関する情報を参照してください。</block>
   <block id="22afb557c864e79c1c8fa5b7e0197010" category="list-text">アプライアンスをインストールする前に KMS を設定すると、 KMS で制御される暗号化が開始されます。この暗号化は、アプライアンスでノード暗号化を有効にし、 KMS が設定されている StorageGRID サイトに追加します。</block>
   <block id="9828b5fcc2aa0853e81224385cf7be51" category="list-text">アプライアンスをインストールする前に KMS が設定されていない場合は、 KMS が設定され、アプライアンスノードを含むサイトで利用可能になった時点で、ノード暗号化が有効になっている各アプライアンスで KMS 制御された暗号化が実行されます。</block>
   <block id="9bba200c01aca3c41165938e4986c1f9" category="inline-link">KMSアプライアンスの設定の概要</block>
-  <block id="e87ed838af2d5a17b818811603349cf9" category="admonition">ノード暗号化を有効にしてアプライアンスを設置すると、一時キーが割り当てられます。アプライアンスのデータは、アプライアンスがキー管理システム（KMS）に接続され、KMSセキュリティキーが設定されるまで保護されません。を参照してください<block ref="7d57422ccf1a5621419117615c6dc8b6" category="inline-link-rx"></block> 追加情報 の場合。</block>
   <block id="9a470dfb9a8484bf439126aff614b62e" category="paragraph">ディスクの復号化にKMSキーが必要でないと、アプライアンス上のデータを取得できず、実質的に失われます。これは、KMSから復号化キーを取得できない場合に発生します。顧客が KMS 設定をクリアするか、 KMS キーの有効期限が切れるか、 KMS への接続が失われるか、 KMS キーがインストールされている StorageGRID システムからアプライアンスが削除されると、キーにアクセスできなくなります。</block>
   <block id="590cbf74b84dfc73c6dc4c168b611ff4" category="admonition">アプライアンスがKMSキーで暗号化されたあとは、同じKMSキーを使用しないとアプライアンスのディスクを復号化できません。</block>
   <block id="cd2916f9f46b3e024123c6c0202b8d14" category="list-text">Configure Hardware * &gt; * Node Encryption * を選択します。</block>
@@ -1840,7 +1799,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="95b668160cdba261ae790b75887a7068" category="list-text">この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="0157d190f869c2f97221de4f6bb05f54" category="paragraph">StorageGRID アプライアンスインストーラが実行されている。</block>
   <block id="2c525a718ee46f850cb00b7c8251d1bb" category="section-title">エラーコードの確認（SG6000-CNコントローラ）</block>
-  <block id="f68249ccb694ca2d6a238fa8a17aca77" category="paragraph">SG6000-CN コントローラのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。</block>
   <block id="2073caa24dba0fd6d24f215ffe171e69" category="section-title">ハードウェアのセットアップがハングしたように見える（SG6000またはSG5700）</block>
   <block id="1c4af02f52caf871bdd2205522eedcdd" category="paragraph">ハードウェア障害やケーブル接続エラーによってストレージコントローラまたはアプライアンスコントローラのブート処理が完了しなかった場合は、StorageGRID アプライアンスインストーラを使用できないことがあります。</block>
   <block id="e597481de2349bed8008b189fed80099" category="inline-link-macro">SG5700のデジタル表示ディスプレイのコードを確認します。</block>
@@ -1936,7 +1894,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f0e4d108bd327aa0295d08fc98aaafd0" category="list-text">前面ベゼルを取り付けます。</block>
   <block id="f8f92f8e3df4caaa331a15ebf21c66fe" category="summary">インストーラのバージョンを確認し、アプライアンスと 3 つの StorageGRID ネットワーク（グリッドネットワーク、管理ネットワーク、（オプション \ ）、クライアントネットワーク（オプション \ ））の間の接続を設定するには、 StorageGRID アプライアンスインストーラにアクセスする必要があります。</block>
   <block id="5ec7f22d3e51b38237d9e49f06df79c2" category="paragraph">インストーラのバージョンを確認し、アプライアンスと 3 つの StorageGRID ネットワーク（グリッドネットワーク、管理ネットワーク（オプション）、クライアントネットワーク（オプション））の間の接続を設定するには、 StorageGRID アプライアンスインストーラにアクセスする必要があります。</block>
-  <block id="4b636b2c00fb0a20b7dbc6d6436cb44d" category="list-text">クライアントまたはサービスラップトップにが搭載されている<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="be86e83cca4c5d05fe7d5b6b9a6e55ee" category="list-text">使用するすべてのStorageGRID ネットワークにサービスアプライアンスまたはストレージアプライアンスコントローラを接続しておきます。</block>
   <block id="17afffb34f67dd060b9cdff4dad524cf" category="list-text">これらのネットワークでのサービスアプライアンスまたはストレージアプライアンスコントローラのIPアドレス、ゲートウェイ、およびサブネットを確認しておきます。</block>
   <block id="345d106a637952d5d6c78c87d1bd9d01" category="list-text">使用するネットワークスイッチを設定しておきます。</block>
@@ -1960,7 +1917,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="d40e4c2c3b0ff5d04fa853b79879165f" category="list-text">セキュリティアラートが表示された場合は、ブラウザのインストールウィザードを使用して証明書を表示およびインストールします。</block>
   <block id="43cf1947f202ecdcb542c175852a5fb8" category="paragraph">次回この URL にアクセスしたときに、アラートは表示されません。</block>
   <block id="e658e68c5a2726a1c4438533ca6fc194" category="paragraph">StorageGRID アプライアンスインストーラのホームページが表示されます。このページに最初にアクセスしたときに表示される情報とメッセージは、アプライアンスと StorageGRID ネットワークの現在の接続状況によって異なります。エラーメッセージが表示された場合は、以降の手順で解決されます。</block>
-  <block id="3e2959dd5329eedea2ff0811ae1465d2" category="image-alt">StorageGRID Webscale アプライアンスインストーラのホームページの上部を示すスクリーンショット</block>
   <block id="dcffb99a3229573aab8a609a363e0638" category="list-text">DHCPを使用してIPアドレスを取得できない場合は、リンクローカル接続を使用できます。</block>
   <block id="4558954c9bea9629dda151c16492b681" category="paragraph">イーサネットケーブルを使用して、サービスラップトップをサービスアプライアンスの右端の RJ-45 ポートに直接接続します。</block>
   <block id="6b55dd5a07c255c477de9dc84aa6c3dd" category="image-alt">SG100 リンク - ローカル接続</block>
@@ -2035,8 +1991,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="b9f6305da898c37246be3a9ad2940067" category="list-text">設置場所に正しいAC電源電圧が供給されていることを確認します。</block>
   <block id="9b97b7bd5e0a87be7bf218224ada83cf" category="cell">要件</block>
   <block id="aa315d71a0efaf85912cc94d0fa4c161" category="paragraph">120 ~ 240 V AC</block>
-  <block id="934636103800fa2d0ce2ea06a754e316" category="paragraph">240ボルトAC</block>
-  <block id="f08061482d4188abc3dae7d5f27247e0" category="paragraph">120 V AC</block>
   <block id="13d6a54468d2c57465721303fe79781b" category="paragraph">100～240 V AC</block>
   <block id="eb1ce5b5a2051e57c63701b4be3572eb" category="list-text">次のサイズのシェルフ（ケーブルなし）に適合する48.3cm（19インチ）のキャビネットまたはラックを用意します。</block>
   <block id="eec6c4bdbd339edf8cbea68becb85244" category="cell">高さ</block>
@@ -2106,7 +2060,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="cd667e7a5bfe576cd195b343236177f8" category="list-text"><block ref="c77bce23015d079a3b1782d6f714a451" category="inline-xref-macro-rx"></block></block>
   <block id="892298a63531bece2790cd7c6c34f3b8" category="inline-link-macro">SG100およびSG1000ハードウェアの設置に関するトラブルシューティングを行う</block>
   <block id="e2eef7e1bab5a25242b974b22e84829d" category="paragraph">この情報を参考にしてください <block ref="2f02a56a38ba5668f78b70d1451025e2" category="inline-link-macro-rx"></block>。</block>
-  <block id="274706ae3938aecdc2817c79cc2e6e76" category="paragraph">次の図は、SG100およびSG1000のステータスインジケータとボタンを示しています。</block>
   <block id="811d271fc8871f49479cd0550410bc16" category="image-alt">前面のインジケータ- SG1000</block>
   <block id="b9987a246a537f4fe86f1f2e3d10dbdb" category="cell">表示</block>
   <block id="46a2a41cc6e552044816a2d04634545d" category="cell">状態</block>
@@ -2238,7 +2191,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="b0ce0da2c61df2a123a327f5fc67ec1e" category="inline-link-macro">SG6000の設置に関するトラブルシューティングを行う</block>
   <block id="8d7b44769faa31ca0795ef22e5e5abad" category="paragraph">この情報を参考にしてください <block ref="7185001606303bd572016512cba439f2" category="inline-link-macro-rx"></block>。</block>
   <block id="b93283f45556daa23823ae488be334e4" category="paragraph">SG6000-CN コントローラには、次のインジケータやボタンなど、コントローラのステータスの確認に役立つインジケータが搭載されています。</block>
-  <block id="c29cf9f5d99d397cca4af2178f7bdf05" category="paragraph">次の図は、SG6000-CNコントローラのステータスインジケータとボタンを示しています。</block>
   <block id="cc64e2baaea130f098dabae1e21d5005" category="image-alt">前面のインジケータ - SG6000-CN</block>
   <block id="adcb6bac9bed11040d097243d4646284" category="list-text">青色：コントローラの電源がオンになっています。</block>
   <block id="ed3e3432e98f906cb4b8f8932f5c3266" category="list-text">off ：コントローラの電源がオフになっています。</block>
@@ -2534,11 +2486,8 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="26ea01749d8fe9ba54d34006d7b711eb" category="list-text">アプライアンスインストールタスクの途中でインストールが一時停止した場合は、 Grid Manager にサインインしてすべてのグリッドノードを承認し、 StorageGRID のインストールプロセスと導入プロセスを完了すると、インストールを再開できます。</block>
   <block id="3da6a7d0bb47cd64f8de58da564ed961" category="list-text">拡張またはリカバリ処理を実行する場合は、該当する手順に従います。</block>
   <block id="3b485651b0f8c9bae0428480b41d029a" category="inline-link">グリッドノードを追加しています</block>
-  <block id="99ff77ddad436b4aa4cfe20cc0b05ade" category="list-text">既存のStorageGRID システムにアプライアンスストレージノードを追加するには、の手順を参照してください<block ref="f2b9f2a623f458b464404f68e70d646c" category="inline-link-rx"></block>。</block>
   <block id="295d6a9c6c9a9b74aae70d676dadb9c9" category="inline-link">アプライアンスストレージノードのリカバリ</block>
-  <block id="1db4030625b77471b38dbe3afa660dcb" category="list-text">リカバリ処理の一環としてアプライアンスストレージノードを導入する場合は、手順を参照してください<block ref="f9cb95fb9122ae24b1bee4e15b33cda1" category="inline-link-rx"></block>。</block>
   <block id="bce65269f41e11f840ba14739e9745a3" category="list-text">ブラウザを開き、アプライアンスのコンピューティングコントローラの IP アドレスのいずれかを入力します。[+]<block ref="535c0115ab5cd897dcfefd414bb52887" prefix=" " category="inline-code"></block></block>
-  <block id="74338052fed8244d69eb24f9f847adee" category="image-alt">他のタイプのノード（管理ノード以外）用のアプライアンスインストーラのホームページ</block>
   <block id="5d3ae9fd20ce11abbf1c69e5e5ba2dbb" category="list-text">「 * プライマリ管理ノード接続 * 」セクションで、プライマリ管理ノードの IP アドレスを指定する必要があるかどうかを判断します。</block>
   <block id="73231881e6fea0c98729cd77e6d2cc87" category="list-text">[*インストール*]セクションで、現在の状態が「のインストール開始準備完了」であることを確認します<block ref="b63eb060814c4999e77b01e66538f258" prefix=" " category="inline-code"></block> をプライマリ管理ノードでグリッドに追加します<block ref="2f9ba536b02b69b5417cd803edfcffc0" prefix=" " category="inline-code"></block> "*インストールの開始*ボタンが有効になっていることを確認します。</block>
   <block id="8e6aacddb5c6d59f03cd6dca3d42cce4" category="admonition">ストレージノードアプライアンスをノードクローニングのターゲットとして導入する場合は、ここで導入プロセスを停止して、に進みます
@@ -2649,7 +2598,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ff893ef835261129935a9f82f297a8d3" category="list-text">*メンテナンスモードで再起動します*。コントローラをリブートし、ノードをメンテナンスモードのままにします。手順 の実行中に障害が発生し、最初からやり直す場合は、このオプションを選択します。ノードのリブートが完了したら、障害が発生した手順 の該当する手順から再起動します。</block>
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。[Nodes]ページに正常なステータス（緑のチェックマークアイコン）が表示されます <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">コンポーネントを交換する必要があるストレージアプライアンスのシリアル番号を確認しておきます。</block>
-  <block id="fe96bb389ae099a3c5dcdd5b5427e3bc" category="list-text">を使用して Grid Manager にサインインします<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">電源装置</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">ファン</block>
   <block id="3907a0fffff4b13006f3069d9186c0d5" category="list-text">ソリッドステートドライブ（SSD）</block>
@@ -2698,13 +2646,11 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">ネットアップの Interoperability Matrix Tool （ IMT ）</block>
   <block id="1ad48ec3a7913e569a91ccc60227023f" category="list-text">を参照してください<block ref="59eff0a7409a2083b143c03284b14f62" category="inline-link-rx"></block> アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。</block>
   <block id="82828b75bd7c1299c73c3da5ba0b0b2d" category="inline-link">Maintenance権限またはRoot Access権限</block>
-  <block id="f444b7c02a193b7d5b0e553d416d92ca" category="list-text">を使用することができます<block ref="b0a3545f40488f39b71de1f5af9d2d3f" category="inline-link-rx"></block>。</block>
   <block id="9a4832beec51f38ad760c485e07c9b9c" category="list-text">プロビジョニングパスフレーズを用意します。</block>
   <block id="5973629dedc46aea0b358220d599bfbd" category="paragraph">手順 は、アップグレード対象として選択されたすべての該当ノードに SANtricity OS のアップグレードが正常に適用されるまでは完了しません。各ノードの SANtricity OS を（順次）ロードする場合は 30 分以上、各 StorageGRID ストレージアプライアンスをリブートする場合は最大 90 分かかることがあります。グリッド内のSANtricity OSを使用していないノードは、この手順 の影響を受けません。</block>
   <block id="78b2a3316e8d5167c09213c366ccdf88" category="admonition">次の手順は、 Grid Manager を使用してアップグレードを実行する場合にのみ実行できます。08.42.20.00（11.42）より前のSANtricity OSをコントローラで使用している場合、アプライアンスのストレージコントローラをGrid Managerを使用してアップグレードできません。</block>
   <block id="61d38d1cdbd76386b6ca992b9d0137ee" category="admonition">この手順 は、 SANtricity OS のアップグレードに関連付けられた最新バージョンに NVSRAM を自動的にアップグレードします。NVSRAMのアップグレードファイルを別途適用する必要はありません。</block>
   <block id="19ad05ce216828cf31d75db3b5189076" category="inline-link">StorageGRID ホットフィックス手順</block>
-  <block id="962421f523a30432ee56d13b4bfeb0f7" category="admonition">この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。を参照してください<block ref="bfbdb3d0778b5cd64604bf15c516b66d" category="inline-link-rx"></block> を参照してください。</block>
   <block id="64b1188ca4b7a6d7d7865cd0446674b5" category="list-text">[download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
   <block id="a2e0fe599ce2640e2f1503063be0609a" category="paragraph">ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。</block>
   <block id="7daa4593875eaec3bb3ad0aa81b013a8" category="list-text">「 * maintenance * &gt; * System * &gt; * Software update * 」を選択します。</block>
@@ -2773,7 +2719,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="40e6ec0ba08691f8bf73f78bc177c657" category="admonition">ステータスが「 Needs Attention 」のノードがある場合は、メンテナンスモードを使用してアップグレードを実行します。</block>
   <block id="39e51c89e2fbc9bd58b8301b9be1e07e" category="doc">NICを取り付け直します</block>
   <block id="c0ce89e53f48ad69404bd79d5a7f6151" category="inline-link">ノードの接続状態を監視しています</block>
-  <block id="7879a141f29939fce0aabd7f2fee03d9" category="paragraph">サービスの中断を防ぐために、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
   <block id="2476382d1fb7937c6e08639e92e9d711" category="inline-link">シングルコピーレプリケーションを使用しない理由</block>
   <block id="4a878637c5e3724ecaa541f40a4bef16" category="list-text">アプライアンスの背面にあるNICを含むライザーアセンブリの場所を確認します。</block>
   <block id="6075a4acaf64fb38fadff43698028748" category="paragraph">アプライアンスの3つのNICは、写真のシャーシの位置にある2つのライザーアセンブリにあります（上部カバーを取り外した状態のアプライアンスの背面）。</block>
@@ -2835,8 +2780,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f127bf70eac06d5cd43bc646d9b61a11" category="list-text">リンク設定の変更が問題なく機能していることを確認したら、ノードをリブートします。StorageGRID アプライアンス・インストーラから、 *Advanced*&gt;*Reboot Controller* を選択し、次のいずれかのオプションを選択します。</block>
   <block id="9bab1ecdd4bd4e687b0585e9cdb2dce3" category="list-text">グリッドにノードを再追加する場合は、*[Reboot into StorageGRID *]*を選択してコンピューティングコントローラをリブートします。メンテナンスモードで作業を完了し、ノードを通常動作に戻す準備ができている場合は、このオプションを選択します。</block>
   <block id="08c9cceee0a6966bea233700fc31e63c" category="list-text">ノードをメンテナンスモードのままにしてコンピューティングコントローラをリブートする場合は、*[メンテナンスモードでリブートする]*を選択します。（このオプションは、コントローラがメンテナンスモードのときにのみ使用できます）。 グリッドに再参加する前にノードで他にもメンテナンス処理を実行する必要がある場合は、このオプションを選択します。</block>
-  <block id="9a18cbee573ae5e0a81c57565a8239d3" category="paragraph">サービスの中断を防ぐには、ファンの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、スケジュールされたメンテナンス期間中にサービスの中断が許容される時間帯にファンを交換してください。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
-  <block id="aa7a430b5102e55ec29d486c5165e7ba" category="paragraph">次の図は、アプライアンスのファンを示しています。コネクタが強調表示されます。アプライアンスの上部カバーを取り外すと、冷却ファンがあります。</block>
   <block id="dc55836577fc02b16cce59c34c0bd0f3" category="admonition">2 つの電源装置にもそれぞれファンが搭載されています。電源装置ファンは、この手順 には含まれていません。</block>
   <block id="c36b4cc7c715c27cf89053ed16076b2a" category="list-text">交換が必要なファンの場所を確認します。</block>
   <block id="faaae5a36ccc39581b4a36a48818db1a" category="image-alt">ファンの場所</block>
@@ -2855,7 +2798,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a06a89697080d39b76934f673e0f7142" category="paragraph">ファンのコネクタを回路基板のソケットに合わせてください。</block>
   <block id="25d33805c4fc3fc9ef5848f3d1c76650" category="list-text">ファンのコネクタを回路基板にしっかりと押し込みます（ソケットがハイライトされています）。</block>
   <block id="28e41029e41676fc4c53ea6a68e37bf2" category="doc">CMOSバッテリを取り付け直します</block>
-  <block id="d52f3d0f799abea307b13972c0f9af3d" category="paragraph">サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
   <block id="37d27b84d37ca2c4710cb9b17554424e" category="list-text">アプライアンスの背面にある2スロットライザーアセンブリの場所を確認します。</block>
   <block id="76245833024f1d80f06ad708ab46663e" category="image-alt">2スロットライザーの位置</block>
   <block id="a9d1558f7b5cfc455393c7b1b00db64c" category="list-text">青いマークの付いた穴を通してライザーアセンブリをつかみ、慎重に持ち上げます。ライザーアセンブリを持ち上げながらシャーシの前面方向に移動し、取り付けられているNICの外部コネクタがシャーシから外れるようにします。</block>
@@ -2876,7 +2818,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">交換したアプライアンスでノード暗号化の暗号化キーを管理するためにキー管理サーバ（KMS）を使用していた場合は、ノードをグリッドに追加するために追加の設定が必要になることがあります。ノードが自動的にグリッドに追加されない場合は、次の設定が新しいアプライアンスに転送されたことを確認し、想定される設定と異なる設定があれば手動で設定します。</block>
   <block id="7deed07135df9d94ea323d9469e424d3" category="list-text"><block ref="7deed07135df9d94ea323d9469e424d3" category="inline-link-macro-rx"></block></block>
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">アプライアンスのノード暗号化を設定します</block>
-  <block id="0a5611066cc6dfa6acb00a3c98785ae8" category="list-text"><block ref="0a5611066cc6dfa6acb00a3c98785ae8" category="inline-link-rx"></block></block>
   <block id="6c60c1ebcaf910de2a51a8c828bc0f5e" category="list-text">アプライアンスにログインします。</block>
   <block id="350f00799e345da9d8437a6755232692" category="paragraph">特定するアプライアンスのBMC IPアドレスを確認しておきます。</block>
   <block id="12d42de975e694d332bec59aed70bded" category="inline-link-macro">アプライアンスのBMCインターフェイスへのアクセス</block>
@@ -2988,7 +2929,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="28afc5014d72f3ea174bc5a65cd9630e" category="list-text">ソースノードで、最初にターゲットノードに割り当てられた一時的な IP アドレスが使用されるようになります。</block>
   <block id="7b94aafd236e4ceea865c931a85dfffa" category="list-text">ターゲットノードはメンテナンスモードを終了し、ソースノードに代わって StorageGRID に参加します。</block>
   <block id="2d19d406fa4b8c7f970985fd245d9c26" category="inline-link">再インストールのための準備をした</block>
-  <block id="11f0130e9caa644f96bf62e2f723dca8" category="list-text">ソースアプライアンスは、以前と同様に事前にインストールされた状態になります<block ref="9808e60ae6558350cc51bc72520015f6" category="inline-link-rx"></block>。</block>
   <block id="7943ed1a95e98b8db345a9a611617fc2" category="paragraph">ソースアプライアンスを別のグリッドに新しいノードとしてインストールまたは拡張すると、古いユーザデータが上書きされます。</block>
   <block id="e2e3ccf7097647279c88916257208b9b" category="paragraph">ソースアプライアンスのコントローラ設定をリセットして、このデータにアクセスできないようにすることもできます。</block>
   <block id="b96c8101a1845adc76ac9c16a415d845" category="inline-link-macro">StorageGRID アプライアンスインストーラ</block>
@@ -3017,7 +2957,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="d990067089901370b250a673e0bb0286" category="paragraph">交換用アプライアンスを設置するときは、 StorageGRID 接続およびデータ転送用の一時的な IP アドレスを指定する必要があります。交換用アプライアンスは、交換するアプライアンスノードと同じネットワークの一部になるため、交換用アプライアンスでこれらの各ネットワークの一時的なIPアドレスを指定する必要があります。</block>
   <block id="e8d170c1d01b5214a9b97ee8fbc40398" category="section-title">ターゲットアプライアンスの互換性</block>
   <block id="6cca792a53335169aad8581043148997" category="paragraph">交換用アプライアンスは、交換するソースノードと同じタイプで、両方が同じ論理 StorageGRID サイトに属している必要があります。</block>
-  <block id="3514507af11b532760b83d61e1cfa58d" category="list-text">交換用サービスアプライアンスは、交換する管理ノードまたはゲートウェイノードとは異なる場合があります。</block>
   <block id="8853412a153551cfcaa29f811be54d2a" category="list-text">SG1000 ソースノードアプライアンスを SG100 サービスターゲットアプライアンスに交換すると、ネットワークポートの最大速度が 100GbE から 25GbE に減ります。</block>
   <block id="953cb2571b5956e3ac9d0120f56a1235" category="list-text">サービスアプライアンスのネットワークコネクタはそれぞれ異なります。アプライアンスのタイプを変更する場合は、ケーブルまたは SFP モジュールの交換が必要になることがあります。</block>
   <block id="f99ba690ef7c0b4d695af7ef97254d6b" category="list-text">交換用ストレージアプライアンスには、交換するストレージノードよりも大きな容量が必要です。</block>
@@ -3025,10 +2964,8 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="3a71fcb87182b5371fb2ff3a6f8ac071" category="list-text">ソースノードで使用したのと同じRAIDモードをターゲットノードで使用する場合は、 ストレージ効率に劣るRAIDモード（RAID 6からDDPへの切り替えなど）の場合は、ターゲットアプライアンスのドライブがソースアプライアンスのドライブよりも大きい（TB単位）必要があります。</block>
   <block id="59ac238e8a3da571e29e8244d7c11945" category="list-text">ソリッドステートドライブ（SSD）の設置により、ターゲットストレージアプライアンスに設置されている標準ドライブの数がソースノードのドライブの数よりも少ない場合は、ターゲットアプライアンスの標準ドライブの全体的なストレージ容量（TB） ソースストレージノード内のすべてのドライブの合計機能ドライブ容量を超える必要があります。</block>
   <block id="6eb1cd521483763cff5db43da35f9bf8" category="paragraph">たとえば、60本のドライブを搭載したSG5760ソースストレージノードアプライアンスを58本の標準ドライブを搭載したSG6060ターゲットアプライアンスにクローニングする場合は、ストレージ容量を維持するために、クローニングの前に大容量のドライブをSG6060ターゲットアプライアンスにインストールする必要があります。（ターゲットアプライアンスのSSDを搭載した2つのドライブスロットは、アプライアンスのストレージ容量の合計には含まれません）。</block>
-  <block id="b9b679a3df24cf16a8eedf98d68b51a2" category="paragraph">ただし、60ドライブのSG5760ソースノードアプライアンスにSANtricity Dynamic Disk Pools DDP-8が設定されている場合は、58ドライブの同サイズのドライブを搭載したSG6060ターゲットアプライアンスにDDP-16を設定すると、ストレージ効率が向上するためにSG6060アプライアンスが有効なクローンターゲットになる可能性があります。</block>
   <block id="8ff591a1e680b38c258c3e2d245be715" category="paragraph">ソースアプライアンスノードの現在の RAID モードに関する情報は、 Grid Manager の * nodes * ページで確認できます。アプライアンスの [*Storage*] タブを選択します。</block>
   <block id="d557e651015d70d07c70796e3d6e3938" category="section-title">クローニングされない情報</block>
-  <block id="a4cf88fa9b5c91a818bbd7e14f3e1753" category="paragraph">次のアプライアンス構成は、クローニング中に交換用アプライアンスに転送されません。交換用アプライアンスの初期セットアップ時に設定する必要があります。</block>
   <block id="795db7e2cbe110c6a7442f6bf5064f61" category="list-text">ノード暗号化ステータス</block>
   <block id="1b014c8cd505ebe6bb399042771165bd" category="list-text">SANtricity システムマネージャ（ストレージノード用）</block>
   <block id="4844c7e6c1b74d1152ca01c1f70eff94" category="list-text">RAID モード（ストレージノード用）</block>
@@ -3039,16 +2976,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="59d2f54bed9c6d1ff315a058a4a52671" category="list-text">ソースとターゲットのアプライアンスに互換性がない</block>
   <block id="89e16c9efc1a3195a41f4ac0343ca036" category="list-text">ストレージノードの場合は、容量の不十分な交換用アプライアンス</block>
   <block id="82a441e64c838645d368374b712e97b3" category="paragraph">続行するには、クローニングのために各問題 を解決する必要があります。</block>
-  <block id="402e8d8cc774faa0ffb103ec31191db4" category="summary">ストレージノードのメンテナンス：</block>
-  <block id="e7c0a65f4f23da917c7102456d8d0604" category="doc">ストレージノードのメンテナンス</block>
-  <block id="b0c50a65e98390901450bc32a964e787" category="paragraph">ストレージノードのメンテナンス：これは統合することに意味がありますか?</block>
-  <block id="5fa0fd1f50f3110e2175d5795ac69d7a" category="paragraph">（新規導入トピック）</block>
-  <block id="fc5f302da9bb1f5799e5cd7b3cb39553" category="section-title">ストレージコントローラ（ストレージノード）のSANtricity OSのアップグレード</block>
-  <block id="d36a4e9199bb0968845f5e1b3aaee31c" category="paragraph">（既存のアプライアンスのトピックから選択-組み合わせる必要があります）</block>
-  <block id="d10e5d41523095f7dacd475aaa2d0eff" category="section-title">グリッドマネージャを使用してストレージコントローラのSANtricity OSをアップグレードします</block>
-  <block id="c8f13ecdc85c3bfef60908e267408347" category="section-title">ストレージコントローラのSANtricity OSをメンテナンスモードでアップグレードします</block>
-  <block id="459f2b9e083f1fd61f3a8e35a2ef5caf" category="section-title">SANtricity System Managerを使用してドライブファームウェアをアップグレードする</block>
-  <block id="01ff43a1e319756e65e4b39009e3bc21" category="paragraph">（既存のアプライアンスのトピックから選択-すでに組み合わせられています）</block>
   <block id="e4652cabe8177b6898c3fceccf7e0889" category="summary">StorageGRID システムのメンテナンスには、次の手順を使用してください。</block>
   <block id="286c486c26bacda407659736abf834d2" category="doc">ノードの一般的なメンテナンス手順：概要</block>
   <block id="0eb7986c87b6853bd0db330cbf27b26c" category="section-title">これらの手順について</block>
@@ -3067,9 +2994,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="93d3f6eb9501413ec1870e64b9c76218" category="inline-link-macro">SG5700 アプライアンスをメンテナンスする</block>
   <block id="085484ecf7fd2a03ad70870c4bf28af1" category="list-text"><block ref="085484ecf7fd2a03ad70870c4bf28af1" category="inline-link-macro-rx"></block></block>
   <block id="27be1a5983fb2c4f30e1d820650b881d" category="list-text"><block ref="27be1a5983fb2c4f30e1d820650b881d" category="inline-link-macro-rx"></block></block>
-  <block id="4ad4a12ff38ac52055189ca016f10e31" category="summary">ソフトウェアベースのノードメンテナンス：</block>
-  <block id="2822e59777c738749518fe3d946b263e" category="doc">ソフトウェアベースのノードメンテナンス</block>
-  <block id="6f90ad7f13dfc3945ef0b06e82dedf45" category="paragraph">ソフトウェアベースのノードメンテナンス：ここに何かありますか。</block>
   <block id="54188b6ff21cd050b26982264997918f" category="summary">アプライアンスノードをクローニングする前に、考慮事項と要件を理解しておく必要があります。</block>
   <block id="b959fd8ab2a0acd7b6945c942f03d2a7" category="section-title">交換用アプライアンスのハードウェア要件</block>
   <block id="8b817ddf1c4850340f6d234f071fae76" category="paragraph">交換用アプライアンスが次の基準を満たしていることを確認します。</block>
@@ -3094,7 +3018,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="e485a2bb58eff1a96bc2f6c877e4c6e8" category="summary">インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。</block>
   <block id="a7a12ea1a4c80643b85cc22b459bd606" category="paragraph">インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。</block>
   <block id="91fba6642e220c9d6b627c272ca1f4b0" category="inline-link">キー管理サーバを設定</block>
-  <block id="e6e81a590b45b0448e651a5dd5254f8b" category="paragraph">を参照してください<block ref="78ee7fe02fa869d03d2c3104510b6aaa" category="inline-link-rx"></block> StorageGRID アプライアンスにKMSを実装する方法については、を参照してください。</block>
   <block id="629dd4a72c9a27968c541923d0344da9" category="list-text">インストール時にアプライアンスのノード暗号化を有効にした。アプライアンスの設置後にノード暗号化を有効にすることはできません。</block>
   <block id="b25287ab8cd241c0615caa9ee3977f49" category="list-text">StorageGRID アプライアンスインストーラから、 * ハードウェアの設定 * &gt; * ノード暗号化 * を選択します。</block>
   <block id="60c896bdd4a0f80aba9556a7b4ddc643" category="image-alt">KMS の設定をクリアします</block>
@@ -3102,7 +3025,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="02f3eed45638835e6c2a74a9381b7d99" category="list-text">Encryption Status には、アプライアンスでノード暗号化が有効か無効かが表示されます。</block>
   <block id="58af1337eff937c1778b18fc1d2d04ea" category="list-text">キー管理サーバの詳細には、アプライアンスの暗号化に使用されている KMS に関する情報が表示されます。サーバおよびクライアント証明書のセクションを展開すると、証明書の詳細およびステータスを表示できます。</block>
   <block id="68504c39869669c6b5389a2274d4dffa" category="inline-link">KMS の設定方法</block>
-  <block id="f082340427789106aeba0cbae89026d9" category="list-text">期限切れの証明書の更新など、証明書自体の問題に対処するには、を参照してください<block ref="52b6d0f13c9fabd38c359a1231580697" category="inline-link-rx"></block>。</block>
   <block id="aa1ca147ed573253c2d79c0899278a0f" category="inline-link-macro">DNSサーバが正しい</block>
   <block id="152f82af2ae59cf239a7fb0a9d4c089f" category="inline-link-macro">アプライアンスのネットワークが正しく設定されていること</block>
   <block id="99cddd386e75287f63d4a5f2ffdc2bf6" category="list-text">KMS ホストへの接続で予期しない問題が発生する場合は、を確認してください <block ref="b3a5acbebadde76cd0f90c861034dd80" category="inline-link-macro-rx"></block> そしてそれ <block ref="1f5071c48334f38d678039b6a4da7b7e" category="inline-link-macro-rx"></block>。</block>
@@ -3116,7 +3038,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="d9744099bf6539e9413b885aa8b82a8b" category="paragraph">アプライアンス上でデータを保持する必要がある場合は、 KMS の設定をクリアする前に、ノードの運用を停止する手順 を実行するか、ノードをクローニングする必要があります。</block>
   <block id="d87465c58386df7fcac3df78509842b5" category="admonition">KMS をクリアすると、アプライアンスのデータが完全に削除され、アクセスできなくなります。このデータはリカバリできません。</block>
   <block id="9b6d5caacf9a5a2c0276599c5f09a29f" category="inline-link">ノードを運用停止</block>
-  <block id="b2144970c69c4f2cf3445b6414613bd5" category="paragraph"><block ref="c0d2e088b84e8b44ecef73c636830bfa" category="inline-link-rx"></block> に含まれるデータを StorageGRID 内の他のノードに移動すること。</block>
   <block id="859d99fa7b935e6325ebfeb0207ded39" category="paragraph">アプライアンス KMS の設定をクリアすると、ノード暗号化が無効になり、アプライアンスノードと StorageGRID サイトの KMS の設定との間の関連付けが解除されます。その後、アプライアンスのデータが削除され、アプライアンスはインストール前の状態のままになります。このプロセスを元に戻すことはできません。</block>
   <block id="1167f3d404dbe49b0ea77711d0270d7f" category="paragraph">KMS の設定をクリアする必要があります。</block>
   <block id="d0fa678397c6ce5dd9fa67cff3137f5d" category="list-text">アプライアンスを別の StorageGRID システムにインストールする前に、 KMS を使用しない、または別の KMS を使用する前に、</block>
@@ -3132,7 +3053,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="d02998317920f8f7ad0339e0f94f8513" category="list-text">ノードの暗号化が無効になっていること、および * キー管理サーバの詳細 * および * KMS キーと削除 * のコントロールでキーと証明書の情報がウィンドウから削除されていることを確認します。</block>
   <block id="30bf3ba32c51e5f7438ddf7451d5b0b7" category="paragraph">ノード暗号化は、グリッドに再インストールするまでアプライアンスで再度有効にすることはできません。</block>
   <block id="66a05384c891c390cd34f3b79245d267" category="inline-link">再インストールのためのアプライアンスの準備手順</block>
-  <block id="10d8553c02ec2ebbc54cd39fa8829035" category="paragraph">アプライアンスがリブートし、 KMS がクリアされてインストール前の状態になっていることを確認したら、 StorageGRID システムからアプライアンスを物理的に取り外すことができます。を参照してください<block ref="be190adfb867dba565a711deb99e1561" category="inline-link-rx"></block>。</block>
   <block id="20145658ea802eba7489d76c2eccb4ed" category="summary">アプライアンスノードの IP アドレスを設定するときに割り当てた MTU 設定を変更できます。</block>
   <block id="b70bb7ceeb11d97c10297430b5e98808" category="inline-xref">IP 変更ツールを使用します</block>
   <block id="a1677671d199d2d1a1f100c491a2509f" category="paragraph">アプライアンスノードをリブートせずに MTU 設定を変更するには、次の手順を実行します。 <block ref="643a99033afcb6b904d10375cb789042" category="inline-xref-macro-rx"></block>。</block>
@@ -3141,7 +3061,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="629f71aaa22e2c436012eb1ba4640efe" category="section-title">IP 変更ツールを使用して MTU 設定を変更します</block>
   <block id="55f0a36e8001f5a40768044169b8038d" category="paragraph">を使用することができます<block ref="28325afa13c532a62489ef0d7bee3061" prefix=" " category="inline-code"></block> ファイルを使用してIP変更ツールを使用します。</block>
   <block id="fc09154f621c355dcaaf65ce69981b52" category="inline-link">ノードのネットワーク設定の変更</block>
-  <block id="c4ee09b7063a859f2e7a87a22cc5aa3c" category="paragraph">IP 変更ツールにアクセスし、の説明に従って MTU 設定を更新します<block ref="5cd7a4cd1ce06b78f3f5634edc47cb8a" category="inline-link-rx"></block>。</block>
   <block id="54a74c2628c753d91428e7a61b1f07cc" category="section-title">メンテナンスモードを使用して MTU 設定を変更します</block>
   <block id="e4e0d35e946a7f92ce7c9ae138d1014b" category="paragraph">IP 変更ツールでこれらの設定にアクセスできない場合は、メンテナンスモードを使用して MTU 設定を変更してください。</block>
   <block id="d0e2b01c55d6145ba7a5e301667aa5b0" category="inline-link-macro">メンテナンスモードにしました</block>
@@ -3229,12 +3148,10 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="e9eeb29aa106609d6de499c60a1bb7ab" category="inline-link-macro">CMOSバッテリを交換する必要があるアプライアンスを確認</block>
   <block id="ea70b6ae5e8e6000f846a5a8a6fee1d9" category="list-text">これで完了です <block ref="5813a66984e2f107697524f5da800ff8" category="inline-link-macro-rx"></block>。</block>
   <block id="af649bc3ca89bac5478860bada27d6ff" category="inline-link-macro">アプライアンスの通常のシャットダウン</block>
-  <block id="b58cf6331a388f8ca4d6c2d9ba4dcb68" category="admonition">A <block ref="6bb1c156f9acfcc4bd439f64de9f6179" category="inline-link-macro-rx"></block> は、アプライアンスをラックから取り外す前に必要です。</block>
   <block id="f53242e4269fef805877f4a607bfeb25" category="inline-link-macro">アプライアンスカバーを取り外した</block>
   <block id="e57884dd2b5e54d870c527b3ffb5c0c7" category="list-text">すべてのケーブルと <block ref="0dfdedc6ae01c44f83284cd76e2de63a" category="inline-link-macro-rx"></block>。</block>
   <block id="1447aad49731047d58031226a72b264a" category="doc">SGF6112アプライアンスを交換してください</block>
   <block id="8d05a10a07f31ac269bed1ae8269a3b2" category="list-text">これで完了です <block ref="5ae0b19c26e1799f1a1f36587bc3c697" category="inline-link-macro-rx"></block>。</block>
-  <block id="18d1f71ff9d7db9c5dca8144a0fbaa78" category="list-text"><block ref="661ec4b50e1bcae5fbe3a04c5ab12ebe" category="inline-link-macro-rx"></block>。</block>
   <block id="aef13b89b7eea46d56501e677144b024" category="list-text">このStorageGRIDアプライアンスのいずれかのネットワークインターフェイスがDHCP用に設定されている場合は、交換用アプライアンスのMACアドレスを参照するように、DHCPサーバの永続的なDHCPリース割り当てを更新する必要があります。これにより、アプライアンスに適切なIPアドレスが確実に割り当てられます。</block>
   <block id="79f315a3efc8106e7c8d3f6476b65f48" category="paragraph">ネットワーク管理者またはDHCPサーバ管理者に連絡して、恒久的なDHCPリース割り当てを更新してください。管理者は、DHCPサーバのログから、またはアプライアンスのイーサネットポートが接続されているスイッチのMACアドレステーブルを調べて、交換用アプライアンスのMACアドレスを特定できます。</block>
   <block id="78ac9393380e8b7e2814df80349428c1" category="inline-link-macro">障害が発生したアプライアンスをキャビネットまたはラックから取り外す</block>
@@ -3264,7 +3181,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="05af8dc3b0588fc5c9ecb2b6c178bee0" category="list-text">アプライアンスの電源をオンにします。</block>
   <block id="4245635d62a9242eb35a7e4ec5a56abd" category="list-text">アプライアンスがグリッドに再参加するまで待ちます。アプライアンスがグリッドに再参加しない場合は、StorageGRID アプライアンスインストーラのホームページのガイダンスに従って問題に対処してください。</block>
   <block id="a7c99d1b44c3cfef060bab2387eba42e" category="admonition">ディスクドライブを別のスロットに移動するなど、物理ハードウェアの変更が必要であることがアプライアンスインストーラによって示された場合は、ハードウェアを変更する前にアプライアンスの電源をオフにしてください。</block>
-  <block id="ca2048aa7418bfc8c45e3193b5be5e0d" category="paragraph"><block ref="ca2048aa7418bfc8c45e3193b5be5e0d" category="inline-link-macro-rx"></block></block>
   <block id="5c7a2a67a862c92aebc2865b7c819287" category="summary">SGF6112をキャビネットまたはラックから取り外して上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。ハードウェアのメンテナンスが完了したら、アプライアンスをキャビネットまたはラックに再度取り付けます。</block>
   <block id="e7398e21823a1d6850d98f9f0adb90af" category="admonition">電源スイッチを使用してアプライアンスをシャットダウンしないでください。</block>
   <block id="dc4aada9d719c5cd8b6b1b2e23cb1371" category="list-text">アプライアンスの電源ケーブルにラベルを付けてから外します。</block>
@@ -3280,8 +3196,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="c5e193e61c8068cebd4cb4fba2c27866" category="inline-link-macro">コントローラの電源ケーブルを再接続</block>
   <block id="b6b0dd970889f43cc1c52597b7622743" category="list-text"><block ref="6f9f5a65c301bc92abf7bdeee5c6a76d" category="inline-link-macro-rx"></block>。</block>
   <block id="37abf98b4de9f33857b199b4587f5694" category="inline-link-macro">アプライアンスの再起動</block>
-  <block id="75a0a5a5fe162a7f9fdba4837463d44f" category="summary">アプライアンスの前面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスを見つけやすくなります。</block>
-  <block id="debdd98b0f5a40d3b21e412c9c782a4d" category="paragraph">アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンターでアプライアンスの場所を特定できます。</block>
   <block id="8d0a484f63561e569cf5b352c5be813a" category="inline-link-macro">データセンターにアプライアンスを配置します</block>
   <block id="48ce381161753a96507e349f7aa77165" category="paragraph"><block ref="48ce381161753a96507e349f7aa77165" category="inline-link-macro-rx"></block></block>
   <block id="93fbb9aaa73dda71ec648251dcaa9967" category="summary">アプライアンスのメンテナンス手順が必要になる場合があります。ここでは、SG6100アプライアンスのメンテナンスに固有の手順について説明します。</block>
@@ -3336,7 +3250,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="6adc7b56a9a705255ff5ae88c4727673" category="admonition">このアプライアンスに緑色のアイコンが表示されている場合を除き、別のアプライアンスノードをオフラインにしないでください。</block>
   <block id="11462fb2917b851e5fb3f96bec8ba764" category="list-text">PuTTYまたは別のsshクライアントを使用してグリッドノードにログインし、新しいアプライアンスが完全に動作していることを確認します。</block>
   <block id="8a319d9f1f8fa62d913f59ab432b8f1a" category="list-text">次のコマンドを入力します。<block ref="604b3aa6831925c337f9cec38597d65a" prefix=" " category="inline-code"></block></block>
-  <block id="4a4df9fcde02f4c20df662c4d87783a1" category="summary">Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。</block>
   <block id="bf8542827bf52ff1d2d3ca74de649b6a" category="inline-link">ストレージアプライアンス管理者またはRoot Access権限</block>
   <block id="bf5f327428f0175033f3cbe43e6e7b3e" category="paragraph">[Manage Drives]タブには、次のビューがあります。</block>
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">レイアウト</block>
@@ -3374,7 +3287,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="42928a49b52d5c63d01891c29be24fcd" category="inline-link-macro">交換するPSUの場所を確認</block>
   <block id="67cb15c24e3f11a79e492d24bd1a36ef" category="list-text">これで完了です <block ref="3f87d3899d1e937c5ab71f93f4b1094d" category="inline-link-macro-rx"></block>。</block>
   <block id="20ba337feb638d326a67a2659467dddc" category="image-alt">2つの電源装置を搭載したSGF6112の背面</block>
-  <block id="e79ffaa46a9eac9da0887c44b78a5e76" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがあり、両方の電源装置を同時に交換する場合は、スケジュールされたメンテナンス時間に電源装置を交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="3977df58bd7e96da4f405bc4b0f8539e" category="paragraph">アプライアンスの背面から見た場合、電源装置A（PSU0）は右側、電源装置B（PSU1）は左側にあります。</block>
   <block id="ba93c8761a840149d924b3d530ed14ec" category="list-text">交換する最初のサプライ品のハンドルを持ち上げます。</block>
   <block id="d5483b5e98966500a9192029cc9e4ec2" category="image-alt">ハンドルを持ち上げてPSUを取り外します</block>
@@ -3421,7 +3333,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2bb86ccc72619207d683e45635d07991" category="list-text">コントローラに接続する各ケーブルを識別するためのラベルを用意しておきます。</block>
   <block id="822f3e8582776cbafa8007c1adb5ec11" category="admonition">保存されたキーでドライブのロックを解除するまでは、アプライアンスを使用できません。</block>
   <block id="b865bb98d9b0550e0a993612bafda00d" category="list-text">特定のアクセス権限が必要です。</block>
-  <block id="8ff1ab4da14b392126e0be753ff139ad" category="list-text">を使用して Grid Manager にサインインする必要があります<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
   <block id="ed685b27fc1f2fa59a4dd9211c2e329c" category="paragraph">コントローラキャニスターに障害が発生したかどうかは、次の 2 つの方法で確認できます。</block>
   <block id="f7e01d9dca1569b4e2686ae3201b9f37" category="list-text">SANtricity System Manager の Recovery Guru から、コントローラを交換するように指示されます。</block>
   <block id="f8e24f4f8665beda2711e14f280abf35" category="list-text">コントローラの黄色の警告 LED が点灯して、コントローラに障害が発生したことが通知されます。</block>
@@ -3500,7 +3411,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="1652d3ef680f0a24a213e53a3684a726" category="list-text">ping テストツールを使用して、で行ったリンク設定の変更によって影響を受けた可能性のあるネットワーク上の IP アドレスへの接続を確認します  <block ref="251a79c2543cfdb5bc7318665d28751a" category="inline-xref-macro-rx"></block> ステップ。</block>
   <block id="ec7d8a941260858e7a2c615bc0712041" category="paragraph">最低でもプライマリ管理ノードのグリッド IP アドレスと、 1 つ以上の他のストレージノードのグリッド IP アドレスについて、 ping が通ることを確認します。必要に応じて、リンク設定の問題を修正します。</block>
   <block id="6917659e38973f6eb0e35216f7b11a68" category="summary">ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。</block>
-  <block id="c681fd0baeee7cbeb31c91910e5a075d" category="doc">SG5700ストレージコントローラでのSANtricity OSのアップグレード</block>
   <block id="b5dd35ba554436566b3e8f9a2a7a26d5" category="paragraph">を参照してください<block ref="59eff0a7409a2083b143c03284b14f62" category="inline-link-rx"></block> をクリックして、使用する必要があるバージョンを確認します。</block>
   <block id="c32e3124620c00511f694597c85f886b" category="paragraph">から新しいSANtricity OSソフトウェアファイルをダウンロードします<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
   <block id="1fc307f4912476cad93bc35528367a92" category="paragraph">現在インストールされている SANtricity OS のバージョンに応じて、次のいずれかの手順を実行します。</block>
@@ -3534,7 +3444,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2f68de2edb01ee7da5e8aff5da82aa89" category="inline-link-macro">E2800コントローラの交換</block>
   <block id="ccec4171b3aa679daffaf6d180f0a8ed" category="paragraph">E2800コントローラのバッテリを交換するには、次の手順を参照してください： <block ref="08b7b963baf956de14da253f81baadff" category="inline-link-macro-rx"></block>。これらの手順では、アプライアンスからのコントローラの取り外し、コントローラからのバッテリの取り外し、バッテリの取り付け、およびコントローラの交換の方法について説明します。</block>
   <block id="3007aafe39334f42091e0f5b3576429c" category="inline-link">EシリーズでのE2800ハードウェアのメンテナンス手順</block>
-  <block id="48b42f1017a20a8026dda3fab8b8bf63" category="paragraph">アプライアンスのドライブ、電源/ファンキャニスター、ファンキャニスター、電源キャニスター、またはドライブドロワーを交換するには、<block ref="651c02e99012dab891794fa14233e234" category="inline-link-rx"></block>。</block>
   <block id="460e3df6135602b462c67bd8cfc3bfca" category="section-title">SG5712 コンポーネントの交換手順</block>
   <block id="c19f6f3bf60ec1c67dea7fd48493e085" category="cell">FRU</block>
   <block id="8a241f77eb8c1ca141cc3dce253f97de" category="cell">については、 E シリーズの手順書を参照してください</block>
@@ -3553,8 +3462,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="8674320d8404bd4a6fd6610d435d59f7" category="doc">SG1000およびSG100サービスアプライアンスハードウェアのメンテナンス</block>
   <block id="7dedc14c3c2da16d1cf49266e55250dd" category="summary">StorageGRIDシステムの構成と使用方法について説明します。</block>
   <block id="932c9337fec4ec6d783d14e18a8f8937" category="doc">StorageGRIDソフトウェアのドキュメント</block>
-  <block id="15b870e7b175a7af88e1f39b1dd67be6" category="inline-link">StorageGRID 11.8ドキュメント</block>
-  <block id="ce54c2d81d85f4c3602ab64f20ca089c" category="paragraph">に進みます<block ref="0bf55bf828dd8d18af99f238c2aa3c65" category="inline-link-rx"></block> を参照して、StorageGRID 11.8システムの設定および使用方法を確認してください。</block>
   <block id="042c7e26fe8aab5fa2f5f2c216686078" category="paragraph">StorageGRIDのドキュメントサイトには、次のような情報が含まれています。</block>
   <block id="9d9d8a3b9e08531839387ac7728d7fc0" category="list-text">ネットワークのガイドライン。</block>
   <block id="7f811504bb717d099e7d5960667aa1ad" category="list-text">LinuxノードとVMwareノードのインストール手順。</block>
@@ -3637,7 +3544,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a6b3ba0004b2a9a8396f15a73114a062" category="list-text">アプライアンスストレージノードおよび新しい拡張シェルフのステータスを確認します。</block>
   <block id="6b5138f4d805b8079a4f07b226e6885a" category="list-text">Grid Managerで、* nodes *を選択し、アプライアンスストレージノードに緑のチェックマークアイコンが表示されていることを確認します。</block>
   <block id="3323a22b50b501b0a1012ae5490e2561" category="inline-link">ノードの接続状態を監視します</block>
-  <block id="2d5c32d5d75282dd8d640653b98ce73d" category="paragraph">緑のチェックマークアイコンは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。ノードアイコンの概要 については、を参照してください<block ref="5cbbac3dc1cf3f6e667c1cdfad1f31fe" category="inline-link-rx"></block>。</block>
   <block id="14596e3f470c9db656d16ab3f2b12a1e" category="list-text">「 * Storage * 」タブを選択し、追加した各拡張シェルフのオブジェクトストレージテーブルに 16 個の新しいオブジェクトストアが表示されていることを確認します。</block>
   <block id="22c69228c329b5116431e025cc44e63d" category="list-text">新しい各拡張シェルフのシェルフステータスが Nominal であり、構成ステータスが Configured になっていることを確認します。</block>
   <block id="a270effeecbb6963016e75f06ac62cdb" category="summary">拡張シェルフの入出力モジュール、電源装置、またはファンの交換が必要になることがあります。</block>
@@ -3654,7 +3560,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="f3f0bb7df8a5df54b93b12a935d9a5cf" category="list-text">StorageGRID アプライアンスをStorageGRID システムで実行している場合は、SG6000-CNコントローラをに配置しておきます <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>。</block>
   <block id="36fde19ae1fdd276915f6d40cd16218b" category="admonition">保守モードでは、ストレージコントローラへの接続が中断されます。</block>
   <block id="50528405c48a12ce4f7dcffb683cba7c" category="list-text">アプライアンスがに接続されていることを確認します <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>。</block>
-  <block id="62f8a82e3dc73d6f7b5281835ada3bdc" category="list-text">SANtricity OS_guide または SANtricity System Manager のオンラインヘルプの指示に従って、ファームウェアと NVSRAM をアップグレードします。</block>
   <block id="93e4518c31af3640d240d4efc6bc5019" category="paragraph"><block ref="93e4518c31af3640d240d4efc6bc5019" category="inline-link-rx"></block></block>
   <block id="15b3987f6e8f0fed9b679cf950924c37" category="paragraph"><block ref="15b3987f6e8f0fed9b679cf950924c37" category="inline-link-macro-rx"></block></block>
   <block id="476f00f04fb8d0b6d5a144c5059893fa" category="summary">Fibre Channel HBAが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。</block>
@@ -3685,9 +3590,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="bb91d90513b11ba0cde4d827b8b6189f" category="list-text">これで完了です <block ref="04cfa1a1def5b2a22a4d1b75e8621252" category="inline-link-macro-rx"></block>。</block>
   <block id="f070b4ead572fee92f168d61cb6a6faa" category="inline-link-macro">コントローラのカバーを取り外した</block>
   <block id="2a43f5efe797669d447814b1cdd36894" category="list-text">これで完了です <block ref="96975b66771a6cb1b5238746a1126bdb" category="inline-link-macro-rx"></block>。</block>
-  <block id="fc98bf5544404a6ebde1117198acbc14" category="paragraph">サービスの中断を防ぐには、ファイバチャネルHBAの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容されるスケジュールされたメンテナンス期間中にアダプタを交換してください。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
-  <block id="8bf33482d5cb3ab2368971d76d70b792" category="admonition">オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス期間中に Fibre Channel HBA を交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。[+]
-については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="159de4d0f279530b02961025bd5110cb" category="list-text">ファイバーチャネル HBA を搭載したコントローラの背面にあるライザーアセンブリを探します。</block>
   <block id="3b9dbd7ec583332e8e82592d28507b10" category="image-alt">SG6060 ライザーアセンブリの場所</block>
   <block id="078f7888ee57016d6ef976c61af2ca58" category="list-text">青いマークの付いた穴を通してライザーアセンブリをつかみ、慎重に持ち上げます。取り付けられているアダプタの外部コネクタがシャーシから外れるように、ライザーアセンブリをシャーシの前面方向に持ち上げます。</block>
@@ -3716,7 +3618,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="8e35462b461cf867d6412ed05c1b3321" category="section-title">SG6000-CN コントローラをシャットダウンします</block>
   <block id="1ca9c37b6efff7aabf07372129fd87c5" category="paragraph">ハードウェアのメンテナンスを実行するには、 SG6000-CN コントローラをシャットダウンします。</block>
   <block id="eea0642a1d6761b6cb0df3399ff32b89" category="list-text">データセンターでのメンテナンスが必要な SG6000-CN コントローラの物理的な場所を確認しておきます。を参照してください <block ref="d3e2bdffcf0415bf12feb01b0c3df297" category="inline-link-macro-rx"></block>。</block>
-  <block id="83bf1903def806459d5726a82b9fb315" category="paragraph">サービスの中断を回避するには、他のすべてのストレージノードがグリッドに接続されていることを確認してから、コントローラをシャットダウンするか、スケジュールされたメンテナンス期間中にサービスの停止期間が許容される場合はコントローラをシャットダウンします。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
   <block id="3e16c46c9ebc6489c58ece6add7335b4" category="admonition">オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス時間中にコントローラをシャットダウンする必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。[+]
 情報ライフサイクル管理によるオブジェクトの管理に関する情報を参照してください。</block>
   <block id="6b5ef9dc21032000727d333484296ee7" category="list-text">SG6000-CNコントローラをシャットダウンします。</block>
@@ -3806,10 +3707,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="9e8de8207a27e38055372b6f8749b8ce" category="summary">SG6000 アプライアンスでメンテナンス手順を実行する必要がある場合があります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。</block>
   <block id="141e448e72da84941411a863213f2c09" category="paragraph">SG6000 アプライアンスでメンテナンス手順を実行する必要がある場合があります。</block>
   <block id="e2509dc9991f44c246272375b8a847a1" category="paragraph">このセクションでは、SG6000アプライアンスのメンテナンスに固有の手順について説明します。アプライアンスがStorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。</block>
-  <block id="73af0f80bf96e942698f82207466896b" category="paragraph">サービスの中断を回避するには、アプライアンスをシャットダウンする前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの停止期間が許容範囲内であれば、スケジュールされたメンテナンス期間中にアプライアンスをシャットダウンします。の情報を参照してください<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
   <block id="b8d2b8725b2e030a515d72c8a63d952f" category="inline-link">情報ライフサイクル管理によるオブジェクトの管理</block>
-  <block id="1f5b15c067723f69c6847d697546abc5" category="admonition">オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス時間中にアプライアンスをシャットダウンする必要があります。そうしないと、ストレージノードのサービスを停止するメンテナンス手順 の実行中に、これらのオブジェクトへのアクセスが一時的に失われる可能性があります。の情報を参照してください<block ref="cd1ef74e74db107110af05b0e30dd0cc" category="inline-link-rx"></block>。</block>
-  <block id="037ffcc9ae7a32db479755efe2598ed5" category="doc">SG6000ストレージコントローラでのSANtricity OSのアップグレード</block>
   <block id="d441e9af212dd125aa8aab1e2197a504" category="inline-link-macro">ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします</block>
   <block id="51e4a82d19fd91f3cf084d63f52ecd24" category="paragraph"><block ref="51e4a82d19fd91f3cf084d63f52ecd24" category="inline-link-macro-rx"></block></block>
   <block id="5e56321203b6b5dd968187ab3777997c" category="admonition">ストレージアプライアンスの SANtricity OS をアップグレードするときは、 StorageGRID のドキュメントに記載されている手順に従う必要があります。他の手順を使用すると、アプライアンスが動作しなくなる可能性があります。</block>
@@ -3828,7 +3726,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="39249c9931daa900d69b1741171b0d74" category="list-text">[[link_config_changes,start=2]] リンク設定に必要な変更を加えます。</block>
   <block id="54bf1be0a1b6120efcd0e5edc79f7254" category="admonition">接続しているネットワークまたはリンクを変更すると、接続が失われる可能性があります。1分以内に再接続されない場合は、アプライアンスに割り当てられている他のIPアドレスのいずれかを使用してStorageGRID アプライアンスインストーラのURLを再入力します：+<block ref="52d1bfd6b3ee81a73b41df0f5e09504c" prefix=" " category="inline-code"></block></block>
   <block id="9578cffd970cec1182dcb54a4d3f788f" category="inline-link">IP アドレスを設定する</block>
-  <block id="49689c780944c9c0200ed69ee29ed779" category="paragraph">VLAN 設定を変更した場合は、アプライアンスのサブネットが変更されている可能性があります。アプライアンスの IP アドレスを変更する必要がある場合は、に従います<block ref="c26e38c8e7107914e422d7c5dd3245be" category="inline-link-rx"></block> 手順</block>
   <block id="130dad3fc255a765151e34f1dedaeab1" category="inline-xref">リンク設定の変更</block>
   <block id="ca0207a23fdc7eb15925595284432b74" category="list-text">ping テストツールを使用して、で行ったリンク設定の変更によって影響を受けた可能性のあるネットワーク上の IP アドレスへの接続を確認します <block ref="7afc8857c1a1d694504049da9c46e74a" category="inline-xref-macro-rx"></block> ステップ。</block>
   <block id="81697b9af295bc0f7ef9d9c8847a0cee" category="paragraph">最低でもプライマリ管理ノードのグリッドネットワーク IP アドレスと、 1 つ以上の他のストレージノードのグリッドネットワーク IP アドレスについて、 ping が通ることを確認します。必要に応じて、に戻ります <block ref="7afc8857c1a1d694504049da9c46e74a" category="inline-xref-macro-rx"></block> リンク設定の問題があれば手順を実行して修正します。</block>
@@ -3838,7 +3735,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="9972e3c27a30d4e8595ff51251aa5042" category="list-text">データセンターでストレージシェルフのハードウェアコンポーネントを交換するストレージアプライアンスを物理的に配置しておきます。</block>
   <block id="9369c94747a1ec47fffa77ecf3cdeaa2" category="paragraph">ストレージコントローラのバッテリを交換するには、の手順を参照してください <block ref="14cc25446d54ba6e716abd5472dcaf03" category="inline-link-macro-rx"></block>。これらの手順では、アプライアンスからのコントローラの取り外し、コントローラからのバッテリの取り外し、バッテリの取り付け、およびコントローラの交換の方法について説明します。</block>
   <block id="1341efb2b0c1641ae667c22aff048f1a" category="inline-link">Eシリーズのシステムメンテナンス手順</block>
-  <block id="24a6c2074191b7644937ad35e163738e" category="paragraph">コントローラシェルフの他のField Replaceable Unit（FRU；フィールド交換可能ユニット）の手順については、<block ref="7aebff414119a02eceeb8a93ad29b549" category="inline-link-rx"></block>。</block>
   <block id="c2722d3c32348b7adce5bfed9f61449a" category="cell">手順を参照してください</block>
   <block id="07f4d2a10bd82d72a5d65f382db25d2b" category="paragraph">StorageGRID （以下の手順）：ストレージコントローラの交換</block>
   <block id="e8ced6b6f8edec510f4bdfce8d8d4ce8" category="paragraph">E シリーズ：</block>
@@ -3910,7 +3806,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="cb8bece9fb25f8108101de99e31c5592" category="summary">StorageGRIDアプライアンスノードを導入し、ノードの動作を確認します。</block>
   <block id="bc03a6dfa9c6afbbaed3ab51e165c652" category="doc">アプライアンスノードを導入する</block>
   <block id="0411119e4f79ad1707ac7d0f4dcfe1f9" category="sidebar">頻繁に実行される手順</block>
-  <block id="314d609d30807d8299f0792c00758f67" category="sidebar">ロケーションLEDのオン/オフ</block>
   <block id="aefc32c543633d03426c4468621c16d0" category="sidebar">アプライアンスの電源のオン/オフ</block>
   <block id="a676111fb737fcb72e7e7c965f76150f" category="sidebar">SANtricityのアップグレード</block>
   <block id="c55b834e11341e1ae1654b547833e156" category="sidebar">ドライブファームウェアをアップグレードします</block>
@@ -3947,7 +3842,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ae8cb7f5f8b1efdc9458aa7fea7da202" category="sidebar">E2800シリーズストレージコントローラの交換</block>
   <block id="6075bc4c409cef5de2e19d8ffc49b559" category="sidebar">他のSG5700コンポーネントの交換</block>
   <block id="aefc997600f67bde12a1da00bc26814a" category="sidebar">交換するコンポーネントを確認します</block>
-  <block id="6b81b1112af1a88409239a22bc0ab3b7" category="sidebar">ラック内のSGF6112の再配置</block>
   <block id="78ca94519eab9faa83c3d6f49938a157" category="sidebar">カバーを交換します</block>
   <block id="10c9d5e9c31fe9ef3ac5e544a2d1af8b" category="sidebar">ファンを交換します</block>
   <block id="14d746b21dcfe93e11bc84dec69f92fc" category="sidebar">ドライブを交換します</block>
@@ -4011,7 +3905,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="77d2b0ac8e200595c2f4d240b0c80f51" category="sidebar">アプライアンスの設定の保守（すべてのノード）</block>
   <block id="48889e269a4d7fca4c265f4a2f877e26" category="sidebar">SG6100ハードウェアのメンテナンス</block>
   <block id="14975bfde92215c95436649cec8f726d" category="sidebar">SG6100ハードウェアのメンテナンス</block>
-  <block id="43669fdd9ce1157a7238aa25102bb3ab" category="sidebar">[ドライブの管理]タブを使用</block>
   <block id="26b6d36b296274fea73c7b0861022842" category="sidebar">アプライアンスの電源をオフにしてオンにします。</block>
   <block id="f038cfedcecfda2c0df73e7e4b3e5a5f" category="sidebar">ハードウェアのメンテナンス手順</block>
   <block id="04151f4bdc7338545b601e95ffdb3628" category="sidebar">ハードウェアのメンテナンス手順- SG6100</block>
@@ -4029,7 +3922,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="70aa111f5c2fa3551f9e0918c56a7284" category="sidebar">SG6000ハードウェアのメンテナンス</block>
   <block id="48b36b52af150902ed9f2d41190c8f15" category="sidebar">SG6000ハードウェアのメンテナンス</block>
   <block id="cf84eddab29b86bbe42255f7a00531eb" category="sidebar">メンテナンス設定手順- SG6000</block>
-  <block id="0feef34cc82f50f31bfa1fabfc7fda07" category="sidebar">ストレージコントローラの SANtricity OS をアップグレードします</block>
   <block id="8ba05f33923228afdc642451d0590be3" category="sidebar">コントローラ識別 LED のオンとオフを切り替えます</block>
   <block id="da009f0b9535f1833958c8e9226dbaf5" category="sidebar">コントローラの電源のオン/オフ</block>
   <block id="5750df12204d549c403e7201cbc6e59e" category="sidebar">ハードウェアの手順- SG6000</block>
@@ -4037,8 +3929,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">SG6000-CN コントローラの Fibre Channel HBA を交換します</block>
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
-  <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">を参照してください<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。</block>
-  <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">に関する情報を確認します<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
   <block id="c114b6896b71306b6ff5217eebf1d7eb" category="doc">手順4：新しいコントローラにバッテリを移動する</block>
   <block id="eed22a946ecb2d3652178906c8adb5c5" category="paragraph">障害が発生したコントローラからバッテリを取り外し、交換用コントローラに取り付けます。</block>
   <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="doc">手順3：コントローラを取り外す</block>
@@ -4050,7 +3940,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="bee477a851e07f638eb69240b1b317bc" category="paragraph">E2800Aコントローラカバーを交換し、に進みます。 <block ref="4bd98407e7ac018ef33f15dc5a2ef6d6" category="inline-xref-macro-rx"></block></block>
   <block id="b186f28a62d42b7cdd50516610c1e839" category="open-title">E2800B</block>
   <block id="477f610d0d161e316a6f06600c56252b" category="paragraph">障害が発生したE2800Bコントローラから交換用コントローラにHICを移動します。</block>
-  <block id="bfc87e4ee97496c70a38995efddf5be3" category="paragraph">SGF6112アプライアンスと<block ref="5540729631f9c458d692d5b76bbc9b38" category="inline-link-rx"></block>アプライアンスの詳細ページに[Manage Drives]タブが表示されます。</block>
   <block id="b8325740c6f1fdf42bd83d726c080c9a" category="inline-link">シンプレックスE2800シリーズコントローラの交換手順</block>
   <block id="0f31bf890cf0f06d20912d7da5d50990" category="list-text">すべてのドライブがセキュリティ保護されている場合は、<block ref="ab9bcc1613fce025138f2bd863db4580" category="inline-link-rx"></block>たとえば、NetApp Support SiteからEシリーズSANtricity System Managerをダウンロードしてインストールし、コントローラの交換後にEnterprise Management Window（EMW）を使用してセキュリティ保護されたドライブのロックを解除します。</block>
   <block id="16cd89923af48ed14de009bdd8e2993f" category="section-title">手順1：コントローラを取り外す準備</block>
@@ -4115,10 +4004,8 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="fd5bba691683ef3a201e310f70f6d8e4" category="list-text">アプライアンスの設定に問題がなければ、を使用します<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> および<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> アプライアンスをインストールするためのサブコマンド：+<block ref="cb22ba99985d4320f9b56e53345a6646" prefix=" " category="inline-code"></block> [+]<block ref="09148fb6c91acb8535552973f29c5302" prefix=" " category="inline-code"></block></block>
   <block id="c931565ed17682d74235819a1b30dffd" category="list-text">アプライアンスをリブートする場合は、「+」を入力します<block ref="8c1be57a6b5e4d6606e9b616bc4b786c" prefix=" " category="inline-code"></block></block>
   <block id="21f8809422673987244d000d11281874" category="paragraph">すべてのインストール段階が完了したら、ウィンドウを閉じます。</block>
-  <block id="a7beb022c93acd3d0673dc51befd93b8" category="list-text">アプライアンスがプライマリ管理ノードを除くすべてのノードでは、[Install StorageGRID Stage]ステージが一時停止し、を使用して管理ノードでこのノードを承認するよう求めるメッセージが組み込みのコンソールに表示されます。<block ref="e3d100a9dd7fc524c056b793772558c8" category="inline-link-rx"></block>。次の手順に進みます。</block>
   <block id="42af9b60b35d6bca9c17ff477c884ccc" category="admonition">アプライアンスプライマリ管理ノードのインストール中に、StorageGRIDインストーラをロードするための第5フェーズが表示されます（このスクリーンショットは最初の4つのフェーズのみを示しています）。StorageGRIDインストーラのロード（第5フェーズ）が10分以上進行中の場合は、Webページを手動で更新します。</block>
   <block id="cc6d0074c1cc81f39341600a31c22eea" category="inline-link">Grid Managerに移動</block>
-  <block id="2402f41c48e7f4bce703c793014a7f2b" category="list-text"><block ref="6f57cab9a4fe2b585805d3a0181ee3a1" category="inline-link-rx"></block> プライマリ管理ノードで、保留中のグリッドノードを承認し、StorageGRIDのインストールプロセスを完了します。</block>
   <block id="cc721c163db74d07c83f165fac1cbd51" category="list-text">管理ノードまたはゲートウェイノードのアプライアンスの場合、ソースノードのアプライアンスとターゲットアプライアンスが同じアプライアンスモデルである必要はありませんが、アプライアンスのモデルを変更するには、ケーブルまたはSFPモジュールの交換が必要になることがあります。</block>
   <block id="186e64d4b1a267ec9b06d82dfc3ea37a" category="list-text">ストレージノードアプライアンスの場合、ソースノードアプライアンスとターゲットアプライアンスが同じタイプのアプライアンスである必要はありませんが、次の点に注意してください。</block>
   <block id="28cb9e1a7b17557df2dab7da635677b4" category="list-text">ターゲットアプライアンスには、ソースアプライアンスよりも大きなストレージ容量が必要です。</block>
@@ -4152,9 +4039,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="6eeb10812f878395fd42337316644656" category="admonition">パフォーマンスレベルの異なるサービスアプライアンス（SG100またはSG110とSG1000またはSG1100など）を同じサイトに混在させると、ハイアベイラビリティグループで複数のノードを使用したり、複数のサービスアプライアンス間でクライアント負荷を分散したりした場合に、原因で予測不可能で一貫性のない結果が生じる可能性があります。</block>
   <block id="9624989f81bd52d3ffbdafbb5e213112" category="list-text">SG110</block>
   <block id="f067c1ad51f888c421e417d3c8174d73" category="list-text">SG1100</block>
-  <block id="7372a975d9635ea096cdb2e16635d786" category="list-text">SG100、SG110、SG1000、およびSG1100のBMCインターフェイスにアクセスする</block>
   <block id="db9ca1297cfefe282f7bf704613373d2" category="inline-link-macro">SG110またはSG1100サービスアプライアンスのリンク設定を変更する</block>
-  <block id="819eab2ae3e43020e15c4fc95f7ca327" category="list-text"><block ref="819eab2ae3e43020e15c4fc95f7ca327" category="inline-link-macro-rx"></block></block>
   <block id="fdb721fb29bb12d395a4c90d75692893" category="doc">ハードウェアの設置に関するトラブルシューティング（SG110およびSG1100）</block>
   <block id="1c8c4e98a896cf2ad92d989eaeee5a54" category="doc">BMCインターフェイス：概要（SG100、SG110、SG1000、SG1100、SG6000、 およびSG6100）</block>
   <block id="65e3a43d7f14275aee46dca655a5201f" category="list-text"><block ref="8a17bb4a8f8c3bd8049fbe657de9b51a" category="inline-xref-macro-rx"></block></block>
@@ -4162,7 +4047,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="7844be79442a1f1fad55f9da176b627e" category="list-text"><block ref="be6fab1e0dd362a8d9a11399bc350f55" category="inline-xref-macro-rx"></block></block>
   <block id="f968bb219612a257c41171656737117f" category="inline-link-macro">SG110およびSG1100ハードウェアの設置に関するトラブルシューティング</block>
   <block id="c0a584d4f9599ff521011752760b603a" category="paragraph">この情報を参考にしてください <block ref="948381f0a6f9865418651bea4346a2f1" category="inline-link-macro-rx"></block>。</block>
-  <block id="c46d134b23d9b2e563bf4be88b43e659" category="paragraph">次の図に、SG110およびSG1100アプライアンスのインジケータとボタンを示します。</block>
   <block id="387739340ec21ff77eb9e92d094b5b92" category="image-alt">前面のインジケータ- SG110およびSG1100</block>
   <block id="587a73f22155129c5ce79bff0c6b56b1" category="paragraph">このライトはSG110およびSG1100アプライアンスでは使用されず、消灯したままです。</block>
   <block id="d01d11481ba69485897f98be94d33893" category="paragraph">次の図は、SG110およびSG1100アプライアンスのSSDインジケータを示しています。</block>
@@ -4229,7 +4113,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2352b2130f44ff234de0d0ef0c2249d0" category="paragraph">ケーブルまたはトランシーバのタイプ、スイッチ速度、設定されたリンク速度に基づく 10 / 25 / 40 / 100GbE 。QSFP56（100GbE /ポートに限定）、QSFP28（100GbE）、およびQSFP+（40GbE）が標準でサポートされます。QSA（別売）では、オプションのSFP+（10GbE）またはSFP28（25GbE）トランシーバを使用できます。</block>
   <block id="f0454101a72342bdb68e3f847866df68" category="section-title">SG110およびSG1100の用途</block>
   <block id="2becee645abbd8209a2519e1ba8c9610" category="list-text">2台のSG110またはSG1100アプライアンスをゲートウェイノードとして設定して、ゲートウェイサービスを提供します。</block>
-  <block id="6f0a69f03c1ff183d86866b1f99ec9db" category="admonition">SG110とSG1100サービスアプライアンスを同じサイトに導入しないでください。パフォーマンスが予測不能になる可能性があります</block>
   <block id="8ea4bf911293cfb2bf04ca96e05c3f41" category="list-text">2台のSG110または2台のSG1100アプライアンスを使用して、一部のグリッド管理サービスの冗長性を確保します。そのためには、各アプライアンスを管理ノードとして設定します。</block>
   <block id="9a36aee0eed152f42afba806fe379d97" category="list-text">2台のSG110またはSG1100アプライアンスを使用して、1つ以上の仮想IPアドレスを介してアクセスされる可用性の高いロードバランシングサービスとトラフィックシェーピングサービスを提供します。そのためには、アプライアンスを管理ノードまたはゲートウェイノードの任意の組み合わせとして設定し、両方のノードを同じ HA グループに追加します。</block>
   <block id="d8a93d72c559dd827dcc442c95aad95b" category="paragraph">SG110およびSG1100サービスアプライアンスをStorageGRIDストレージアプライアンスと併用すると、外部のハイパーバイザーやコンピューティングハードウェアに依存しない、アプライアンスのみのグリッドを導入できます。</block>
@@ -4237,16 +4120,11 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="174d39beebf966f8b0fd97a60a1b64fd" category="list-text">* BMC管理ネットワーク*（SG100、SG110、SG1000、SG1100、SG6000ではオプション） およびSG6100）：このネットワークからSG100、SG1000、SG6000、およびSG6100アプライアンスのベースボード管理コントローラにアクセスして、アプライアンスのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。</block>
   <block id="768c56127fcc2636d57e4635785f71f3" category="section-title">SG110およびSG1100サービスアプライアンス</block>
   <block id="cb8480a76ca9faf13ba8cdaa026a4115" category="inline-link-macro">SG110およびSG1100サービスアプライアンス：概要</block>
-  <block id="a83eeae8b6fd32d08a2347f7444c21ee" category="admonition">アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。を実行します
-<block ref="cca79d77d4e26ceed98b8b75d018051a" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> Command）アプライアンスをStorageGRIDでリブートしたあとに、</block>
   <block id="673f51a198147ee01f0eda8def081663" category="paragraph">8つのファンは、シャーシ内で次の位置にあります（上部カバーを取り外した状態のStorageGRIDアプライアンスの前面半分）。</block>
   <block id="3bd0d1998d06f546858be89f67dafb1c" category="inline-link-macro">SG110およびSG1100アプライアンスのメンテナンス</block>
   <block id="e18debed2185f73ee8477857562ba4ee" category="list-text"><block ref="e18debed2185f73ee8477857562ba4ee" category="inline-link-macro-rx"></block></block>
   <block id="6632e86febb1a2e603ec2700897f8a86" category="list-text">SG100ソースノードアプライアンスは、SG110、SG1000、またはSG1100サービスターゲットアプライアンスにクローニングできます。SG100をSG1000またはSG1100サービスターゲットアプライアンスにクローニングすると、管理ノードまたはゲートウェイノードの機能が向上します。</block>
   <block id="b4dbdb727139e5ead70576ff4386d050" category="list-text">SG110ソースノードアプライアンスをSG1100サービスアプライアンスターゲットにクローニングすると、管理ノードまたはゲートウェイノードの機能を強化できます。</block>
-  <block id="977b528f03583de0752d1521f2d8acb9" category="list-text">SG1000ソースノードアプライアンスをSG100、SG110、またはSG1100サービスターゲットアプライアンスにクローニングできます。SG1000をSG100またはSG110サービスターゲットアプライアンスにクローニングすると、要件の厳しいアプリケーション向けにSG1000を再導入できます。</block>
-  <block id="3c893022293982e3947a5e3e05078f75" category="list-text">要件の厳しいアプリケーションには、SG1100ソースノードアプライアンスをSG110サービスターゲットアプライアンスにクローニングしてSG1100を再導入できます。</block>
-  <block id="59830b85779f0e0f99f6eae5dedae7e3" category="paragraph">たとえば、SG1100またはSG1000ソースノードアプライアンスを管理ノードとして使用している場合に、そのアプライアンスを専用のロードバランシングノードとして使用するとします。</block>
   <block id="b35c0ef428ec255e038f1521fe8a0683" category="list-text">SG1100ソースノードアプライアンスをSG110サービスターゲットアプライアンスに置き換えると、ネットワークポートの最大速度が100GbEから25GbEに短縮されます。</block>
   <block id="e84c89730f464a482aef94ee1a675b10" category="paragraph">ここでは、SG110またはSG1100アプライアンスのメンテナンスに固有の手順について説明します。</block>
   <block id="ac7d3872004b0a65fa2be33e24e28d8a" category="doc">データセンターでSG110またはSG1100の場所を確認します。</block>
@@ -4270,12 +4148,10 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="66104298dc21ba6c0533bc9d0b9b6bf8" category="image-alt">SG110およびSG1100のドライブの位置</block>
   <block id="bd7f3d409571f64d9e17003a1374da04" category="paragraph">交換したドライブは、動作中のドライブのミラーデータで自動的にリビルドされます。  グリッドマネージャを使用して、再構築のステータスを確認できます。[ノード]*&gt;に移動します。<block ref="dde8ded2884e27f868b3a8c4b5416bb3" prefix=" " category="inline-code"></block> &gt;*ハードウェア*。ドライブが完全にリビルドされるまで、[Storage RAID Mode]フィールドに「rebuilding」というメッセージが表示されます。</block>
   <block id="dc707ffba727d12356011f9f73a992eb" category="doc">SG110またはSG110アプライアンスの交換</block>
-  <block id="f2a5a8758ca15c3a23a2ddbd079a95ee" category="list-text"><block ref="e02d1a5e1dc87cd7778b4a75e2317828" category="inline-link-macro-rx"></block>。</block>
   <block id="5409d0965e779fcc5620d3cd745ab01f" category="list-text"><block ref="4fa0895d2a03c9ce7010299dc730cc37" category="inline-link-macro-rx"></block>。</block>
   <block id="a48af9b61164e86b2280ebe2bd272712" category="list-text">障害が発生したアプライアンスの交換可能コンポーネント（電源装置2台、冷却ファン8台、NIC 3台、SSD 2台）の位置をメモします。</block>
   <block id="8b1659eb1302c159af7985a2c22fa27e" category="paragraph">2つのドライブは、シャーシ内で次の位置にあります（ベゼルを取り外した状態のシャーシ前面）。</block>
   <block id="c2b15088afc135982ed6160ae5eac813" category="list-text"><block ref="f6c9cca69a348acd8905bc371eb6fc7a" category="inline-link-macro-rx"></block>。</block>
-  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">交換したアプライアンスでSEDドライブでハードウェアドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="0a5b0b97f6329c71c665a41fb8e50546" category="paragraph"><block ref="0a5b0b97f6329c71c665a41fb8e50546" category="inline-link-macro-rx"></block></block>
   <block id="77a3632ce069e04667f3c07729bc12e6" category="doc">SG110およびSG1100のカバーの交換</block>
   <block id="17f139a2fd45164bf31db4cbc506794e" category="paragraph"><block ref="94283cdb05b445a973e84301f97caf0b" category="inline-link-macro-rx"></block> トップカバーにアクセスするには。</block>
@@ -4285,7 +4161,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="4c68b0943e79e049731958e525193bbd" category="paragraph">SG110またはSG1100が適切に機能しない場合や障害が発生した場合は、そのNICの交換が必要になることがあります。</block>
   <block id="927be83d9035c123f8d7d9e8cfafeb94" category="inline-link-macro">SG110またはSG1100アプライアンスの物理的な場所</block>
   <block id="24bf7ce85a6fb58803cea8f5c88ca74b" category="list-text">これで完了です <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> データセンターのNICを交換する場所。</block>
-  <block id="73a2518b7d3a736d59aa912a57abda34" category="admonition">A <block ref="937f3ef5575067c7f2242672e77298dc" category="inline-link-macro-rx"></block> は、アプライアンスをラックから取り外す前に必要です。</block>
   <block id="6c5d9be04e7c66d804e9922fc591088c" category="list-text">すべてのケーブルと <block ref="dc7225cbd8d4b68386891f4f43bfe53f" category="inline-link-macro-rx"></block>。</block>
   <block id="f9cae9b628024fbe396a0cbabe539188" category="doc">SG110またはSG1100のCMOSバッテリの交換</block>
   <block id="bfe3df71e69779f16f86cfe5c2c8630c" category="inline-link-macro">CMOSバッテリを交換する必要があるSG110またはSG1100を確認</block>
@@ -4301,7 +4176,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="e8a36eefffb270e7fdfcbe70cfae02c8" category="inline-link-macro">SG110またはSG1100の物理的な場所</block>
   <block id="da293f6803f9457d5e25775b4d7ba62c" category="list-text">これで完了です <block ref="cbbe557358a36c0ce95c8f4a10b6af30" category="inline-link-macro-rx"></block> データセンターのメンテナンスを実施している場合。</block>
   <block id="c9c52f1bbaf493c0bd060f99e9b4d31b" category="inline-link-macro">SG110またはSG1100をシャットダウンします。</block>
-  <block id="a356c4d9c1948b8dc45c1ffca6f88115" category="list-text">これで完了です <block ref="7c024e7b821ea2605c8d62e2c8b78fe4" category="inline-link-macro-rx"></block>。</block>
   <block id="654b557c64cf80df53d669b5e931d3da" category="image-alt">SG110またはSG1100のラック固定ネジ</block>
   <block id="4187702a620626981506c308f62e0442" category="list-text">マウントレールが完全に伸び、両側のラッチがカチッという音がするまで、SG110またはSG1100をラックから前方にスライドさせます。</block>
   <block id="609dfb79180e75d183414141ff1c7699" category="section-title">キャビネットまたはラックへのSG110またはSG1100の再取り付け</block>
@@ -4310,7 +4184,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="c95bfc841349ab8679294cc677e88c9d" category="paragraph"><block ref="c95bfc841349ab8679294cc677e88c9d" category="inline-link-macro-rx"></block></block>
   <block id="e19587ca009fb28c16d995c5edbd1fa5" category="list-text">青色のレールを押して両方のラックレールを同時に外し、SG110またはSG1100をラックにスライドさせて完全に装着します。</block>
   <block id="22dc184830c2cbda4b043ab5a3cce6bb" category="image-alt">SG110またはSG1100のスライド式レール</block>
-  <block id="74c2ea6aca800b8766b877c2b16a7728" category="paragraph"><block ref="c8ee67fa13b2b241963a60e9659d4d7f" category="inline-link-macro-rx"></block>。</block>
   <block id="b4b1ae13ff19104a2638fac1e91cf92f" category="doc">SG110またはSG1100の電源のオンとオフの切り替え</block>
   <block id="b9240936ed31e305085463f5cce2c053" category="paragraph">メンテナンスを実施するために、SG110またはSG1100アプライアンスをシャットダウンして電源を再度オンにすることができます。</block>
   <block id="b1c1dfb471a6f1f3fd2166422e5ee696" category="section-title">SG110またはSG1100アプライアンスのシャットダウン</block>
@@ -4323,11 +4196,9 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a494d05ff2448de4863300634404b00e" category="list-text"><block ref="7605313cc83fe468541967e7fefdaac9" category="inline-link-macro-rx"></block>ラッチを押し下げて、カバーを所定の位置に固定します。</block>
   <block id="2b714c159ee37bfcda3d8997dbf8c34a" category="list-text"><block ref="d562fca429c3ba3818e1a9ce8be74798" category="inline-link-macro-rx"></block> アプライアンスのLEDとブート時のコードを監視します。</block>
   <block id="b337d01c3682624445d3043b34d4f142" category="paragraph">*メンテナンス設定手順*は、アプライアンスインストーラ、Grid Manager、またはBMCのインターフェイスを使用して実行します。これらの手順は次のとおりです。</block>
-  <block id="e26ffb539a1b2a0b29867450005b8bee" category="paragraph"><block ref="e6765e58c61518e3539dcb7717155370" category="inline-link-macro-rx"></block>。</block>
   <block id="e7e49b9f955135fd24f83c367558f704" category="sidebar">SG110またはSG1100アプライアンスの交換</block>
   <block id="b2f29fa8f4a845926f04c6b42a76608e" category="sidebar">ラック内のSG110またはSG1100の再配置</block>
   <block id="05e5b945264ec2a7a4fb43cd609f1363" category="sidebar">SG110およびSG1100のネットワーク情報</block>
-  <block id="74c62c67c3d6082d54f23ecf0b6db84a" category="sidebar">SG110およびSG1100（新規）</block>
   <block id="d6fca2602ac9cbcfb8a14dfb1f7739de" category="sidebar">BMCインターフェイスの設定（SG100、SG110、SG1000、SG1100、SG6000、 およびSG6100）</block>
   <block id="3cedc3146b91b16ed8ebb1fee915113d" category="sidebar">インストールのトラブルシューティング（SG110およびSG1100）</block>
   <block id="a2e2012b6b8c458228b1e15b454770f0" category="sidebar">SG110およびSG1100ハードウェアのメンテナンスガイド</block>
@@ -4359,7 +4230,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="824c69f392afac52cf0df413bba182db" category="list-text">コントローラキャニスターに接続する各ケーブルを識別するためのラベル。</block>
   <block id="7205b64f3f16e1d51e7a5571ef199fc1" category="list-text">SANtricityシステムマネージャへのアクセス：</block>
   <block id="5bae71ef74f18a1eafb4dd38d03179fc" category="inline-link">SANtricityの[System Manager]タブ</block>
-  <block id="f1bc9a7acb92fc530debe4876b5fa6f8" category="list-text">Grid Managerで、* nodes *&gt;*_appliance node_*&gt;* SANtricity System Manager *を選択します。コントローラ情報は<block ref="8cda1b10cdeda80d8878af8201ad4b36" category="inline-link-rx"></block>。</block>
   <block id="ee2e86ae661f8d5f1b2929908e487683" category="admonition">この手順の特定の手順では、グリッドマネージャを使用してSANtricityシステムマネージャにアクセスできない可能性があります。SG5800コントローラがシャットダウンされている場合は、ブラウザを使用してSANtricityシステムマネージャにアクセスする必要があります。</block>
   <block id="748a16873acefe7987ba1df0537fdde0" category="list-text">管理ステーションのブラウザで、コントローラのドメイン名またはIPアドレスを指定します。</block>
   <block id="580a98b407c693e5484cd51c02eb9563" category="section-title">手順 1 ： DIMM の交換が必要かどうかを確認します</block>
@@ -4415,9 +4285,7 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="685636dc5350b778abfb785eaf60ca39" category="list-text">DIMMを所定の位置まで回転させ、ソケットから引き出します。</block>
   <block id="bc6f68ddb18a2f2b33244b2f8f11420b" category="admonition">DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。</block>
   <block id="e4f96ad3979c5e1ad029cfb1aef791cc" category="image-alt">DIMMを取り外します。</block>
-  <block id="9e64f9f7a827c26fc2d5c89975330a4c" category="image-alt">凡例アイコン01</block>
   <block id="cfc8a707905d308742a0633fefb9ba76" category="cell">DIMM のツメ</block>
-  <block id="cd8fc17dc540949d4a2220442f92f1e4" category="image-alt">凡例アイコン 02</block>
   <block id="5550b5c21becc525ad89172c3f6562a7" category="cell">DIMM</block>
   <block id="780061b11a4f33cc8eecc0c1fd85c471" category="list-text">交換用 DIMM を静電気防止用の梱包バッグから取り出し、 DIMM の端を持ってスロットに合わせます。</block>
   <block id="54c4ac61314c29265db975e7abc3e29f" category="paragraph">DIMM のピンの間にある切り欠きを、ソケットの突起と揃える必要があります。</block>
@@ -4684,8 +4552,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="0a0e11a593a1ae795c58a7ea1751517a" category="list-text">[サポートデータの収集]を選択します。</block>
   <block id="b54c595bb71cefacd0ee6e5a4d68dc02" category="list-text">収集をクリックします。</block>
   <block id="efd279df83f7980b63864ad37d922c7b" category="paragraph">これでバッテリの交換は完了です。通常の運用を再開することができます。</block>
-  <block id="18933f9d2ebf6f8bf7e7947ab0bce7d7" category="doc">SG5800ストレージコントローラでのSANtricity OSのアップグレード</block>
-  <block id="5ea91833755ea0a0d17e74ee434bf41d" category="paragraph">StorageGRIDアプライアンスでの使用が確認されている最新のSANtricity OSバージョンを確認するには、<block ref="e7b75487549954e00354c6731ea3ca9e" category="inline-link-rx"></block> 必要に応じてダウンロードします。</block>
   <block id="cd39d2cd100c7fba2f06debd14ee7b94" category="doc">SG5800ドライブファームウェアのアップグレードエラーのトラブルシューティング</block>
   <block id="432fc9ca6a732f41755849d144322681" category="summary">電源の冗長性を確保するために電源キャニスターを 2 つ搭載した 60 ドライブのコントローラシェルフまたはドライブシェルフを交換します。</block>
   <block id="fc9d2a7031883dd4802020b9492deded" category="doc">SG5860の電源キャニスターの交換</block>
@@ -4700,7 +4566,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="35dad50be3b954e82fa1f029dca60fb0" category="paragraph">電源キャニスターを交換する準備をします。</block>
   <block id="715982174e7e4dcda393bbe2bb35e421" category="list-text">メニューを選択します。 Support [ Support Center &gt; Diagnostics ] （サポートセンター &gt; 診断）。</block>
   <block id="893ab1ae5c17160128a9140e253794ab" category="list-text">SANtricity System Manager で、障害が発生した電源キャニスターを特定します。</block>
-  <block id="61840a278143b576453579e28a6c98f6" category="list-text">電源を確認します <block ref="5c179093712741c1ac6d83d8605b855b" category="inline-image-macro-rx" type="image"></block> 「 * Shelf * 」ドロップダウン・リストの右側にあるアイコンをクリックして、電源キャニスターに障害が発生したシェルフを特定します。</block>
   <block id="8092906792979c8b780953ad0d13e083" category="paragraph">コンポーネントで障害が発生している場合、このアイコンは赤色で表示されます。</block>
   <block id="e902c8e51932ed0636fb1d2879d9372d" category="list-text">赤いアイコンが表示されたシェルフが見つかったら、 * シェルフの背面を表示 * を選択します。</block>
   <block id="d41778d835aaa9f2630fdeb56c8cfe13" category="list-text">いずれかの電源キャニスターまたは赤色の電源アイコンを選択します。</block>
@@ -4755,7 +4620,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="773c2723d6a9a0d160532312c104863d" category="section-title">手順 1 ：ファンキャニスターを交換する準備をします</block>
   <block id="83eeb9945d1dc6f7b70309d62a09af0b" category="paragraph">ファンキャニスターを交換する準備として、ストレージアレイに関するサポートデータを収集し、障害が発生したコンポーネントを特定します。</block>
   <block id="a70c638aa6442dd0cd4bd489333586ac" category="list-text">SANtricity System Manager で、障害が発生したファンキャニスターを特定します。</block>
-  <block id="a53ae7e73bae0d5966dfe3f672b56332" category="list-text">ファンを確認します <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> 「 * Shelf * 」ドロップダウン・リストの右側にあるアイコンをクリックして、ファン・キャニスターで障害が発生したシェルフを特定します。</block>
   <block id="50cc8192e748bb17a8df770d5a32cf75" category="list-text">いずれかのファンキャニスターまたは赤色のファンアイコンを選択します。</block>
   <block id="54f2a1ff285dde23857c41e5f7c6ec19" category="list-text">「ファン * 」タブで、ファンキャニスターのステータスを確認して、交換する必要があるファンキャニスターを特定します。</block>
   <block id="7c04b30a180a09ed131bbe1dd9ccbb51" category="admonition">シェルフのもう一方のファンキャニスターのステータスが「最適」でない場合は、障害が発生したファンキャニスターのホットスワップを行わないでください。この場合は、テクニカルサポートにお問い合わせください。</block>
@@ -4790,7 +4654,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="152913b57dc0f6847aa70f4ee84c4c44" category="list-text">[サポート]&gt;[サポートセンター]&gt;[診断]*を選択します。</block>
   <block id="2c38f05e53de6004289a3631a4250cc8" category="list-text">SANtricity System Manager で、障害が発生した電源装置を特定します。</block>
   <block id="209efedd4d6d66610471d4b9281405e1" category="paragraph">この情報は、 Recovery Guru の詳細領域に表示されるか、シェルフについて表示される情報を確認できます。</block>
-  <block id="05c53e0ddd1f2e97904a4e7a0715bee0" category="list-text">電源を確認します <block ref="5c179093712741c1ac6d83d8605b855b" category="inline-image-macro-rx" type="image"></block> ファンもあります <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> [*Shelf-*] ドロップダウン・リストの右側にあるアイコンを使用して、電源装置に障害が発生したシェルフを特定できます。</block>
   <block id="b4cf459575f55b9522f5a3df6c095dce" category="paragraph">コンポーネントで障害が発生した場合、これらのアイコンの一方または両方が赤色で表示されます。</block>
   <block id="60f50fc085055091f055cf0f3bf2fb86" category="list-text">いずれかの電源装置を選択します。</block>
   <block id="10c055892271a83993e7398f73245393" category="list-text">電源装置 * タブと * ファン * タブで、電源 / ファンキャニスター、電源装置、およびファンのステータスを確認して、交換する必要がある電源装置を特定します。</block>
@@ -4917,7 +4780,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="20d4ad7302d59cc00a8fda9a9f549883" category="list-text">グリッドネットワークポートとクライアントネットワークポートを異なる速度で実行できるのは、リンク速度として自動ネゴシエーションが選択され、ポートボンディングモードとして[Fixed]が選択されている場合のみです。そうしないと、4つのポートすべてが同じ速度で実行されます。</block>
   <block id="76caeddfbf7a30108ac0c230c0790b19" category="paragraph">SG6160、SG6000、SG5800、およびSG5700の場合は、SANtricity System Managerを設定します。SANtricity ソフトウェアを使用して、これらのアプライアンスのハードウェアを監視します。</block>
   <block id="e1625de3f6c73370d4238f76e2d7c923" category="list-text">ハードウェアの監視に使用するSANtricity System Manager（SG5700、SG5800、SG6000、およびSG6100）の設定</block>
-  <block id="5c805d9f17dbca3e765899fe3c79ad03" category="list-text">SG6000-CNまたはSG6100-CNコントローラのBMCインターフェイスにアクセスします。</block>
   <block id="d50073bc1f70506eed0240c89301c447" category="summary">StorageGRID SG6100シリーズアプライアンスは、StorageGRIDシステムでストレージノードとして動作します。  他のStorageGRIDアプライアンスと同様に、単一の環境で他のアプライアンスモデルやソフトウェアのみのノードと自由に混在させることができます。</block>
   <block id="238b2f6f0befef83f791adc9c97aab03" category="paragraph">StorageGRID SG6160アプライアンスには、読み取りキャッシュとして機能する1組のNVMe SSDを搭載したコンピューティングコントローラ、および2台のストレージコントローラと60本のNL-SASハードドライブを搭載したストレージコントローラシェルフが搭載されています。オプションの拡張シェルフを2台まで追加することで、NL-SASハードドライブを最大180台まで拡張できます。StorageGRID SGF6112アプライアンスは、コンパクトな1Uフォームファクタに12本のNVMe SSDを搭載したオールフラッシュアプライアンスです。</block>
   <block id="77783d17070c097b0b2bdefcf60a58a8" category="paragraph">SGF6112およびSG6160アプライアンスには次のような特長があります。</block>
@@ -4961,7 +4823,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="7f515b7b271e2f2650ab9205041ae23a" category="section-title">SG6100コントローラ</block>
   <block id="e095a9ee88152254e105acb911c6ddc3" category="section-title">SG6100-CNコンピューティングコントローラ</block>
   <block id="9e6efa9cf5cab14b623ece7b4484e851" category="image-alt">SG6100-CN背面のコネクタ</block>
-  <block id="fc001ab6e2d7a82822431bab29184e34" category="paragraph">ケーブルまたはSFPトランシーバのタイプ、スイッチ速度、設定されたリンク速度を基に10GbE、25GbE、または100GbE</block>
   <block id="adf89afa6fb2cb5790764d361c1197ad" category="paragraph">SG6100-CNベースボード管理コントローラに接続します。</block>
   <block id="eecadf3f4a72170ab05bbffe174574b6" category="paragraph">SG6100-CNをStorageGRIDの管理ネットワークに接続します。</block>
   <block id="c32f651c9723102d4736cde6f2380926" category="paragraph">インターコネクトポート</block>
@@ -4989,15 +4850,12 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="df1b95911c4f6882e45d24f2259a56e6" category="list-text">拡張シェルフがある場合は、上記の手順を繰り返して、各拡張シェルフの各ドロワーに12本のNL-SASドライブを取り付けます。</block>
   <block id="b218bef4cfb11040fa05a34d90fae202" category="list-text">SG6100-CNをキャビネットまたはラックに設置する手順に進みます。</block>
   <block id="f80088ee28f7604e9f8592d90fa6728a" category="inline-link-macro">SG5800コントローラのリンク設定を変更する</block>
-  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
   <block id="55c62a33f4c4845aa583cada0c7c5cc2" category="doc">ハードウェアの設置に関するトラブルシューティング（SG5800またはSG6100）</block>
-  <block id="67829ca668814889b20e11dd7ae1278b" category="section-title">ブート時のコードの表示（SGF6112およびSG6160のみ）</block>
   <block id="223443ade3977f88b0b9803a5b6b9269" category="list-text">USBケーブル</block>
   <block id="545471d8f02ab7e136641a52e51a2a01" category="admonition">場合によっては、デフォルトのユーザ名が「admin」ではなく「root」になることがあります。</block>
   <block id="c93ea9c6b3ac300738245274f885b4b1" category="paragraph">SG6160のみ：</block>
   <block id="43e28363ded43d73ad8ac28a6111392d" category="paragraph">*注*：ブート手順がこの段階を過ぎない場合は、次の手順を実行します。</block>
   <block id="fca532d96db500a0a69be39e5b335bdb" category="list-text">SG6100-CNコントローラと2台のストレージコントローラの間の4本のインターコネクトケーブルがしっかりと接続されていることを確認します。</block>
-  <block id="9b7f2dc0ae072f34841a60d1d7640cc8" category="section-title">エラーコードを確認する（SGF6112およびSG6160のみ）</block>
   <block id="d42295299a1cbc4cb6230b793ee6e5da" category="list-text">アプライアンスのLED、またはBMCに表示されるブートコードとエラーコード（装備している場合）を確認します。</block>
   <block id="9ae5b4acced88571bf83d9099f626ab3" category="section-title">拡張シェルフがアプライアンスインストーラに表示されない（SG6160）</block>
   <block id="cbcf875f9db88c03ec6dd7149506babb" category="paragraph">設置済みの拡張シェルフがStorageGRIDアプライアンスインストーラに表示されない場合は、シェルフの設置が完了し、電源がオンになっていることを確認する必要があります。</block>
@@ -5017,7 +4875,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="32ffda78ae2a587b5d8e5c836a950931" category="image-alt">SG6100のスライド式レール</block>
   <block id="820701e6693a357bbb41eaa4bab830d0" category="image-alt">SG6160ラック固定ネジ</block>
   <block id="beec78facd678008d6aba848431e2f9b" category="doc">オプション：RAIDモードを変更する（SG5760、SG5860、SG6000、SG6160）</block>
-  <block id="9c4a3ebc6e3cc35cf21692e17aaa9763" category="list-text">* Dynamic Disk Pools（DDP）*：データドライブ8本につきパリティドライブを2本使用します。すべてのアプライアンスに推奨されるデフォルトのモードです。DDPはRAID 6よりもシステムパフォーマンスに優れ、ドライブ障害が発生したあとのリビルド時間が短く、管理も容易です。DDPは、SG5760、SG5860、SG6160アプライアンスにドロワー損失からの保護も提供します。</block>
   <block id="89d7713591083db229780baef1fd7a93" category="open-title">SG5860</block>
   <block id="8097e6b5736f5902818ddcd581b46b25" category="list-text">60本のドライブを搭載したSG5860があります。SG5812を使用している場合は、デフォルトのDDPモードを使用する必要があります。</block>
   <block id="644a9662bfc608c4e24ec9f9d1c53dc6" category="list-text">サービスラップトップでWebブラウザを開き、StorageGRID アプライアンスインストーラの+にアクセスします<block ref="543c5eba2770d8d7b78d53a6e96eec12" prefix=" " category="inline-code"></block></block>
@@ -5055,7 +4912,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ee0d7ce7f3f04a927e4972f514fd99c9" category="inline-link-macro">SG5800ハードウェアの設置に関するトラブルシューティング</block>
   <block id="6e11a1131d9974f2fd0c9ec0f8b70da1" category="paragraph">StorageGRIDアプライアンスインストーラが起動したら、SG5800コントローラのステータスインジケータを定期的に確認する必要があります。</block>
   <block id="043b3b7e7d1cab87dcb9bbe4e09747f6" category="paragraph">次の図は、SG5800コントローラのステータスインジケータを示しています。</block>
-  <block id="ee19c832192b29abe3714f9cd076b86b" category="paragraph">次の図は、SG6100アプライアンスのインジケータとボタンを示しています。</block>
   <block id="a1d1c5c3d0d9a5f37b3e9c802075363c" category="paragraph">このライトはSG6100アプライアンスでは使用されず、消灯したままになります。</block>
   <block id="26d3431ec32e39ad87b42dd94029fd5d" category="paragraph">次の図に、SGF6112またはSG6160アプライアンスのSSDインジケータを示します。</block>
   <block id="0b393e9e1f5538879c19f759d1a006f7" category="paragraph">*注：*動作中のSGF6112またはSG6160 StorageGRIDノードに動作中の新しいSSDを挿入すると、最初はSSDのLEDが点滅しますが、ドライブに十分な容量があり、機能しているとシステムが判断するとすぐに点滅を停止します。</block>
@@ -5106,8 +4962,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="b311407ac8f1e864f5265bfcfbc86e13" category="list-text">100GbE QSFP28</block>
   <block id="a2561c0e281fe3a4373beff950cd8c01" category="paragraph">120～240 V AC</block>
   <block id="01db6415639d41cb635a63f3dd76ce67" category="paragraph">SG5812</block>
-  <block id="ee1ebf14afa6f51d0bdc0c7b7d95e0fd" category="paragraph">120～240 V AC</block>
-  <block id="c645bb2671c75a31858237b9ef960e1d" category="paragraph">100～240 V AC</block>
   <block id="53c0fd4bf33a4f5209bcd292aca9cd4a" category="paragraph">3.4インチ</block>
   <block id="8dcceeb66c6a4bd4aa5d09b0cca30d0a" category="paragraph">（8.6 cm）</block>
   <block id="d6864ab259d3d42319bb56dbe4b90b65" category="paragraph">（4.8 cm）</block>
@@ -5219,14 +5073,9 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="8c153a995614ef0a6ba70a818a49be84" category="summary">SG5800ストレージアプライアンスのハードウェアを保守します。</block>
   <block id="7d090f8d618279a3d149398716b33fdb" category="doc">SG5800ストレージアプライアンスハードウェアのメンテナンス</block>
   <block id="f7e2b8e3d85d290dcca43cce02c80067" category="section-title">SG5812およびSG5860アプライアンス</block>
-  <block id="d7efad05f54e12d8b229dc0d62771c27" category="paragraph">新しいStorageGRID SG5812およびSG5860アプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。を参照してください<block ref="1734786df2c4f776b6423022989a975b" category="inline-link-rx"></block> をクリックしてください。</block>
   <block id="f9b87deff325082cc0a1f50f4e181511" category="inline-link-macro">SGF6100アプライアンス：概要</block>
-  <block id="f188677f8280c9744bd1ef6fee35d5db" category="paragraph">新しいStorageGRID SG6160アプライアンスには、コンピューティングコントローラ、2台のストレージコントローラと60本のドライブを搭載したストレージコントローラシェルフ、およびキャッシング用のNVMe SSDドライブが2本搭載されています。必要に応じて、60ドライブ拡張シェルフをSG6160に追加できます。を参照してください <block ref="dc1838b204cabed776c113546e2bd56a" category="inline-link-macro-rx"></block> をクリックしてください。</block>
   <block id="e12ebc016927211d63794de19e7cf124" category="paragraph">新しいStorageGRID SG110およびSG1100サービスアプライアンスは、進化したハードウェアアップデートであり、管理とロードバランシングのパフォーマンスが向上しています。を参照してください <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
-  <block id="f27ed0a94f9eee56d32bbb5c205f81eb" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にファンを交換する必要があります。については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="b60e3f350dfafff923b7172d86b066de" category="doc">内蔵NICを取り付け直します。</block>
-  <block id="94d010826f8f96b560725f0d09c13a79" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
-  <block id="e60a5d7fc05dc7aa04ee5e7026a49fa5" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にバッテリを交換する必要があります。については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="3f069ee729875ead128854e2d4b0be0c" category="list-text"><block ref="3f069ee729875ead128854e2d4b0be0c" category="inline-link-macro-rx"></block></block>
   <block id="3f05f5216237fcf2b2bad4efa8026d10" category="list-text">交換用アプライアンスのStorageGRIDアプライアンスインストーラのバージョンがStorageGRIDシステムのソフトウェアバージョンと一致していることを確認し、必要に応じてStorageGRIDアプライアンスインストーラのファームウェアをアップグレードまたはダウングレードします。</block>
   <block id="476162db1ad0a3ccd8baf4c31ab26fb4" category="doc">MACアドレス参照を更新（SG100、SG1000、SGF6024、およびSG6060）</block>
@@ -5287,7 +5136,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="1ecc95a39ea26f34e7268be87dbc3786" category="paragraph">ドライブはシャーシ内で次の位置にあります（ベゼルを取り外した状態のシャーシ前面）。</block>
   <block id="aed3a6e51582511fdf422c24d584d1a7" category="image-alt">SG6160でのSSDの場所</block>
   <block id="53edb80130864b9cb5a075e3fe5b3e03" category="inline-link">診断を実行します</block>
-  <block id="becc5747410d6d3b9373c76a2c82269e" category="paragraph">両方のSSDドライブが正常に機能している場合は、読み取りキャッシュ機能が自動的にリストアされます。可能です<block ref="49a773a5019753255d2d2b6f10a54073" category="inline-link-rx"></block> をクリックして読み取りキャッシュのヒット率を監視します。キャッシュが再構築されたばかりのため、最初はヒット率が低くなる可能性がありますが、オブジェクトデータにアクセスするクライアントがキャッシュに再度データを格納するにつれて、ヒット率は上昇します。</block>
   <block id="6afe076d745c28e67848c230c127f912" category="doc">SGF6112またはSG6100-CNで交換するコンポーネントを確認します。</block>
   <block id="99333dae3b0ba16106970b638ebd27fc" category="doc">ストレージコントローラシェルフまたは拡張シェルフのファンキャニスターの交換（SG6160）</block>
   <block id="d07f54da4fcb4b065be41f5c4be9a44d" category="paragraph">SG6160のファンキャニスターを交換することができます。</block>
@@ -5296,7 +5144,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="21ca0a6d008a3f0d6fadcffb1f54e4ba" category="list-text">ファンキャニスターの黄色の警告 LED が点灯していることを確認します。ファンで障害が発生した場合に点灯します。アプライアンスの両方のファンキャニスターで黄色の警告LEDが点灯している場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="0ecdbc8b9a11e80bf7c8f9a74c14dc53" category="paragraph">ファンキャニスターを交換する準備として、アプライアンスに関するサポートデータを収集し、障害が発生したコンポーネントを特定します。</block>
   <block id="83aaf3642bbba28d36f4da51adfee35e" category="list-text">[サポートセンター]&gt;[診断]*を選択します。</block>
-  <block id="fc8caa2eed66d0f248d4ec071522cfc4" category="list-text">ファンを確認します <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> [シェルフ]*ドロップダウンリストの右側にあるアイコンをクリックして、障害が発生したファンキャニスターが搭載されているアプライアンスを特定します。</block>
   <block id="ec354b1258c06ae6583157f8ef2196b3" category="list-text">赤のアイコンが表示されたアプライアンスを見つけたら、*[シェルフ背面を表示]*を選択します。</block>
   <block id="f7adda54e6937a70013a89b48b669c86" category="admonition">アプライアンスのもう一方のファンキャニスターのステータスが「最適」でない場合は、障害が発生したファンキャニスターのホットスワップを行わないでください。この場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="3b33e5703e1569451a346dd29af50b51" category="list-text">新しいファンキャニスターを開封し、アプライアンスの近くの平らな場所に置きます。</block>
@@ -5375,11 +5222,9 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="a1810e1ee9dc4a56e47017d6a63bd3d2" category="inline-link-macro">SGF6112またはSG6100-CNの物理的な場所</block>
   <block id="843764d471e95f5a4269bb5e6d2b145b" category="list-text">これで完了です <block ref="cf3c649780f1306d5adbe47d3f7a2d2c" category="inline-link-macro-rx"></block> データセンターのメンテナンスを実施している場合。</block>
   <block id="79a966caab2b12effdf2053e5e4f55d6" category="inline-link-macro">SGF6112またはSG6100-CNをシャットダウンします。</block>
-  <block id="3bf41c406f5766d1b62e764d78815006" category="list-text">これで完了です <block ref="49296b47acea766c5c7d891047bed3f2" category="inline-link-macro-rx"></block>。</block>
   <block id="ceedd6bc488978da982637b521428bf5" category="image-alt">SGF6112またはSG6100-CNのラック固定ネジ</block>
   <block id="9b6b980304823e819d6a10f2887e228a" category="list-text">マウントレールが完全に伸び、両側のラッチがカチッという音がするまで、SGF6112またはSG6100-CNをラックから前方にスライドさせます。</block>
   <block id="ea451a7e000e56ca9723a7327e0a5ee5" category="section-title">キャビネットまたはラックへのSGF6112またはSG6100-CNの再取り付け</block>
-  <block id="486637db4093d2e7f93d6c755fc52ef2" category="doc">[Manage Drives]タブを使用（SGF6112）</block>
   <block id="e68af6822729f2d13a6e09c482933d41" category="doc">メンテナンスモードを使用したSG6160ストレージコントローラのSANtricity OSのアップグレード</block>
   <block id="26057f35f4601a7c8747345c376102c0" category="paragraph">メンテナンスモードを使用して、SG6160コントローラのSANtricity OSをアップグレードできます。</block>
   <block id="60f3c8de41561e30c6a1bb54457dead2" category="admonition">08.42.20.00（11.42）よりも新しいSANtricity OSを現在使用しているストレージコントローラの場合は、 <block ref="676f8e0aaa6d1091bae102dc63249cf0" category="inline-link-macro-rx"></block>。ただし、保守モードの手順は、必要に応じて使用することも、テクニカルサポートから指示があった場合に使用することもできます。</block>
@@ -5397,19 +5242,15 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="77442a88ebd7cb0929276245bb6fa261" category="doc">SGF6112またはSG6100-CNの一方または両方の電源装置を交換します。</block>
   <block id="b40f48980b91f6eeeaca45a02098961f" category="paragraph">次の図は、SGF6112アプライアンスまたはSG6100-CNコンピューティングノードの2つの電源装置を示しています。電源装置には、アプライアンスの背面からアクセスできます。</block>
   <block id="56347f82384b21f0e089b756280bf350" category="image-alt">2つの電源装置を搭載したSGF6112またはSG6100-CNの背面</block>
-  <block id="dcbfe91a20e41ca1166b39996007957a" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがあり、両方の電源装置を同時に交換する場合は、この手順中にこれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中に電源装置を交換する必要があります。については、を参照してください<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="45c26226adb5ac780361eb67562102b4" category="summary">SG6100-CNが適切に機能していない場合や障害が発生した場合は、SG6100-CNのネットワークインターフェイスカード\（NIC\）の交換が必要になることがあります。</block>
   <block id="b64bc50a417ed89b6f98a9cf7702f4c6" category="doc">SG6100-CNの外付けNICの交換</block>
   <block id="68389729ef500c851bd175b61c435629" category="paragraph">SG6100-CNが適切に機能しない場合や障害が発生した場合は、SG6100-CNの外部ネットワークインターフェイスカード（NIC）の交換が必要になることがあります。</block>
   <block id="873f4e1b6b1acfd0f6ea7fc4a7cee73c" category="image-alt">NICの前面プレート。</block>
   <block id="a906778e494f0b40580e1e85dcb33e85" category="inline-link-macro">SG6100-CNコントローラの物理的な場所</block>
   <block id="58e70c1ae42267f307cdffab0cdfbbe4" category="list-text">これで完了です <block ref="5c1fa18bafcc8d60bd46b368c02cb91a" category="inline-link-macro-rx"></block> データセンターのNICを交換する場所。</block>
-  <block id="63f8fca3cb7c8b6c25c6c9a37f3c0e4a" category="admonition">この手順では、ホットスワップは*サポートされていません*。A <block ref="6bb1c156f9acfcc4bd439f64de9f6179" category="inline-link-macro-rx"></block> は、ケーブルを外してNICを取り外す前に必要です。</block>
   <block id="eaf231f4003aa68f6123cc0e6d604d87" category="list-text">SG6100-CNの2本の電源コードを含むすべてのケーブルを外しておきます。</block>
   <block id="17b208d64aae491214f3782c0ff2d452" category="list-text">*オプション*：地域の規制で要求されている場合は、コントローラをラックから取り外しておきます。NICは外部からアクセスできるため、取り外す必要はありません。</block>
   <block id="e2023a44c961f3f4470bb5e3006ff4cb" category="inline-link-macro">ノードの接続状態の監視</block>
-  <block id="37a4367f9d2138846d7d30345a9222b6" category="paragraph">サービスの中断を防ぐには、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。については、を参照してください <block ref="d14796012b1b468838045204e28fa845" category="inline-link-macro-rx"></block>。</block>
-  <block id="d639274428f4ac031f1908faa6990c49" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。については、を参照してください <block ref="4aae144d8fbb767d73fa7fd90a3dc263" category="inline-link-macro-rx"></block>。</block>
   <block id="45aabce7da28d01db08ff5344a11d65d" category="section-title">外部NICを取り外します。</block>
   <block id="746181094439f6c85453dfb13c07c646" category="list-text">静電気放電を防ぐために、ESDリストバンドのストラップ側を手首に巻き付け、クリップ側を金属アースに固定します。</block>
   <block id="f06ce8aaa962b8310bab87422709eca7" category="list-text">ドライバを使用して、NICの前面プレートのネジを緩めます。</block>
@@ -5425,10 +5266,8 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="35354d3f59ef76da6c3d8d0aafc491e7" category="doc">SGF6112またはSG6100-CN（SG6160）のファンの交換</block>
   <block id="dff98198bff06709975037453d00df52" category="list-text">これで完了です <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> データセンターのファンを交換する場所。</block>
   <block id="7a70e2c3c98205b7029ea7982add5e80" category="summary">SANtricity OS 08.42.20.00\（11.42\）以降を現在使用しているストレージコントローラでは、Grid Managerまたはメンテナンスモードを使用してアップグレードを適用できます。</block>
-  <block id="3b289339a5f46c375f3026b8b50cb446" category="doc">Grid Managerを使用してSG6160ストレージコントローラのSANtricity OSをアップグレードする</block>
   <block id="73b13828240be2d4ed9ff2f029c5ac9c" category="paragraph">SANtricity OS 08.42.20.00（11.42）以降を現在使用しているストレージコントローラでは、Grid Managerまたはメンテナンスモードを使用してアップグレードを適用できます。</block>
   <block id="80bcdb369c1aaaea9daefaf6cf5773ae" category="inline-link-macro">メンテナンスモードを使用したSG6160コントローラのSANtricity OSのアップグレード</block>
-  <block id="57ca482829cf5cc3cae5f2129c23fbb1" category="paragraph"><block ref="57ca482829cf5cc3cae5f2129c23fbb1" category="inline-link-macro-rx"></block></block>
   <block id="75bae77bd5a1e5d5a3fa60c2123780ca" category="summary">SG6100-CNコントローラが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。</block>
   <block id="34219e12808cfaa75a6d668403e35db8" category="doc">SG6100-CNコントローラの交換</block>
   <block id="001591654095885fb8e8bae93eba4b37" category="paragraph">SG6100-CNコントローラを交換すると、アプライアンスストレージノードにアクセスできなくなります。SG6100-CNコントローラが動作している場合は、この手順の開始時に通常の方法でシャットダウンを実行できます。</block>
@@ -5455,7 +5294,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="bb16bf046b2fd7560a2b14a7f9ad9e54" category="sidebar">ドライブファームウェアのアップグレード（SG6160）</block>
   <block id="1dc91b81c3c8c4d17ed44a4e5d4339f6" category="sidebar">SG6100-CNコントローラの交換（SG6160）</block>
   <block id="e96b749f34b2756fc2a0b8eac5a9e783" category="sidebar">ストレージコントローラコントローラの交換（SG6160）</block>
-  <block id="21b373ec754df40d02f0cfeb18c105fe" category="sidebar">ラックへのSG6100-CNの移動</block>
   <block id="4b1c1ad38150ad91104a761cfb5a1382" category="sidebar">ストレージコントローラシェルフまたは拡張シェルフの電源装置の交換（SG6160）</block>
   <block id="982ae3aea4734aa7e1eded70b7f60794" category="sidebar">SGF6112またはSG6100-CN（SG6160）のファンの交換</block>
   <block id="febcfd461af3265bdb47b88615490ba4" category="sidebar">ストレージコントローラシェルフまたは拡張シェルフのファンの交換（SG6160）</block>
@@ -5570,4 +5408,357 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="10fa39edb4e5d5fc91498d5271535f37" category="doc">SG6000-CNで交換するコンポーネントを確認します</block>
   <block id="ca37341c514b082d1be600ae89827bce" category="sidebar">ラック内のSG100またはSG1000の再配置</block>
   <block id="530a7cab0d75789e4984b34660953995" category="sidebar">SG6000-CNコントローラのCMOSバッテリの交換</block>
+  <block id="7598dd87f6ccb051188b1a78a7189afc" category="admonition">アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。実行し<block ref="9cdb103f4828cad5c0e4dadc89ebc345" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block>アプライアンスをStorageGRIDでリブートしてから、コマンド]をます。</block>
+  <block id="0ea8ee68566cf4949af61a6a8aa12755" category="list-text">同梱されているドキュメントを確認し、ハードウェアの移動と設置に関する注意事項を理解しておき<block ref="8c47f64a0b2720e9b32669186a53a9df" category="inline-link-rx"></block>ます。</block>
+  <block id="d50522e241adda84c1d25a8d6f13385b" category="list-text"><block ref="d50522e241adda84c1d25a8d6f13385b" category="inline-link-rx"></block></block>
+  <block id="4b54fdb089f1e4859471d4b0b7418787" category="list-text">Grid Managerにサインインしておきます<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
+  <block id="961b9bf06406cfb8ca3a4eb1a65b7049" category="paragraph">電源装置LED</block>
+  <block id="1a7a26e11de8230795faee52af8c0999" category="list-text">緑、点灯：アプライアンスに電源が投入され、電源ボタンがオンになっています。</block>
+  <block id="66645350bde260cb99c9b398d22a4321" category="list-text">緑色の点滅：アプライアンスに電源が投入され、電源ボタンがオフになっています。</block>
+  <block id="dd3358b2289b8e2eddff605e6002a733" category="list-text">消灯：アプライアンスに電力が供給されていません。</block>
+  <block id="0d62b6adecaf87bf7af8afc6946e6857" category="list-text">オレンジ：電源装置に障害があります。</block>
+  <block id="9eda08f277c75d2cbd6cbe89a3a578b1" category="paragraph">LEDの識別</block>
+  <block id="b673288e438383d0a8a5fd24fa185140" category="list-text">あなたはを持っています<block ref="4b9b8ad1fd2d0c7e2de41ab41c589ff5" category="inline-link-rx"></block>。</block>
+  <block id="609295eb0c681d6c1424fff83e27f505" category="admonition">この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。詳細は、を参照してください<block ref="4c6c5bde6eefe6b83cf8fcf6cfafcbf0" category="inline-link-rx"></block>。</block>
+  <block id="53a1c12160c727fefa8453478aa1dd20" category="list-text">ソースアプライアンスは、がインストールされているかのように事前にインストールされた状態になってい<block ref="d8179f874ceb9655a4c19cb17f6c7478" category="inline-link-rx"></block>ます。</block>
+  <block id="66cc02950de74fa96e9f918a807f3106" category="paragraph">IP変更ツールにアクセスし、MTU設定を更新します（を参照）<block ref="8adfe8e8a2d3ccaaf3f07fd9e52d3fc4" category="inline-link-rx"></block>。</block>
+  <block id="4e1662db936106068fd744ad81e3f5f1" category="paragraph">次のアプライアンス構成は、クローニング中に交換用アプライアンスに転送されません。これらの設定は、交換用アプライアンスの初期セットアップ時に行う必要があります。</block>
+  <block id="3765af3134e36278ca2d69a872d2407b" category="paragraph">クローニングの前に、クローニングに関する一般的な考慮事項、特定のクローニング情報、および各アプライアンスタイプの制限事項を確認してください。</block>
+  <block id="8ddf7a21881801ae08477effbd5d7af6" category="section-title">サービスアプライアンスのクローニングに関する一般的な考慮事項</block>
+  <block id="57f93d2de2695868a5e26368333757c4" category="list-text">交換用サービスアプライアンスは、交換する管理ノードまたはゲートウェイノードとは異なるモデルにすることができます。</block>
+  <block id="79763293798557ed13d222b355f68616" category="section-title">ストレージアプライアンスのクローニングに関する一般的な考慮事項</block>
+  <block id="7dc91f8105cebed0ab7d7beace6ce686" category="list-text">ストレージアプライアンスのクローニングに関する一般的な考慮事項の例外は次のとおりです。</block>
+  <block id="d76cfefba37f805cdd3b91e78261ca7a" category="paragraph">ただし、60ドライブのSG5760ソースノードアプライアンスにSANtricity Dynamic Disk Pools DDP-8（DDP）が設定されている場合、58ドライブの同サイズのドライブを搭載したSG6060ターゲットアプライアンスにDDP-16を設定すると、ストレージ効率が向上するためにSG6060アプライアンスが有効なクローンターゲットになる可能性があります。</block>
+  <block id="f194ba33da90ab8375effcb158038558" category="section-title">SG100アプライアンスのクローニング情報と制限事項</block>
+  <block id="48b148bae67ee305a9705ca4e7c2572c" category="section-title">SG110アプライアンスのクローニング情報と制限事項</block>
+  <block id="05c21975da1846682c7fd4373ea0bc11" category="section-title">SG1000アプライアンスのクローニング情報および制限事項</block>
+  <block id="f25a4ebffe6943c6d8d6ac878765b867" category="paragraph">SG1000ソースノードアプライアンスをSG100、SG110、またはSG1100サービスターゲットアプライアンスにクローニングできます。</block>
+  <block id="eb5817ef78e02dfd5d2d219c5166ad05" category="list-text">SG1000をSG100またはSG110サービスターゲットアプライアンスにクローニングすると、要件の厳しいアプリケーション向けにSG1000を再導入できます。</block>
+  <block id="e5cd2c5b5147b30ea505c3f6aefea96b" category="section-title">SG1100アプライアンスのクローニング情報と制限事項</block>
+  <block id="2ea5af75041fffbbfdb516fcf376bd7b" category="paragraph">SG1100ソースノードアプライアンスをSG110サービスターゲットアプライアンスにクローニングできます。</block>
+  <block id="8ad280867ec027eaebd3b5769c5692d0" category="list-text">SG1100をSG110サービスターゲットアプライアンスにクローニングすると、要件の厳しいアプリケーション向けにSG1100を再導入できます。たとえば、 SG1100 ソースノードアプライアンスを管理ノードとして使用していて、専用のロードバランシングノードとして使用する場合などです。</block>
+  <block id="414b4ae28f40631a9454c27f6d27fff4" category="section-title">SG5712アプライアンスのクローニング情報と制限事項</block>
+  <block id="47da0c0a63a296a2f4eca41b2b301443" category="paragraph">DDPが設定されたSG5712ソースノードアプライアンスは、SG5812ストレージターゲットアプライアンスにクローニングできます。</block>
+  <block id="261c05e27ab0717960f01603179953e1" category="section-title">SG5760アプライアンスのクローニング情報と制限事項</block>
+  <block id="e348992d19da9ca6dffcfcd62dcd5de1" category="list-text">DDP16が設定されたSG5760ソースノードアプライアンスを、DDP16が設定されたSG5860ストレージターゲットアプライアンスにクローニングできます。</block>
+  <block id="29454823f33ea920fd499f50643cad31" category="list-text">DDPが設定されたソースノードのSG5760アプライアンスは、DDPが設定されたSG5860ストレージターゲットアプライアンスにクローニングできます。</block>
+  <block id="94d47c4ef3b8b28b73c37a860a7d1b8c" category="list-text">DDPまたはDDP-16_cannot _ cannot _が設定されたソースノードのSG5760アプライアンスは、RAIDモードが一致するSG6160ストレージターゲットアプライアンスにクローニングされます。</block>
+  <block id="2c6d9b9a9c0600160c2b64ce62430068" category="section-title">SG5812アプライアンスのクローニング情報と制限事項</block>
+  <block id="cbdcf0e08a6f453f5d5f464ddc5670fe" category="paragraph">SG5812アプライアンスをソースまたはターゲットとして正常にクローニングできます。</block>
+  <block id="9808dd89c99bc174be3451ce1ad3fb12" category="section-title">SG5860アプライアンスのクローニング情報と制限事項</block>
+  <block id="26c52a4163a0fad600b7845f86bcd80a" category="paragraph">SG5860アプライアンスをソースまたはターゲットとして正常にクローニングできますが、いくつかの制限（アプライアンスのクローニング情報およびソースごとの制限事項に記載）があります。</block>
+  <block id="c9dc7c9220f912dfb636713044860c30" category="section-title">SG6060アプライアンスのクローニング情報と制限事項</block>
+  <block id="19898146b3790e98ad6057dfb9809f49" category="list-text">DDPまたはDDP16で構成されたソースノードのSG6060アプライアンスは、RAIDモードが一致するSG5860ストレージターゲットアプライアンスにクローニングできます。</block>
+  <block id="336173098aaa8541a973a255c2116444" category="list-text">ドライブサイズとRAIDモードが同じ場合、拡張シェルフなしのソースノードアプライアンスSG6060を、拡張シェルフなしのSG6160ストレージターゲットアプライアンスにクローニングできます。</block>
+  <block id="96ad7433b185e1ce5a49b5f0bbcbb713" category="list-text">拡張シェルフの数、ドライブサイズ、RAIDモードが同じであっても、任意の数の拡張シェルフを備えたソースノードアプライアンスSG6060をSG6160ストレージターゲットアプライアンスにクローニングすることはできません。</block>
+  <block id="a7b46b54b459e5411aaf4e74fe9d4b53" category="section-title">SG6160アプライアンスのクローニング情報と制限事項</block>
+  <block id="4f1956ec8d1137e6475bc51b75fd0530" category="paragraph">SG6160アプライアンスをソースまたはターゲットとして正常にクローニングできますが、いくつかの制限事項（アプライアンスのクローニング情報およびソースごとの制限事項に記載）があります。</block>
+  <block id="9a9f5437c95d85ac1ffbe90c9992003f" category="summary">Grid Managerの[Manage Drives]タブを使用して、この機能をサポートするアプライアンスのドライブについて、トラブルシューティングとメンテナンスのタスクを実行できます。</block>
+  <block id="118ba6cc75f24f399710c6ae5b006004" category="doc">[Manage Drives]タブを使用（SG110、SG1100、SGF6112、およびSG6160）</block>
+  <block id="39de5bbb672d392153253bbba450f378" category="paragraph">この機能をサポートするアプライアンスがあり、かついずれかのを使用している場合は<block ref="b0cf970b620483f230cbd78040cd621f" category="inline-link-rx"></block>、アプライアンスの詳細ページに[Manage Drives]タブが表示されます。</block>
+  <block id="cb52a12b6397a5a5e8762d18c90ff4c4" category="admonition">StorageGRID 11.8では、[Manage Drives]タブはSGF6112アプライアンスでのみサポートされます。</block>
+  <block id="4540ea92c58b7662e69ee02f3ab2f0bf" category="paragraph">StorageGRIDアプライアンスにKMSを実装する方法については、を参照してください<block ref="ff71524e9d8daf6c894ae193c213a6fe" category="inline-link-rx"></block>。</block>
+  <block id="aea1a9bca2ed2ae05ea4cd371fd4daaf" category="list-text">期限切れの証明書の更新など、証明書自体に関する問題に対処するには、を参照して<block ref="bea470a7f8c799e316c6ab2e0d35b4de" category="inline-link-rx"></block>ください。</block>
+  <block id="8e3fbee6dbf4e5f488f04bce27a5d306" category="paragraph"><block ref="94da1bd5a7fd88ca6c3595ede9cb4388" category="inline-link-rx"></block>StorageGRIDの他のノードに格納されているデータを移動します。</block>
+  <block id="308f745346e907eb916ad0ef1725ff55" category="paragraph">アプライアンスがリブートし、 KMS がクリアされてインストール前の状態になっていることを確認したら、 StorageGRID システムからアプライアンスを物理的に取り外すことができます。を参照してください<block ref="fd8c1f6608c39b7dc09cb321b339ae19" category="inline-link-rx"></block>。</block>
+  <block id="ae1236673f683ee092e2e2cfcdb21cb3" category="summary">一部のStorageGRIDアプライアンスには、ベースボード管理コントローラ（BMC）が搭載されており、アプライアンスの設定、監視、診断のための下位レベルのハードウェアアクセスが可能です。</block>
+  <block id="81afb0d680e166dfb6e54ba04669269a" category="doc">StorageGRIDアプライアンスのベースボード管理コントローラ（BMC）の使用</block>
+  <block id="078f1b8735576824de05382d7ef4a179" category="paragraph">BMCインターフェイスは、次のStorageGRIDアプライアンスモデルでサポートされています。</block>
+  <block id="e4eee474413c60f8ab8cda9428725eb9" category="inline-link">BMCユーザガイド</block>
+  <block id="11075fc62346a79fdbddbbe7388604ae" category="paragraph">これらのアプライアンスでのBMCインターフェイスの使用の詳細については、を参照して<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>ください。テクニカルサポートから指示があった場合にのみ、StorageGRIDのドキュメントに_not_documentedのBMC機能にアクセスしてください。</block>
+  <block id="ff32464e26cc664354809e6d1df0c510" category="paragraph">このBMCユーザーガイドは、一部のStorageGRIDアプライアンスで使用可能なBMCファームウェアの最新バージョンを対象としています。StorageGRIDアプライアンスのBMCファームウェアのバージョンが若干異なる場合があります。</block>
+  <block id="9604df8d6440862442953f75ceb84783" category="inline-link">アプライアンスで使用可能な最新のBMCファームウェアバージョン</block>
+  <block id="390cb8453e37075315513f4f5c46d4d9" category="list-text">StorageGRIDソフトウェアのアップグレード中にBMCファームウェアが更新されます。最新バージョンのStorageGRIDソフトウェアを実行していない場合は、アプライアンスを最新バージョンのStorageGRIDに更新してをインストールできます<block ref="a4a90e880bd58f91178e3e1166ec1e4f" category="inline-link-rx"></block>。</block>
+  <block id="a02904807f194e4823db1b8506329c03" category="list-text">StorageGRIDの更新前と更新後にBMCの表示が異なる場合は、の情報を<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>参照して、使用しているBMCのバージョンに応じた手順を変更することができます。</block>
+  <block id="15e9b7003c5c62d90363beb80fddd032" category="section-title">StorageGRIDアプライアンスでのBMCの使用</block>
+  <block id="d019f1659ff584f055e58c3a71e0c315" category="paragraph">サポートされているStorageGRIDアプライアンスで使用するBMCの手順は、次のとおりです。</block>
+  <block id="88b81829dd703f80c8fd4a07f63958af" category="inline-link-macro">BMCのダッシュボードへのアクセス</block>
+  <block id="621a11fe1e8bf422bb8328f9258640bb" category="list-text"><block ref="621a11fe1e8bf422bb8328f9258640bb" category="inline-link-macro-rx"></block></block>
+  <block id="c38637e5a2715d0bb936f43783cd1539" category="inline-link-macro">BMC SNMPの設定</block>
+  <block id="e24b87fcc932b825bd444b4eb3763ab8" category="list-text"><block ref="e24b87fcc932b825bd444b4eb3763ab8" category="inline-link-macro-rx"></block></block>
+  <block id="ab81dbb5d70b7380211a1bb39188eafb" category="inline-link-macro">Eメールアラート通知の設定</block>
+  <block id="f9d6356cbbcb02bdeebd7713145a4cbd" category="list-text"><block ref="f9d6356cbbcb02bdeebd7713145a4cbd" category="inline-link-macro-rx"></block></block>
+  <block id="e5365cfcf47367301a16e803e5331188" category="list-text">ハードウェアの設置に関するトラブルシューティング：</block>
+  <block id="bc496fc4f5adb6c66aa628a721d4b883" category="inline-link-macro">SG1000およびSG100</block>
+  <block id="fb3e0941711899b6c35bad168539dee3" category="list-text"><block ref="fb3e0941711899b6c35bad168539dee3" category="inline-link-macro-rx"></block></block>
+  <block id="8689233f5d4a8728d77b1b3f854ab436" category="inline-link-macro">SG1100およびSG110</block>
+  <block id="a898761362fedf57114d5726c4a9929e" category="list-text"><block ref="a898761362fedf57114d5726c4a9929e" category="inline-link-macro-rx"></block></block>
+  <block id="cd5041ccda9fe39d95ecf190ac9aed5b" category="list-text"><block ref="cd5041ccda9fe39d95ecf190ac9aed5b" category="inline-link-macro-rx"></block></block>
+  <block id="ecc8bfe86d95b45a1295a67752b9421b" category="list-text"><block ref="ecc8bfe86d95b45a1295a67752b9421b" category="inline-link-macro-rx"></block></block>
+  <block id="b231262bfbb651020f3a4d665910f0fa" category="list-text">アプライアンスの電源状態を確認します。</block>
+  <block id="102166831b892b4632edd6636ddfa9d7" category="list-text"><block ref="102166831b892b4632edd6636ddfa9d7" category="inline-link-macro-rx"></block></block>
+  <block id="f330aafe9bb7f349056104bd5153e6ee" category="list-text"><block ref="f330aafe9bb7f349056104bd5153e6ee" category="inline-link-macro-rx"></block></block>
+  <block id="681154c2bb1727c4ed4e9f4cfed95ce9" category="list-text"><block ref="681154c2bb1727c4ed4e9f4cfed95ce9" category="inline-link-macro-rx"></block></block>
+  <block id="ace8bebab8a8e24ad1824bb8262398c6" category="list-text"><block ref="ace8bebab8a8e24ad1824bb8262398c6" category="inline-link-macro-rx"></block></block>
+  <block id="61ad48de05b0851c00b3d3cf59f57d1c" category="list-text">アプライアンスの識別LEDのオンとオフを切り替えます。</block>
+  <block id="8f2c45f953ca0730fbd2c49675874c20" category="list-text"><block ref="8f2c45f953ca0730fbd2c49675874c20" category="inline-link-macro-rx"></block></block>
+  <block id="90a036c1d1de7e0cc71a4017b413591d" category="list-text"><block ref="90a036c1d1de7e0cc71a4017b413591d" category="inline-link-macro-rx"></block></block>
+  <block id="60fe38c42b29c8f4c84801f6ec3dc5f9" category="list-text"><block ref="60fe38c42b29c8f4c84801f6ec3dc5f9" category="inline-link-macro-rx"></block></block>
+  <block id="56c13a43d940c636dbc77d275f042118" category="list-text"><block ref="56c13a43d940c636dbc77d275f042118" category="inline-link-macro-rx"></block></block>
+  <block id="1017a641af9d542aad6ad2cb58687d9c" category="section-title">BMCの機能はStorageGRIDアプライアンスでサポートされない</block>
+  <block id="2f8a47b463b9cc5e9dd4f7377a356ff9" category="paragraph">次のBMC機能はStorageGRID固有の設定と競合するため、使用しないでください。</block>
+  <block id="f4f70727dc34561dfde1a3c529b6205c" category="list-text">設定</block>
+  <block id="84a4385e5a5707dda4a6776c101f4dd4" category="list-text">RAID管理</block>
+  <block id="95af14f7b91e327fe25f48cef3201810" category="list-text">SAS IT管理</block>
+  <block id="6ffd91d71317a9575936e547c6b63760" category="list-text">IPMIインターフェイス</block>
+  <block id="8c152b849012b502e6962a0b5cb2a6ec" category="list-text">コールド冗長性</block>
+  <block id="e2c1f07338c1939e615dd2ef2c16c2ea" category="list-text">NICの選択</block>
+  <block id="a840cf47a8332894d0f0ff896f7c6fde" category="list-text">イメージのリダイレクト</block>
+  <block id="538dacced78393560ce03a512034104a" category="list-text">ホストシステムの診断</block>
+  <block id="10d0de28911c5f66463b9c8783f8148a" category="list-text">メンテナンス</block>
+  <block id="2744600dbb7829921afa43a5e51d6960" category="list-text">デュアルイメージ構成</block>
+  <block id="9cb3ce93829d820e18cc10a3b66fe1ee" category="list-text">ファームウェア情報</block>
+  <block id="8f8bb20031f4e802d79980b675b8efee" category="list-text">ファームウェアの更新</block>
+  <block id="26820296116eb425fde2606d377822e2" category="list-text">工場出荷時のデフォルトに戻す</block>
+  <block id="b3cd8f3e800ae32f9597c2c967eaafce" category="list-text">を使用している<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
+  <block id="285a5479fcd9e929929e1251959923b8" category="inline-link">NetApp Eシリーズのドキュメント</block>
+  <block id="9f72865d275f78716a892682df58dbb9" category="paragraph">EシリーズAutoSupportの詳細については、を参照してください<block ref="1bea79f343ec419edecfabb887851d1a" category="inline-link-rx"></block>。</block>
+  <block id="eedf14cd2857eb0f649a10ed03bbc089" category="paragraph">管理ポートを使用せずにEシリーズAutoSupportメッセージを送信するためのStorageGRIDプロキシを設定する具体的な手順については、を参照して<block ref="371380525086e2f2ae59c12f120aa200" category="inline-link-rx"></block>ください。</block>
+  <block id="7a91b845254c912250f757dd44b4e866" category="inline-link">ドライブセキュリティ</block>
+  <block id="50e17ddccb3b5e51d480bad851e192ff" category="list-text">アプライアンスでが有効になっている場合は<block ref="838f63b5450b1f57f3e8b865bc58c585" category="inline-link-rx"></block>、セキュリティキーを作成して管理します。</block>
+  <block id="637caad455a57e19afcd30b9c02674b0" category="open-title">SG5700およびSG5800</block>
+  <block id="eb1a4beef110ceda19ffa08d7d3c5511" category="inline-link">ドライブセキュリティの実装</block>
+  <block id="edc7c6a0a6b43c141f2158dab7e2fe46" category="paragraph">SG5700およびSG5800ストレージアプライアンスの場合は、SANtricity System Managerの大まかな手順~を実行し<block ref="30ac7c9d072f9a088ff3ecff057331d7" category="inline-link-rx"></block>ます。</block>
+  <block id="7c069ddd5dad8ecd4ee00173477e13a1" category="paragraph">SG6060ストレージアプライアンスでは、ストレージアプライアンスをインストールする前にキー管理が設定されている場合にのみ、SSDドライブのドライブセキュリティを自動的に有効にできます。</block>
+  <block id="b321866a74d5de79233bf6878dbd4501" category="list-text">ストレージアレイにセキュリティ対応ドライブ（FDEドライブまたはFIPSドライブ）を装備します。</block>
+  <block id="12696fff85009a1ef2901d8929335983" category="list-text">FIPSのサポートが必要なボリュームには、FIPSドライブのみを使用します。</block>
+  <block id="a8f349d358cf5164a86a3b184efab1c3" category="list-text">ボリュームグループまたはプールにFIPSドライブとFDEドライブが混在している場合、すべてのドライブがFDEドライブとして扱われます。</block>
+  <block id="5a9a863055dc29aed89d8c77f4e168a4" category="list-text">FIPSのみのボリュームグループまたはプールでは、FDEドライブを追加したりスペアとして使用したりすることはできません。</block>
+  <block id="0579aa3685f75e3b2f4e2835bd1277f2" category="list-text">E4000コントローラシェルフの場合は、セキュリティキー（読み取り/書き込みアクセス用にコントローラとドライブで共有される文字列）を作成します。</block>
+  <block id="febebabfe962a13cf87eb0ff7729dcb2" category="inline-link">内部キーを作成する</block>
+  <block id="2c6c5c9b7b46bbd4da92a18c67ee7c48" category="list-text">コントローラの永続的メモリから使用することも、キー管理サーバから提供される外部キーを使用することもできます<block ref="6ec3cd897a97c3edb24a1fe750b56c9b" category="inline-link-rx"></block>。</block>
+  <block id="3b38026201c87a4c8932e38d5e80aa11" category="inline-link">キー管理サーバとの認証を確立する</block>
+  <block id="3f6fc27ceab845d15af8823c525b2242" category="list-text">キー管理サーバから提供される外部キーを使用するには、SANtricity System Managerで最初に実行する必要があります<block ref="ee23b2a40609e43ea56b18882ab214d1" category="inline-link-rx"></block>。</block>
+  <block id="235394a9c7f981205eb308d4434be6dc" category="inline-link-macro">インストールの開始</block>
+  <block id="4d6a3c10acfa05f8204809df03f0d4fc" category="list-text"><block ref="213531d86724f578f5ac920bc89e3edb" category="inline-link-macro-rx"></block>をクリックします。</block>
+  <block id="1a3d83a11843bc2c9a2b5405af4f8e34" category="inline-link">プールまたはボリュームグループのセキュリティを有効にする</block>
+  <block id="54f776eb1acdab445c42db5e101bc6ee" category="list-text">アプライアンスのインストールが完了したら、StorageGRIDフラッシュキャッシュでドライブセキュリティが有効になっていることを確認し、残りのすべてのディスクプールまたはボリュームグループでドライブセキュリティを有効にします（SANtricity System Managerのを参照）<block ref="1b58f1b8b5df796e256daeb0bc52d11c" category="inline-link-rx"></block>。</block>
+  <block id="8b001191a2ce8c5c2e038da330cb4069" category="paragraph">SG6160ストレージアプライアンスには、SG6100-CNコンピューティングコントローラとE4000コントローラシェルフの両方で、FIPS準拠のドライブを搭載できます。ドライブ暗号化は、SG6100-CNドライブとE4000ドライブで個別に設定できます。</block>
+  <block id="1f125f33fb9a90850c7507027dd55faf" category="inline-link-macro">ドライブ暗号化を有効にする</block>
+  <block id="f0db51e4358831ab70bc4473904069e4" category="list-text"><block ref="24129ff5f8bfd7e7061cdf8a81a4dc6d" category="inline-link-macro-rx"></block>SG6100-CNコンピューティングノードに取り付けられているSED SSDの場合。</block>
+  <block id="c254efa19103013981a41d6545334a49" category="list-text">セキュリティキー（読み取り/書き込みアクセス用にコントローラとドライブで共有される文字列）を作成します。</block>
+  <block id="589493108a7eb4f4efcb602f89f5bc3a" category="inline-link">ドライブセキュリティの有効化</block>
+  <block id="00eb0afe39b7bb07ee33907e04143322" category="list-text">インストールが完了したら、<block ref="7c1ab5b17d759a83d6a4eac233344f46" category="inline-link-rx"></block>SANtricity System Managerですべてのディスクプールまたはボリュームグループを表示します。</block>
+  <block id="e7d1344a53b797c760231d6d67e01bd9" category="list-text">管理クライアントはを使用してい<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>ます。</block>
+  <block id="b54a31b113abaae54f0e1d652d40bd79" category="list-text">クライアントまたはサービスラップトップにが搭載されている<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
+  <block id="92cc52a4541f1cee178e5e7bb1312d38" category="image-alt">StorageGRIDアプライアンスインストーラのホームページの上部を示すスクリーンショット</block>
+  <block id="15c2366d765d58299bad2b1257f33e5c" category="admonition">Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください<block ref="8f6f997668adf715032c29362b329763" category="inline-link-rx"></block>。</block>
+  <block id="b070f93443d48805f685978787f43388" category="list-text">を使用して設定するアプライアンス上のStorageGRIDアプライアンスインストーラに接続し<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>ます。</block>
+  <block id="39ed22a75288844801e288ae98729e0c" category="admonition">またはを使用してシステムを設定することもできます<block ref="211fd8fdc92725b38616205e7f1e7a76" category="inline-link-rx"></block><block ref="2b9b559fdbf6b83dc49f82aaedacac2d" category="inline-link-macro-rx"></block>。</block>
+  <block id="7983c6c3a58e03f9d9ce8d8c7067d5b9" category="paragraph">SG6100-CN コントローラの 4 つのネットワークポート</block>
+  <block id="2e5ed6cbd1cadc389aee4d24a4981060" category="list-text">オプションの100G NIC SKUを搭載した10 / 25 / 40 / 100GbEネットワークポート×4（SG6160のみ）</block>
+  <block id="b6b7fd4f926edf48bae64f263f2d6483" category="inline-link-macro">BMCインターフェイスへのアクセス</block>
+  <block id="b4c16ea7e0860df6d3a2eadc7d9613d7" category="list-text"><block ref="4b155d78a925ee15ae7148fef37d5200" category="inline-link-macro-rx"></block>SG6000-CNまたはSG6100-CNコントローラの場合</block>
+  <block id="9e52145db24a83afe34c9fc8cdbab864" category="list-text"><block ref="4b155d78a925ee15ae7148fef37d5200" category="inline-link-macro-rx"></block>SG100、SG110、SG1000、およびSG1100の場合</block>
+  <block id="a6611236fb5ed0c6289bf5534f3ad0b7" category="open-title">SG110、SG1100、SG6100-CN、SGF6112</block>
+  <block id="1520a0ec06669cf96539fb6f13561c88" category="list-text">SNMPv3機器のSNMP設定の経験が必要です。</block>
+  <block id="c436b13053b39bb6d0fccbe01cf53b6b" category="paragraph">ここでは、一部のStorageGRIDアプライアンスで利用可能なBMCファームウェアの最新バージョンを示します。StorageGRIDアプライアンスのBMCファームウェアのバージョンが若干異なる場合があります。</block>
+  <block id="71d938b7fb691da4578757e7dcdca152" category="list-text">BMCファームウェアの最新バージョンでは、SNMPv3のみがサポートされています。</block>
+  <block id="9e311bd1614cee9ae7e59fa2233f3e69" category="list-text">StorageGRIDの更新前または更新後にBMCが異なる場合は、次の手順を実行します。</block>
+  <block id="a8b884bc046348681c269cc31cbcba37" category="list-text">SG100、SG1000、SG6000-CNタブの手順を参照してください。</block>
+  <block id="13d5066be46ca75b93fc715d729a2b93" category="inline-link-macro">StorageGRID BMCの使用</block>
+  <block id="70be2c269e1ec62ce94970522a5ac0d1" category="list-text"><block ref="d8535bd983aba4fed9c9950640034d6e" category="inline-link-macro-rx"></block>また、これらの手順をBMCのバージョンに合わせて変更するのに役立つ情報も含まれている場合があります。</block>
+  <block id="586cd3d9e6b6ddc4c09a09ba2157629a" category="list-text">SNMPトラップを1つ以上のLAN宛先として設定します。</block>
+  <block id="ef99a9bac1414b3cc22a43ed27acce9f" category="list-text">BMCのダッシュボードで、*[設定]*&gt;*[プラットフォームイベントフィルタ]*&gt;*[LAN送信先]*を選択します。</block>
+  <block id="e1fb8c865feef0b0a68de4c37b670c28" category="list-text">[Destination Type]で、[SNMP Trap]*を選択します。</block>
+  <block id="27ec1e87314cbfe4bef59b80d816d847" category="list-text">[SNMP Destination Address]に、ターゲットIPアドレスを入力します。</block>
+  <block id="d1256add23a5fe0c0c1ed03986a7cfbe" category="admonition">[SNMP Destination Address]にはIPアドレスを使用します。DNS名はサポートされていません。</block>
+  <block id="e36d411646ecd3215170b48deb1ef9b1" category="list-text">SNMPトラップを使用してアラート通知を配信する場合は、BMCを使用してアラートポリシーとイベントフィルタを設定する方法について、『』の「プラットフォームイベントフィルタ」の項を参照して<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>ください。</block>
+  <block id="d568f84c80b58eb6816cdd0315219fe3" category="list-text">（任意）BMCユーザのSNMPをイネーブルにして設定します。</block>
+  <block id="47ad274f9ed0cdf62664abe92fe98517" category="list-text">BMCのダッシュボードで*[設定]*&gt;*[ユーザー管理]*を選択し、BMCユーザーを選択します。</block>
+  <block id="538523202ca6bf0633149bc88b6c2126" category="list-text">BMCユーザのSNMP設定の詳細については、『』の「ユーザ管理」を参照してください<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>。</block>
+  <block id="161ee13679977973b428693dfc5b3491" category="open-title">SG100、SG1000、SG6000-CN</block>
+  <block id="4ca88c2129a665829add8557995fcd74" category="list-text">既存のStorageGRIDシステムにアプライアンスストレージノードを追加するには、の手順を参照してください<block ref="d99e0d4e560b97e8eacc8d5509d73ab4" category="inline-link-rx"></block>。</block>
+  <block id="057c9d3da970ff17e05a9a548122da9b" category="list-text">リカバリ処理の一環としてアプライアンスストレージノードを導入する場合は、手順を参照してください<block ref="2a061ee6da6d61c2699c951fe86594f4" category="inline-link-rx"></block>。</block>
+  <block id="21028a6c060e43785f90af52efd9b299" category="inline-link">ストレージノードのタイプ</block>
+  <block id="5dadc9e66f2393a92237ef6bb355b0d3" category="list-text">[ノードタイプ]*を選択します。詳細については、を参照してください<block ref="c8e4f0e4f024966e7a8e7ecd14b02811" category="inline-link-rx"></block>。</block>
+  <block id="943a6532b2bb4031bd3bed2b35df9b89" category="admonition">Metadata-onlyは、アプライアンスの導入時にのみ選択できます。ストレージノードタイプとして[Metadata-Only]が選択されている場合、アプライアンスの導入後に変更することはできません。</block>
+  <block id="f8ea739552206c512584fe1d62a3e1df" category="list-text">を搭載したサービスラップトップを用意しておき<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>ます。</block>
+  <block id="d8245442f7bde2be0097d61d1cf79482" category="list-text">40GbEとオプションの100G NIC SKU（SG6160のみ）</block>
+  <block id="3aa6cf276b3b604ce70f1314ba05482a" category="paragraph">次の図は、SG100およびSG1000の背面にある電源装置の場所とLEDを示しています。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="54d3d8e2802a1847f5c5b9105c41a775" category="image-alt">SG100およびSG1000の背面LED</block>
+  <block id="5ce07e9f32961d03db1932b73d06c3ef" category="admonition">同じHAグループの管理ノードとゲートウェイノードを使用する場合、管理ノードのみのポートはフェイルオーバーしません。の手順を参照してください<block ref="e1a46353ec4f82573a1930167f651a2b" category="inline-link-rx"></block>。</block>
+  <block id="f84e92af65c35e8a3a0f82dea32c8d9e" category="paragraph">次の図は、SG110およびSG1100の背面にある電源装置の場所とLEDを示しています。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="99b0b1be4be516226726c4988e84e957" category="image-alt">SG110およびSG1100の背面LED</block>
+  <block id="7a2b330d303e524bd05f96dc96e3d197" category="admonition">パフォーマンスレベルの異なるサービスアプライアンス（SG100またはSG110とSG1000またはSG1100など）を同じサイトに混在させると、ハイアベイラビリティグループで複数のノードを使用したり、複数のサービスアプライアンス間でクライアントの負荷を分散したりした場合に、予測不可能で一貫性のない結果が生じることがあります。</block>
+  <block id="d1420a3e9b83f07de3c98fe031506f01" category="paragraph"><block ref="d1420a3e9b83f07de3c98fe031506f01" category="inline-link-rx"></block></block>
+  <block id="56d20f9269053e1fdaff50f8878fd060" category="paragraph">次の図は、SG6060およびSG6060Xで使用されるSG6000-CNコンピューティングコントローラの背面にある電源装置の場所とLEDを示しています。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="43d4cb361f931c29f7ab67092b7d9ec6" category="image-alt">SG6000-CNの背面LED</block>
+  <block id="0d72e60e6c6588a795f623a06b4cd95a" category="paragraph">次の図は、電源装置の位置を示し、SGF6112の背面にあるLEDを示しています。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="d336bc1ebecea1684c8b113e9cbaa22b" category="image-alt">背面LED SGF6112</block>
+  <block id="6dfd79974cfa36e257e92bc1e4d1c1ed" category="paragraph">次の図は、SG6100-CNコンピューティングコントローラの背面にあるポートを示しています。</block>
+  <block id="659b617e7798afa778e28cdccca6d6cd" category="list-text">10 / 25GbEは、ケーブルまたはSFPトランシーバのタイプ（SFP28およびSFP+モジュールをサポート）、スイッチ速度、設定されたリンク速度に基づいています。</block>
+  <block id="e607d94480c3d12398f751ba8352b6e6" category="list-text">オプションの100G NIC SKU（SG6160のみ）を使用すると、ケーブルまたはトランシーバのタイプ、スイッチ速度、設定されたリンク速度に基づいて10 / 25 / 40 / 100GbEが提供されます。QSFP56（100GbE /ポートに限定）、QSFP28（100GbE）、およびQSFP+（40GbE）が標準でサポートされます。QSA（別売）では、オプションのSFP+（10GbE）またはSFP28（25GbE）トランシーバを使用できます。</block>
+  <block id="3874b74af884b67f89c6c2adc59d6564" category="paragraph">次の図は、SG6100-CNコンピューティングコントローラの背面にある電源装置の場所とLEDを示しています。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="2e6dfafd88c45e0ec399efb6c48564d4" category="image-alt">SG6100-CNの背面LED</block>
+  <block id="65243f9b11da4aff53ef2492bd2914b0" category="list-text"><block ref="65243f9b11da4aff53ef2492bd2914b0" category="inline-link-rx"></block></block>
+  <block id="21e4cc108031bba39206d7b6b9caf5eb" category="list-text">アプライアンスがプライマリ管理ノードを除くすべてのノードでは、[Install StorageGRID（プライマリ管理ノードのインストール）]ステージが一時停止し、を使用して管理ノードでこのノードを承認するよう求めるメッセージが組み込みのコンソールに表示され<block ref="e9b839af5117614531eec6994f76d987" category="inline-link-rx"></block>ます。次の手順に進みます。</block>
+  <block id="c4343f2a5127528d5f6935b01fef86a5" category="list-text"><block ref="6f88de86b8743bbe23202c83b893e250" category="inline-link-rx"></block>プライマリ管理ノードで、保留中のグリッドノードを承認し、StorageGRIDのインストールプロセスを完了します。</block>
+  <block id="d08e16a033b319c3d200b9268a3bdf72" category="list-text"><block ref="d08e16a033b319c3d200b9268a3bdf72" category="inline-link-rx"></block></block>
+  <block id="2ba45c55f69f733db3f04d7fc73830ff" category="admonition">ボリュームサイズがDDPとRAIDの種類によって異なる場合があります。DDPとRAID 6の動作が異なると、ボリュームサイズが異なります。</block>
+  <block id="89b29f1df208250a7c684a6d065ce222" category="list-text">* Dynamic Disk Pools（DDP）*：データドライブ8本につきパリティドライブを2本使用します。すべてのアプライアンスに推奨されるデフォルトのモードです。</block>
+  <block id="2657c66a9f6017ec7ea3d635c75a9066" category="list-text">DDPはRAID 6よりもシステムパフォーマンスに優れ、ドライブ障害が発生したあとのリビルド時間が短く、管理も容易です。</block>
+  <block id="73a395853ac89ccaebf08978ea1b0986" category="list-text">ストレージアプライアンスまたは拡張シェルフごとに1つのディスクプールが作成されます。</block>
+  <block id="f26649dce28dd5e1d86ed8b5c92bf3b7" category="list-text">DDPは、SG5760、SG5860、SG6160アプライアンスでドロワー障害からデータを保護します。</block>
+  <block id="f92aa9f3253830e1851d9ed2af3d86cc" category="admonition">SG6060アプライアンスではSSDが2本あるため、DDPはドロワー障害からの保護を提供しません。ドロワー損失の保護は、SG6060に追加するすべての拡張シェルフで有効です。</block>
+  <block id="19c93c667ef2cc13e93ecfe64327890c" category="list-text">* DDP16 * ：このモードはデータドライブ 16 本につきパリティドライブを 2 本使用するため、 DDP よりもストレージ効率が高くなります。</block>
+  <block id="5754a263b23f44c63b8215bbbee707fe" category="list-text">DDP16はRAID 6と比較してシステムパフォーマンスが向上し、ドライブ障害後のリビルド時間が短縮され、管理が容易で、同等のストレージ効率を実現します。</block>
+  <block id="02a221d4c920873196eae410e8e27dc0" category="list-text">DDP16モードを使用するには、ストレージアプライアンスにドライブが20本以上搭載されている必要があります。</block>
+  <block id="c842ed21a3be5df18a08a7175bcbe688" category="list-text">DDP16はドロワー損失からの保護には対応していません。</block>
+  <block id="66288b09f1575aedd4dce484482c0652" category="list-text">RAID 6は、拡張シェルフごとに1つのグローバルホットスペアを提供します。たとえば、2台の拡張シェルフを搭載したSG6160には、3つのホットスペアがあります。</block>
+  <block id="fa3b6dffc44fdf2a5bea27671ba42222" category="list-text">60ドライブのストレージアプライアンスでは、StorageGRIDによって3つのボリュームグループが作成されます。各グループには少なくとも18本のドライブ（16+2）、最大サイズは21本のドライブ（19+2）が含まれます。</block>
+  <block id="c21f5bafb47f9e353888eb55dd2c48e2" category="list-text">SGF6024のRAID 6ボリュームグループは23本のドライブと1本のホットスペアで構成されます。</block>
+  <block id="acb2a90c3a0b57de73de69f0404b05e4" category="list-text">RAID 6ボリュームは若干サイズが大きく、多くの場合、DDP16からノードをクローニングできます。ボリュームサイズは、RAID 6構成のボリュームグループによって異なります。</block>
+  <block id="4ac07674a7081b86680597503f30774b" category="list-text">クライアントにはがあり<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>ます。</block>
+  <block id="4e566fed33a5fbe94f583058b0167bb7" category="list-text">クライアントにはがあり<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>ます。</block>
+  <block id="0f7cdc2213ae0614b6880519b807dd83" category="paragraph">StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください<block ref="9240b1c7fca3b4c00aaf60d976e6caee" category="inline-link-rx"></block>。</block>
+  <block id="a18c863efe264b8a820a3aa5f15dce6e" category="paragraph">に関する情報を確認します<block ref="1ab6cf7b725cd1db8724fbcf79291fd1" category="inline-link-rx"></block>。</block>
+  <block id="6c36a8ed89f3113c9a4d345d07c525a3" category="admonition">ノード暗号化を有効にしてアプライアンスを設置すると、一時キーが割り当てられます。アプライアンスのデータは、アプライアンスがキー管理システム（KMS）に接続され、KMSセキュリティキーが設定されるまで保護されません。詳細については、を参照してください<block ref="1b141fe85ee275193be0bd326245089d" category="inline-link-rx"></block>。</block>
+  <block id="d453e448de3170f088f49a44683b6aaf" category="paragraph">に関する情報を確認します<block ref="9240b1c7fca3b4c00aaf60d976e6caee" category="inline-link-rx"></block>。</block>
+  <block id="a834eba1793fd24a3b0df9777ed08ac4" category="paragraph">再マッピングされたポートをロードバランサエンドポイントに使用することはできません。再マッピングされたポートを削除する必要がある場合は、の手順に従います<block ref="ddc2fed20f0a5902c2e31af029d5bc0b" category="inline-link-rx"></block>。</block>
+  <block id="37718a7243f3d42aa9519f9d8931c1b7" category="list-text">* drive-encryption *（StorageGRID 11.8以降）：ドライブの暗号化を管理し、ドライブの暗号化ステータスを表示する処理。</block>
+  <block id="da4a2d6800ce0679984c088566051916" category="list-text">* encryption *：ノードの暗号化を管理し、ノードの暗号化ステータスを表示する処理。</block>
+  <block id="51635520d5b0468a18837fd93d6b53a9" category="paragraph">240 V AC</block>
+  <block id="d096b064f353634cafcde4024d6f0389" category="paragraph">120 V AC</block>
+  <block id="e68e16a439ac6f0d69ed3c29e912a12a" category="list-text">設置場所がアプライアンスの電源要件を満たしていることを確認します。</block>
+  <block id="835447e8e565cf411579559df9c8a431" category="admonition">StorageGRIDアプライアンスの電源装置の定格電力は、最大消費電力期間中であっても、StorageGRIDアプライアンスのハードウェアの使用電力よりも大幅に高くなります。NetAppでは、次の表の数値を使用して、StorageGRIDアプライアンスを含む推奨ラックレイアウトがラックの電力バジェットと互換性があるかどうかを判断することを推奨しています。</block>
+  <block id="2b5b64a60bc631586234f5544da3749e" category="cell">必要な平均電力（W）</block>
+  <block id="d610d425d035c971ae38a91c6059ba0e" category="cell">必要な最大電力（W）</block>
+  <block id="4734ba6f3de83d861c3176a6273cac6d" category="paragraph">273</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="paragraph">400</block>
+  <block id="357a6fdf7642bf815a88822c447d9dc4" category="paragraph">337</block>
+  <block id="d490d7b4576290fa60eb31b5fc917ad1" category="paragraph">600</block>
+  <block id="371bce7dc83817b7893bcdeed13799b5" category="paragraph">352</block>
+  <block id="cee631121c2ec9232f3a2f028ad5c89b" category="paragraph">500</block>
+  <block id="f85454e8279be180185cac7d243c5eb3" category="paragraph">422</block>
+  <block id="e5841df2166dd424a57127423d276bbe" category="paragraph">700</block>
+  <block id="a8849b052492b5106526b2331e526138" category="paragraph">578</block>
+  <block id="f016e59c7ad8b1d72903bb1aa5720d53" category="paragraph">1394</block>
+  <block id="f39ae9ff3a81f499230c4126e01f421b" category="paragraph">1800</block>
+  <block id="d61e4bbd6393c9111e6526ea173a7c8b" category="paragraph">449</block>
+  <block id="7cce53cf90577442771720a370c3c723" category="paragraph">1048</block>
+  <block id="6f3e29a35278d71c7f65495871231324" category="paragraph">1300</block>
+  <block id="883e881bb4d22a7add958f2d6b052c9f" category="paragraph">1027</block>
+  <block id="9fdb62f932adf55af2c0e09e55861964" category="paragraph">1900</block>
+  <block id="729c68884bd359ade15d5f163166738a" category="paragraph">1484</block>
+  <block id="46a558d97954d0692411c861cf78ef79" category="paragraph">2300</block>
+  <block id="1a5b1e4daae265b790965a275b53ae50" category="paragraph">446</block>
+  <block id="f29b38f160f87ae86df31cee1982066f" category="paragraph">1312</block>
+  <block id="dfd298f661fce8aa9b8b039f6fcfd317" category="paragraph">StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認し、各コントローラのポートがどのように使用されるかを把握する必要があります。StorageGRIDのネットワーク要件については、を参照して<block ref="3b358f12dd038279fdaf0d1808df91ba" category="inline-link-rx"></block>ください。</block>
+  <block id="2060996e4ea036c84fe524f4bb640ff0" category="list-text">* SANtricityの管理ネットワーク*（ストレージアプライアンスの場合はオプションで、SGF6112では不要）：このネットワークからSANtricity System Managerにアクセスして、アプライアンスおよびストレージコントローラシェルフのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。</block>
+  <block id="e6b3f8c787f110e738041acfec63cd45" category="admonition">StorageGRIDネットワークの詳細については、を参照してください<block ref="c9a67c39cb366102345c95ea9d802249" category="inline-link-rx"></block>。</block>
+  <block id="79ffe998f527a3998a83d054ff067c7e" category="list-text"><block ref="79ffe998f527a3998a83d054ff067c7e" category="inline-link-macro-rx"></block></block>
+  <block id="44ef269732748f70c763abafc0361990" category="list-text"><block ref="44ef269732748f70c763abafc0361990" category="inline-link-macro-rx"></block></block>
+  <block id="2b5994be0ad1518a670726d49503aef3" category="admonition">この手順で行ったBMC設定は、コントローラまたはアプライアンスに障害が発生して交換が必要になった場合に保持されないことがあります。適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。</block>
+  <block id="156e455630a4e49e7afff2a829c35531" category="open-title">StorageGRID 11.9以降</block>
+  <block id="1433f3dea3005561ee1f9e94e4de877d" category="paragraph">BMCインターフェイスで、設定ページの*ユーザー管理*および*プラットフォームイベントフィルタ*オプションを使用して、電子メール通知を設定します。</block>
+  <block id="a24c4a49e0637c9ce9a5d3e3763c71a7" category="list-text">StorageGRID 11.8タブの手順を参照してください。</block>
+  <block id="a6a395448459048fdaeb07e54b94b267" category="list-text">Eメール通知を1つ以上のLAN宛先として設定します。</block>
+  <block id="0c8ef26903a3b776adc43b99b18c9e2e" category="list-text">[Destination Type]で、*[E-Mail]*を選択します。</block>
+  <block id="c7b5a36a19e8301eff4fc9451bd33dea" category="list-text">BMCユーザのリストからEメールアラートを受信するBMCユーザ名を選択します。このユーザに設定されたEメールアドレスにアラートEメールが送信されます。注：BMCユーザを設定するには、*[設定]*&gt;*[ユーザ管理]*を選択します。詳細については、『』の「ユーザ管理」セクションを参照してください<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>。</block>
+  <block id="1175a7000fca77edd90d690277c3ed44" category="list-text">EメールアラートのEメール件名とEメールメッセージを入力します。</block>
+  <block id="1de1c8446868458ccee2581f78aec976" category="admonition">電子メールの件名と電子メールメッセージは、AMI形式の電子メールユーザーには使用されません。</block>
+  <block id="e7ffe24adcffdb8065ff9e62767b1cb4" category="list-text">BMCを使用してアラートポリシーおよびイベントフィルタを設定する方法については、『』のプラットフォームイベントフィルタの項を参照してください<block ref="aa4ae73a3679e76122102799e4b86b83" category="inline-link-rx"></block>。</block>
+  <block id="0c116dd1f4daf14c460a0c77a9e0e674" category="open-title">StorageGRID 11.8</block>
+  <block id="f2fd1a71b7c294443da01bf7801b5884" category="list-text">BMCのSMTPを設定します。</block>
+  <block id="90d64eeba8247d656ef6b4800ec0f52f" category="paragraph">HT</block>
+  <block id="01004ca4b4cda083a59d7ef1cfc90475" category="paragraph">マスターブートスクリプトは、OSのブートが完了するのを待機しています。</block>
+  <block id="5651d908d5b3ab8d4a8fe8089b4e7d83" category="paragraph">HB</block>
+  <block id="e8ab6a7dc89e99a70ee4788e32f81415" category="paragraph">アプライアンスのブート時にハードウェアエラーが発生すると、BMCにエラーコードが記録されます。必要に応じて、BMCインターフェイスまたはアプライアンスのシリアルポートを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題を解決できます。</block>
+  <block id="1ee2c044ca8cf52433cc3a62a7cad31b" category="admonition">BMCにBIOS POSTコードメニュー項目がない場合は、アプライアンスのシリアルポートを使用してエラーコードにアクセスします。</block>
+  <block id="38a427148a620f2d51fd1f486f845a8e" category="list-text">BMCを使用している場合は、その方法を知っています<block ref="53b3502becaef2024da9e6edc66a9fa0" category="inline-link-macro-rx"></block>。</block>
+  <block id="5fc4ac7c66fdffe8401fe52c2a46019f" category="list-text">シリアルポートと端末を使用している場合は、必要な機器を用意します。</block>
+  <block id="230e9ec0c8f1943db724a00dd136d924" category="list-text">次のいずれかの方法でエラーコードにアクセスします。</block>
+  <block id="396262ee936f3d3e26ff0e60bea6cae0" category="open-title">BMC</block>
+  <block id="b3f994a8ec5d98ac49568364e3796eef" category="paragraph">BMCを使用する場合は、次の手順を実行します。</block>
+  <block id="9c3afca0e22b83712c6663246c37c5a0" category="list-text"><block ref="3823cbfd1384af1b7d12448c89b77fd1" category="inline-link-macro-rx"></block>です。</block>
+  <block id="9bd7f548a0adc76ee297f5abc7430291" category="paragraph">シリアルポートと端末を使用している場合は、次の手順を実行してエラーコードを表示します。アプライアンスの再起動時に、シリアル・コンソールにBIOS POSTコードが表示されます。</block>
+  <block id="250c0b0a67f024ab7cd29d7df958eaf4" category="paragraph">アプライアンスのブート時にハードウェアエラーが発生すると、BMCにエラーコードが記録されます。必要に応じて、アプライアンスのシリアルポートを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題を解決できます。</block>
+  <block id="85fd8dbcb292a18c6e134c11d34b8b85" category="list-text">必要な機器を揃えます。</block>
+  <block id="4c7f4b4177a8afabdfb2e79cd5bb5558" category="list-text">シリアルターミナルに印刷された情報で、[Current Code]と[Previous Code]を確認します。</block>
+  <block id="e6523bc6b0aa210bcea1be5b2e6318ec" category="section-title">[view-boot-codes]]ブート時のコードの表示（SGF6112およびSG6160のみ）</block>
+  <block id="badc9a052fb8dc6b6ee7a3020215193b" category="section-title">[[view-error-codes]]エラーコードを表示する（SGF6112およびSG6160のみ）</block>
+  <block id="a318b0e440c8e88d015bff11ce8a6e4c" category="paragraph">SG6000-CN コントローラのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて、BMCインターフェイスまたはアプライアンスのシリアルポートを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題を解決できます。</block>
+  <block id="99095f0bedc8e3d1410fe6eff42af5fc" category="image-alt">StorageGRIDアプライアンスインストーラでのpingテストの結果のスクリーンショット</block>
+  <block id="e7ea23a54c0ddebee1c1492e0cc1ea3d" category="paragraph">また、外部 NFS サーバや DNS サーバで使用されるポートなど、管理ネットワークとクライアントネットワーク、および UDP ポートで接続をテストすることもできます。これらのポートのリストについては、を参照して<block ref="1e586dd4a6252c59d7456ca897ae854e" category="inline-link-rx"></block>ください。</block>
+  <block id="bdf32cd6e5bfe0d5860a2d5151fe3289" category="paragraph">次の図は、SG100およびSG1000の前面にあるステータスインジケータとボタンを示しています。</block>
+  <block id="1a2ed7d39e0db03d9b5d4d6a46779876" category="paragraph">次の図に、SG100およびSG1000の背面にある電源装置の場所とLEDを示します。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="d74a4b83ad81c51e5fafde7ae7461979" category="paragraph">次の図に、SG110およびSG1100アプライアンスの前面にあるインジケータとボタンを示します。</block>
+  <block id="20e957672cdc3dd43e0123cfc44ed26b" category="paragraph">次の図に、SG110およびSG1100の背面にある電源装置の位置とLEDを示します。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="64f2a2a9a6275d1679af729cb7fec6ac" category="paragraph"><block ref="64f2a2a9a6275d1679af729cb7fec6ac" category="inline-link-macro-rx"></block></block>
+  <block id="64dc56b6855e747e49efa5dfe185c62b" category="paragraph">次の図は、SG6000-CNコントローラ前面にあるステータスインジケータとボタンを示しています。</block>
+  <block id="89a12c9cfe23a1dee6be66e2fb554131" category="paragraph">次の図に、SG6000-CNコントローラの背面にある電源装置の場所とLEDを示します。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="6caee75b38d61d4801420e3aec0b9ea6" category="paragraph">次の図は、SG6100アプライアンス前面のインジケータとボタンを示しています。</block>
+  <block id="fe624da545a0997cc5d2c3d30f369af3" category="paragraph">次の図に、SGF6112およびSG6100-CNの背面にある電源装置の場所とLEDを示します。アプライアンスのポートには、その他のステータスLEDとアクティビティLEDがあります。これらのLEDはアプライアンスのモデルによって異なる場合があります。</block>
+  <block id="f95ca0912808abe2270cd1f418b6e89a" category="image-alt">SGF6112およびSG6100-CNの背面LED</block>
+  <block id="0f47986745ce840c10499664283d7b6b" category="paragraph"><block ref="0f47986745ce840c10499664283d7b6b" category="inline-link-rx"></block></block>
+  <block id="810b48be331213357ad3b610c2ba8a84" category="paragraph">サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="ae08639bb3ed33f2b9c5b58d9cddd031" category="list-text">交換するアプライアンスと同じパーツ番号の交換用アプライアンスを用意しておきます。アプライアンスの前面に取り付けられているタグを調べて、パーツ番号が一致していることを確認します。</block>
+  <block id="4a9949b1653a4c2d26a04be273526cc5" category="list-text">そうだな <block ref="1f3a73fe731b4a5896a19ff9b9d6fda4" category="inline-link-macro-rx"></block></block>
+  <block id="aa3035df8358cb3ce6b87fc939c73bbe" category="paragraph"><block ref="d1b4cf48faff4ebf5184bd2d02096bd0" category="inline-link-macro-rx"></block>です。</block>
+  <block id="02d004373a5767dc8e2794e1c333439b" category="paragraph">サービスの中断を防ぐために、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="a11b7604b2e5565658b835219c8e4f8b" category="paragraph">サービスの中断を防ぐには、ファンの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、スケジュールされたメンテナンス期間中にサービスの中断が許容される時間帯にファンを交換してください。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="e3b64f91fe1b1f4d62193ee25017383c" category="paragraph">図は、電気コネクタが強調表示されたアプライアンスのファンを示しています。アプライアンスの上部カバーを取り外すと、冷却ファンがあります。</block>
+  <block id="176b214d5da79715417a4dd8edc62741" category="summary">アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスの場所を特定できます。</block>
+  <block id="729e9f8a1afa4afe767302dd73394d10" category="list-text">Grid Managerにサインインする必要があります<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
+  <block id="ba435d2f285faf2c9d0a780aaf4916ed" category="paragraph">アプライアンスのドライブ、電源/ファンキャニスター、ファンキャニスター、電源キャニスター、またはドライブドロワーを交換するには、にアクセスします<block ref="305b653a8d7ae8e7e9656f618c2cf6b6" category="inline-link-rx"></block>。</block>
+  <block id="3d73a67961e1a613e0b4583610182b70" category="doc">SG5700ストレージコントローラでのSANtricity OSのアップグレードについて</block>
+  <block id="a3fb3bbf2cf1bd106246d3e5db977eee" category="list-text"><block ref="a3fb3bbf2cf1bd106246d3e5db977eee" category="inline-link-macro-rx"></block></block>
+  <block id="d440998a1c8beb2d7f6513462969f958" category="list-text">手順でのリンク設定の変更によって影響を受けた可能性があるネットワーク上のIPアドレスへの接続を確認するには、[Ping Test]ツールを使用し<block ref="2b33924fedc837b12bedd9a200e4d03f" category="inline-xref-macro-rx"></block>ます。</block>
+  <block id="89da1e2c5db02ccb941cd0e6d0b78782" category="list-text">Grid Managerで、* nodes *&gt;*_appliance node_*&gt;* SANtricity System Manager *を選択します。コントローラ情報はにあり<block ref="a1aaf7bb5ac3c80e5c2b1588aa506a0d" category="inline-link-rx"></block>ます。</block>
+  <block id="a5ee4cd59c510c6a402f181d8d799c9b" category="image-alt">コールアウトリファレンス1</block>
+  <block id="0757f3b26ab245447cc41936cd3afefe" category="image-alt">コールアウトリファレンス2</block>
+  <block id="3cbfcbda43179f1df024e2d6051f5271" category="list-text">Grid Managerで、* nodes *&gt;*_appliance node_*&gt;* SANtricity System Manager *を選択します。コントローラ情報はにあり<block ref="5f7e3517d1392ee1637563255b3cc9f7" category="inline-link-rx"></block>ます。</block>
+  <block id="dd3e050849166c9b784e0ff7ea3bc78b" category="inline-image-macro">ファンアイコン</block>
+  <block id="54e682c1e932dd0c4bfed689b5838167" category="list-text">[シェルフ]*ドロップダウンリストの右側にあるファンのアイコンを確認し<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>て、障害が発生したファンキャニスターが搭載されているシェルフを特定します。</block>
+  <block id="192a91d56dc6ef980c24ab2e0ae1423b" category="inline-image-macro">電源アイコン</block>
+  <block id="0b1e2ac5c16b80c880fa2636f10e31c2" category="list-text">[シェルフ]*ドロップダウンリストの右側にある電源アイコンを確認し<block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block>て、障害が発生した電源キャニスターが搭載されているシェルフを特定します。</block>
+  <block id="d5dc60c63c442be4b800edee5dfd7825" category="list-text">[シェルフ]*ドロップダウンリストの右側にある電源とファンの<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>アイコンを確認し<block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block>て、障害が発生した電源装置が搭載されているシェルフを特定します。</block>
+  <block id="385670e63395d954db81d385b46f8236" category="doc">SG5800ストレージコントローラでのSANtricity OSのアップグレードについて</block>
+  <block id="461fe7b94ee4ef21c8144bcd702f1c6b" category="paragraph">StorageGRIDアプライアンスでの使用が確認されている最新のSANtricity OSバージョンを確認し、<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>必要に応じてダウンロードします。</block>
+  <block id="b87441e57987f2ad30acc24d0989a299" category="paragraph">緑のチェックマークアイコンは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。ノードアイコンの説明については、を参照してください<block ref="9d01e9b7dd507e2d1821030b4fd4830d" category="inline-link-rx"></block>。</block>
+  <block id="9b7df7c7893533ac85953b325941fb3b" category="paragraph">VLAN 設定を変更した場合は、アプライアンスのサブネットが変更されている可能性があります。アプライアンスのIPアドレスを変更する必要がある場合は、手順に従って<block ref="9eb689c81bebacfe8c9452246eece765" category="inline-link-rx"></block>ください。</block>
+  <block id="d80c84e576fe98bc08893a257604be7d" category="paragraph">サービスの中断を回避するには、アプライアンスをシャットダウンする前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの停止期間が許容範囲内であれば、スケジュールされたメンテナンス期間中にアプライアンスをシャットダウンします。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="ea1ecedab3555fb0adf3fd24fc5107bb" category="admonition">オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス時間中にアプライアンスをシャットダウンする必要があります。そうしないと、ストレージノードのサービスを停止するメンテナンス手順 の実行中に、これらのオブジェクトへのアクセスが一時的に失われる可能性があります。の情報を参照してください<block ref="02302a9f780d0f227b7003a48943822d" category="inline-link-rx"></block>。</block>
+  <block id="096c2190c4224592568161b84626fdbc" category="paragraph">サービスの中断を回避するには、他のすべてのストレージノードがグリッドに接続されていることを確認してから、コントローラをシャットダウンするか、スケジュールされたメンテナンス期間中にサービスの停止期間が許容される場合はコントローラをシャットダウンします。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="99b7499d29e0b4c92013708a5a36981e" category="paragraph">サービスの中断を防ぐには、ファイバチャネルHBAの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容されるスケジュールされたメンテナンス期間中にアダプタを交換してください。の情報を参照してください<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
+  <block id="cf2a6241dc04a8d5bee62e55ba159d5d" category="admonition">オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス期間中に Fibre Channel HBA を交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。+についての情報を参照してください<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
+  <block id="5ff2938bdba727cdd0ed16126bccac9b" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にバッテリを交換する必要があります。についての情報を参照してください<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
+  <block id="75fa2073dc16039e973e9242607939fa" category="paragraph">コントローラシェルフの他のField Replaceable Unit（FRU；フィールド交換可能ユニット）の手順については、を参照して<block ref="96926f38e4586f8b487862e63472a27b" category="inline-link-rx"></block>ください。</block>
+  <block id="4d2f463540a5360143a293cf6af90e59" category="list-text">交換するコントローラと同じパーツ番号の交換用コントローラを用意しておきます。コントローラの前面に取り付けられているタグでパーツ番号が一致していることを確認します。</block>
+  <block id="bf521ae758eb336e5dd7164da362b975" category="inline-link">SANtricity OS_guideのアップグレード</block>
+  <block id="ea5248ca8d12f622fb0872382b7ae167" category="list-text">またはSANtricity System Managerのオンラインヘルプの手順に従って、<block ref="8ac6e3aa056487ab7380cf9c558bf6f1" category="inline-link-rx"></block>ファームウェアとNVSRAMをアップグレードします。</block>
+  <block id="50b9cd40eadd70d8b653fd8f03084bec" category="doc">SG6000ストレージコントローラのSANtricity OSのアップグレードについて</block>
+  <block id="ae8e7ea880d097d7e9a0bde508c7e81d" category="list-text">そうだな <block ref="68174fa3bab4ce6c72c57fb3530fdfd7" category="inline-link-macro-rx"></block></block>
+  <block id="c844d01687ddbc9954f7c427da1d4706" category="paragraph"><block ref="865edf77b3eba053e29e61ca4d9fc799" category="inline-link-macro-rx"></block>です。</block>
+  <block id="9a221fc8827a4991817e2b249cd1cf3d" category="admonition">アプライアンスをラックから取り外す前に、が <block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block> 必要です。</block>
+  <block id="638734fcdf0d50595d78d81bb639fd1b" category="paragraph">両方のSSDドライブが正常に機能している場合は、読み取りキャッシュ機能が自動的にリストアされます。読み取りキャッシュのヒット率を監視できます<block ref="735aff2661f88efa8f6e8cceeb96bac0" category="inline-link-rx"></block>。キャッシュが再構築されたばかりのため、最初はヒット率が低くなる可能性がありますが、オブジェクトデータにアクセスするクライアントがキャッシュに再度データを格納するにつれて、ヒット率は上昇します。</block>
+  <block id="ae4fa539a7c5cac501cec6d0e59f538b" category="list-text">[シェルフ]*ドロップダウンリストの右側にあるファンのアイコンを確認し<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>て、障害が発生したファンキャニスターが搭載されているアプライアンスを特定します。</block>
+  <block id="b8e55daf0cd7d7e3973b1e259f86f0cd" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してください<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
+  <block id="7da93c6e68a43a9bce834b5ab317044f" category="admonition">この手順では、ホットスワップは*サポートされていません*。ケーブルを外してNICを取り外す前に、が<block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block>必要です。</block>
+  <block id="f23564587172dfdbfe2370e00a02a9e5" category="paragraph">サービスの中断を防ぐには、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。についての情報を参照してください<block ref="5059dc4531f4f3adf649d818b95a89ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="84504c6b7f2491dc5bc7090a8c2b9821" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してください<block ref="f62f9b0fd270f830287bb631ff88ea28" category="inline-link-macro-rx"></block>。</block>
+  <block id="04690c654e14c31aaff7dcdf3ee29f7f" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にファンを交換する必要があります。についての情報を参照してください<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
+  <block id="57f986120565d62fe336f74024a0a5dc" category="list-text"><block ref="b8ccfb419e995cdda7f100cd08c73614" category="inline-link-macro-rx"></block>です。</block>
+  <block id="cdc6c3e5556c763f3a315ba4edf24802" category="admonition">オブジェクトのコピーを1つだけ作成するILMルールを使用したことがあり、両方の電源装置を同時に交換する場合は、この手順中にこれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中に電源装置を交換する必要があります。についての情報を参照してください<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
+  <block id="1b7d4d3c0c1dc6813d5940e856960dd4" category="list-text">交換したアプライアンスでSEDドライブに対してハードウェアドライブ暗号化が有効になっていた場合は、を参照してください<block ref="942fcf41c1144a1a8b0cde84a2954b64" category="inline-link-macro-rx"></block>。ガイダンスに従って、交換用アプライアンスを初めて起動したときに暗号化ドライブにアクセスします。この手順を完了するには、リブートが必要です。</block>
+  <block id="8b2f35ba079b66e821fbe2ecbf079a0b" category="list-text"><block ref="8b2f35ba079b66e821fbe2ecbf079a0b" category="inline-link-macro-rx"></block></block>
+  <block id="6df3b6aa83b520cdd88f98e9d7ae2f92" category="doc">Grid Managerを使用してSG6100ストレージコントローラのSANtricity OSをアップグレードする</block>
+  <block id="73ceb72d67ba34612609e1f83759b680" category="inline-link-macro">メンテナンスモードを使用したSG6100コントローラのSANtricity OSのアップグレード</block>
+  <block id="35be643dd560ae241670f92b1cd69cf6" category="list-text"><block ref="35be643dd560ae241670f92b1cd69cf6" category="inline-link-macro-rx"></block></block>
+  <block id="2f0574719ffbf08aeb528b5265507fb2" category="inline-link">StorageGRID 11.9ドキュメント</block>
+  <block id="fb9bf062d669886ba82eb2cef6e06bb0" category="paragraph">StorageGRID 11.9システムの設定および使用方法については、を参照してください<block ref="8a6d41e812d44c3c4b339dfb6a2bafbd" category="inline-link-rx"></block>。</block>
+  <block id="d9419a01ee4fdcd160bf1446e5a481f5" category="list-text"><block ref="d9419a01ee4fdcd160bf1446e5a481f5" category="inline-link-rx"></block></block>
+  <block id="0ceab7293af6c07bc39db5e5d82dd9d5" category="section-title">BMCノシヨウホウ</block>
+  <block id="383618c189ef21ef243ef8ab02426094" category="paragraph">StorageGRIDアプライアンスのBMCインターフェイスの使用方法の詳細が表示されます。を参照して <block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block></block>
+  <block id="4c3023a359ba4319887ce079f8ee7f9b" category="paragraph">新しいStorageGRID SG5812およびSG5860アプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。詳細については、を参照して<block ref="2a413e9ad740d8bf3ae3102a4c99aa8a" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="32b906eb47adfda8201e47113c29db5b" category="paragraph">新しいStorageGRID SG6160アプライアンスには、コンピューティングコントローラ、2台のストレージコントローラと60本のドライブを搭載したストレージコントローラシェルフ、およびキャッシング用のNVMe SSDドライブが2本搭載されています。必要に応じて、60ドライブ拡張シェルフをSG6160に追加できます。詳細については、を参照してください<block ref="476efecdba735494e72d7970bc2f3e26" category="inline-link-macro-rx"></block>。</block>
+  <block id="a875f4e3e98d1c995967b1dfb394ca2e" category="sidebar">StorageGRID 11.9ドキュメント</block>
+  <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="sidebar">ドライブの管理</block>
+  <block id="d9435157d60631f5b40942f8da9f9d4f" category="sidebar">識別LEDのオン/オフ</block>
+  <block id="9e0d42c7b934dc5cdf1101e6790d4586" category="sidebar">ドライブファームウェアのアップグレード（オンライン方式）</block>
+  <block id="e54c8c67c50fc4b3207c84f37536f504" category="sidebar">ドライブファームウェアのアップグレード（オフライン方式）</block>
+  <block id="51130a506eed4d61508de06399ef34da" category="sidebar">ラック内のSGF6112またはSG6100-CNの再配置</block>
+  <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">ドライブの管理（SG110、SG1100、SGF6112、SG6160）</block>
+  <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">BMCインターフェイスの使用</block>
 </blocks>

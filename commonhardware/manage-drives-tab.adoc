@@ -1,24 +1,26 @@
 ---
-permalink: sg6100/manage-drives-tab.html 
+permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
-summary: 'Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。' 
+keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 'Grid Managerの[Manage Drives]タブを使用して、この機能をサポートするアプライアンスのドライブについて、トラブルシューティングとメンテナンスのタスクを実行できます。' 
 ---
-= [Manage Drives]タブを使用（SGF6112）
+= [Manage Drives]タブを使用（SG110、SG1100、SGF6112、およびSG6160）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Grid Managerの[Manage Drives]タブを使用して、SGF6112アプライアンスのドライブに対してトラブルシューティングとメンテナンスのタスクを実行できます。
+Grid Managerの[Manage Drives]タブを使用して、この機能をサポートするアプライアンスのドライブについて、トラブルシューティングとメンテナンスのタスクを実行できます。
 
 .作業を開始する前に
-* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
-
+Grid Managerにサインインしておきます https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 
 .このタスクについて
-SGF6112アプライアンスと https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"^]アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
+この機能をサポートするアプライアンスがあり、かついずれかのを使用している場合は https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["ストレージアプライアンス管理者またはRoot Access権限"^]、アプライアンスの詳細ページに[Manage Drives]タブが表示されます。
+
+
+NOTE: StorageGRID 11.8では、[Manage Drives]タブはSGF6112アプライアンスでのみサポートされます。
 
 [Manage Drives]タブには、次のビューがあります。
 

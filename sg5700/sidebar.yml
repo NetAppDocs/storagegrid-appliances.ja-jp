@@ -10,8 +10,9 @@ entries:
   pdf-filename: メンテナンス設定手順- SG5700
   entries:
   - title: ストレージコントローラの SANtricity OS をアップグレードします
-    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: SG5700ストレージコントローラでのSANtricity OSのアップグレードについて
+      url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     - title: Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
       url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
     - title: E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします

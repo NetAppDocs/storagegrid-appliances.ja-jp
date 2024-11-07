@@ -34,7 +34,7 @@ NOTE: アプライアンスをラックから取り外す前に、が link:shut-
 
 
 .このタスクについて
-サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
+サービスの中断を防ぐには、CMOSバッテリの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス期間中にバッテリを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
 
 .手順
 . ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
@@ -75,7 +75,7 @@ image::../media/sg6060_riser_alignment_hole.jpg[ライザーアセンブリの�
 . 交換したアプライアンスでノード暗号化の暗号化キーを管理するためにキー管理サーバ（KMS）を使用していた場合は、ノードをグリッドに追加するために追加の設定が必要になることがあります。ノードが自動的にグリッドに追加されない場合は、次の設定が新しいアプライアンスに転送されたことを確認し、想定される設定と異なる設定があれば手動で設定します。
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["StorageGRID 接続を設定します"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["アプライアンスのノード暗号化を設定します"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["アプライアンスのノード暗号化を設定します"^]
 
 
 . アプライアンスにログインします。

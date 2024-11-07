@@ -1,14 +1,18 @@
 ---
 indexpage:
+  title: StorageGRIDアプライアンスのマニュアル
+  summary: NetApp StorageGRID は、ソフトウェアで定義されるオブジェクトストレージスイートで、パブリック、プライベート、ハイブリッドのマルチクラウド環境での幅広いユースケースに対応します。StorageGRID
+    はAmazon S3 APIをネイティブでサポートし、自動化されたライフサイクル管理などの業界をリードする革新的なテクノロジを提供して、非構造化データを長期にわたってコスト効率よく格納、保護、保持します。
+  keywords: storagegrid appliances, storagegrid hardware, install, configure
   lead: NetApp StorageGRID は、ソフトウェアで定義されるオブジェクトストレージスイートで、パブリック、プライベート、ハイブリッドのマルチクラウド環境での幅広いユースケースに対応します。StorageGRID
     はAmazon S3 APIをネイティブでサポートし、自動化されたライフサイクル管理などの業界をリードする革新的なテクノロジを提供して、非構造化データを長期にわたってコスト効率よく格納、保護、保持します。
   tiles:
   - title: はじめに
     links:
     - title: StorageGRID の詳細をご覧ください
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/index.html
     - title: StorageGRID クイックスタート
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/quick-start.html
     - title: アプライアンスインストールのクイックスタート
       url: "/installconfig/index.html"
     - title: インストールと設定を自動化
@@ -19,7 +23,7 @@ indexpage:
     links:
     - title: SG100およびSG1000
       url: "/installconfig/hardware-description-sg100-and-1000.html"
-    - title: SG110およびSG1100（新規）
+    - title: SG110およびSG1100
       url: "/installconfig/hardware-description-sg110-and-1100.html"
     - title: SG5700
       url: "/installconfig/hardware-description-sg5700.html"
@@ -57,6 +61,8 @@ indexpage:
       url: "/landing-maintain-sgf6112/index.html"
   - title: StorageGRID ソフトウェア
     links:
+    - title: StorageGRID 11.9ドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid/index.html
     - title: StorageGRID 11.8ドキュメント
       url: https://docs.netapp.com/us-en/storagegrid-118/index.html
     - title: StorageGRID 11.7ドキュメント

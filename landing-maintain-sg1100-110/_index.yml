@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: SG1100およびSG110サービスアプライアンスハードウェアのメンテナンス
+  summary: SG1100およびSG110サービスアプライアンスのハードウェアを保守します。
+  keywords: maintain storagegrid sg110, maintain storagegrid sg1100
+  lead: SG1100およびSG110サービスアプライアンスのハードウェアを保守します。
   tiles:
   - title: 頻繁に実行される手順
     links:
-    - title: ロケーションLEDのオン/オフ
+    - title: 識別LEDのオン/オフ
       url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
     - title: データセンターにアプライアンスを配置します
       url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"

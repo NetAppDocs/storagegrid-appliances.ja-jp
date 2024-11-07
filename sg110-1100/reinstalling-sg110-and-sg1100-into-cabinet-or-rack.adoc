@@ -20,7 +20,7 @@ summary: キャビネットまたはラックからSG110またはSG1100を取り
 .作業を開始する前に
 * SG110またはSG1100に接続する各ケーブルを識別するためのラベルを用意しておきます。
 * これで完了です link:locating-sg110-and-sg1100-in-data-center.html["SG110またはSG1100の物理的な場所"] データセンターのメンテナンスを実施している場合。
-* これで完了です link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["SG110またはSG1100をシャットダウンします。"]。
+* そうだな link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["SG110またはSG1100をシャットダウンします。"]
 +
 
 CAUTION: 電源スイッチを使用してアプライアンスをシャットダウンしないでください。
@@ -83,4 +83,4 @@ IMPORTANT: パフォーマンスの低下を防ぐため、ケーブルをねじ
 
 
 .完了後
-link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["アプライアンスの再起動"]。
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation["アプライアンスの再起動"]です。

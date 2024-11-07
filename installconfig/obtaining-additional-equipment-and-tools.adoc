@@ -30,7 +30,7 @@ StorageGRID アプライアンスを設置する前に、必要な追加機器�
 静電気防止用リストストラップ::
 +
 --
-* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]
+* https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]
 * PuTTY などの SSH クライアント
 * 1GbE （ RJ-45 ）ポート
 

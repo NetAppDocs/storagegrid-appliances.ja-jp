@@ -161,12 +161,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[NVMEMバッテリを�
 
 
  a| 
-image::../media/legend_icon_01.png[凡例アイコン01]
+image::../media/legend_icon_01.png[コールアウトリファレンス1]
 | バッテリリリースタブ 
 
 
  a| 
-image::../media/legend_icon_02.png[凡例アイコン 02]
+image::../media/legend_icon_02.png[コールアウトリファレンス2]
 | バッテリ電源コネクタ 
 |===
 
@@ -210,12 +210,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[DIMMを取り外します�
 
 
  a| 
-image::../media/legend_icon_01.png[凡例アイコン01]
+image::../media/legend_icon_01.png[コールアウトリファレンス1]
 | DIMM のツメ 
 
 
  a| 
-image::../media/legend_icon_02.png[凡例アイコン 02]
+image::../media/legend_icon_02.png[コールアウトリファレンス2]
 | DIMM 
 |===
 

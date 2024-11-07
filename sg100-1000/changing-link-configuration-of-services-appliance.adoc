@@ -14,8 +14,7 @@ summary: サービスアプライアンスのイーサネットリンク設定�
 サービスアプライアンスのイーサネットリンク設定を変更することができます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。
 
 .作業を開始する前に
-* これで完了です link:../commonhardware/placing-appliance-into-maintenance-mode.html["アプライアンスをメンテナンスモードにしました"]。
-
+これで完了です link:../commonhardware/placing-appliance-into-maintenance-mode.html["アプライアンスをメンテナンスモードにしました"]。
 
 
 NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。

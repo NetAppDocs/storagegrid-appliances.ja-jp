@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: SG5700ストレージアプライアンスハードウェアのメンテナンス
+  summary: SG5700ストレージアプライアンスのハードウェアを保守します。
+  keywords: maintain storagegrid sg5700
+  lead: SG5700ストレージアプライアンスのハードウェアを保守します。
   tiles:
   - title: 頻繁に実行される手順
     links:
@@ -7,8 +11,10 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: SANtricityのアップグレード
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
-    - title: ドライブファームウェアをアップグレードします
-      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: ドライブファームウェアのアップグレード（オンライン方式）
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: ドライブファームウェアのアップグレード（オフライン方式）
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: ハードウェアの手順
     links:
     - title: E2800シリーズストレージコントローラの交換

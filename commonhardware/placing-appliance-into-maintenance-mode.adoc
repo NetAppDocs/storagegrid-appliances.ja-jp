@@ -14,7 +14,7 @@ summary: 特定のメンテナンス手順を実行する前に、アプライ�
 特定のメンテナンス手順を実行する前に、アプライアンスをメンテナンスモードにする必要があります。
 
 .作業を開始する前に
-* を使用して Grid Manager にサインインします https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* Grid Managerにサインインしておきます https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 * Maintenance または Root アクセス権限が必要です。詳細については、 StorageGRID の管理手順を参照してください。
 
 

@@ -114,4 +114,4 @@ CAUTION: コントローラは重いので、必ず両手で支えながら作�
 部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
 
 .関連情報
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp Eシリーズのドキュメント"^]

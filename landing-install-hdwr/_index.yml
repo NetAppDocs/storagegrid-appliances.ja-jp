@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: アプライアンスハードウェアを設置
+  summary: アプライアンスハードウェアをサイトに設置します。
+  keywords: storagegrid install hardware, storagegrid install appliance
+  lead: アプライアンスハードウェアをサイトに設置します。
   tiles:
   - title: キャビネットまたはラックへのストレージアプライアンスの設置
     links:

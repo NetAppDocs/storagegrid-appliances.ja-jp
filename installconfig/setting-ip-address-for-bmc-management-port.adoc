@@ -16,7 +16,7 @@ BMCインターフェイスにアクセスするには、SGF6112、SG6000-CNコ�
 ConfigBuilderを使用してJSONファイルを生成する場合は、IPアドレスを自動的に設定できます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
 
 .作業を開始する前に
-* 管理クライアントがを使用している必要があります https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* 管理クライアントはを使用してい https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
 * StorageGRID ネットワークに接続できる管理クライアントを使用している必要があります。
 * BMC 管理ポートが、使用する管理ネットワークに接続されている必要があります。
 +

@@ -35,7 +35,7 @@ image::../media/ping_test_start.png[StorageGRID アプライアンスインス�
 ネットワーク接続が有効な場合は、「 Ping test passed 」メッセージと ping コマンドの出力が表示されます。
 
 +
-image::../media/ping_test_passed.png[StorageGRID Webscale アプライアンスインストーラでの ping テストの結果を示すスクリーンショット]
+image::../media/ping_test_passed.png[StorageGRIDアプライアンスインストーラでのpingテストの結果のスクリーンショット]
 
 
 

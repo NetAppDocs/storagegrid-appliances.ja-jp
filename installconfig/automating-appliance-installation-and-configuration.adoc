@@ -62,7 +62,7 @@ NOTE: 同じJSONファイルを使用して複数のアプライアンスを設�
 
 +
 
-NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください https://docs.netapp.com/us-en/storagegrid-118/maintain/downloading-and-extracting-storagegrid-installation-files.html["StorageGRID インストールファイルのダウンロードと展開"^]。
+NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください https://docs.netapp.com/us-en/storagegrid/maintain/downloading-and-extracting-storagegrid-installation-files.html["StorageGRID インストールファイルのダウンロードと展開"^]。
 
 
 
@@ -76,7 +76,7 @@ JSONファイルを生成したら、StorageGRID アプライアンスインス�
 * アプライアンスをラックに設置し、ネットワークに接続し、電源を投入しておきます。
 * これで完了です <<automation-options,JSONファイルが生成されました>> ネットアッププロフェッショナルサービスコンサルタントが指導します。
 * アプライアンスに、StorageGRID 11.5以降と互換性のある最新のファームウェアが搭載されています。
-* を使用して設定するアプライアンス上のStorageGRID アプライアンスインストーラに接続します https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を使用して設定するアプライアンス上のStorageGRIDアプライアンスインストーラに接続し https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
 
 
 .手順

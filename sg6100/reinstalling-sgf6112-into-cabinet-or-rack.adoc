@@ -20,7 +20,7 @@ summary: SGF6112をキャビネットまたはラックから取り外して上�
 .作業を開始する前に
 * SGF6112またはSG6100-CNに接続する各ケーブルを識別するためのラベルを用意しておきます。
 * これで完了です link:locating-sgf6112-in-data-center.html["SGF6112またはSG6100-CNの物理的な場所"] データセンターのメンテナンスを実施している場合。
-* これで完了です link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["SGF6112またはSG6100-CNをシャットダウンします。"]。
+* そうだな link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["SGF6112またはSG6100-CNをシャットダウンします。"]
 +
 
 CAUTION: 電源スイッチを使用してアプライアンスをシャットダウンしないでください。
@@ -81,4 +81,4 @@ NOTE: パフォーマンスの低下を防ぐため、ケーブルをねじっ�
 
 
 .完了後
-link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["アプライアンスの再起動"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-or-sg6100-cn-and-verify-operation["アプライアンスの再起動"]です。

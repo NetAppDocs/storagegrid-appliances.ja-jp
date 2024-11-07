@@ -10,8 +10,9 @@ entries:
   pdf-filename: メンテナンス設定手順- SG5800
   entries:
   - title: ストレージコントローラの SANtricity OS をアップグレードします
-    url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: SG5800ストレージコントローラでのSANtricity OSのアップグレードについて
+      url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     - title: Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
       url: "/sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html"
     - title: メンテナンスモードを使用したE4000コントローラのSANtricity OSのアップグレード
@@ -30,7 +31,7 @@ entries:
   pdf-filename: ハードウェアの手順- SG5800
   entries:
   - title: SG5800コントローラの交換
-    url: "/sg5800/replace-controller-sg5800.html"
+    url: "/sg5800/replace-controller-5800sg.html"
   - title: E4000コントローラの交換
     url: "/sg5800/replace-controller-e4000-simplex.html"
   - title: ファンの交換（SG5860）

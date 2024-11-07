@@ -22,7 +22,7 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 . link:preparing-site.html["サイトを準備"]
 . link:unpacking-boxes.html["箱を開梱します"]
 . link:obtaining-additional-equipment-and-tools.html["追加の機器と工具を入手します"]
-. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["Webブラウザの要件を確認します"^]
+. https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["Webブラウザの要件を確認します"^]
 . link:reviewing-appliance-network-connections.html["ネットワーク情報の収集"]
 
 

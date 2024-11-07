@@ -29,16 +29,16 @@ SGF6112またはSG6100-CNが最適に機能しない場合や障害が発生し�
 * これで完了です link:locating-sgf6112-in-data-center.html["SGF6112アプライアンスまたはSG6100-CNコントローラの物理的な場所"] データセンターのNICを交換する場所。
 +
 
-NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["アプライアンスの通常のシャットダウン"] は、アプライアンスをラックから取り外す前に必要です。
+NOTE: アプライアンスをラックから取り外す前に、が link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["アプライアンスの通常のシャットダウン"] 必要です。
 
 * すべてのケーブルと link:reinstalling-sgf6112-cover.html["アプライアンスカバーを取り外した"]。
 
 
 .このタスクについて
-サービスの中断を防ぐために、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
+サービスの中断を防ぐために、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
 
 
-CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してください https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
 
 .手順
 . ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
@@ -47,7 +47,7 @@ CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを�
 アプライアンスの3つのNICは、写真のシャーシの位置にある2つのライザーアセンブリにあります（上部カバーを取り外した状態のアプライアンスの背面）。
 
 +
-image::../media/sgf6112-nic-positions.jpg[NICの場所]
+image::../media/sgf6112-nic-positions.png[NICの場所]
 
 +
 [cols="1a,2a,4a"]

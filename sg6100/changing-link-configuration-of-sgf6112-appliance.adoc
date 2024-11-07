@@ -14,8 +14,7 @@ summary: ポートボンディングモード、ネットワークボンディ�
 ポートボンディングモード、ネットワークボンディングモード、リンク速度など、アプライアンスのイーサネットリンク設定を変更できます。
 
 .作業を開始する前に
-* これで完了です link:../commonhardware/placing-appliance-into-maintenance-mode.html["アプライアンスをメンテナンスモードにしました"]。
-
+これで完了です link:../commonhardware/placing-appliance-into-maintenance-mode.html["アプライアンスをメンテナンスモードにしました"]。
 
 
 NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。
@@ -28,8 +27,7 @@ NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモー�
 
 +
 
-NOTE: アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。を実行します
-[`change-ip` Command）アプライアンスをStorageGRIDでリブートしたあとに、
+NOTE: アプライアンスのメンテナンスモード中にIP設定を変更した場合、インストールされているStorageGRID環境には適用されません。実行し[`change-ip`アプライアンスをStorageGRIDでリブートしてから、コマンド]をます。
 
 . 選択に問題がなければ、 * 保存 * をクリックします。
 +

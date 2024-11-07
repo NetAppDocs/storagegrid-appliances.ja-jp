@@ -23,8 +23,6 @@ entries:
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: ドライブファームウェアのアップグレードエラーのトラブルシューティング
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
-  - title: "[ドライブの管理]タブを使用"
-    url: "/sg6100/manage-drives-tab.html"
   - title: 識別LEDのオン/オフ
     url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
   - title: データセンターにアプライアンスを配置します
@@ -63,7 +61,7 @@ entries:
     - title: 内蔵NIC（SGF6112およびSG6160）
       url: "/sg6100/replace-nic-in-sgf6112.html"
     - title: 外部NIC（SG6160）
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: CMOSバッテリを交換してください
     url: "/sg6100/replace-cmos-in-sgf6112.html"
   - title: DIMM を交換します

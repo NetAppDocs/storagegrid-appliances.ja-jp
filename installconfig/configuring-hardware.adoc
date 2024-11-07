@@ -58,12 +58,12 @@ SG6160、SG6000、SG5800、およびSG5700の場合は、SANtricity System Manag
 +
 ** ハードウェアの監視に使用するSANtricity System Manager（SG5700、SG5800、SG6000、およびSG6100）の設定
 ** RAIDモードを変更します
-** SG6000-CNまたはSG6100-CNコントローラのBMCインターフェイスにアクセスします。
+** link:../installconfig/accessing-bmc-interface.html["BMCインターフェイスへのアクセス"]SG6000-CNまたはSG6100-CNコントローラの場合
 
 
 * サービスアプライアンス
 +
-** SG100、SG110、SG1000、およびSG1100のBMCインターフェイスにアクセスする
+** link:../installconfig/accessing-bmc-interface.html["BMCインターフェイスへのアクセス"]SG100、SG110、SG1000、およびSG1100の場合
 
 
 

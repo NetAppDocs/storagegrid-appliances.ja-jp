@@ -195,7 +195,7 @@ image::../media/appliance_installer_reboot_complete.png[リブートが完了し
 +
 .. Grid Managerで、* nodes *を選択し、アプライアンスストレージノードに緑のチェックマークアイコンが表示されていることを確認します。
 +
-緑のチェックマークアイコンは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。ノードアイコンの概要 については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視します"^]。
+緑のチェックマークアイコンは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。ノードアイコンの説明については、を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視します"^]。
 
 .. 「 * Storage * 」タブを選択し、追加した各拡張シェルフのオブジェクトストレージテーブルに 16 個の新しいオブジェクトストアが表示されていることを確認します。
 .. 新しい各拡張シェルフのシェルフステータスが Nominal であり、構成ステータスが Configured になっていることを確認します。

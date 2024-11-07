@@ -25,7 +25,7 @@ DIMM を交換するには、コントローラのキャッシュサイズを確
 ** コントローラキャニスターに接続する各ケーブルを識別するためのラベル。
 ** SANtricityシステムマネージャへのアクセス：
 +
-*** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報は https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]。
+*** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報はにあり https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]ます。
 *** 管理ステーションのブラウザで、コントローラのドメイン名またはIPアドレスを指定します。
 
 
@@ -158,12 +158,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[DIMMを取り外します�
 
 
  a| 
-image::../media/legend_icon_01.png[凡例アイコン01]
+image::../media/legend_icon_01.png[コールアウトリファレンス1]
 | DIMM のツメ 
 
 
  a| 
-image::../media/legend_icon_02.png[凡例アイコン 02]
+image::../media/legend_icon_02.png[コールアウトリファレンス2]
 | DIMM 
 |===
 . 交換用 DIMM を静電気防止用の梱包バッグから取り出し、 DIMM の端を持ってスロットに合わせます。

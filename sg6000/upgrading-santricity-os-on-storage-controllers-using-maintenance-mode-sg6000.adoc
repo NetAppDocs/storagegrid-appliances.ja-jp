@@ -36,7 +36,7 @@ CAUTION: 一度に複数の StorageGRID アプライアンスをアップグレ�
 
 CAUTION: NVSRAM は、 StorageGRID アプライアンスに固有です。標準のNVSRAMダウンロードは使用しないでください。
 
-. SANtricity OS_guide または SANtricity System Manager のオンラインヘルプの指示に従って、ファームウェアと NVSRAM をアップグレードします。
+. またはSANtricity System Managerのオンラインヘルプの手順に従って、 https://docs.netapp.com/us-en/e-series-santricity/sm-support/upgrade-controller-software-and-firmware.html["SANtricity OS_guideのアップグレード"^]ファームウェアとNVSRAMをアップグレードします。
 +
 
 NOTE: アップグレードファイルはただちにアクティブ化する必要があります。アクティベーションを延期しないでください。
@@ -59,6 +59,6 @@ image::../media/nodes_menu.png[アプライアンスノードがグリッドに�
 
 
 .関連情報
-https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]
+* https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]
+* link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html["Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード"]
 
-link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html["Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード"]

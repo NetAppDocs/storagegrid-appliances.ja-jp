@@ -1,5 +1,5 @@
 ---
-permalink: sg6100/replace-ocp-nic-in-sg6100-cn.html 
+permalink: sg6100/replace-ocp-nic-sg6100-cn.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
 summary: SG6100-CNが適切に機能していない場合や障害が発生した場合は、SG6100-CNのネットワークインターフェイスカード\（NIC\）の交換が必要になることがあります。 
@@ -28,17 +28,17 @@ image::../media/sg6100_cn_ocp_nic_location.png[NICの前面プレート。]
 * これで完了です link:locating-sgf6112-in-data-center.html["SG6100-CNコントローラの物理的な場所"] データセンターのNICを交換する場所。
 +
 
-NOTE: この手順では、ホットスワップは*サポートされていません*。A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["アプライアンスの通常のシャットダウン"] は、ケーブルを外してNICを取り外す前に必要です。
+NOTE: この手順では、ホットスワップは*サポートされていません*。ケーブルを外してNICを取り外す前に、がlink:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["アプライアンスの通常のシャットダウン"]必要です。
 
 * SG6100-CNの2本の電源コードを含むすべてのケーブルを外しておきます。
 * *オプション*：地域の規制で要求されている場合は、コントローラをラックから取り外しておきます。NICは外部からアクセスできるため、取り外す必要はありません。
 
 
 .このタスクについて
-サービスの中断を防ぐには、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。については、を参照してください link:https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態の監視"]。
+サービスの中断を防ぐには、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。についての情報を参照してくださいlink:https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態の監視"]。
 
 
-CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。については、を参照してください link:https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"]。
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してくださいlink:https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"]。
 
 
 

@@ -32,7 +32,7 @@ NOTE: ネットワークのパフォーマンスを最大限に高めるには�
 を使用することができます `Passwords.txt` ファイルを使用してIP変更ツールを使用します。
 
 .手順
-IP 変更ツールにアクセスし、の説明に従って MTU 設定を更新します https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["ノードのネットワーク設定の変更"^]。
+IP変更ツールにアクセスし、MTU設定を更新します（を参照） https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html["ノードのネットワーク設定の変更"^]。
 
 
 

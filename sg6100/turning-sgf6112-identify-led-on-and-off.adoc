@@ -2,7 +2,7 @@
 permalink: sg6100/turning-sgf6112-identify-led-on-and-off.html 
 sidebar: sidebar 
 keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
-summary: アプライアンスの前面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスを見つけやすくなります。 
+summary: アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスの場所を特定できます。 
 ---
 = SGF6112アプライアンスまたはSG6100-CNコントローラの識別LEDのオンとオフの切り替え
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: アプライアンスの前面にある青色の識別LEDを点灯す�
 
 
 [role="lead"]
-アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンターでアプライアンスの場所を特定できます。
+アプライアンスの前面と背面にある青色の識別LEDを点灯すると、データセンター内でアプライアンスの場所を特定できます。
 
 .作業を開始する前に
 特定するアプライアンスのBMC IPアドレスを確認しておきます。

@@ -13,7 +13,7 @@ summary: インストール中にアプライアンスのノード暗号化を�
 [role="lead"]
 インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。
 
-を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["キー管理サーバを設定"^] StorageGRID アプライアンスにKMSを実装する方法については、を参照してください。
+StorageGRIDアプライアンスにKMSを実装する方法については、を参照してください https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["キー管理サーバを設定"^]。
 
 .作業を開始する前に
 * インストール時にアプライアンスのノード暗号化を有効にした。アプライアンスの設置後にノード暗号化を有効にすることはできません。
@@ -32,7 +32,7 @@ Node Encryption ページには、次の 3 つのセクションがあります�
 ** Encryption Status には、アプライアンスでノード暗号化が有効か無効かが表示されます。
 ** キー管理サーバの詳細には、アプライアンスの暗号化に使用されている KMS に関する情報が表示されます。サーバおよびクライアント証明書のセクションを展開すると、証明書の詳細およびステータスを表示できます。
 +
-*** 期限切れの証明書の更新など、証明書自体の問題に対処するには、を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["KMS の設定方法"^]。
+*** 期限切れの証明書の更新など、証明書自体に関する問題に対処するには、を参照して https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["KMS の設定方法"^]ください。
 *** KMS ホストへの接続で予期しない問題が発生する場合は、を確認してください link:../commonhardware/checking-dns-server-configuration.html["DNSサーバが正しい"] そしてそれ link:../installconfig/configuring-network-links.html["アプライアンスのネットワークが正しく設定されていること"]。
 *** 証明書の問題を解決できない場合は、テクニカルサポートにお問い合わせください。
 
@@ -73,7 +73,7 @@ image::../media/nodes_menu.png[アプライアンスノードがグリッドに�
 
 CAUTION: KMS をクリアすると、アプライアンスのデータが完全に削除され、アクセスできなくなります。このデータはリカバリできません。
 
-https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html["ノードを運用停止"^] に含まれるデータを StorageGRID 内の他のノードに移動すること。
+https://docs.netapp.com/us-en/storagegrid/maintain/grid-node-decommissioning.html["ノードを運用停止"^]StorageGRIDの他のノードに格納されているデータを移動します。
 
 .このタスクについて
 アプライアンス KMS の設定をクリアすると、ノード暗号化が無効になり、アプライアンスノードと StorageGRID サイトの KMS の設定との間の関連付けが解除されます。その後、アプライアンスのデータが削除され、アプライアンスはインストール前の状態のままになります。このプロセスを元に戻すことはできません。
@@ -130,4 +130,4 @@ StorageGRID アプライアンスインストーラのホームページが表�
 
 
 .完了後
-アプライアンスがリブートし、 KMS がクリアされてインストール前の状態になっていることを確認したら、 StorageGRID システムからアプライアンスを物理的に取り外すことができます。を参照してください https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["再インストールのためのアプライアンスの準備手順"^]。
+アプライアンスがリブートし、 KMS がクリアされてインストール前の状態になっていることを確認したら、 StorageGRID システムからアプライアンスを物理的に取り外すことができます。を参照してください https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["再インストールのためのアプライアンスの準備手順"^]。

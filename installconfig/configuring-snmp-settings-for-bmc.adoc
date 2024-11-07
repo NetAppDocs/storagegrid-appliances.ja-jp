@@ -13,8 +13,57 @@ summary: ハードウェアのSNMPの設定に精通している場合は、BMC�
 [role="lead"]
 ハードウェアのSNMPの設定に精通している場合は、BMCインターフェイスを使用してSG6100、SG6000、およびサービスアプライアンスのSNMP設定を行うことができます。セキュリティで保護されたコミュニティストリングを指定し、 SNMP トラップを有効にし、 SNMP の送信先を最大 5 つ指定できます。
 
+[role="tabbed-block"]
+====
+.SG110、SG1100、SG6100-CN、SGF6112
+--
 .作業を開始する前に
-* BMC ダッシュボードへのアクセス方法を確認しておく必要があります。
+* どうすればいいか知ってるだろう link:../installconfig/accessing-bmc-interface.html["BMCダッシュボードへのアクセス"]。
+* SNMPv3機器のSNMP設定の経験が必要です。
+
+
+
+NOTE: この手順 で作成された BMC 設定は、アプライアンスに障害が発生して交換が必要な場合に、保持されないことがあります。  適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。
+
+ここでは、一部のStorageGRIDアプライアンスで利用可能なBMCファームウェアの最新バージョンを示します。StorageGRIDアプライアンスのBMCファームウェアのバージョンが若干異なる場合があります。
+
+* BMCファームウェアの最新バージョンでは、SNMPv3のみがサポートされています。
+* StorageGRIDソフトウェアのアップグレード中にBMCファームウェアが更新されます。最新バージョンのStorageGRIDソフトウェアを実行していない場合は、アプライアンスを最新バージョンのStorageGRIDに更新してをインストールできます https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["アプライアンスで使用可能な最新のBMCファームウェアバージョン"]。
+* StorageGRIDの更新前または更新後にBMCが異なる場合は、次の手順を実行します。
++
+** SG100、SG1000、SG6000-CNタブの手順を参照してください。
+** link:../commonhardware/use-bmc.html["StorageGRID BMCの使用"]また、これらの手順をBMCのバージョンに合わせて変更するのに役立つ情報も含まれている場合があります。
+
+
+
+
+.手順
+. SNMPトラップを1つ以上のLAN宛先として設定します。
++
+.. BMCのダッシュボードで、*[設定]*>*[プラットフォームイベントフィルタ]*>*[LAN送信先]*を選択します。
+.. [Destination Type]で、[SNMP Trap]*を選択します。
+.. [SNMP Destination Address]に、ターゲットIPアドレスを入力します。
++
+
+NOTE: [SNMP Destination Address]にはIPアドレスを使用します。DNS名はサポートされていません。
+
+.. [ 保存（ Save ） ] を選択します。
+
+
+. SNMPトラップを使用してアラート通知を配信する場合は、BMCを使用してアラートポリシーとイベントフィルタを設定する方法について、『』の「プラットフォームイベントフィルタ」の項を参照して https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]ください。
+. （任意）BMCユーザのSNMPをイネーブルにして設定します。
++
+.. BMCのダッシュボードで*[設定]*>*[ユーザー管理]*を選択し、BMCユーザーを選択します。
+.. BMCユーザのSNMP設定の詳細については、『』の「ユーザ管理」を参照してください https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]。
+
+
+
+
+--
+.SG100、SG1000、SG6000-CN
+--
+.作業を開始する前に
+* どうすればいいか知ってるだろう link:../installconfig/accessing-bmc-interface.html["BMCダッシュボードへのアクセス"]。
 * SNMPv1-v2c 機器の SNMP 設定経験が必要です。
 
 
@@ -38,3 +87,6 @@ NOTE: IP アドレスを使用して、各 SNMP トラップの送信先 IP を�
 . 必要に応じて、 [ テストトラップの送信 ] をクリックして設定をテストします。
 . 設定が正しい場合は、 * 保存 * をクリックします。
 
+
+--
+====

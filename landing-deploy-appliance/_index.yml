@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: アプライアンスノードを導入する
+  summary: StorageGRIDアプライアンスノードを導入し、ノードの動作を確認します。
+  keywords: storagegrid deployment, deploy storagegrid
+  lead: StorageGRIDアプライアンスノードを導入し、ノードの動作を確認します。
   tiles:
   - title: アプライアンスの導入
     links:

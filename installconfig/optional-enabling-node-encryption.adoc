@@ -19,7 +19,7 @@ summary: ノードレベルおよびディスクレベルで暗号化を有効�
 
 セキュリティを強化するために、サポートされているドライブで両方の暗号化レベルを実行できます。
 
-を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^] StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください。
+StorageGRIDアプライアンスで使用できるすべての暗号化方式については、を参照してください https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^]。
 
 
 
@@ -30,7 +30,7 @@ summary: ノードレベルおよびディスクレベルで暗号化を有効�
 ConfigBuilderを使用してJSONファイルを生成する場合は、ノード暗号化を自動的に有効にすることができます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
 
 .作業を開始する前に
-に関する情報を確認します https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["KMSを設定しています"^]。
+に関する情報を確認します https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["KMSを設定しています"^]。
 
 .このタスクについて
 ノード暗号化が有効になっているアプライアンスは、 StorageGRID サイト用に設定されている外部キー管理サーバ（ KMS ）に接続します。各 KMS （または KMS クラスタ）は、サイトにあるすべてのアプライアンスノードの暗号化キーを管理します。これらのキーは、ノード暗号化が有効なアプライアンスで、各ディスク上のデータを暗号化および復号化します。
@@ -42,7 +42,7 @@ Grid Manager StorageGRID では、アプライアンスのインストール前�
 
 
 
-CAUTION: ノード暗号化を有効にしてアプライアンスを設置すると、一時キーが割り当てられます。アプライアンスのデータは、アプライアンスがキー管理システム（KMS）に接続され、KMSセキュリティキーが設定されるまで保護されません。を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html["KMSアプライアンスの設定の概要"^] 追加情報 の場合。
+CAUTION: ノード暗号化を有効にしてアプライアンスを設置すると、一時キーが割り当てられます。アプライアンスのデータは、アプライアンスがキー管理システム（KMS）に接続され、KMSセキュリティキーが設定されるまで保護されません。詳細については、を参照してください https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["KMSアプライアンスの設定の概要"^]。
 
 ディスクの復号化にKMSキーが必要でないと、アプライアンス上のデータを取得できず、実質的に失われます。これは、KMSから復号化キーを取得できない場合に発生します。顧客が KMS 設定をクリアするか、 KMS キーの有効期限が切れるか、 KMS への接続が失われるか、 KMS キーがインストールされている StorageGRID システムからアプライアンスが削除されると、キーにアクセスできなくなります。
 
@@ -107,7 +107,7 @@ NOTE: アプライアンスは、最初に各ディスクボリュームにラ�
 Grid Managerをロードする前に、アプライアンスの初回インストール時にドライブ暗号化を有効にすることができます。アプライアンスをメンテナンスモードにして、ノード暗号化を有効にしたり、パスフレーズを変更したりすることもできます。
 
 .作業を開始する前に
-に関する情報を確認します https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^]。
+に関する情報を確認します https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID暗号化方式"^]。
 
 .このタスクについて
 パスフレーズは、ドライブ暗号化を最初に有効にしたときに設定されます。コンピューティングノードを交換した場合や暗号化されたSEDを新しいコンピューティングノードに移動した場合は、パスフレーズを手動で再入力する必要があります。

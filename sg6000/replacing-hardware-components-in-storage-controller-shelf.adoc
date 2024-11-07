@@ -24,7 +24,7 @@ link:locating-controller-in-data-center.html["データセンターでコント�
 .このタスクについて
 ストレージコントローラのバッテリを交換するには、の手順を参照してください link:replacing-storage-controller-sg6000.html["ストレージコントローラの交換"]。これらの手順では、アプライアンスからのコントローラの取り外し、コントローラからのバッテリの取り外し、バッテリの取り付け、およびコントローラの交換の方法について説明します。
 
-コントローラシェルフの他のField Replaceable Unit（FRU；フィールド交換可能ユニット）の手順については、 http://mysupport.netapp.com/info/web/ECMP1658252.html["Eシリーズのシステムメンテナンス手順"^]。
+コントローラシェルフの他のField Replaceable Unit（FRU；フィールド交換可能ユニット）の手順については、を参照して https://docs.netapp.com/us-en/e-series-family/index.html["Eシリーズのシステムメンテナンス手順"^]ください。
 
 [cols="1a,3a"]
 |===

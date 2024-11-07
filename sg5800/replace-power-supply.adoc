@@ -33,7 +33,7 @@ NOTE: 電圧タイプの異なるPSUを混在させないでください。い�
 ** ESD リストバンドを装着するか、静電気防止処置を施しておきます。
 ** SANtricityシステムマネージャへのアクセス：
 +
-*** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報は https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]。
+*** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報はにあり https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]ます。
 *** 管理ステーションのブラウザで、コントローラのドメイン名またはIPアドレスを指定します。
 
 
@@ -64,7 +64,7 @@ NOTE: 電圧タイプの異なるPSUを混在させないでください。い�
 
 +
 .. 「 * ハードウェア * 」を選択します。
-.. 電源を確認します image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] ファンもあります image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] [*Shelf-*] ドロップダウン・リストの右側にあるアイコンを使用して、電源装置に障害が発生したシェルフを特定できます。
+.. [シェルフ]*ドロップダウンリストの右側にある電源とファンのimage:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["ファンアイコン"]アイコンを確認しimage:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源アイコン"]て、障害が発生した電源装置が搭載されているシェルフを特定します。
 +
 コンポーネントで障害が発生した場合、これらのアイコンの一方または両方が赤色で表示されます。
 

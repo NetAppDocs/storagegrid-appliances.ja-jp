@@ -26,7 +26,7 @@ NOTE: StorageGRID アプライアンスのコントローラを交換する際�
 CAUTION: 保存されたキーでドライブのロックを解除するまでは、アプライアンスを使用できません。
 
 * 特定のアクセス権限が必要です。
-* を使用して Grid Manager にサインインする必要があります https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* Grid Managerにサインインする必要があります https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 
 
 .このタスクについて

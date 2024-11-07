@@ -14,7 +14,7 @@ summary: SG6100-CNコントローラが適切に機能しない場合や障害�
 SG6100-CNコントローラが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。
 
 .作業を開始する前に
-* 交換するコントローラと同じパーツ番号の交換用コントローラを用意しておきます。
+* 交換するコントローラと同じパーツ番号の交換用コントローラを用意しておきます。コントローラの前面に取り付けられているタグでパーツ番号が一致していることを確認します。
 * コントローラに接続する各ケーブルを識別するためのラベルを用意しておきます。
 * データセンター内で交換するコントローラの物理的な場所を確認しておきます。
 +
@@ -65,7 +65,7 @@ CAUTION: パフォーマンスの低下を防ぐため、ケーブルをねじ�
 +
 ** link:../installconfig/configuring-network-links.html["ネットワークリンクを設定する"]
 ** link:../installconfig/setting-ip-configuration.html["StorageGRID IP アドレスを設定する"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["アプライアンスのノード暗号化を設定します"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["アプライアンスのノード暗号化を設定します"^]
 
 
 . コントローラを交換したアプライアンスにログインします。

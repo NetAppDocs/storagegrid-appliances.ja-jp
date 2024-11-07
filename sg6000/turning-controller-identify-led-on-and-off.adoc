@@ -37,8 +37,7 @@ NOTE: コントローラにベゼルが取り付けられている場合、前�
 
 
 .関連情報
-link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["交換するファイバチャネル HBA を確認します"]
+* link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["交換するファイバチャネル HBA を確認します"]
+* link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+* link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
 
-link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
-
-link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]

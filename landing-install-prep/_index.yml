@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: StorageGRIDのインストールの準備
+  summary: StorageGRIDシステムを設置するためのサイトを準備します。
+  keywords: storagegrid installation preparation
+  lead: StorageGRIDシステムを設置するためのサイトを準備します。
   tiles:
   - title: 準備
     links:

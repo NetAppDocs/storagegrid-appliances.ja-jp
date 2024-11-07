@@ -37,10 +37,10 @@ image::../media/sgf6112_power_supplies.png[2つの電源装置を搭載したSGF
 .手順
 . 電源装置を 1 台だけ交換する場合は、アプライアンスをシャットダウンする必要はありません。にアクセスします <<Unplug_the_power_cord,電源コードを抜きます>> ステップ。両方の電源装置を同時に交換する場合は、電源コードを取り外す前に次の手順を実行します。
 +
-.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["アプライアンスをシャットダウンします"]。
+.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["アプライアンスをシャットダウンします"]です。
 +
 
-CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがあり、両方の電源装置を同時に交換する場合は、この手順中にこれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中に電源装置を交換する必要があります。については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがあり、両方の電源装置を同時に交換する場合は、この手順中にこれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中に電源装置を交換する必要があります。についての情報を参照してください https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
 
 
 

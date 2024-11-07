@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
 summary: ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。 
 ---
-= SG6000ストレージコントローラでのSANtricity OSのアップグレード
+= SG6000ストレージコントローラのSANtricity OSのアップグレードについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -22,7 +22,7 @@ summary: サービスアプライアンスは、プライマリ管理ノード�
 .作業を開始する前に
 * アプライアンスをラックまたはキャビネットに設置し、ネットワークに接続し、電源を投入しておきます。
 * StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。
-* を搭載したサービスラップトップを用意します https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を搭載したサービスラップトップを用意しておき https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
 * アプライアンスに割り当てられている IP アドレスのいずれかを確認しておきます。接続されているどの StorageGRID ネットワークの IP アドレスでも使用できます。
 
 
@@ -90,7 +90,7 @@ NOTE: モニタのインストールページに手動でアクセスする必�
 * StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。
 * StorageGRID システムのプライマリ管理ノードを導入しておきます。
 * StorageGRID アプライアンスインストーラの IP 設定ページに表示されるすべてのグリッドネットワークサブネットが、プライマリ管理ノードのグリッドネットワークサブネットリストで定義されている。
-* を搭載したサービスラップトップを用意します https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を搭載したサービスラップトップを用意しておき https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
 * アプライアンスに割り当てられている IP アドレスを確認しておきます。接続されているどの StorageGRID ネットワークの IP アドレスでも使用できます。
 
 

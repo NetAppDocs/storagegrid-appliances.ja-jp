@@ -460,4 +460,4 @@ E2800 コントローラを E5700SG コントローラに接続します。
 
 |===
 .関連情報
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp Eシリーズのドキュメント"^]

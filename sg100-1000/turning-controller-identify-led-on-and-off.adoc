@@ -17,7 +17,7 @@ summary: コントローラの前面と背面にある青色の識別 LED は、
 特定するコントローラのBMC IPアドレスを確認しておきます。
 
 .手順
-. アプライアンスのBMCインターフェイスにアクセスします。
+. link:../installconfig/accessing-bmc-interface.html["アプライアンスのBMCインターフェイスへのアクセス"]。
 . 「 * サーバー識別 * 」を選択します。
 +
 識別LEDの現在のステータスが選択されます。
@@ -37,6 +37,6 @@ NOTE: コントローラにベゼルが取り付けられている場合、前�
 
 
 .関連情報
-link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+* link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+* link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
 
-link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]

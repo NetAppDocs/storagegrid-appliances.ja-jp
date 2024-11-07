@@ -20,7 +20,7 @@ SANtricity System Manager を使用して、ストレージコントローラシ
 ストレージコントローラシェルフのハードウェアを監視したり、 E シリーズ AutoSupport を設定したりするために、ストレージコントローラの SANtricity System Manager へのアクセスが必要になる場合があります。
 
 .作業を開始する前に
-* を使用している https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を使用している https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 * グリッドマネージャからSANtricity システムマネージャにアクセスするには、StorageGRID をインストールし、ストレージアプライアンス管理者またはRootアクセス権限が必要です。
 * StorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
 * Webブラウザを使用してSANtricity System Managerに直接アクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
@@ -61,7 +61,7 @@ SANtricity System Manager を使用して、次の設定を行うことができ
 * ストレージコントローラシェルフのコンポーネントの E メールアラート、 SNMP アラート、または syslog アラート
 * ストレージコントローラシェルフのコンポーネントの E シリーズ AutoSupport の設定。
 +
-E シリーズ AutoSupport の詳細については、を参照してください http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]。
+EシリーズAutoSupportの詳細については、を参照してください https://docs.netapp.com/us-en/e-series-family/index.html["NetApp Eシリーズのドキュメント"^]。
 
 * セキュリティ保護されたドライブのロックを解除するために必要なドライブセキュリティキー（ドライブセキュリティ機能が有効になっている場合はロックの解除が必要）
 * SANtricity システムマネージャにアクセスするための管理者パスワード
@@ -106,24 +106,58 @@ image::../media/sam_home_page.gif[SANtricity System Manager ホームページ�
 .. オンラインヘルプの「 * support * > * Support Center * 」セクションで、 AutoSupport 機能について学習します。
 .. 「 How To 」の指示に従って、 AutoSupport を管理します。
 +
-管理ポートを使用せずにEシリーズAutoSupport メッセージを送信するためのStorageGRID プロキシを設定する具体的な手順については、を参照してください https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-storage-proxy-settings.html["ストレージプロキシの設定手順"^]。
+管理ポートを使用せずにEシリーズAutoSupportメッセージを送信するためのStorageGRIDプロキシを設定する具体的な手順については、を参照して https://docs.netapp.com/us-en/storagegrid/admin/configuring-storage-proxy-settings.html["ストレージプロキシの設定手順"^]ください。
 
 
 
-. アプライアンスでドライブセキュリティ機能が有効になっている場合は、セキュリティキーを作成して管理します。
+. アプライアンスでが有効になっている場合は https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html#what-is-drive-security["ドライブセキュリティ"^]、セキュリティキーを作成して管理します。
 +
-.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
-.. オンラインヘルプの「 * Settings * > * System * > * Security key management * 」セクションでドライブセキュリティについて学習します。
-.. 「 How To 」の指示に従って、セキュリティキーを作成および管理します。
+[role="tabbed-block"]
+====
+.SG5700およびSG5800
+--
+SG5700およびSG5800ストレージアプライアンスの場合は、SANtricity System Managerの大まかな手順~を実行し https://docs.netapp.com/us-en/e-series-santricity/sm-settings/how-the-drive-security-feature-works.html#how-to-implement-drive-security["ドライブセキュリティの実装"^]ます。
 
+--
+.SG6060 の設計
+--
+SG6060ストレージアプライアンスでは、ストレージアプライアンスをインストールする前にキー管理が設定されている場合にのみ、SSDドライブのドライブセキュリティを自動的に有効にできます。
 
-. 必要に応じて、管理者パスワードを変更します。
+.. ストレージアレイにセキュリティ対応ドライブ（FDEドライブまたはFIPSドライブ）を装備します。
 +
-.. SANtricity System Manager のオンラインヘルプにアクセスするには、 * Help * を選択します。
-.. オンラインヘルプの * Home * > * Storage array administration * セクションで、管理者パスワードを確認してください。
-.. 「 How To 」の指示に従ってパスワードを変更します。
+*** FIPSのサポートが必要なボリュームには、FIPSドライブのみを使用します。
+*** ボリュームグループまたはプールにFIPSドライブとFDEドライブが混在している場合、すべてのドライブがFDEドライブとして扱われます。
+*** FIPSのみのボリュームグループまたはプールでは、FDEドライブを追加したりスペアとして使用したりすることはできません。
 
 
+.. E4000コントローラシェルフの場合は、セキュリティキー（読み取り/書き込みアクセス用にコントローラとドライブで共有される文字列）を作成します。
++
+*** コントローラの永続的メモリから使用することも、キー管理サーバから提供される外部キーを使用することもできます https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["内部キーを作成する"^]。
+*** キー管理サーバから提供される外部キーを使用するには、SANtricity System Managerで最初に実行する必要があります https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["キー管理サーバとの認証を確立する"^]。
+
+
+.. link:deploying-appliance-storage-node.html["インストールの開始"]をクリックします。
+.. アプライアンスのインストールが完了したら、StorageGRIDフラッシュキャッシュでドライブセキュリティが有効になっていることを確認し、残りのすべてのディスクプールまたはボリュームグループでドライブセキュリティを有効にします（SANtricity System Managerのを参照） https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["プールまたはボリュームグループのセキュリティを有効にする"^]。
+
+
+--
+.SG6160
+--
+SG6160ストレージアプライアンスには、SG6100-CNコンピューティングコントローラとE4000コントローラシェルフの両方で、FIPS準拠のドライブを搭載できます。ドライブ暗号化は、SG6100-CNドライブとE4000ドライブで個別に設定できます。
+
+.. link:optional-enabling-node-encryption.html#drive-encryption["ドライブ暗号化を有効にする"]SG6100-CNコンピューティングノードに取り付けられているSED SSDの場合。
+.. セキュリティキー（読み取り/書き込みアクセス用にコントローラとドライブで共有される文字列）を作成します。
++
+*** コントローラの永続的メモリから使用することも、キー管理サーバから提供される外部キーを使用することもできます https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["内部キーを作成する"^]。
+*** キー管理サーバから提供される外部キーを使用するには、SANtricity System Managerで最初に実行する必要があります https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["キー管理サーバとの認証を確立する"^]。
+
+
+.. link:deploying-appliance-storage-node.html["インストールの開始"]をクリックします。
+.. インストールが完了したら、 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["ドライブセキュリティの有効化"^]SANtricity System Managerですべてのディスクプールまたはボリュームグループを表示します。
+
+
+--
+====
 
 
 
@@ -133,7 +167,7 @@ image::../media/sam_home_page.gif[SANtricity System Manager ホームページ�
 SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。
 
 .作業を開始する前に
-* を使用している https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
+* を使用している https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]。
 * Grid ManagerからSANtricity System Managerにアクセスするには、ストレージアプライアンス管理者の権限またはRoot Access権限が必要です。
 * StorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。
 * Webブラウザを使用してSANtricity System Managerに直接アクセスするには、SANtricity System Manager管理者のユーザ名とパスワードが必要です。

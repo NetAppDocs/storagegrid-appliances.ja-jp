@@ -98,7 +98,7 @@ image::../media/cloning_progress.png[クローニングの進捗状況]
 
 
 * ターゲットノードはメンテナンスモードを終了し、ソースノードに代わって StorageGRID に参加します。
-* ソースアプライアンスは、以前と同様に事前にインストールされた状態になります https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["再インストールのための準備をした"^]。
+* ソースアプライアンスは、がインストールされているかのように事前にインストールされた状態になってい https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["再インストールのための準備をした"^]ます。
 
 
 
