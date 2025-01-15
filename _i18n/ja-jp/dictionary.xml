@@ -5648,7 +5648,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2060996e4ea036c84fe524f4bb640ff0" category="list-text">* SANtricityの管理ネットワーク*（ストレージアプライアンスの場合はオプションで、SGF6112では不要）：このネットワークからSANtricity System Managerにアクセスして、アプライアンスおよびストレージコントローラシェルフのハードウェアコンポーネントの監視と管理を行うことができます。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。</block>
   <block id="e6b3f8c787f110e738041acfec63cd45" category="admonition">StorageGRIDネットワークの詳細については、を参照してください<block ref="c9a67c39cb366102345c95ea9d802249" category="inline-link-rx"></block>。</block>
   <block id="79ffe998f527a3998a83d054ff067c7e" category="list-text"><block ref="79ffe998f527a3998a83d054ff067c7e" category="inline-link-macro-rx"></block></block>
-  <block id="44ef269732748f70c763abafc0361990" category="list-text"><block ref="44ef269732748f70c763abafc0361990" category="inline-link-macro-rx"></block></block>
   <block id="2b5994be0ad1518a670726d49503aef3" category="admonition">この手順で行ったBMC設定は、コントローラまたはアプライアンスに障害が発生して交換が必要になった場合に保持されないことがあります。適用したすべての設定を記録し、必要に応じてハードウェアの交換後に簡単に再適用できるようにします。</block>
   <block id="156e455630a4e49e7afff2a829c35531" category="open-title">StorageGRID 11.9以降</block>
   <block id="1433f3dea3005561ee1f9e94e4de877d" category="paragraph">BMCインターフェイスで、設定ページの*ユーザー管理*および*プラットフォームイベントフィルタ*オプションを使用して、電子メール通知を設定します。</block>
@@ -5761,4 +5760,5 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">ドライブの管理（SG110、SG1100、SGF6112、SG6160）</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">BMCインターフェイスの使用</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
+  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
 </blocks>
