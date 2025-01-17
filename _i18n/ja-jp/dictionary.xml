@@ -5761,4 +5761,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">BMCインターフェイスの使用</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
   <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
+  <block id="125c3dfed61415188958ef328818fc0b" category="inline-link-macro">導入したSG6160に拡張シェルフを追加する手順</block>
+  <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">アプライアンスに拡張シェルフが搭載されている場合のケーブル接続については、を参照してください<block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>。</block>
 </blocks>
