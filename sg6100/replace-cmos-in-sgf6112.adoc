@@ -26,9 +26,25 @@ summary: この手順 を使用して、システム基板のCMOSコイン型電
 .作業を開始する前に
 * これで完了です link:verify-component-to-replace.html["CMOSバッテリを交換する必要があるアプライアンスを確認"]。
 * これで完了です link:locating-sgf6112-in-data-center.html["SGF6112アプライアンスまたはSG6100-CNコントローラの物理的な場所"] データセンターのCMOSバッテリを交換する場所。
+* アプライアンスの現在のBMC設定を記録しておきます（使用可能な場合）。
++
+.. 交換するアプライアンスにログインします。
++
+... 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
+... 次のコマンドを入力してrootに切り替えます。 `su -`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+
+
+.. と入力して `*run-host-command ipmitool lan print*`、アプライアンスの現在のBMC設定を表示します。
 +
 
 NOTE: アプライアンスをラックから取り外す前に、が link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["アプライアンスの通常のシャットダウン"] 必要です。
+
+
 
 * すべてのケーブルと link:reinstalling-sgf6112-cover.html["アプライアンスカバーを取り外した"]。
 

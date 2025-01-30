@@ -26,9 +26,25 @@ summary: この手順 を使用して、システム基板のCMOSコイン型電
 .作業を開始する前に
 * これで完了です link:verify-component-to-replace.html["CMOSバッテリを交換する必要があるSG110またはSG1100を確認"]。
 * これで完了です link:locating-sg110-and-sg1100-in-data-center.html["SG110またはSG1100アプライアンスの物理的な場所"] データセンターのCMOSバッテリを交換する場所。
+* アプライアンスの現在のBMC設定を記録しておきます（使用可能な場合）。
++
+.. 交換するアプライアンスにログインします。
++
+... 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
+... 次のコマンドを入力してrootに切り替えます。 `su -`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+
+
+.. と入力して `*run-host-command ipmitool lan print*`、アプライアンスの現在のBMC設定を表示します。
 +
 
 NOTE: A link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["アプライアンスの通常のシャットダウン"] は、アプライアンスをラックから取り外す前に必要です。
+
+
 
 * すべてのケーブルと link:reinstalling-sg110-and-sg1100-cover.html["アプライアンスカバーを取り外した"]。
 
