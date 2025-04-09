@@ -9,8 +9,10 @@ indexpage:
     links:
     - title: SANtricityのアップグレード
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
-    - title: ドライブファームウェアのアップグレード（SG6160）
-      url: "../sg6100/upgrade-drive-firmware-using-santricity-system-manager.html"
+    - title: ドライブファームウェアのアップグレード（SG6160オンライン方式）
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: ドライブファームウェアのアップグレード（SG6160のオフライン方式）
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 識別LEDのオン/オフ
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: データセンターにアプライアンスを配置します

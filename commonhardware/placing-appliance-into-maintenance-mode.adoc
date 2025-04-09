@@ -57,7 +57,7 @@ image::../media/maintenance_mode_notification_bar.png[メンテナンスモー�
 image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
 
 +
-アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。nodes *ページに正常なステータス（緑色のチェックマークアイコン）が表示されます image:../media/icon_alert_green_checkmark.png["緑のチェックマーク"] （ノード名の左側）に表示されます。これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
+アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。nodes *ページに、アプライアンスノードの正常なステータス（ノード名の左側にある緑のチェックマークアイコン）が表示され、アクティブなアラートがなく、ノードがグリッドに接続されていることが示されますimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]。
 
 +
 image::../media/nodes_menu.png[ノードページの正常ステータス]

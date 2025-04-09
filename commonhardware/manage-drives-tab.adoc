@@ -57,7 +57,7 @@ image:../media/manage_drives_tab_details.png["[Manage Drives]タブドライブ�
 
 . [ロケーターライトをオンにする]*を選択します。
 +
-** 電球アイコン image:../media/icon_drive-light-bulb.png["ドライブランプバルブ"] ドライブに対してと表示されます。
+** ドライブの電球アイコンがimage:../media/icon_drive-light-bulb.png["ドライブランプバルブ"]表示されます。
 ** 物理ドライブのオレンジのLEDが点滅します。
 
 

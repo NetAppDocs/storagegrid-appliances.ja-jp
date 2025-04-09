@@ -13,7 +13,7 @@ summary: StorageGRID アプライアンスを設置してセットアップし�
 [role="lead"]
 StorageGRID アプライアンスを設置してセットアップし、StorageGRID システムにノードとして導入するには、次の手順を実行します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 設置を準備
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]設置の準備
 [role="quick-margin-list"]
 . ネットアッププロフェッショナルサービスコンサルタントと連携して、インストールと設定を自動化します。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
 +
@@ -26,7 +26,7 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 . link:reviewing-appliance-network-connections.html["ネットワーク情報の収集"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] ハードウェアを設置
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]ハードウェアの設置
 [role="quick-margin-list"]
 . link:registering-hardware.html["ハードウェアを登録"]
 . キャビネットまたはラックに設置します
@@ -44,7 +44,7 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 . link:viewing-status-indicators.html["ステータスインジケータとコードを表示します"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ハードウェアをセットアップする
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]ハードウェアのセットアップ
 [role="quick-margin-para"]
 複数のアプライアンスを設定および導入する場合は、NetApp ConfigBuilderツールを使用して、次の設定および導入手順を自動化します。詳細については、ネットアッププロフェッショナルサービスコンサルタントにお問い合わせください。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
 
@@ -69,7 +69,7 @@ StorageGRID アプライアンスを設置してセットアップし、StorageG
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] アプライアンスノードを導入
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."]アプライアンスノードの導入
 [role="quick-margin-para"]
 アプライアンスをStorageGRID システムの新しいノードとして導入します。
 

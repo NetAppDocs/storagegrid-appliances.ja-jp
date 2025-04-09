@@ -23,7 +23,7 @@ StorageGRID アプライアンスインストーラでは、インストール�
 Monitor Installation ページにインストールの進行状況が表示されます。
 
 +
-image::../media/monitor_installation_configure_storage.gif[この図には説明が付随しています。]
+image::../media/monitor_installation_configure_storage.gif[[Monitor Installation]ページ]
 
 +
 青色のステータスバーは、現在進行中のタスクを示します。緑のステータスバーは、正常に完了したタスクを示します。
@@ -47,7 +47,7 @@ NOTE: インストーラは、以前のインストールで完了したタス�
 
 . インストールの進行状況の監視を継続して、組み込みコンソールに「 Install StorageGRID * 」ステージが一時停止し、グリッドマネージャを使用して管理ノードでこのノードを承認するように求めるメッセージが表示されるまで続けます。次の手順に進みます。
 +
-image::../media/monitor_installation_install_sgws.gif[この図には説明が付随しています。]
+image::../media/monitor_installation_install_sgws.gif[[Monitor Installation]ページ]
 
 . プライマリ管理ノードのグリッドマネージャに移動し、保留中のストレージノードを承認して、 StorageGRID のインストールプロセスを完了します。
 +
@@ -95,7 +95,7 @@ NOTE: インストーラは、以前のインストールで完了したタス�
 NOTE: アプライアンスプライマリ管理ノードのインストール中に、StorageGRIDインストーラをロードするための第5フェーズが表示されます（このスクリーンショットは最初の4つのフェーズのみを示しています）。StorageGRIDインストーラのロード（第5フェーズ）が10分以上進行中の場合は、Webページを手動で更新します。
 
 +
-image::../media/monitor_installation_install_sgws.gif[この図には説明が付随しています。]
+image::../media/monitor_installation_install_sgws.gif[[Monitor Installation]ページ]
 
 
 
