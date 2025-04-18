@@ -2865,7 +2865,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="9bb391312ffed336cc1adbf60045dba8" category="list-text">アプライアンスの前面に取り付けられているタグに一致するパーツ番号がないかどうかを調べて、正しいアプライアンスが見つかったことを確認します。</block>
   <block id="d3cb531b4f9c05d46c6be8f0489a9b86" category="list-text">前面ベゼルが取り付けられている場合は取り外し、前面パネルのコントロールとインジケータにアクセスします。</block>
   <block id="8727881150b0ace8b598a648cdfcd4e1" category="summary">NetApp StorageGRID は、ソフトウェアで定義されるオブジェクトストレージスイートで、パブリック、プライベート、ハイブリッドのマルチクラウド環境での幅広いユースケースに対応します。StorageGRID はAmazon S3 APIをネイティブでサポートし、自動化されたライフサイクル管理などの業界をリードする革新的なテクノロジを提供して、非構造化データを長期にわたってコスト効率よく格納、保護、保持します。</block>
-  <block id="4fab2171e21f4258294a2a074494fa18" category="doc">StorageGRIDアプライアンスのマニュアル</block>
   <block id="2e1c8345a49fcd97288e52caaad82a49" category="summary">場合によっては、アプライアンスの交換後にMACアドレス参照の更新が必要になることがあります。</block>
   <block id="8731fac4810f4eee46647147bd16bf3d" category="paragraph">交換するアプライアンスのいずれかのネットワークインターフェイスがDHCP用に設定されている場合は、交換用アプライアンスのMACアドレスを参照するために、DHCPサーバの永続的なDHCPリース割り当てを更新する必要があります。この更新により、交換用アプライアンスに想定されるIPアドレスが確実に割り当てられます。</block>
   <block id="5d98e441c401a29a6e5bb2f1212a7a15" category="list-text">アプライアンス前面のラベルを確認します。ラベルには、アプライアンスのBMC管理ポートのMACアドレスが記載されています。</block>
@@ -3865,7 +3864,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="8ef596bf4eb7277f78ad1d7ad4cc04de" category="sidebar">StorageGRID ナレッジベース</block>
   <block id="c2d388654878e1108f99fdeaa465fcac" category="sidebar">ネットアップのブログ</block>
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">ネットアップコミュニティ</block>
-  <block id="69d1c297210c956cee51bf4ccf9dc0d1" category="sidebar">StorageGRIDアプライアンスドキュメント</block>
   <block id="42201415720ad552ae0536ddda18b94e" category="sidebar">StorageGRIDアプライアンスの詳細</block>
   <block id="b7cd29c1531745149a88d6056a6c42c4" category="sidebar">アプライアンスノードのクローニング</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概要</block>
@@ -5762,4 +5760,5 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">[シェルフ]*ドロップダウンリストの右側にあるファンのアイコンを確認し<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>て、障害が発生したファンキャニスターが搭載されているアプライアンスを特定します。</block>
   <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">ドライブファームウェアのアップグレード（SG6160オンライン方式）</block>
   <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">ドライブファームウェアのアップグレード（SG6160のオフライン方式）</block>
+  <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">StorageGRIDアプライアンスのドキュメント</block>
 </blocks>
