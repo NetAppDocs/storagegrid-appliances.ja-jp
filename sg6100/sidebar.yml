@@ -15,11 +15,13 @@ entries:
       url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
     - title: メンテナンスモードを使用したSG6160コントローラのSANtricity OSのアップグレード
       url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html"
-  - title: SANtricity System Managerを使用したドライブファームウェアのアップグレード（SG6160）
+  - title: ドライブファームウェアのアップグレード（SG6160）
     entries:
-    - title: SANtricity System Managerオンライン方式を使用したSG6100ドライブファームウェアのアップグレード
+    - title: アプライアンスの再起動中に SG6160 ドライブのファームウェアを自動的にアップグレードします
+      url: "/sg6100/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: SANtricity System Managerオンライン方式を使用してSG6160ドライブファームウェアをアップグレードする
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
-    - title: SANtricity System Managerオフライン方式を使用したSG6100ドライブファームウェアのアップグレード
+    - title: SANtricity System Manager オフライン方式を使用して SG6160 ドライブ ファームウェアをアップグレードする
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: ドライブファームウェアのアップグレードエラーのトラブルシューティング
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
@@ -58,9 +60,9 @@ entries:
       url: "/sg6100/replace-6160-drives-60.html"
   - title: NICを交換してください
     entries:
-    - title: 内蔵NIC（SGF6112およびSG6160）
+    - title: 内部 NIC (SGF6112 または SG6100-CN)
       url: "/sg6100/replace-nic-in-sgf6112.html"
-    - title: 外部NIC（SG6160）
+    - title: 外部NIC（SG6100-CN）
       url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: CMOSバッテリを交換してください
     url: "/sg6100/replace-cmos-in-sgf6112.html"

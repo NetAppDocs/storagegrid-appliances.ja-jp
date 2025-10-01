@@ -4,7 +4,7 @@ permalink: whats-new-appliances.html
 keywords: storagegrid, appliance, whats new 
 summary: このドキュメントサイトの新機能をご確認ください。 
 ---
-= アプライアンスの新機能アプライアンスノシンキノウ
+= StorageGRIDアプライアンスの新機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,40 @@ summary: このドキュメントサイトの新機能をご確認ください�
 
 
 [role="lead"]
-StorageGRIDアプライアンスの新機能をご紹介します。
+StorageGRIDアプライアンスの新機能について説明します。
+
+
+
+== クライアントネットワークはIPアドレスなしで構成できます
+
+IP アドレスを指定せずにクライアント ネットワークを有効にできるようになりました。これにより、クライアント ネットワークは、インターフェイス自体に追加の IP アドレスを必要とせずに、 StorageGRIDで VLAN インターフェイスを構成できるようになります。。 link:.//installconfig/setting-ip-configuration.html["StorageGRID IP アドレスを設定する"] 。
+
+
+
+== StorageGRIDソフトウェアとアプライアンスインストーラのバージョン番号が一致しました
+
+StorgeGRID バージョン 12.0 では、 StorageGRIDアプライアンス インストーラーのバージョン番号はStorageGRIDソフトウェアのバージョンと一致します。ユーザーは、どのバージョンが連携して動作するかを把握する必要がなくなりました。。 link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします"] 。
 
 
 
 == BMCノシヨウホウ
 
-StorageGRIDアプライアンスのBMCインターフェイスの使用方法の詳細が表示されます。を参照して link:./commonhardware/use-bmc.html["StorageGRIDアプライアンスのベースボード管理コントローラ（BMC）の使用"]
+StorageGRIDアプライアンスのBMCインターフェイスの使用に関する詳細情報が利用可能になりました。。 link:./commonhardware/use-bmc.html["StorageGRIDアプライアンスのベースボード管理コントローラ（BMC）の使用"] 。
 
 
 
 == SG5812およびSG5860アプライアンス
 
-新しいStorageGRID SG5812およびSG5860アプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。詳細については、を参照してlink:./installconfig/hardware-description-sg5800.html["SG5800アプライアンス：概要"]ください。
+StorageGRID SG5812 および SG5860 アプライアンスは、 StorageGRIDグリッド内のストレージ ノードとして動作する統合ストレージおよびコンピューティング プラットフォームです。参照link:./installconfig/hardware-description-sg5800.html["SG5800アプライアンス：概要"]詳細については、こちらをご覧ください。
 
 
 
 == SG6160アプライアンス
 
-新しいStorageGRID SG6160アプライアンスには、コンピューティングコントローラ、2台のストレージコントローラと60本のドライブを搭載したストレージコントローラシェルフ、およびキャッシング用のNVMe SSDドライブが2本搭載されています。必要に応じて、60ドライブ拡張シェルフをSG6160に追加できます。詳細については、を参照してくださいlink:./installconfig/hardware-description-sg6100.html["SGF6100アプライアンス：概要"]。
+新しいStorageGRID SG6160 アプライアンスには、コンピューティング コントローラと、2 つのストレージ コントローラと 60 個のドライブ、およびキャッシュ用の 2 つの NVMe SSD ドライブを含むストレージ コントローラ シェルフが含まれています。オプションで、60 ドライブ拡張シェルフを SG6160 に追加できます。参照link:./installconfig/hardware-description-sg6100.html["SGF6100アプライアンス：概要"]詳細については、こちらをご覧ください。
 
 
 
 == SG110およびSG1100サービスアプライアンス
 
-新しいStorageGRID SG110およびSG1100サービスアプライアンスは、進化したハードウェアアップデートであり、管理とロードバランシングのパフォーマンスが向上しています。を参照してください link:./installconfig/hardware-description-sg110-and-1100.html["SG110およびSG1100サービスアプライアンス：概要"]。
+新しいStorageGRID SG110 および SG1100 サービス アプライアンスは、管理および負荷分散のパフォーマンスを向上させる進化したハードウェア アップデートです。。 link:./installconfig/hardware-description-sg110-and-1100.html["SG110およびSG1100サービスアプライアンス：概要"] 。

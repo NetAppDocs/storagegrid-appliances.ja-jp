@@ -17,8 +17,10 @@ entries:
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"
     - title: ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
-  - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+  - title: ドライブ ファームウェアのアップグレード
     entries:
+    - title: アプライアンスの再起動中に SG6000 ドライブのファームウェアを自動的にアップグレードします
+      url: "/sg6000/upgrading-drive-firmware-using-auto-reboot.html"
     - title: オンライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード
       url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: オフライン方式を使用したSANtricity System Managerを使用したSG6000ドライブファームウェアのアップグレード
@@ -50,6 +52,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: SG6000-CN コントローラの一方または両方の電源装置を交換します
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: ファンを交換します
+    url: "/sg6000/replacing-fan-in-sg6000cn.html"
   - title: SG6000-CNコントローラのCMOSバッテリの交換
     url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: ラック内のコントローラを交換します

@@ -9,9 +9,11 @@ indexpage:
     links:
     - title: SANtricityのアップグレード
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
-    - title: ドライブファームウェアのアップグレード（SG6160オンライン方式）
+    - title: ドライブファームウェアのアップグレード（SG6160 - 自動再起動方法）
+      url: "../sg6100/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: ドライブファームウェアのアップグレード（SG6160 - オンライン方式）
       url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
-    - title: ドライブファームウェアのアップグレード（SG6160のオフライン方式）
+    - title: ドライブファームウェアのアップグレード（SG6160 - オフライン方式）
       url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 識別LEDのオン/オフ
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
@@ -35,9 +37,9 @@ indexpage:
       url: "../sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
   - title: ハードウェアの手順
     links:
-    - title: カバーを交換します
+    - title: カバーを交換する（SGF6112またはSG6100-CN）
       url: "../sg6100/reinstalling-sgf6112-cover.html"
-    - title: 電源装置を交換してください
+    - title: 電源装置（SGF6112またはSG6100-CN）を交換してください
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
     - title: ストレージコントローラシェルフまたは拡張シェルフの電源装置の交換（SG6160）
       url: "../sg6100/replace-6100-cn-power-canister.html"
@@ -51,17 +53,15 @@ indexpage:
       url: "../sg6100/replace-drive-sg6100-cn.html"
     - title: ストレージコントローラシェルフまたは拡張シェルフのドライブの交換（SG6160）
       url: "../sg6100/replace-6160-drives-60.html"
-    - title: 内部NICの交換（SGF6112およびSG6160）
+    - title: 内部NIC（SGF6112またはSG6100-CN）を交換する
       url: "../sg6100/replace-nic-in-sgf6112.html"
-    - title: 外付けNICの交換（SG6160）
+    - title: 外部NIC（SG6100-CN）の交換
       url: "../sg6100/replace-ocp-nic-sg6100-cn.html"
-    - title: DIMMの交換（SG6160）
+    - title: ストレージコントローラシェルフのDIMMの交換（SG6160）
       url: "../sg6100/replace-dimms-e4000.html"
-    - title: ハツテリノコウカンSG6160
+    - title: ストレージ コントローラ シェルフ (SG6160) のバッテリを交換します
       url: "../sg6100/replace-battery-e4000.html"
-    - title: カバーを交換します
-      url: "../sg6100/reinstalling-sgf6112-cover.html"
-    - title: CMOSバッテリを交換してください
+    - title: CMOSバッテリー（SGF6112またはSG6100-CN）を交換します
       url: "../sg6100/replace-cmos-in-sgf6112.html"
     - title: 導入したSG6160に拡張シェルフを追加
       url: "../sg6100/adding-expansion-shelf-to-deployed-sg6160.html"

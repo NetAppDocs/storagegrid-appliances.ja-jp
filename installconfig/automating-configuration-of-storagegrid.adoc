@@ -38,6 +38,9 @@ summary: グリッドノードのインストールと設定が完了したら�
 * を作成しておきます `configure-storagegrid.json` 構成ファイルこのファイルを作成するには、構成ファイルの例を変更します。 (`configure-storagegrid.sample.json`)または空の構成ファイル (`configure-storagegrid.blank.json`）。
 
 
+
+CAUTION: 変更したファイルのパスワードセクションから管理パスワードとプロビジョニングパスフレーズを保存します。 `configure-storagegrid.json`構成ファイルを安全な場所に保管します。これらのパスワードは、インストール、拡張、およびメンテナンスの手順に必要です。変更したファイルもバックアップする必要があります `configure-storagegrid.json`構成ファイルを作成して安全な場所に保存します。
+
 .このタスクについて
 を使用できます `configure-storagegrid.py` Pythonスクリプトおよび `configure-storagegrid.json` StorageGRID システムの設定を自動化するための構成ファイル。
 

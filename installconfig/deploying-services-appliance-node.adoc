@@ -22,6 +22,10 @@ summary: サービスアプライアンスは、プライマリ管理ノード�
 .作業を開始する前に
 * アプライアンスをラックまたはキャビネットに設置し、ネットワークに接続し、電源を投入しておきます。
 * StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。
++
+
+NOTE: ポート再マッピングのサポートは非推奨であり、将来のリリースでは削除される予定です。再マップされたポートを削除するには、 https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["StorageGRIDアプライアンスのポート再マップを削除します"^] 。
+
 * を搭載したサービスラップトップを用意しておき https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
 * アプライアンスに割り当てられている IP アドレスのいずれかを確認しておきます。接続されているどの StorageGRID ネットワークの IP アドレスでも使用できます。
 
@@ -54,9 +58,6 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab
 .. アーカイブを展開します。
 .. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
 .. [ 削除 ] をクリックして、現在のソフトウェアパッケージを削除します。
-+
-image::../media/appliance_installer_rmv_current_software.png[アプライアンスインストーラ - 現在のソフトウェアを削除します]
-
 .. [参照]*をクリックして、ダウンロードして展開したソフトウェアパッケージを指定します。を選択します `storagegrid-webscale-images-_version_.deb` パッケージ。
 .. ホームページに戻るには、「 * Home * 」（ホーム）を選択します。
 
@@ -67,9 +68,6 @@ image::../media/appliance_installer_rmv_current_software.png[アプライアン�
 NOTE: 管理ノードアプライアンスをノードのクローニングターゲットとして導入する場合は、ここで導入プロセスを停止して、に進みます link:../commonhardware/appliance-node-cloning-procedure.html["ノードクローニングの手順"]。
 
 . StorageGRID アプライアンスインストーラのホームページで、 * インストールの開始 * をクリックします。
-+
-image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[アプライアンスプライマリ管理ノードのインストール]
-
 +
 現在の状態が「 Installation is in progress 」に変わり、「 Monitor Installation 」ページが表示されます。
 
@@ -88,6 +86,10 @@ NOTE: モニタのインストールページに手動でアクセスする必�
 .作業を開始する前に
 * アプライアンスをラックまたはキャビネットに設置し、ネットワークに接続し、電源を投入しておきます。
 * StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。
++
+
+NOTE: ポート再マッピングのサポートは非推奨であり、将来のリリースでは削除される予定です。再マップされたポートを削除するには、 https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["StorageGRIDアプライアンスのポート再マップを削除します"^] 。
+
 * StorageGRID システムのプライマリ管理ノードを導入しておきます。
 * StorageGRID アプライアンスインストーラの IP 設定ページに表示されるすべてのグリッドネットワークサブネットが、プライマリ管理ノードのグリッドネットワークサブネットリストで定義されている。
 * を搭載したサービスラップトップを用意しておき https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["サポートされている Web ブラウザ"^]ます。
@@ -145,7 +147,7 @@ IP を手動で入力します
  a| 
 .. [管理ノードの検出を有効にする]*チェックボックスを選択します。
 .. 検出された IP アドレスのリストが表示されるまで待ちます。
-.. このアプライアンスストレージノードを導入するグリッドのプライマリ管理ノードを選択します。
+.. このアプライアンス ゲートウェイまたは非プライマリ管理ノードがデプロイされるグリッドのプライマリ管理ノードを選択します。
 .. [ 保存（ Save ） ] をクリックします。
 .. 新しい IP アドレスの接続状態が READY になるまで待ちます。
 
@@ -153,7 +155,7 @@ IP を手動で入力します
 |===
 . [ノード名]フィールドに、このアプライアンスノードに使用するシステム名を入力し、*[保存]*をクリックします。
 +
-ここに表示される名前は、アプライアンスノードのシステム名です。システム名は内部StorageGRID 処理に必要であり、変更することはできません。
+ここで表示される名前は、アプライアンス ノードのシステム名になります。システム名は内部StorageGRID操作に必要であり、変更できません。アプライアンスノードの表示名を変更するには、 https://docs.netapp.com/us-en/storagegrid/maintain/rename-grid-site-node.html#how-to-rename-grid-sites-or-nodes["グリッド、サイト、ノードの名前を変更する方法"^] 。
 
 . 別のバージョンの StorageGRID ソフトウェアをインストールする必要がある場合は、次の手順を実行します。
 +
@@ -164,9 +166,6 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab
 .. アーカイブを展開します。
 .. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
 .. [ 削除 ] をクリックして、現在のソフトウェアパッケージを削除します。
-+
-image::../media/appliance_installer_rmv_current_software.png[アプライアンスインストーラ - 現在のソフトウェアを削除します]
-
 .. [参照]*をクリックして、ダウンロードして展開したソフトウェアパッケージを指定します。を選択します `storagegrid-webscale-images-_version_.deb` パッケージ。
 .. ホームページに戻るには、「 * Home * 」（ホーム）を選択します。
 

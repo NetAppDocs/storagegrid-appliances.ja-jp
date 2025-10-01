@@ -11,6 +11,8 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: SANtricityのアップグレード
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: ドライブファームウェアのアップグレード（自動再起動方式）
+      url: "../sg5700/upgrading-drive-firmware-using-auto-reboot.html"
     - title: ドライブファームウェアのアップグレード（オンライン方式）
       url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: ドライブファームウェアのアップグレード（オフライン方式）

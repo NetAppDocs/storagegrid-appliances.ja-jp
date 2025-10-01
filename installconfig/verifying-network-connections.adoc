@@ -18,9 +18,6 @@ summary: 使用する StorageGRID ネットワークに、アプライアンス�
 +
 [Ping and MTU Test] ページが表示されます。
 
-+
-image::../media/ping_test_start.png[StorageGRID アプライアンスインストーラの ping および MTU テストオプションのスクリーンショット]
-
 . [* ネットワーク *] ドロップダウンボックスから、テストするネットワークを選択します。グリッド、管理、またはクライアント。
 . そのネットワーク上のホストの IPv4 アドレスまたは完全修飾ドメイン名（ FQDN ）を入力します。
 +
@@ -33,9 +30,6 @@ image::../media/ping_test_start.png[StorageGRID アプライアンスインス�
 . [ 接続のテスト * ] をクリックします。
 +
 ネットワーク接続が有効な場合は、「 Ping test passed 」メッセージと ping コマンドの出力が表示されます。
-
-+
-image::../media/ping_test_passed.png[StorageGRIDアプライアンスインストーラでのpingテストの結果のスクリーンショット]
 
 
 

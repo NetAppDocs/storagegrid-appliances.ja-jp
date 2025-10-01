@@ -56,7 +56,7 @@ sidebar:
     - section: sg5800
     - section: sg6000
     - section: sg6100
-  - title: StorageGRID を有効にします
+  - title: StorageGRIDソリューションとリソース
     url: "/storagegrid-enable.html"
   - title: 法的通知
     url: "/legal-notices.html"

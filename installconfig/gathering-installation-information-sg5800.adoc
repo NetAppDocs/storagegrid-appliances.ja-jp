@@ -423,6 +423,5 @@ NOTE: 4 つのポート全部を使用しない場合は、 StorageGRID をイ�
 
 .関連情報
 * link:cabling-appliance.html["ケーブルアプライアンス（SG5800）"]
-* link:gathering-installation-information-sg5800.html#port-bond-modes["ポートボンディングモード（SG5800コントローラ）"]
 * link:configuring-hardware.html["ハードウェアの設定（SG5800）"]
 

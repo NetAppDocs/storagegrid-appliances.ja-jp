@@ -1,0 +1,35 @@
+---
+permalink: sg6000/upgrading-drive-firmware-using-auto-reboot.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
+summary: StorageGRIDアプライアンス インストーラーは、アプライアンスの再起動時に最新の E シリーズ ドライブ ファームウェア ファイルを自動的にインストールします。 
+---
+= アプライアンスの再起動中に SG6000 ドライブのファームウェアを自動的にアップグレードします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRIDアプライアンス インストーラーは、アプライアンスの再起動時に最新の E シリーズ ドライブ ファームウェア ファイルを自動的にインストールします。
+
+E シリーズ ドライブ ファームウェア ファイルは、 StorageGRIDソフトウェアに含まれています。これらのアップデートは、 StorageGRIDアプライアンスが再起動するたびに自動的にインストールされます。
+
+* の中へlink:../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html["メンテナンスモード"]
+* の一環として https://docs.netapp.com/us-en/storagegrid/maintain/rolling-reboot-procedure.html["ローリングリブート"]
+* 中に https://docs.netapp.com/us-en/storagegrid/upgrade/performing-upgrade.html["StorageGRIDバージョンアップグレード"]または https://docs.netapp.com/us-en/storagegrid/maintain/applying-hotfix.html["修正プログラムのインストール"]
+* 中にlink:../sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["SANtricity OS アップグレード"]メンテナンスモードの使用
+
+
+
+CAUTION: ステータスが「注意が必要」のノードでは、ドライブ ファームウェアのアップグレードは試行されません。
+
+
+NOTE: アプライアンスが再起動している間、ストレージ コントローラへの I/O (入出力) アクティビティは停止します。
+
+SANtricity System Managerを使用して、ドライブファームウェアのアップグレードを手動でインストールすることもできます。link:upgrading-drive-firmware-using-santricity-system-manager-online.html["オンライン"]またはlink:upgrading-drive-firmware-using-santricity-system-manager-offline.html["オフライン"]方法：
+
+* 新しいドライブファームウェアのアップグレードを、 StorageGRIDソフトウェアにパッケージ化される前に適用するには
+* ドライブファームウェアの自動アップグレードが失敗した場合
+* SANtricity System Managerを使用するにはlink:upgrading-drive-firmware-using-santricity-system-manager-online.html["オンラインドライブファームウェアアップグレード"]ノードを再起動する代わりにグリッドマネージャーから
+

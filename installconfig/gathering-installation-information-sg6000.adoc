@@ -552,7 +552,6 @@ A
 .関連情報
 * link:../installconfig/hardware-description-sg6000.html#sg6000-controllers["SG6000コントローラ"]
 * link:../installconfig/reviewing-appliance-network-connections.html["アプライアンスのネットワーク接続を確認する"]
-* link:../installconfig/gathering-installation-information-sg6000.html#port-bond-modes["ポートボンディングモード（SG6000-CNコントローラ）"]
 * link:cabling-appliance.html["アプライアンスをケーブル接続します"]
 * link:../installconfig/setting-ip-configuration.html["StorageGRID IP アドレスを設定する"]
 

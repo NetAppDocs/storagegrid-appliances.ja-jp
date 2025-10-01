@@ -23,7 +23,7 @@ SANtricity OS 08.42.20.00（11.42）以降を現在使用しているストレ�
 .このタスクについて
 SANtricity OSのアップグレード中は、他のソフトウェアの更新（StorageGRIDソフトウェアのアップグレードまたはホットフィックス）を実行することはできません。SANtricity OS のアップグレードプロセスが完了する前にホットフィックスや StorageGRID ソフトウェアのアップグレードを開始しようとすると、 SANtricity OS のアップグレードページが表示されます。
 
-手順 は、アップグレード対象として選択されたすべての該当ノードに SANtricity OS のアップグレードが正常に適用されるまでは完了しません。各ノードの SANtricity OS を（順次）ロードする場合は 30 分以上、各 StorageGRID ストレージアプライアンスをリブートする場合は最大 90 分かかることがあります。グリッド内のSANtricity OSを使用していないノードは、この手順 の影響を受けません。
+アップグレード対象として選択されたすべての該当ノードにSANtricity OS アップグレードが正常に適用されるまで、手順は完了しません。各ノードにSANtricity OS を (順番に) ロードするには 30 分以上かかる場合があり、各StorageGRIDストレージ アプライアンスを再起動するには最大 90 分かかる場合があります。  SANtricity OS を使用していないグリッド内のノードは、この手順の影響を受けません。
 
 
 CAUTION: 次の手順は、 Grid Manager を使用してアップグレードを実行する場合にのみ実行できます。08.42.20.00（11.42）より前のSANtricity OSをコントローラで使用している場合、アプライアンスのストレージコントローラをGrid Managerを使用してアップグレードできません。
@@ -32,12 +32,12 @@ CAUTION: 次の手順は、 Grid Manager を使用してアップグレードを
 NOTE: この手順 は、 SANtricity OS のアップグレードに関連付けられた最新バージョンに NVSRAM を自動的にアップグレードします。NVSRAMのアップグレードファイルを別途適用する必要はありません。
 
 
-NOTE: この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。詳細は、を参照してください https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"^]。
+NOTE: この手順を開始する前に、最新のStorageGRID修正プログラムを適用してください。見る https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"^]詳細については。
 
 .手順
 . [download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 +
-ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。
+ストレージ コントローラのSANtricity OS バージョンを選択します。
 
 . 「 * maintenance * > * System * > * Software update * 」を選択します。
 +
@@ -187,10 +187,10 @@ NOTE: すでに承認され、エラーなしでアップグレードされた�
 
 
 
-. 別の SANtricity OS アップグレードファイルが必要な、完了段階のノードすべてについて、このアップグレード手順 を繰り返します。
+. 別のSANtricity OS アップグレード ファイルを必要とする、ステージが「完了」のノードに対して、このアップグレード手順を繰り返します。
 +
 
-NOTE: ステータスが「 Needs Attention 」のノードがある場合は、メンテナンスモードを使用してアップグレードを実行します。
+NOTE: ステータスが「注意が必要」のノードの場合は、メンテナンス モードを使用してアップグレードを実行します。
 
 
 

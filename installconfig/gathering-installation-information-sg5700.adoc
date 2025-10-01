@@ -464,6 +464,5 @@ image::../media/e5700sg_bonded_management_ports.gif[E5700SG のボンディン�
 
 .関連情報
 * link:cabling-appliance-sg5700.html["ケーブルアプライアンス（ SG5700 ）"]
-* link:gathering-installation-information-sg5700.html#port-bond-modes["ポートボンディングモード（E5700SGコントローラ）"]
 * link:configuring-hardware.html["ハードウェアの構成（ SG5700 ）"]
 

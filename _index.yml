@@ -61,8 +61,10 @@ indexpage:
       url: "/landing-maintain-sgf6112/index.html"
   - title: StorageGRID ソフトウェア
     links:
-    - title: StorageGRID 11.9ドキュメント
+    - title: StorageGRID 12.0 ドキュメント
       url: https://docs.netapp.com/us-en/storagegrid/index.html
+    - title: StorageGRID 11.9ドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-119/index.html
     - title: StorageGRID 11.8ドキュメント
       url: https://docs.netapp.com/us-en/storagegrid-118/index.html
     - title: StorageGRID 11.7ドキュメント
@@ -71,7 +73,7 @@ indexpage:
       url: https://docs.netapp.com/us-en/storagegrid-116/index.html
     - title: StorageGRID 11.5 のドキュメント
       url: https://docs.netapp.com/us-en/storagegrid-115/index.html
-  - title: StorageGRID を有効にします
+  - title: StorageGRIDソリューションとリソース
     links:
     - title: 他のアプリケーションの統合
       url: https://docs.netapp.com/us-en/storagegrid-enable/index.html

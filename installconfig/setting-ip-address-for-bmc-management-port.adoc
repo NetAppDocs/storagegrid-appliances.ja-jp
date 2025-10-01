@@ -78,21 +78,15 @@ StorageGRID アプライアンスインストーラのホームページが表�
 
 . [ ハードウェアの設定 *>*BMC 構成 *] を選択します。
 +
-image::../media/bmc_configuration_page.gif[Advanced > BMC Configuration オプションを示すスクリーンショット]
-
-+
 [Baseboard Management Controller Configuration] ページが表示されます。
 
-. 自動的に表示される IPv4 アドレスを書き留めます。
+. LAN IP 設定で、自動的に表示される IPv4 アドレスをメモします。
 +
 このポートに IP アドレスを割り当てるためのデフォルトの方法は、 DHCP です。
 
 +
 
 NOTE: DHCP 値が表示されるまでに数分かかる場合があります。
-
-+
-image::../media/bmc_configuration_dhcp_address.gif[DHCP アドレスを示す地下管理コントローラの設定ページ]
 
 . 必要に応じて、 BMC 管理ポートに静的 IP アドレスを設定します。
 +
@@ -103,9 +97,6 @@ NOTE: BMC 管理ポートに静的 IP を割り当てるか、 DHCP サーバで
 .. 「 * Static * 」を選択します。
 .. CIDR 表記を使用して IPv4 アドレスを入力します。
 .. デフォルトゲートウェイを入力します。
-+
-image::../media/bmc_configuration_static_ip.gif[Baseboard Management Controller Configuration Static オプション]
-
 .. [ 保存（ Save ） ] をクリックします。
 +
 変更が適用されるまで数分かかる場合があります。

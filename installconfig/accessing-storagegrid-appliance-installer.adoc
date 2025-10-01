@@ -109,9 +109,6 @@ image::../media/sg6100_admin_network_port.png[SGF6112の管理ネットワーク
 +
 StorageGRID アプライアンスインストーラのホームページが表示されます。このページに最初にアクセスしたときに表示される情報とメッセージは、アプライアンスと StorageGRID ネットワークの現在の接続状況によって異なります。エラーメッセージが表示された場合は、以降の手順で解決されます。
 
-+
-image::../media/appliance_installer_home_5700_5600.png[StorageGRIDアプライアンスインストーラのホームページの上部を示すスクリーンショット]
-
 
 
 . DHCPを使用してIPアドレスを取得できない場合は、リンクローカル接続を使用できます。
@@ -205,7 +202,4 @@ StorageGRID アプライアンスインストーラにアクセスしたあと�
 link:verifying-and-upgrading-storagegrid-appliance-installer-version.html["StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします"]
 
 * StorageGRID アプライアンスインストーラのホームページに表示されるメッセージを確認し、必要に応じてリンク設定と IP 設定を行います。
-+
-image::../media/appliance_installer_home_services_appliance.png[アプライアンスインストーラのホーム]
-
 

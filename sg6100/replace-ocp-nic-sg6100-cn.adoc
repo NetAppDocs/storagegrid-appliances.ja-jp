@@ -35,10 +35,10 @@ NOTE: この手順では、ホットスワップは*サポートされていま�
 
 
 .このタスクについて
-サービスの中断を防ぐには、ネットワークインターフェイスカード（NIC）の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、サービスの中断が許容される時間帯にスケジュールされたメンテナンス時間内にNICを交換してください。についての情報を参照してくださいlink:https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態の監視"]。
+サービスの中断を防ぐには、ネットワーク インターフェイス カード (NIC) の交換を開始する前に、他のすべてのストレージ ノードがグリッドに接続されていることを確認するか、サービスの中断期間が許容される、スケジュールされたメンテナンス ウィンドウ中に NIC を交換します。に関する情報を見る https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態の監視"^]。
 
 
-CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してくださいlink:https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"]。
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にNICを交換する必要があります。についての情報を参照してください https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
 
 
 

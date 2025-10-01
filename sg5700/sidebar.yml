@@ -17,8 +17,10 @@ entries:
       url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
     - title: E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします
       url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
-  - title: SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+  - title: ドライブ ファームウェアのアップグレード
     entries:
+    - title: アプライアンスの再起動中に SG5700 ドライブのファームウェアを自動的にアップグレードします
+      url: "/sg5700/upgrading-drive-firmware-using-auto-reboot.html"
     - title: オンライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード
       url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: オフライン方式を使用したSANtricity System Managerを使用したドライブファームウェアのアップグレード

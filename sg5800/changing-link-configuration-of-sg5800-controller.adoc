@@ -24,15 +24,13 @@ SG5800コントローラのイーサネットリンク設定を変更するオ�
 
 * ポートボンディングモード * を「 Fixed 」から「 Aggregate 」または「 Aggregate 」から「 Fixed 」に変更します
 * ネットワークボンディングモード * を Active-Backup から LACP に、または LACP から Active-Backup に変更
+* *LACP送信ハッシュポリシー*と*LACP PDUレート*の値を変更する
 * VLAN タグを有効または無効にするか、 VLAN タグの値を変更します
 * リンク速度を自動（推奨）、10GbE、または25GbEに変更する。
 
 
 .手順
 . メニューから * Configure Networking * > * Link Configuration * を選択します。
-+
-image::../media/link_configuration_option.gif[Link Configuration （リンク設定）]
-
 . [[change_link_configuration_sg5800、start=2]]リンク設定に必要な変更を加えます。
 +
 オプションの詳細については、を参照してください link:../installconfig/configuring-network-links.html["ネットワークリンクを設定する"]。
@@ -53,12 +51,11 @@ VLAN 設定を変更した場合は、アプライアンスのサブネットが
 
 . リンク設定の変更が問題なく機能していることを確認したら、ノードをリブートします。StorageGRID アプライアンス・インストーラから、 *Advanced*>* Reboot Controller* を選択し、 * Reboot into StorageGRID * を選択します。
 +
-image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+アプライアンスが再起動してグリッドに再参加するまでに最大 20 分かかる場合があります。再起動が完了し、ノードがグリッドに再参加したことを確認するには:
 
 +
-アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。nodes *ページに、アプライアンスノードの正常なステータス（ノード名の左側にある緑のチェックマークアイコン）が表示され、アクティブなアラートがなく、ノードがグリッドに接続されていることが示されますimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]。
+.. グリッド マネージャーで、*NODES* を選択します。
+.. アプライアンスノードが正常状態であることを確認します（緑色のチェックマークアイコンimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
 
-+
-image::../media/nodes_menu.png[アプライアンスノードがグリッドに再参加しました]
 
 

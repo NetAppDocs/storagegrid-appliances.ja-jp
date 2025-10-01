@@ -20,8 +20,7 @@ summary: メンテナンスを実施するために、SG6000-CNコントロー�
 ハードウェアのメンテナンスを実行するには、 SG6000-CN コントローラをシャットダウンします。
 
 .作業を開始する前に
-* データセンターでのメンテナンスが必要な SG6000-CN コントローラの物理的な場所を確認しておきます。を参照してください link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]。
-
+データセンターでのメンテナンスが必要な SG6000-CN コントローラの物理的な場所を確認しておきます。を参照してください link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]。
 
 .このタスクについて
 サービスの中断を回避するには、他のすべてのストレージノードがグリッドに接続されていることを確認してから、コントローラをシャットダウンするか、スケジュールされたメンテナンス期間中にサービスの停止期間が許容される場合はコントローラをシャットダウンします。の情報を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
@@ -84,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 電源制御ペー
 
 
 
-== SG6000-CN コントローラの電源をオンにして、動作を確認します
+== [[poweron]]SG6000-CNコントローラの電源を入れ、動作を確認します
 
 メンテナンスが完了したら、コントローラの電源をオンにします。
 
