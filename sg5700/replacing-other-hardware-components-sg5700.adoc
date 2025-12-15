@@ -35,14 +35,14 @@ E2800コントローラのバッテリを交換するには、次の手順を参
  a| 
 ドライブ
  a| 
-E2800 12 ドライブまたは 24 ドライブシェルフのドライブの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["E2800 12 ドライブまたは 24 ドライブシェルフのドライブの交換"^]
 
 
 
  a| 
 電源 / ファンキャニスター
  a| 
-E2800 シェルフの電源 / ファンキャニスターの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["E2800 シェルフの電源 / ファンキャニスターの交換"^]
 
 |===
 
@@ -57,27 +57,27 @@ E2800 シェルフの電源 / ファンキャニスターの交換
  a| 
 ドライブ
  a| 
-E2860 シェルフのドライブの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["E2860 シェルフのドライブの交換"^]
 
 
 
  a| 
 電源キャニスター
  a| 
-E2860 シェルフの電源キャニスターの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-60-replace-power-task.html["E2860 シェルフの電源キャニスターの交換"^]
 
 
 
  a| 
 ファンキャニスター
  a| 
-E2860 シェルフのファンキャニスターの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["E2860 シェルフのファンキャニスターの交換"^]
 
 
 
  a| 
 ドライブドロワー
  a| 
-E2860 シェルフのドライブドロワーの交換
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-60-supertask-task.html["E2860 シェルフのドライブドロワーの交換"^]
 
 |===
