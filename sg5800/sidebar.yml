@@ -36,6 +36,8 @@ entries:
     url: "/sg5800/replace-controller-5800sg.html"
   - title: E4000コントローラの交換
     url: "/sg5800/replace-controller-e4000-simplex.html"
+  - title: CMOSバッテリを交換してください
+    url: "/sg5800/replace-cmos-battery-sg5800.html"
   - title: ファンの交換（SG5860）
     url: "/sg5800/replace-fan-canister.html"
   - title: 電源装置の交換（SG5812）

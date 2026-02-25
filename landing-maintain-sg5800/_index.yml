@@ -23,6 +23,8 @@ indexpage:
       url: "../sg5800/replace-controller-5800sg.html"
     - title: E4000ストレージコントローラの交換
       url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: CMOSバッテリを交換してください
+      url: "../sg5800/replace-cmos-battery-sg5800.html"
     - title: ファンキャニスターの交換
       url: "../sg5800/replace-fan-canister.html"
     - title: 電源キャニスターの交換

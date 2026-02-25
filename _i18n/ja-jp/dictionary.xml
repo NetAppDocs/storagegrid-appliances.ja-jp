@@ -5163,7 +5163,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="66db453d1fbfd54c6cd6227309339cf6" category="sidebar">メンテナンス設定手順- SG5800</block>
   <block id="998790f9ab6f4b8c9d5c5f4b8fe9fb04" category="sidebar">SANtricity System Managerオフライン方式を使用したSG5800ドライブファームウェアのアップグレード</block>
   <block id="be6a822c7c939a85f260e4c1b126877e" category="sidebar">ハードウェアの手順- SG5800</block>
-  <block id="3a7e137bff919e7eb144afcb96534cd0" category="sidebar">SG5800コントローラの交換</block>
   <block id="7e7251144a00e421936f34a8a2fccbc9" category="sidebar">E4000コントローラの交換</block>
   <block id="d52b6b7bb1340659104ecf27f81d8465" category="sidebar">ファンの交換（SG5860）</block>
   <block id="eabb04d32e9b0a5c85136275fc80f072" category="sidebar">電源装置の交換（SG5812）</block>
@@ -5815,4 +5814,36 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="563b1774437ac478e7c976ac7144d4ba" category="paragraph"><block ref="563b1774437ac478e7c976ac7144d4ba" category="inline-link-macro-rx"></block></block>
   <block id="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="paragraph"><block ref="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="inline-link-macro-rx"></block></block>
   <block id="25c6e9b66962fe13c106a3caf7544197" category="list-text">拡張シェルフと、拡張シェルフごとに 4 本の SAS ケーブルがあります。</block>
+  <block id="bf7a7919e351a1a6c8b89c398faa1328" category="inline-link-macro">グリッドの設定とインストールの完了</block>
+  <block id="22989b878271e76ef8bf5b08fad5e7d6" category="inline-link-macro">アプライアンスのインストールの監視</block>
+  <block id="2048d83aeb526b7695d1ff32348540df" category="paragraph"><block ref="7a1653b967287a1946fde1ee086529bd" category="inline-link-macro-rx"></block>と<block ref="52503075dfbaade950e111995566ccce" category="inline-link-macro-rx"></block>について学ぶ。</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="bdaa382a9049928db036ba1631c0b174" category="paragraph-title"><block ref="79bf5670869810cb20409fdc24ec5377" category="inline-image-macro-rx" type="image"></block>設定</block>
+  <block id="dee3a7a685c2c720894ed0f2e07992a3" category="inline-link-macro">グリッドを構成してインストールを完了する</block>
+  <block id="19d9d1db654f94e3eb6fcc7e6af5321c" category="paragraph">すべてのノードがデプロイされたら、Grid Manager を使用して<block ref="0e3c3da0a4935b39895881a3e1ba1fa6" category="inline-link-macro-rx"></block>。</block>
+  <block id="21d16072e421374602ab88939126fd95" category="summary">システムのサービスとアプリケーションが正確な時間同期を保ち、正常に機能し続けるためには、SG5800 コントローラの CMOS バッテリを交換する必要がある場合があります。</block>
+  <block id="69216d92847d4af52b52771d3c3ae7ae" category="doc">SG5800コントローラのCMOSバッテリを交換する</block>
+  <block id="ef873613d11c9b9b25aaed3ff67cd134" category="paragraph">CMOS バッテリを交換すると、アプライアンスの Storage Node にアクセスできなくなります。サービスの中断を防ぐには、CMOS バッテリの交換を開始する前に、他のすべての Storage Node がグリッドに接続されていることを確認するか、サービスの中断期間が許容される、スケジュールされたメンテナンス ウィンドウ中にバッテリを交換します。</block>
+  <block id="18546461d45525827f263fdff9a119e4" category="section-title">ステップ1：SG5800コントローラをシャットダウンする</block>
+  <block id="ab997ba06a268869466210f14377a777" category="section-title">ステップ2：アプライアンスからコントローラを取り外す</block>
+  <block id="2cf2e55bf4beebbc2bf1d7eb20b6849f" category="admonition">パフォーマンスの低下を防ぐため、ケーブルをねじったり、折り曲げたり、挟んだり、踏んだりしないでください。</block>
+  <block id="5fb9af22ffedd74df1492c91f96b8d7a" category="list-text">コントローラ モジュールを裏返し、平らで安定した場所に置きます。</block>
+  <block id="7f55eb94cdf1a4b21094c894e466a775" category="list-text">コントローラモジュールの側面にある青いボタンを押してカバーを開き、カバーを上に回転させてコントローラモジュールから取り外します。</block>
+  <block id="f396ab354e7d8d3083cb0440e7c9071f" category="image-alt">SG5800コントローラーモジュールカバーを開く</block>
+  <block id="182e97c3add734b1fd99f0eee3f49103" category="section-title">ステップ3：CMOSバッテリーを交換する</block>
+  <block id="9ea8197531786638801dd649be89466a" category="list-text">CMOSバッテリの場所を確認します。</block>
+  <block id="c044d37265ebeb1da6ae41687ebe2874" category="image-alt">SG5800コントローラのCMOSバッテリーの場所</block>
+  <block id="9c79b200590fdd1b4448109404ae9fa8" category="admonition">コントローラーの外観は、図に示されているものと異なる場合があります。ただし、CMOS バッテリーの位置は同じです。</block>
+  <block id="4d588aa7140258cf33c90bf84373b987" category="list-text">バッテリーをホルダーからゆっくりと押して回転させ、機器から持ち上げて取り出します。</block>
+  <block id="9e5b0cf96e39c07e340d8e7e3f98141d" category="admonition">ホルダーから取り外す際に、バッテリの極の向きを確認しておいてください。バッテリに記載されているプラス記号に従って、バッテリをホルダーに正しく配置する必要があります。正しいバッテリの向きを示すため、ホルダーの近くにプラス記号が表示されています。</block>
+  <block id="ea4330063aff847ec18a76ddefbeb737" category="list-text">交換用バッテリを静電気防止用の梱包バッグから取り出します。</block>
+  <block id="b1288294c924e966dd5f1e52dc50d8fa" category="list-text">コントローラ モジュールで空のバッテリ ホルダーの場所を確認します。</block>
+  <block id="3f438088c150922b6b48db4eb6139959" category="list-text">CMOSバッテリの極の向きを確認し、バッテリを斜めに傾けた状態で押し下げてホルダーに挿入します。</block>
+  <block id="f03bfb81b0d6ffbb00f9e9e58c111c93" category="list-text">バッテリがホルダーに完全に取り付けられ、かつ極の向きが正しいことを目で見て確認します。</block>
+  <block id="9f8a96e46f0e86179108737100c29b9d" category="list-text">コントローラーカバーを再度取り付けます。</block>
+  <block id="e607ef3b8ec06559c2e929e8f3cdafdc" category="section-title">ステップ4：コントローラをアプライアンスに再インストールする</block>
+  <block id="a403d8265c5e6d43e2ea0d96d972952c" category="list-text">コントローラをアプライアンスにインストールします：</block>
+  <block id="327397f6c0f0348d5802bda44790ddff" category="list-text">取り外し可能なカバーが下を向くようにコントローラーを裏返します。</block>
+  <block id="0a984775a796371a39701d3f492a05d3" category="list-text">ケーブルを再接続します。</block>
+  <block id="67e61ec95be7440ca50351a3be0bc2a7" category="sidebar">SG5800コントローラの交換</block>
 </blocks>
