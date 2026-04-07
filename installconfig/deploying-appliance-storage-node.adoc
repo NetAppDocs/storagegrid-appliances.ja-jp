@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
 summary: ストレージアプライアンスを設置して設定したら、 StorageGRID システムにストレージノードとして導入できます。アプライアンスをストレージノードとして導入する場合は、アプライアンスに搭載されている StorageGRID アプライアンスインストーラを使用します。 
 ---
-= アプライアンスストレージノードを導入する
+= StorageGRIDアプライアンスストレージノードを導入する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

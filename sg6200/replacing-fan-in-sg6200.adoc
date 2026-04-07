@@ -1,0 +1,118 @@
+---
+permalink: sg6200/replacing-fan-in-sg6200.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6212, sg6200-cn, sg6260, storage appliance, Replacing, replace, fan, remove, removing, removal, install, installing 
+summary: SGF6212アプライアンスとSG6200-CNコントローラには、7つの冷却ファンが搭載されています。ファンの1つに障害が発生した場合は、アプライアンスが適切に冷却されるように、できるだけ早く交換する必要があります。 
+---
+= SGF6212またはSG6200-CN（SG6260）のファンを交換します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SGF6212アプライアンスとSG6200-CNコントローラには、7つの冷却ファンが搭載されています。ファンの1つに障害が発生した場合は、アプライアンスが適切に冷却されるように、できるだけ早く交換する必要があります。
+
+.このタスクについて
+サービスの中断を防ぐには、ファンの交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、スケジュールされたメンテナンス期間中にサービスの中断が許容される時間帯にファンを交換してください。の情報を参照してください https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["ノードの接続状態を監視しています"^]。
+
+
+CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを使用したことがある場合は、この手順の実行中はそれらのオブジェクトに一時的にアクセスできなくなる可能性があるため、スケジュールされたメンテナンス時間中にファンを交換する必要があります。についての情報を参照してください https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"^]。
+
+ファンの交換中は、アプライアンスノードにアクセスできなくなります。
+
+
+NOTE: 2 つの電源装置にもそれぞれファンが搭載されています。電源装置ファンは、この手順 には含まれていません。
+
+.作業を開始する前に
+* 正しい交換用ファンを用意しておきます。
+* これで完了です link:verify-component-to-replace.html["交換するファンの位置を確認"]。
+* データセンターでファンを交換するlink:locating-sg6200-in-data-center.html["SGF6212アプライアンスまたはSG6200-CNコントローラの物理的な場所を確認した"]があります。
++
+
+NOTE: ラックからアプライアンスを取り外す前に、link:power-sg6200-off-on.html#shut-down-the-sgf6212-appliance-or-sg6200-cn-controller["アプライアンスの通常のシャットダウン"]が必要です。
+
+* すべてのケーブルを外し、link:reinstalling-sg6200-cover.html["アプライアンスカバーを取り外した"]。
+* 他のファンが取り付けられ、動作していることを確認しておきます。
+
+
+.手順
+. ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
+. 交換が必要なファンの場所を確認します。
++
+7 つのファンはシャーシの次の位置にあります（StorageGRID アプライアンスの前半分、上部カバーを取り外した状態）：
+
++
+image::../media/drw_fan_position_ieops-2614.svg[StorageGRIDアプライアンスシャーシ内のファンの位置]
+
++
+|===
+| シャーシの位置 | ファンユニット 
+
+
+ a| 
+1.
+ a| 
+FAN_SYS0
+
+
+
+ a| 
+2.
+ a| 
+FAN_SYS1
+
+
+
+ a| 
+3.
+ a| 
+FAN_SYS2
+
+
+
+ a| 
+4.
+ a| 
+FAN_SYS3の略
+
+
+
+ a| 
+5.
+ a| 
+FAN_SYS4
+
+
+
+ a| 
+6.
+ a| 
+FAN_SYS5
+
+
+
+ a| 
+7.
+ a| 
+FAN_SYS6
+
+|===
+. ファンの青いタブを使用して、障害が発生したファンをシャーシから持ち上げます。
++
+image:../media/drw_s2025_fan_replace_ieops-2552.svg["シャーシからファンを取り外す"]
+
+. 交換用ファンをシャーシのオープンスロットにスライドさせて挿入します。
++
+ファンのコネクタを回路基板のソケットに合わせます。
+
+. ファンのコネクタを回路基板にしっかりと押し込みます。
+. link:reinstalling-sg6200-cover.html["上部カバーをアプライアンスに戻します。"]ラッチを押し下げてカバーを固定します。
+. link:power-sg6200-off-on.html["アプライアンスの電源をオンにします。"]アプライアンスのLEDと起動コードを監視します。
++
+BMC インターフェイスを使用して、ブート時のステータスを監視します。
+
+. アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
+
+
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。

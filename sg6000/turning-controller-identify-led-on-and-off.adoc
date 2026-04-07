@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。 
 ---
-= SG6000-CNコントローラの識別LEDのオンとオフの切り替え
+= SG6000-CNコントローラの識別LEDをオン/オフにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

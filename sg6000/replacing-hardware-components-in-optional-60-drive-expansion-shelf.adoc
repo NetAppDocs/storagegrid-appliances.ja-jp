@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
 summary: 拡張シェルフの入出力モジュール、電源装置、またはファンの交換が必要になることがあります。 
 ---
-= オプションのSG6000 60ドライブ拡張シェルフのハードウェアコンポーネントの交換
+= オプションのSG6000 60ドライブ拡張シェルフのハードウェアコンポーネントを交換します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

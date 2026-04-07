@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, replacing, replace, fan, remove, removing, removal, install, installing, installation 
 summary: SG6000-CN コンピュート コントローラには 8 つの冷却ファンがあります。ファンの 1 つが故障した場合は、コントローラが適切に冷却されるように、できるだけ早く交換する必要があります。 
 ---
-= SG6000-CNコンピュートコントローラのファンを交換する
+= SG6000-CNコンピューティングコントローラのファンを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -56,4 +56,4 @@ image::../media/fan_connector_check.png[ファンコネクタの点検]
 . アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
 
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。

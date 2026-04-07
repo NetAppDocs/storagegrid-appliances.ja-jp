@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cmos, battery, replace, sg5800, controller 
 summary: システムのサービスとアプリケーションが正確な時間同期を保ち、正常に機能し続けるためには、SG5800 コントローラの CMOS バッテリを交換する必要がある場合があります。 
 ---
-= SG5800コントローラのCMOSバッテリを交換する
+= SG5800コントローラのCMOSバッテリを交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

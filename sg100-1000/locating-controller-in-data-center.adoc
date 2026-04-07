@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。 
 ---
-= データセンターでのSG100またはSG1000の場所の確認
+= データセンター内のSG100またはSG1000を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

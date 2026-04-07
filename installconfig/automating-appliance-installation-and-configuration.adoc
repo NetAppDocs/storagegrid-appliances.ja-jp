@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: automate, automating, automation, automatic, install, installation, configuration, configure 
 summary: インストールと設定を自動化すると、複数の StorageGRID インスタンス、または大規模で複雑な StorageGRID インスタンスを 1 つ導入する場合に便利です。 
 ---
-= アプライアンスのインストールと設定を自動化
+= StorageGRID アプライアンスの設置と設定を自動化
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

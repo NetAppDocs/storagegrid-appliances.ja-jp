@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, install, installing, installation, cabinet, rack, rail, rails 
 summary: キャビネットまたはラックにアプライアンス用のレール1組を取り付け、レールにアプライアンスをスライドさせます。 
 ---
-= キャビネットまたはラックへの設置（SGF6112）
+= SGF6112をキャビネットまたはラックに取り付けます
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

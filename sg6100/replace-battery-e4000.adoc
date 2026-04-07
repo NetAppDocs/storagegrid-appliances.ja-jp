@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= ストレージコントローラシェルフのバッテリの交換（SG6160）
+= SG6160ストレージコントローラシェルフのバッテリを交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,7 +23,7 @@ SANtricity System Manager の Recovery Guru で詳細を確認し、問題にバ
 * コントローラキャニスターに接続する各ケーブルを識別するためのラベル。
 * SANtricityシステムマネージャへのアクセス：
 +
-** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報はにあり https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]ます。
+** Grid Managerから、*Nodes* > *_appliance node_* > *SANtricity System Manager*を選択します。コントローラ情報は https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]にあります。
 ** 管理ステーションのブラウザで、コントローラのドメイン名またはIPアドレスを指定します。
 
 

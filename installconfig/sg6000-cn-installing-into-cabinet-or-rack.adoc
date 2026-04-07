@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, rail, rails 
 summary: SG6000-CNコントローラ用のレール1組をキャビネットまたはラックに設置し、レールにコントローラをスライドさせます。 
 ---
-= SG6000-CNコントローラの設置（SG6060およびSG6024）
+= SG6060およびSG6024にSG6000-CNコントローラをインストールします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

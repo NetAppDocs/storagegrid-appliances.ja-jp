@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, service appliance, services appliance, gateway Node, admin node, reboot, restart 
 summary: StorageGRID アプライアンスインストーラの実行中にアプライアンスのリブートが必要になることがあります。たとえば、インストールに失敗した場合は、アプライアンスのリブートが必要になることがあります。 
 ---
-= StorageGRID アプライアンスインストーラの実行中にアプライアンスをリブートします
+= StorageGRID アプライアンスインストーラの実行中にアプライアンスを再起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

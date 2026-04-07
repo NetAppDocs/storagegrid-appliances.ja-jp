@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installing, installation, cabinet, rack, rail, rails 
 summary: キャビネットまたはラックにアプライアンス用のレール1組を取り付け、レールにアプライアンスをスライドさせます。 
 ---
-= キャビネットまたはラックへの設置（SG100およびSG1000）
+= SG100またはSG1000をキャビネットまたはラックに設置します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

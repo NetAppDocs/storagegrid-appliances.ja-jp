@@ -109,7 +109,7 @@ HDD02またはHDD2は上部スロットのドライブを表し、HDD03または
 . アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
 
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。
 
 .関連情報
 * link:../installconfig/viewing-status-indicators.html["ステータスインジケータを表示します"]

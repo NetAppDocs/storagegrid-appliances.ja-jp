@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unpack, unbox, prepare, inventory, components, contents 
 summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
 ---
-= 箱を開梱します
+= StorageGRIDアプライアンスボックスを開梱する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,6 +72,42 @@ image::../media/rail_kit.gif[レールキット]
 image::../media/sgf_6112_front_bezel.png[前面ベゼル]
 
 --
+
+
+* *電源コード*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+
+
+--
+.SG120とSG1200
+--
+* * ハードウェア *
++
+SG120またはSG1200::
++
+--
+image::../media/sg120_front_view.png[フロントドライブSG120およびSG1200アプライアンス]
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+フロントベゼル（図示せず）::
 
 
 * *電源コード*
@@ -518,6 +554,128 @@ image::../media/rail_kit.gif[レールキット]
 image::../media/sgf_6112_front_bezel.png[前面ベゼル]
 
 --
+
+
+* *電源コード*
++
+
+TIP: キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
++
+お住まいの国に対応した2本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+
+
+--
+.SG6200
+--
+* *SG6260ハードウェア*
++
+SG6200-CNコントローラ::
++
+--
+image::../media/s25_front_with_ssds.png[SG6200-CNコントローラ]
+
+--
+E4000コントローラシェルフ（ドライブなし）::
++
+--
+image::../media/de460c_table_size.gif[E4000 4Uコントローラ]
+
+--
+前面ベゼル2個（図示せず）::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+NL-SAS ドライブ × 60::
++
+--
+image::../media/sg5760_drive.gif[NL-SAS ドライブ × 60]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[E4000ハンドル]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860の背面ブラケットとケージナット]
+
+--
+100GbE~4x25GbEブレークアウトインターコネクトケーブル×1::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100GbE~4x25GbEブレークアウトケーブル]
+
+--
+お住まいの国に対応した4本の電源コード::
++
+--
+image::../media/power_cords.gif[電源コード]
+
+--
+
+
+* *SG6260拡張シェルフ*
++
+拡張シェルフにドライブが取り付けられていません::
++
+--
+image::../media/de460c_table_size.gif[E4000 4Uコントローラ]
+
+--
+フロントベゼル（図示せず）::
++
+--
+image::../media/sg5760_drive.gif[ドライブ]
+
+--
+レールキット（取扱説明書付き）×1::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+4つのハンドル::
++
+--
+image::../media/handles.gif[E4000ハンドル]
+
+--
+角穴ラック取り付け用の背面ブラケットとケージナット::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860の背面ブラケットとケージナット]
+
+--
+
+
+* *SGF6212 ハードウェア*
++
+SGF6212::
++
+--
+image::../media/s25_front_with_ssds.png[フロントドライブ SGF6212 アプライアンス]
+
+--
+レールキットと取扱説明書::
++
+--
+image::../media/rail_kit.gif[レールキット]
+
+--
+フロントベゼル（図示せず）::
 
 
 * *電源コード*

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6160, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
 summary: StorageGRIDアプライアンス インストーラーは、アプライアンスの再起動時に最新の E シリーズ ドライブ ファームウェア ファイルを自動的にインストールします。 
 ---
-= アプライアンスの再起動中に SG6160 ドライブのファームウェアを自動的にアップグレードします
+= アプライアンスの再起動中にSG6160ドライブ ファームウェアをアップグレード
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

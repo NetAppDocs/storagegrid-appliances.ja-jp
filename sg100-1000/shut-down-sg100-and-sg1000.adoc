@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg1000, SG100, power off, turn off, shut off, shutdown, shut down, 
 summary: サービスアプライアンスをシャットダウンして、ハードウェアのメンテナンスを行います。 
 ---
-= SG100またはSG1000のシャットダウン
+= SG100またはSG1000サービスアプライアンスをシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery, sg6160 
 summary: この手順 を使用して、システム基板のCMOSコイン型電池を交換します。 
 ---
-= SGF6112またはSG6100-CN CMOSバッテリの交換
+= SGF6112またはSG6100-CNのCMOSバッテリを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

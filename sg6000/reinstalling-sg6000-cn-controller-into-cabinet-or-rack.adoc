@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, remove, removing, removal 
 summary: SG6000-CNコントローラをキャビネットまたはラックから取り外して上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。ハードウェアのメンテナンスが完了したら、コントローラをキャビネットまたはラックに再度取り付けます。 
 ---
-= キャビネットまたはラック内のSG6000-CNコントローラの移動
+= SG6000-CNコントローラをキャビネットまたはラックに再配置します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,7 +51,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060 ラック固定ネジ]
 . オプション：キャビネットまたはラックからコントローラを完全に取り外す場合は、レールキットの手順に従ってレールからコントローラを取り外します。
 
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。
 
 
 

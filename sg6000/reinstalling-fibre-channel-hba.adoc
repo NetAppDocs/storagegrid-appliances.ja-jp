@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal, locate, identify, find 
 summary: Fibre Channel HBAが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。 
 ---
-= SG6000のファイバチャネルHBAの交換
+= SG6000-CNコントローラ内のファイバチャネルHBAを交換します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -29,7 +29,7 @@ NOTE: 交換するファイバチャネル HBA を搭載したストレージア
 
 
 .手順
-. Grid Manager から * nodes * を選択します。
+. Grid Managerから、*Nodes*を選択します。
 . ノードページのテーブルで、アプライアンスストレージノードを選択します。
 . [* ハードウェア * ] タブを選択します。
 +
@@ -96,7 +96,7 @@ image::../media/sg6060_fc_hba_location.jpg[ライザーアセンブリ内の SG6
 .完了後
 link:reinstalling-fibre-channel-hba.html["交換用ファイバチャネルHBAを取り付けます"]。
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。
 
 
 

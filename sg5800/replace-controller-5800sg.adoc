@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= StorageGRID SG5800コントローラの交換
+= SG5800コントローラを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

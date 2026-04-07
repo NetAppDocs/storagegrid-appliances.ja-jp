@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg5700, sg5712, sg5712x, sg5760, sg5760x, storage appliance 
 summary: SG5700 StorageGRID アプライアンスは、 StorageGRID グリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。アプライアンスは、アプライアンスストレージノードと仮想ストレージノードを組み合わせたハイブリッドグリッド環境で使用できます（ソフトウェアベース）。 
 ---
-= SG5700 アプライアンス：概要
+= StorageGRID SG5700アプライアンス
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

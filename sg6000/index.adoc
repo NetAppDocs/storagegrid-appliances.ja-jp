@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
 summary: SG6000 アプライアンスでメンテナンス手順を実行する必要がある場合があります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。 
 ---
-= SG6000アプライアンスのメンテナンス
+= SG6000アプライアンスのメンテナンスを実施する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

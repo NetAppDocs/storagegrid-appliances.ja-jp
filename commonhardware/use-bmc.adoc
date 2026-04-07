@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, bmc 
 summary: 一部のStorageGRIDアプライアンスには、ベースボード管理コントローラ（BMC）が搭載されており、アプライアンスの設定、監視、診断のための下位レベルのハードウェアアクセスが可能です。 
 ---
-= StorageGRIDアプライアンスのベースボード管理コントローラ（BMC）の使用
+= StorageGRID アプライアンス用ベースボード管理コントローラ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,10 +17,13 @@ BMCインターフェイスは、次のStorageGRIDアプライアンスモデル
 
 * SG100
 * SG110
+* SG120
 * SG1000 からのアクセス
 * SG1100
+* SG1200
 * SG6000を使用します
 * SG6100
+* SG6200
 
 
 これらのアプライアンスでのBMCインターフェイスの使用の詳細については、を参照して https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMCユーザガイド"^]ください。テクニカルサポートから指示があった場合にのみ、StorageGRIDのドキュメントに_not_documentedのBMC機能にアクセスしてください。
@@ -42,26 +45,32 @@ BMCインターフェイスは、次のStorageGRIDアプライアンスモデル
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["Eメールアラート通知の設定"]
 * ハードウェアの設置に関するトラブルシューティング：
 +
-** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000およびSG100"]
-** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100およびSG110"]
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG100およびSG1000"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG110およびSG1100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg120-and-sg1200.html["SG120とSG1200"]
 ** link:../installconfig/troubleshooting-hardware-installation.html["SG6000を使用します"]
 ** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6200.html["SG6200"]
 
 
 * アプライアンスの電源状態を確認します。
 +
 ** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000およびSG100"]
-** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100およびSG110"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG110およびSG1100"]
+** link:../sg120-1200/power-sg120-and-sg1200-off-on.html["SG120とSG1200"]
 ** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000を使用します"]
 ** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+** link:../sg6200/power-sg6200-off-on.html["SG6200"]
 
 
 * アプライアンスの識別LEDのオンとオフを切り替えます。
 +
 ** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000およびSG100"]
 ** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100およびSG110"]
+** link:../sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html["SG120とSG1200"]
 ** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000を使用します"]
 ** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+** link:../sg6200/turning-sg6200-identify-led-on-and-off.html["SG6200"]
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
 summary: SG6160およびSGF6112の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。 
 ---
-= キャビネットまたはラックへの設置（SG6100）
+= SG6100をキャビネットまたはラックに設置します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

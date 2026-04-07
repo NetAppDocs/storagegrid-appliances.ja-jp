@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
 summary: キャビネットまたはラックにE4000コントローラシェルフ用のレール一式を取り付け、レールにコントローラシェルフをスライドさせます。60 ドライブ拡張シェルフを設置する場合は、同じ手順 が適用されます。 
 ---
-= 60ドライブシェルフの設置（SG6160）
+= SG6160用の60ドライブシェルフを取り付けます
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

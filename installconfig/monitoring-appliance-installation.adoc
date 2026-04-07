@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: appliance, installation, install, progress, monitor, status 
 summary: StorageGRID アプライアンスインストーラでは、インストールが完了するまでステータスが提供されます。ソフトウェアのインストールが完了すると、アプライアンスがリブートされます。 
 ---
-= アプライアンスの設置を監視する
+= StorageGRID アプライアンスのインストールを監視
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

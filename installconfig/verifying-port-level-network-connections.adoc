@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
 summary: StorageGRID アプライアンスインストーラとその他のノードの間のアクセスがファイアウォールの妨げにならないように、 StorageGRID アプライアンスインストーラが指定した IP アドレスまたはアドレス範囲にある特定の TCP ポートまたはポートセットに接続できることを確認します。 
 ---
-= ポートレベルのネットワーク接続を確認
+= StorageGRID アプライアンスでポートレベルのネットワーク接続を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6200.html 
+sidebar: sidebar 
+keywords: install, sg6200, sg6212, expansion shelf, cabinet, rack, drives 
+summary: SG6260およびSGF6212の場合、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせて取り付けます。 
+---
+= SG6200をキャビネットまたはラックに設置します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6260およびSGF6212の場合、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせて取り付けます。
+
+[cols="1a,2a,2a"]
+|===
+| モデル | をインストールします | を参照してください 
+
+
+ a| 
+SG6260
+ a| 
+60ドライブコントローラシェルフと60ドライブ拡張シェルフ
+ a| 
+link:sg6260-installing-60-drive-shelves-into-cabinet-or-rack.html["60ドライブシェルフを設置"]
+
+
+
+ a| 
+SG6212
+ a| 
+12ドライブアプライアンスシェルフ
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6212.html["12ドライブシェルフの設置"]
+
+
+
+ a| 
+SG6260
+ a| 
+SG6200-CNコンピューティングコントローラ
+ a| 
+link:sg6200-cn-installing-into-cabinet-or-rack.html["SG6200-CNコントローラを設置します"]
+
+|===

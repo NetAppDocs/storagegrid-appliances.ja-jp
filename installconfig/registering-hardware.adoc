@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, registering, registration, support 
 summary: アプライアンスハードウェアを登録するとサポートを受けられるようになります。 
 ---
-= ハードウェアを登録
+= StorageGRIDアプライアンスハードウェアを登録する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

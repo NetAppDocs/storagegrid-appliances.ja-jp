@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
 summary: StorageGRID には、インストールタスクを実行するための REST API として、 StorageGRID インストール API と StorageGRID アプライアンスインストーラ API の 2 つが用意されています。 
 ---
-= インストール REST API の概要
+= StorageGRIDインストールREST API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

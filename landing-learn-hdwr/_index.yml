@@ -25,9 +25,13 @@ indexpage:
       url: "../installconfig/hardware-description-sg6000.html"
     - title: SG6100ストレージアプライアンス
       url: "../installconfig/hardware-description-sg6100.html"
+    - title: SG6200 ストレージアプライアンス
+      url: "../installconfig/hardware-description-sg6200.html"
   - title: サービスアプライアンスの詳細
     links:
     - title: SG100 および SG1000 サービスアプライアンス
       url: "../installconfig/hardware-description-sg100-and-1000.html"
     - title: SG110およびSG1100サービスアプライアンス
       url: "../installconfig/hardware-description-sg110-and-1100.html"
+    - title: SG120およびSG1200サービス アプライアンス
+      url: "../installconfig/hardware-description-sg120-and-1200.html"

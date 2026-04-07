@@ -1,0 +1,43 @@
+---
+permalink: sg6200/reinstalling-sg6200-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200, sgf6212, storage node, storage appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
+summary: メンテナンスのためにアプライアンスのカバーを取り外して内部コンポーネントにアクセスし、作業が完了したらカバーを元に戻します。 
+---
+= SGF6212またはSG6200-CNのカバーを交換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスのためにアプライアンスのカバーを取り外して内部コンポーネントにアクセスし、作業が完了したらカバーを元に戻します。
+
+
+
+== ステップ1：カバーを外す
+
+.手順
+. 静電気防止用リストバンドのストラップの端を手首に巻き付け、クリップの端を金属製のアースに固定して、アプライアンス内部での作業時に静電気が発生しないようにします。
+. link:reinstalling-sg6200-into-cabinet-or-rack.html["キャビネットまたはラックからのアプライアンスの取り外し"]上蓋にアクセスします。
+
+
+. 本体カバーにある青いロックボタンを押して、カバーのラッチを解除してください。
++
+image:../media/drw_s2025_cover_replace_ieops-2559.svg["機器カバーのロックを解除して取り外す"]
+
+. ラッチをアプライアンスシャーシの背面方向に上下に回転させて停止し、カバーをシャーシから慎重に持ち上げて脇に置きます。
+
+
+
+
+== 手順2：カバーを再度取り付ける
+
+.手順
+. カバーのラッチを開いた状態で、カバーをシャーシの上に位置合わせし、慎重に下ろしてください。
+. カバーラッチが止まるまで前後に回し、カバーをシャーシに完全に固定します。カバーの前端に隙間がないことを確認します。
++
+カバーが完全に装着されていないと、アプライアンスをラックにスライドさせることができない場合があります。
+
+. link:reinstalling-sg6200-into-cabinet-or-rack.html["キャビネットまたはラックへのアプライアンスの再設置"]。
+

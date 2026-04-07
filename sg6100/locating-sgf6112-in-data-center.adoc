@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、アプライアンスの場所を確認します。 
 ---
-= データセンターでのSGF6112アプライアンスまたはSG6100-CNコントローラの場所の確認
+= データセンター内でSGF6112アプライアンスまたはSG6100-CNコントローラを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
 summary: キャビネットまたはラックにEF570コントローラシェルフ用のレール1組を取り付け、レールにアレイをスライドさせます。 
 ---
-= 24ドライブシェルフの設置（SGF6024）
+= SGF6024用の24ドライブシェルフを取り付けます
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

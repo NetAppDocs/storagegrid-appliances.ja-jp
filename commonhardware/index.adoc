@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance 
 summary: StorageGRID システムのメンテナンスには、次の手順を使用してください。 
 ---
-= ノードの一般的なメンテナンス手順：概要
+= StorageGRIDアプライアンスの一般的なメンテナンス手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,10 +38,12 @@ NOTE: ここで説明する「Linux」とは、Red Hat®Enterprise Linux®、Ubu
 
 StorageGRID アプライアンスのタイプごとに固有のメンテナンス手順については、アプライアンスのメンテナンスセクションを参照してください。
 
+* link:../sg6200/index.html["SG6200アプライアンスのメンテナンス"]
 * link:../sg6100/index.html["SG6100アプライアンスのメンテナンス"]
 * link:../sg6000/index.html["SG6000アプライアンスのメンテナンス"]
-* link:../sg5800/index.html["SG5800アプライアンスのメンテナンス"]
 * link:../sg5700/index.html["SG5700 アプライアンスをメンテナンスする"]
-* link:../sg110-1100/index.html["SG110およびSG1100アプライアンスのメンテナンス"]
+* link:../sg5800/index.html["SG5800アプライアンスのメンテナンス"]
 * link:../sg100-1000/index.html["SG100およびSG1000アプライアンスのメンテナンス"]
+* link:../sg110-1100/index.html["SG110およびSG1100アプライアンスのメンテナンス"]
+* link:../sg120-1200/index.html["SG120およびSG1200アプライアンスのメンテナンス"]
 

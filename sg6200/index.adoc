@@ -1,0 +1,45 @@
+---
+permalink: sg6200/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200 storage appliance, SGF6212 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: お使いの機器には、メンテナンス作業が必要になる場合があります。このセクションでは、sg6200機器のメンテナンスに関する具体的な手順について説明します。 
+---
+= SG6200アプライアンスのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+お使いのアプライアンスには、メンテナンス作業が必要になる場合があります。このセクションでは、SG6200アプライアンスのメンテナンスに関する具体的な手順について説明します。
+
+このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。
+
+*メンテナンス設定手順*は、アプライアンスインストーラ、Grid Manager、またはBMCのインターフェイスを使用して実行します。これらの手順は次のとおりです。
+
+* link:turning-sg6200-identify-led-on-and-off.html["アプライアンスの識別LEDのオンとオフを切り替えます"]
+* link:locating-sg6200-in-data-center.html["データセンターにアプライアンスを配置します"]
+* link:power-sg6200-off-on.html["アプライアンスをシャットダウンします"]
+* link:changing-link-configuration-of-sg6200-appliance.html["アプライアンスのリンク設定を変更します"]
+
+
+*ハードウェア保守手順*では、特定のSGF6212またはSG6260コンポーネントを物理的に操作する必要があります。
+
+
+
+== ドライブファームウェアのアップグレード
+
+SG6260に搭載されているドライブのファームウェアは、アプライアンスが再起動されるたびに自動的にチェックされます。必要に応じて、ファームウェアは現在のStorageGRIDリリースで想定されるバージョンに自動的にアップグレードされます。通常、ファームウェアのアップグレードはStorageGRIDソフトウェアのアップグレード中に実行されます。既存のStorageGRIDバージョンに必要なドライブ ファームウェアのアップグレードはホットフィックスに含まれます。各ホットフィックスに付属の手順に従って、アップグレードの恩恵を受ける可能性のあるすべてのドライブにアップグレードが適用されるようにしてください。
+
+さらに、SG6260のドライブは、SANtricity を使用してlink:upgrading-drive-firmware-using-santricity-system-manager-online.html["SANtricity System Manager オンライン"]またはlink:upgrading-drive-firmware-using-santricity-system-manager-offline.html["SANtricity System Managerがオフラインです"]の手順でアップデートできます。
+
+
+NOTE: SGF6212アプライアンスの保守にSANtricity System Managerは必要ありません。
+
+
+
+== 一般的なメンテナンス手順
+
+を参照してください link:../commonhardware/index.html["一般的なメンテナンス手順"] ホットフィックスの適用、ノードまたはサイトのリカバリ、ネットワークのメンテナンスなど、すべてのアプライアンスで同じ手順。
+
+を参照してください link:../installconfig/configuring-hardware.html["アプライアンスハードウェアをセットアップする"] アプライアンスの初期インストールおよび設定時にも実行されるアプライアンスのメンテナンス手順。

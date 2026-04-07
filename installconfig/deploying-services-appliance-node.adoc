@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。すべてのサービスアプライアンスは、ゲートウェイノードと管理ノード\（プライマリまたは非プライマリ\）として同時に動作できます。 
 ---
-= サービスアプライアンスノードを導入する
+= StorageGRIDサービスアプライアンスノードを導入する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

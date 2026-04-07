@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remap appliance ports, network, internal to external port mapping 
 summary: 必要に応じて、アプライアンスノードの内部ポートを別の外部ポートに再マッピングできます。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。 
 ---
-= オプション：アプライアンスのネットワークポートの再マッピング
+= StorageGRID アプライアンスのネットワークポートを再マッピングする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

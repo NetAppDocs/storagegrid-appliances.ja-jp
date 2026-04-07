@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, independent, active-backup, active backup, management, management port, management ports 
 summary: 次の表を使用して、アプライアンスに接続する各ネットワークに必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。 
 ---
-= ネットワーク情報の収集（SG100およびSG1000）
+= SG100およびSG1000のネットワーク情報を収集する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,0 +1,67 @@
+---
+indexpage:
+  title: SG6200ストレージアプライアンスのハードウェアを保守する
+  summary: SG6200ストレージアプライアンスのハードウェアを保守します。
+  keywords: maintain storagegrid sg6200
+  lead: SG6200ストレージアプライアンスのハードウェアを保守します。
+  tiles:
+  - title: 頻繁に実行される手順
+    links:
+    - title: SANtricityのアップグレード
+      url: "../sg6200/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6260.html"
+    - title: ドライブ ファームウェアのアップグレード（SG6200 - 自動再起動方式）
+      url: "../sg6200/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: ドライブ ファームウェアのアップグレード（SG6200 - オンライン方式）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: ドライブ ファームウェアのアップグレード（SG6200 - オフライン方式）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 識別LEDのオン/オフ
+      url: "../sg6200/turning-sg6200-identify-led-on-and-off.html"
+    - title: データセンターにアプライアンスを配置します
+      url: "../sg6200/locating-sg6200-in-data-center.html"
+    - title: アプライアンスの電源のオン/オフ
+      url: "../sg6200/power-sg6200-off-on.html"
+    - title: リンク設定を変更します
+      url: "../sg6200/changing-link-configuration-of-sg6200-appliance.html"
+    - title: 交換するコンポーネントを確認します
+      url: "../sg6200/verify-component-to-replace.html"
+  - title: ラックの手順
+    links:
+    - title: SGF6212アプライアンスの交換
+      url: "../sg6200/replacing-sgf6212-appliance.html"
+    - title: SG6200-CNコントローラの交換（SG6260）
+      url: "../sg6200/replacing-sg6200-cn-controller.html"
+    - title: ストレージコントローラコントローラ（SG6260）を交換してください
+      url: "../sg6200/replace-controller-e4000-duplex.html"
+    - title: SGF6212またはSG6200-CNをラック内で移動します
+      url: "../sg6200/reinstalling-sg6200-into-cabinet-or-rack.html"
+  - title: ハードウェアの手順
+    links:
+    - title: カバーの交換（SGF6212またはSG6200-CN）
+      url: "../sg6200/reinstalling-sg6200-cover.html"
+    - title: 電源装置の交換（SGF6212またはSG6200-CN）
+      url: "../sg6200/replacing-one-or-more-power-supplies-in-sg6200-appliance.html"
+    - title: ストレージコントローラシェルフまたは拡張シェルフの電源を交換する（SG6260）
+      url: "../sg6200/replace-e4000-power-canister.html"
+    - title: SGF6212またはSG6200-CN（SG6260）のファンを交換
+      url: "../sg6200/replacing-fan-in-sg6200.html"
+    - title: ストレージコントローラシェルフまたは拡張シェルフのファンの交換（SG6260）
+      url: "../sg6200/replace-e4000-fan-canister.html"
+    - title: SGF6212のドライブを交換する
+      url: "../sg6200/replacing-drive-in-sgf6212.html"
+    - title: SG6200-CNのドライブを交換
+      url: "../sg6200/replace-drive-sg6200-cn.html"
+    - title: ストレージ コントローラ シェルフまたは拡張シェルフのドライブの交換（SG6260）
+      url: "../sg6200/replace-6260-drives-60.html"
+    - title: 内蔵NIC（SGF6212またはSG6200-CN）を交換
+      url: "../sg6200/replace-nic-in-sg6200.html"
+    - title: 外部NIC（SG6200-CN）の交換
+      url: "../sg6200/replace-ocp-nic-sg6200-cn.html"
+    - title: ストレージ コントローラ シェルフ（SG6260）のDIMMを交換します
+      url: "../sg6200/replace-dimms-e4000.html"
+    - title: ストレージコントローラシェルフ（SG6260）のバッテリを交換
+      url: "../sg6200/replace-battery-e4000.html"
+    - title: CMOSバッテリの交換（SGF6212またはSG6200-CN）
+      url: "../sg6200/replace-cmos-in-sg6200.html"
+    - title: 導入済みのSG6260に拡張シェルフを追加
+      url: "../sg6200/adding-expansion-shelf-to-deployed-sg6260.html"

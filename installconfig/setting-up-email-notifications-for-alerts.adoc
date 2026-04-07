@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: email, notifications, alerts, set up, setup, configure, configuration, bmc 
 summary: アラート発生時にEメール通知が送信されるようにするには、BMCインターフェイスを使用してSMTP設定、ユーザ、LANデスティネーション、アラートポリシー、およびイベントフィルタを設定します。 
 ---
-= BMCアラートのEメール通知を設定する
+= StorageGRID アプライアンスの BMC アラートに関する E メール通知を設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

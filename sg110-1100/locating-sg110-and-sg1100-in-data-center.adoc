@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、アプライアンスの場所を確認します。 
 ---
-= データセンターでSG110またはSG1100の場所を確認します。
+= データセンター内のSG110またはSG1100を特定します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

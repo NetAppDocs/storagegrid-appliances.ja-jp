@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
 summary: コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。 
 ---
-= SG100またはSG1000の識別LEDのオンとオフの切り替え
+= SG100またはSG1000の識別LEDをオン/オフします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。 
 ---
-= データセンターでのSG6000-CNコントローラの場所の確認
+= データセンター内のSG6000-CNコントローラを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

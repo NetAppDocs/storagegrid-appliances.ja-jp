@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg5800, sg5812, sg5860, storage appliance 
 summary: SG5800 StorageGRIDアプライアンスは、StorageGRIDグリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。アプライアンスは、アプライアンスストレージノードと仮想ストレージノードを組み合わせたハイブリッドグリッド環境で使用できます（ソフトウェアベース）。 
 ---
-= SG5800アプライアンス：概要
+= StorageGRID SG5800アプライアンス
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

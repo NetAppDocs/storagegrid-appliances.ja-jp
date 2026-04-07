@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing, installation 
 summary: SG6000-CN コントローラには、冗長性を確保するために電源装置が 2 つあります。いずれかの電源装置で障害が発生した場合は、コンピューティングコントローラの電源の冗長性を維持するために、できるだけ早く交換する必要があります。 
 ---
-= SG6000-CN コントローラの電源装置を交換します
+= SG6000-CNコントローラの電源装置を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

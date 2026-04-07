@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
 summary: 60ドライブシェルフをキャビネットまたはラックに設置したら、60本のドライブをすべてシェルフに取り付けます。E2860 コントローラシェルフには SSD ドライブが 2 本同梱されており、これらをコントローラシェルフ上段のドロワーに取り付ける必要があります。オプションの拡張シェルフには HDD ドライブが 60 本同梱されていますが、 SSD ドライブは同梱され 
 ---
-= ドライブの取り付け（SG6060）
+= SG6060ドライブシェルフにドライブを取り付けます
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

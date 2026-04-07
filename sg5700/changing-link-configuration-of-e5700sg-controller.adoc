@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: E5700SG コントローラのイーサネットリンク設定を変更できます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。 
 ---
-= E5700SG コントローラのリンク設定の変更
+= SG5700のE5700SGコントローラのリンク設定を変更します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -57,7 +57,7 @@ VLAN 設定を変更した場合は、アプライアンスのサブネットが
 アプライアンスが再起動してグリッドに再参加するまでに最大 20 分かかる場合があります。再起動が完了し、ノードがグリッドに再参加したことを確認するには:
 
 +
-... グリッド マネージャーで、*NODES* を選択します。
+... Grid Managerで、*Nodes*を選択します。
 ... アプライアンスノードが正常状態であることを確認します（緑色のチェックマークアイコンimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
 
 

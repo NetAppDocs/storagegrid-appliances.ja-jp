@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, sg5812, sg5860, install, cabinet, rack, rails, drives 
 summary: キャビネットまたはラックに一連のレールを取り付け、レールにアプライアンスをスライドさせます。SG5760を使用している場合は、アプライアンスを設置したあとにドライブを取り付けます。 
 ---
-= キャビネットまたはラックへの設置（SG5800）
+= SG5800をキャビネットまたはラックに設置します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

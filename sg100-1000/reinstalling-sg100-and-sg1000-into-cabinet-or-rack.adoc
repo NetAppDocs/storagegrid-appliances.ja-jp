@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, appliance, install, installing, installation, cabinet, rack, controller, remove, removing, removal 
 summary: ハードウェアのメンテナンスが完了したら、キャビネットまたはラックからSG100またはSG1000を取り外して上部カバーにアクセスしたり、アプライアンスを別の場所に移動したりします。 
 ---
-= キャビネットまたはラック内のSG100またはSG1000の移動
+= SG100またはSG1000をキャビネットまたはラックに再配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,7 +51,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060 ラック固定ネジ]
 . オプション：キャビネットまたはラックからアプライアンスを完全に取り外す場合は、レールキットの手順に従ってレールからアプライアンスを取り外します。
 
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。
 
 
 

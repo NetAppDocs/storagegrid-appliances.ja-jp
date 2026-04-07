@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= ストレージコントローラシェルフのDIMMの交換（SG6160）
+= SG6160ストレージコントローラシェルフのDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ DIMM を交換するには、コントローラのキャッシュサイズを確
 ** コントローラキャニスターに接続する各ケーブルを識別するためのラベル。
 ** SANtricityシステムマネージャへのアクセス：
 +
-*** Grid Managerで、* nodes *>*_appliance node_*>* SANtricity System Manager *を選択します。コントローラ情報はにあり https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]ます。
+*** Grid Managerから、*Nodes* > *_appliance node_* > *SANtricity System Manager*を選択します。コントローラ情報は https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricityの[System Manager]タブ"]にあります。
 *** 管理ステーションのブラウザで、コントローラのドメイン名またはIPアドレスを指定します。
 
 

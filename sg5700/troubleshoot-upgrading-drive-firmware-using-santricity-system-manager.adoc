@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, troubleshoot, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: SANtricity System Managerを使用してアプライアンスのドライブのファームウェアをアップグレードするときに発生する可能性があるエラーのトラブルシューティングを行います。 
 ---
-= ドライブファームウェアのアップグレードエラーのトラブルシューティング
+= SG5700 ドライブ ファームウェアのアップグレードエラーのトラブルシューティング
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

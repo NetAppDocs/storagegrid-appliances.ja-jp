@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
 summary: StorageGRID SG110サービスアプライアンスとSG1100サービスアプライアンスは、ゲートウェイノードおよび管理ノードとして動作でき、可用性の高いロードバランシングサービスをStorageGRIDシステムに提供します。両方のアプライアンスをゲートウェイノードとして使用し、管理ノード（プライマリノードまたは非プライマリノード）を同時に使用できます。 
 ---
-= SG110およびSG1100アプライアンス：概要
+= StorageGRID SG110およびSG1100アプライアンス
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,7 +72,7 @@ LEDの識別
  a| 
 * 青、点滅：キャビネットまたはラック内のアプライアンスを示します。
 * 青、点灯：キャビネットまたはラック内のアプライアンスを示します。
-* 消灯：キャビネットまたはラック内のアプライアンスを目視で識別できません。
+* オフ：キャビネットまたはラック内で、アプライアンスが目視で識別できません。
 
 
 |===

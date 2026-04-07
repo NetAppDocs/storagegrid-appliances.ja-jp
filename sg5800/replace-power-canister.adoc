@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace 60-drive power canister, replacing E4000 power canister, E4000, E-Series, eseries 
 summary: 電源の冗長性を確保するために電源キャニスターを 2 つ搭載した 60 ドライブのコントローラシェルフまたはドライブシェルフを交換します。 
 ---
-= SG5860の電源キャニスターの交換
+= SG5860の電源キャニスタを交換する
 :allow-uri-read: 
 :experimental: 
 :icons: font

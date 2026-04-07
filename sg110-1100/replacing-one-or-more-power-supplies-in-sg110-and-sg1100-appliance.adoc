@@ -71,4 +71,4 @@ image::../media/sg6000_cn_insert_power_supply.gif[電源装置をスライドさ
 . link:../installconfig/connecting-power-cords-and-applying-power.html["交換したユニットに電源コードを接続し、電源を投入"]。
 
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+部品を交換した後、キットに同梱されているRMA手順書に記載されているとおりに、故障した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["部品の返品と交換"^]ページを参照してください。

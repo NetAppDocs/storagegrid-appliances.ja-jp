@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: E4000ドライブを交換する前に、要件と考慮事項を確認してください。 
 ---
-= SG5800ドライブの交換の概要
+= SG5800ドライブ交換の要件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

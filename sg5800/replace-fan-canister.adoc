@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: E4000キャニスターのタイプと要件を確認します。 
 ---
-= SG5860のファンキャニスターの交換
+= SG5860のファンキャニスターを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

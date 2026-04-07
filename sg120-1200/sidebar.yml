@@ -1,0 +1,40 @@
+---
+section: sg120-1200
+title: SG120およびSG1200ハードウェアの保守
+url: "/landing-maintain-sg1200-120/index.html"
+entries:
+- title: 概要
+  pdf-filename: SG120およびSG1200のハードウェア保守
+  url: "/sg120-1200/index.html"
+- title: メンテナンス設定手順
+  pdf-filename: 保守構成手順 - SG120およびSG1200
+  entries:
+  - title: 識別LEDのオン/オフ
+    url: "/sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html"
+  - title: データセンターにアプライアンスを配置します
+    url: "/sg120-1200/locating-sg120-and-sg1200-in-data-center.html"
+  - title: アプライアンスの電源をオフにしてオンにします。
+    url: "/sg120-1200/power-sg120-and-sg1200-off-on.html"
+  - title: リンク設定を変更します
+    url: "/sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html"
+- title: ハードウェアのメンテナンス手順
+  pdf-filename: ハードウェア保守手順 - SG120 および SG1200
+  entries:
+  - title: 交換するコンポーネントを確認します
+    url: "/sg120-1200/verify-component-to-replace.html"
+  - title: 1つ以上の電源装置を交換します
+    url: "/sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html"
+  - title: ファンを交換します
+    url: "/sg120-1200/replacing-fan-in-sg120-and-sg1200.html"
+  - title: ドライブを交換します
+    url: "/sg120-1200/replacing-drive-in-sg120-and-sg1200.html"
+  - title: NICを交換してください
+    url: "/sg120-1200/replace-nic-in-sg120-and-sg1200.html"
+  - title: CMOSバッテリを交換してください
+    url: "/sg120-1200/replace-cmos-in-sg120-and-sg1200.html"
+  - title: カバーを交換します
+    url: "/sg120-1200/reinstalling-sg120-and-sg1200-cover.html"
+  - title: アプライアンスの交換
+    url: "/sg120-1200/replacing-sg120-and-sg1200-appliance.html"
+  - title: ラック内のアプライアンスの再配置
+    url: "/sg120-1200/reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html"

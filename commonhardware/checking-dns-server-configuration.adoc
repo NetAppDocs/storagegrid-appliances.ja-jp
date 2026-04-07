@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: DNS, server, servers, check, checking, change, changing, modify, modifying, modification 
 summary: このアプライアンスノードで現在使用されているDNSサーバを確認し、一時的に変更することができます。 
 ---
-= DNS サーバの設定を確認します
+= StorageGRID アプライアンスのDNSサーバー設定を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: ノードがリブートしてグリッドに再び参加すると、 Grid
 アプライアンスが再起動してグリッドに再参加するまでに最大 20 分かかる場合があります。再起動が完了し、ノードがグリッドに再参加したことを確認するには:
 
 +
-... グリッド マネージャーで、*NODES* を選択します。
+... Grid Managerで、*Nodes*を選択します。
 ... アプライアンスノードが正常状態であることを確認します（緑色のチェックマークアイコンimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, Replacing, replace, CMOS, battery 
 summary: この手順 を使用して、システム基板のCMOSコイン型電池を交換します。 
 ---
-= SG6000-CN CMOSバッテリの交換
+= SG6000-CN CMOSバッテリを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
 summary: SG6060およびSGF6024の場合は、キャビネットまたはラックにレールを取り付け、コントローラシェルフ、拡張シェルフ、およびコンピューティングコントローラをレールにスライドさせます。SG6060の場合は、シェルフを設置するまで各シェルフにドライブを取り付けないでください。 
 ---
-= キャビネットまたはラックへの設置（SG6000）
+= SG6000をキャビネットまたはラックに設置します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

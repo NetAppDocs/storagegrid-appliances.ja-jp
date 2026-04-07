@@ -2,9 +2,9 @@
 permalink: sg110-1100/power-sg110-and-sg1100-off-on.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
-summary: メンテナンスを実施するために、SGF6112アプライアンスをシャットダウンして電源を再度オンにすることができます。 
+summary: メンテナンスを実施するために、SG110またはSG1100アプライアンスをシャットダウンして電源を再度オンにすることができます。 
 ---
-= SG110またはSG1100の電源のオンとオフの切り替え
+= SG110またはSG1100の電源をオフにしてからオンにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

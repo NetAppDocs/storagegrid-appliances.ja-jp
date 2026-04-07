@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, mtu, test, testing 
 summary: 使用する StorageGRID ネットワークに、アプライアンスからアクセスできることを確認する必要があります。ネットワークゲートウェイ経由のルーティングを検証するには、 StorageGRID アプライアンスインストーラと異なるサブネット上の IP アドレスとの接続をテストする必要があります。MTU 設定を確認することもできます。 
 ---
-= ネットワーク接続を確認します
+= StorageGRID アプライアンスのネットワーク接続を確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: SG6000-CN コントローラのイーサネットリンク設定を変更することができます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。 
 ---
-= SG6000-CN コントローラのリンク設定を変更します
+= SG6000-CNコントローラのリンク構成を変更します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -57,7 +57,7 @@ link:../installconfig/setting-ip-configuration.html["StorageGRID IP アドレス
 アプライアンスが再起動してグリッドに再参加するまでに最大 20 分かかる場合があります。再起動が完了し、ノードがグリッドに再参加したことを確認するには:
 
 +
-... グリッド マネージャーで、*NODES* を選択します。
+... Grid Managerで、*Nodes*を選択します。
 ... アプライアンスノードが正常状態であることを確認します（緑色のチェックマークアイコンimage:../media/icon_alert_green_checkmark.png["緑のチェックマーク"]これは、アクティブなアラートがなく、ノードがグリッドに接続されていることを示します。
 
 

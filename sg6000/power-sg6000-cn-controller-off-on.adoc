@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, power off, turn off, shut off, shutdown, shut down, sg6000-cn, controller, power on, turn on, start 
 summary: メンテナンスを実施するために、SG6000-CNコントローラをシャットダウンして電源を再度オンにすることができます。 
 ---
-= SG6000-CNコントローラの電源のオンとオフの切り替え
+= SG6000-CNコントローラの電源をオフにしてからオンにします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
