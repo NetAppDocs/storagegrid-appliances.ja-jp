@@ -29,7 +29,7 @@ StorageGRIDアプライアンスで使用できるすべての暗号化方式に
 
 ConfigBuilderを使用してJSONファイルを生成する場合は、ノード暗号化を自動的に有効にすることができます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。
 
-さらに、ノード暗号化を有効にした後に FIPS モードを有効にすると、保存データの暗号化にNetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 モジュールが使用されます。参照 https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-tls-ssh-policy.html#select-a-security-policy["セキュリティポリシーを選択する"^]詳細についてはこちらをご覧ください。
+さらに、ノード暗号化を有効にした後に FIPS モードを有効にすると、NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 モジュールは、保存データの暗号化に使用されます。詳細については、 https://docs.netapp.com/us-en/storagegrid/admin/manage-tls-ssh-policy.html#select-a-security-policy["セキュリティポリシーを選択する"^]を参照してください。
 
 .作業を開始する前に
 に関する情報を確認します https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["KMSを設定しています"^]。
