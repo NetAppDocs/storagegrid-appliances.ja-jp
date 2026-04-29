@@ -83,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 電源制御ペー
 
 
 
-== SG6000-CN コントローラの電源をオンにして、動作を確認します
+== [[poweron]]SG6000-CNコントローラの電源をオンにして動作を確認
 
 メンテナンスが完了したら、コントローラの電源をオンにします。
 

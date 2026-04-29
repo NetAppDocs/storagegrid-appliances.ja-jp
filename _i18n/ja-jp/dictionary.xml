@@ -6586,4 +6586,5 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="2ba40bc143304c6482f4d84aed967cc7" category="sidebar">SG6200-CNコントローラ（SG6260）</block>
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">E4000 コントローラ（SG6260）</block>
   <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">さらに、ノード暗号化を有効にした後に FIPS モードを有効にすると、NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 モジュールは、保存データの暗号化に使用されます。詳細については、<block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]SG6000-CNコントローラの電源をオンにして動作を確認</block>
 </blocks>
