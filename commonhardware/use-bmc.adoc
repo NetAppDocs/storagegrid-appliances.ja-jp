@@ -36,11 +36,14 @@ BMCインターフェイスは、次のStorageGRIDアプライアンスモデル
 
 
 
+[[bmc-use-for-storagegrid-appliances]]
 == StorageGRIDアプライアンスでのBMCの使用
 
 サポートされているStorageGRIDアプライアンスで使用するBMCの手順は、次のとおりです。
 
 * link:../installconfig/accessing-bmc-interface.html["BMCのダッシュボードへのアクセス"]
+* https://docs.netapp.com/us-en/storagegrid/harden/hardening-guidelines-for-storagegrid-nodes.html#change-appliance-bmc-password["Grid Manager でアプライアンスの BMC パスワードを変更する"^]
+* https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings["BMC LAN IP設定の構成"^]
 * link:../installconfig/configuring-snmp-settings-for-bmc.html["BMC SNMPの設定"]
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["Eメールアラート通知の設定"]
 * ハードウェアの設置に関するトラブルシューティング：
@@ -77,6 +80,7 @@ BMCインターフェイスは、次のStorageGRIDアプライアンスモデル
 
 
 
+[[bmc-features-not-supported-for-storagegrid-appliances]]
 == BMCの機能はStorageGRIDアプライアンスでサポートされない
 
 次のBMC機能はStorageGRID固有の設定と競合するため、使用しないでください。

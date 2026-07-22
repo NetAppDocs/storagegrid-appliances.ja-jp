@@ -2,7 +2,7 @@
 permalink: sg6100/replace-nic-in-sgf6112.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
-summary: SGF6112が適切に機能していない場合や障害が発生した場合は、SGF6112のネットワークインターフェイスカード\（NIC\）の交換が必要になることがあります。 
+summary: SGF6112のネットワークインターフェースカード（NIC）が最適に機能していない場合、または故障している場合は、NICを交換する必要があります。 
 ---
 = SGF6112またはSG6100-CNの内蔵NICを交換します
 :allow-uri-read: 
@@ -21,6 +21,7 @@ SGF6112またはSG6100-CNが最適に機能しない場合や障害が発生し�
 
 
 
+[[remove-the-internal-nic]]
 == 内蔵NICを取り外します。
 
 .作業を開始する前に
@@ -118,6 +119,7 @@ image::../media/one-slot-assembly-sgf6112.png[1スロットライザーアセン
 
 
 
+[[reinstall-the-internal-nic]]
 == 内蔵NICを取り付け直します。
 
 取り外したNICと同じ場所に交換用NICを取り付けます。

@@ -15,6 +15,7 @@ summary: 設置作業で問題が発生した場合は、ハードウェアの�
 
 
 
+[[view-boot-codesview-boot-up-codes-sgf6112-and-sg6160-only]]
 == [view-boot-codes]]ブート時のコードの表示（SGF6112およびSG6160のみ）
 
 アプライアンスに電源を投入すると、 BMC に一連のブート時コードが記録されます。BMC 管理ポートに接続されているグラフィカルコンソールでこれらのコードを確認できます。
@@ -188,6 +189,7 @@ StorageGRID が実行されています。
 
 
 
+[[view-error-codesview-error-codes-sgf6112-and-sg6160-only]]
 == [[view-error-codes]]エラーコードを表示する（SGF6112およびSG6160のみ）
 
 アプライアンスのブート時にハードウェアエラーが発生すると、BMCにエラーコードが記録されます。必要に応じて、アプライアンスのシリアルポートを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題を解決できます。
@@ -560,6 +562,8 @@ MRC ： ERR_interleave_failure
 
 
 
+[[hardware-setup-appears-to-hang]]
+[[hardware-setup-hangs]]
 == ハードウェアのセットアップがハングしたように見えます
 
 ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。
@@ -571,10 +575,12 @@ MRC ： ERR_interleave_failure
 
 
 
+[[connection-issues]]
 == セツソクノモンタイ
 
 
 
+[[expansion-shelves-dont-appear-in-appliance-installer-sg6160]]
 === 拡張シェルフがアプライアンスインストーラに表示されない（SG6160）
 
 設置済みの拡張シェルフがStorageGRIDアプライアンスインストーラに表示されない場合は、シェルフの設置が完了し、電源がオンになっていることを確認する必要があります。
@@ -599,6 +605,7 @@ StorageGRID アプライアンスインストーラのページに拡張シェ�
 
 
 
+[[unable-to-connect-to-appliance]]
 === アプライアンスに接続できません
 
 ストレージアプライアンスに接続できない場合は、ネットワーク問題があるか、ハードウェアの設置が正常に完了していない可能性があります。

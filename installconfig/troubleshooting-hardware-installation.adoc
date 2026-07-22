@@ -15,6 +15,8 @@ summary: 設置作業で問題が発生した場合は、ハードウェアの�
 
 
 
+[[view-boot-up-codes-sg6000-cn-controller]]
+[[view-boot-codes]]
 == ブート時のコードの表示（SG6000-CNコントローラ）
 
 アプライアンスの電源を入れると、 BMC は SG6000-CN コントローラの一連のブート時のコードを記録します。これらのコードはいくつかの方法で確認できます。
@@ -188,6 +190,8 @@ StorageGRID が実行されています。
 
 
 
+[[view-error-codes-sg6000-cn-controller]]
+[[error-codes]]
 == エラーコードの確認（SG6000-CNコントローラ）
 
 SG6000-CN コントローラのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて、BMCインターフェイスまたはアプライアンスのシリアルポートを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題を解決できます。
@@ -584,6 +588,8 @@ MRC ： ERR_interleave_failure
 
 
 
+[[hardware-setup-appears-to-hang-sg6000-or-sg5700]]
+[[hardware-setup-hangs]]
 == ハードウェアのセットアップがハングしたように見える（SG6000またはSG5700）
 
 ハードウェア障害やケーブル接続エラーによってストレージコントローラまたはアプライアンスコントローラのブート処理が完了しなかった場合は、StorageGRID アプライアンスインストーラを使用できないことがあります。
@@ -647,12 +653,15 @@ https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2
 ====
 
 
+[[connection-issues-sg5700-or-sg6000]]
+[[connection-issues]]
 == 接続の問題（SG5700またはSG6000）
 
 StorageGRID アプライアンスのインストール時に接続の問題が発生した場合は、以下に記載する対処策を実施する必要があります。
 
 
 
+[[unable-to-connect-to-sg6000-appliance]]
 === SG6000アプライアンスに接続できません
 
 アプライアンスに接続できない場合は、ネットワーク問題 があるか、ハードウェアの設置が正常に完了していない可能性があります。
@@ -703,6 +712,7 @@ SANtricity System Manager のログインページが表示されます。
 
 
 
+[[sg6060-expansion-shelves-dont-appear-in-appliance-installer]]
 === SG6060拡張シェルフはアプライアンスインストーラに表示されません
 
 SG6060に設置済みの拡張シェルフがStorageGRID アプライアンスインストーラに表示されない場合は、シェルフが完全に設置され、電源がオンになっていることを確認する必要があります。
@@ -729,6 +739,7 @@ StorageGRID アプライアンスインストーラのページに拡張シェ�
 
 
 
+[[unable-to-connect-to-sg5700-appliance]]
 === SG5700アフライアンスニセツソクテキナイ
 
 アプライアンスに接続できない場合は、ネットワーク問題 があるか、ハードウェアの設置が正常に完了していない可能性があります。
@@ -778,6 +789,8 @@ SANtricity System Manager のログインページが表示されます。
 
 
 
+[[he-error-error-synchronizing-with-santricity-os-software-sg5700]]
+[[he-error]]
 == HEエラー：SANtricity OSソフトウェアとの同期エラー（SG5700）
 
 StorageGRID アプライアンスインストーラがSANtricity OSソフトウェアと同期できない場合、コンピューティングコントローラのデジタル表示ディスプレイにHEエラーコードが表示されます。

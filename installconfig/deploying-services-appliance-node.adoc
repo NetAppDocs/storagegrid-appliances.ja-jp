@@ -2,7 +2,7 @@
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
-summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。すべてのサービスアプライアンスは、ゲートウェイノードと管理ノード\（プライマリまたは非プライマリ\）として同時に動作できます。 
+summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。すべてのサービスアプライアンスは、ゲートウェイノードと管理ノード（プライマリまたは非プライマリ）として同時に動作できます。 
 ---
 = StorageGRIDサービスアプライアンスノードを導入する
 :allow-uri-read: 
@@ -15,6 +15,7 @@ summary: サービスアプライアンスは、プライマリ管理ノード�
 
 
 
+[[deploy-services-appliance-as-primary-admin-node]]
 == サービスアプライアンスをプライマリ管理ノードとして導入する
 
 サービスアプライアンスをプライマリ管理ノードとして導入する場合は、アプライアンスに組み込みの StorageGRID アプライアンスインストーラを使用して StorageGRID ソフトウェアをインストールするか、インストールするソフトウェアバージョンをアップロードします。プライマリ管理ノードは、他のタイプのアプライアンスノードをインストールする前にインストールして設定する必要があります。プライマリ管理ノードは、グリッドネットワーク、およびオプションの管理ネットワークとクライアントネットワーク（いずれかまたは両方が設定されている場合）に接続できます。
@@ -79,6 +80,7 @@ NOTE: モニタのインストールページに手動でアクセスする必�
 
 
 
+[[deploy-services-appliance-as-gateway-or-non-primary-admin-node]]
 == ゲートウェイノードまたは非プライマリ管理ノードとしてサービスアプライアンスを導入する
 
 サービスアプライアンスをゲートウェイノードまたは非プライマリ管理ノードとして導入する場合は、アプライアンスに搭載されている StorageGRID アプライアンスインストーラを使用します。

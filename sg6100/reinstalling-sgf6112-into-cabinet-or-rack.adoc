@@ -15,6 +15,8 @@ summary: SGF6112をキャビネットまたはラックから取り外して上�
 
 
 
+[[remove-sgf6112-or-sg6100-cn-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == キャビネットまたはラックからのSGF6112またはSG6100-CNの取り外し
 
 .作業を開始する前に
@@ -50,6 +52,7 @@ image::../media/sg6060_rack_retaining_screws.png[SGF6112またはSG6100-CNのラ
 
 
 
+[[reinstall-sgf6112-or-sg6100-cn-into-cabinet-or-rack]]
 == キャビネットまたはラックへのSGF6112またはSG6100-CNの再取り付け
 
 .作業を開始する前に

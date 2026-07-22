@@ -23,6 +23,7 @@ image::../media/SGF6112-battery-cmos.png[CMOSバッテリクリップ]
 
 
 
+[[reinstall-the-cmos-battery]]
 == CMOSバッテリを取り付け直します
 
 交換用CMOSバッテリをシステム基板のソケットに取り付けます。

@@ -69,8 +69,10 @@ indexpage:
       url: "/landing-maintain-sg6200/index.html"
   - title: StorageGRID ソフトウェア
     links:
-    - title: StorageGRID 12.0 ドキュメント
+    - title: StorageGRID 12.1 ドキュメント
       url: https://docs.netapp.com/us-en/storagegrid/index.html
+    - title: StorageGRID 12.0 ドキュメント
+      url: https://docs.netapp.com/us-en/storagegrid-120/index.html
     - title: StorageGRID 11.9ドキュメント
       url: https://docs.netapp.com/us-en/storagegrid-119/index.html
     - title: StorageGRID 11.8ドキュメント

@@ -4,6 +4,7 @@
 
 
 
+[[step-1-remove-the-nic]]
 == ステップ1：NICを取り外す
 
 [role="tabbed-block"]
@@ -48,6 +49,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["ライザーアセン�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == ステップ2：内蔵NICを再インストールする
 
 取り外したNICと同じ場所に交換用NICを取り付けます。

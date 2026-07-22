@@ -2,7 +2,7 @@
 permalink: sg110-1100/replace-nic-in-sg110-and-sg1100.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, admin node, admin appliance, replacing, replace, NIC, network interface card 
-summary: SG110またはSG1100が適切に機能していない場合や障害が発生した場合は、そのNICの交換が必要になることがあります。 
+summary: SG110またはSG1100が適切に機能しない場合や障害が発生した場合は、そのNICの交換が必要になることがあります。 
 ---
 = SG110またはSG1100のNICを交換する
 :allow-uri-read: 
@@ -21,6 +21,7 @@ SG110またはSG1100が適切に機能しない場合や障害が発生した場
 
 
 
+[[remove-the-nic]]
 == NICを取り外します
 
 .作業を開始する前に
@@ -115,6 +116,7 @@ image::../media/one-slot-assembly-sgf6112.png[1スロットライザーアセン
 
 
 
+[[reinstall-the-internal-nic]]
 == 内蔵NICを取り付け直します。
 
 取り外したNICと同じ場所に交換用NICを取り付けます。

@@ -36,6 +36,7 @@ StorageGRID Grid Managerはアプライアンスのステータスを監視し�
 
 
 
+[[step-1-prepare-to-replace-drive]]
 == 手順 1 ：ドライブを交換する準備をします
 
 ドライブを交換する準備として、 SANtricity System Manager の Recovery Guru を確認し、前提となる手順を完了します。その後、障害が発生したコンポーネントを特定できます。
@@ -75,6 +76,7 @@ StorageGRID Grid Managerはアプライアンスのステータスを監視し�
 
 
 
+[[step-2-remove-failed-drive]]
 == 手順 2 ：障害が発生したドライブを取り外す
 
 新しいドライブに交換するために、障害が発生したドライブを取り外します。
@@ -103,6 +105,7 @@ NOTE: アクティブなドライブを誤って取り外した場合は、少�
 
 
 
+[[step-3-install-new-drive]]
 == 手順 3 ：新しいドライブを取り付ける
 
 障害が発生したドライブの代わりに、新しいドライブを取り付けます。
@@ -129,6 +132,7 @@ CAUTION: * データアクセスが失われる可能性 * - ドライブドロ�
 
 
 
+[[step-4-complete-drive-replacement]]
 == 手順 4 ：ドライブの交換後の処理
 
 新しいドライブが正しく動作していることを確認します。

@@ -15,6 +15,7 @@ StorageGRID アプライアンスを設置する前に、必要な追加機器�
 
 
 
+[[all-appliances]]
 == すべてのアプライアンス
 
 すべてのアプライアンスを設置および設定するには、次の機器が必要です。
@@ -53,6 +54,7 @@ NOTE: 一部のポートでは 10/100 イーサネット速度がサポートさ
 
 
 
+[[appliance-specific-equipment-and-tools]]
 == アプライアンス固有の機器とツール
 
 [role="tabbed-block"]

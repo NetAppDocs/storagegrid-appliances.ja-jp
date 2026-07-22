@@ -80,6 +80,7 @@ image::../media/one-slot-assembly-sgf6112.png[1スロットライザーアセン
 
 
 
+[[reinstall-the-internal-nic]]
 == 内蔵NICを取り付け直します。
 
 取り外したNICと同じ場所に交換用NICを取り付けます。

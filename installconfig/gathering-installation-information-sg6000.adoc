@@ -18,6 +18,7 @@ TIP: 表を使用する代わりに、ConfigBuilderに付属のワークブッ�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-storage-controllers]]
 == ストレージコントローラの SANtricity System Manager に接続するために必要な情報
 
 アプライアンスの両方のストレージコントローラ（E2800シリーズコントローラまたはEF570コントローラ）を、SANtricity System Managerで使用する管理ネットワークに接続します。コントローラは次のように各アプライアンスに配置されています。
@@ -122,6 +123,7 @@ IP アドレスの形式
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-admin-network]]
 == SG6000-CNコントローラを管理ネットワークに接続するために必要な情報
 
 StorageGRID の管理ネットワークは、システムの管理とメンテナンスに使用するオプションのネットワークです。アプライアンスは、 SG6000-CN コントローラの次の 1GbE 管理ポートを使用して管理ネットワークに接続します。
@@ -204,6 +206,7 @@ DHCP によって割り当てられた管理ネットワークポートの IP �
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg6000-cn-controller]]
 == SG6000-CNコントローラの10 / 25GbEポートの接続と設定に必要な情報
 
 SG6000-CN コントローラの 4 つの 10 / 25GbE ポートは、 StorageGRID のグリッドネットワーク、およびオプションのクライアントネットワークに接続します。
@@ -261,6 +264,7 @@ SG6000-CN コントローラの 4 つの 10 / 25GbE ポートは、 StorageGRID 
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-grid-network]]
 == SG6000-CNコントローラをグリッドネットワークに接続するために必要な情報
 
 StorageGRID のグリッドネットワークは、内部のすべての StorageGRID トラフィックに使用される必須のネットワークです。アプライアンスは、 SG6000-CN コントローラの 10 / 25GbE ポートを使用してグリッドネットワークに接続します。
@@ -326,6 +330,7 @@ VLANタグ（VLANタギングが有効な場合）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-client-network]]
 == SG6000-CNコントローラをクライアントネットワークに接続するために必要な情報
 
 StorageGRID のクライアントネットワークは、一般にグリッドへのクライアントプロトコルアクセスを可能にするために使用する、オプションのネットワークです。アプライアンスは、 SG6000-CN コントローラの 10 / 25GbE ポートを使用してクライアントネットワークに接続します。
@@ -396,6 +401,7 @@ VLANタグ（VLANタギングが有効な場合）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-bmc-management-network]]
 == SG6000-CN コントローラを BMC 管理ネットワークに接続するために必要な情報
 
 SG6000-CN コントローラの BMC インターフェイスには、次の 1GbE 管理ポートを使用してアクセスできます。このポートは、 Intelligent Platform Management Interface （ IPMI ）標準を使用した、イーサネット経由でのコントローラハードウェアのリモート管理をサポートします。
@@ -437,12 +443,14 @@ BMC 管理ポートに使用する静的 IP アドレス
 |===
 
 
+[[port-bond-modes]]
 == ポートボンディングモード
 
 いつ link:configuring-network-links.html["ネットワークリンクを設定しています"] SG6000-CNコントローラでは、グリッドネットワークとオプションのクライアントネットワークに接続する10 / 25GbEポート、およびオプションの管理ネットワークに接続する1GbE管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。
 
 
 
+[[network-bond-modes-for-1025-gbe-ports]]
 === 10 / 25GbE ポートのネットワークボンディングモード
 
 SG6000-CN コントローラの 10 / 25GbE ネットワークポートは、グリッドネットワークおよびクライアントネットワーク接続用に、 Fixed または Aggregate のポートボンディングモードをサポートします。
@@ -518,6 +526,7 @@ NOTE: 4 つのポート全部を使用しない場合は、 StorageGRID をイ�
 
 
 
+[[network-bond-modes-for-1-gbe-management-ports]]
 === 1GbE 管理ポートのネットワークボンディングモード
 
 SG6000-CN コントローラの 2 つの 1GbE 管理ポートでは、独立したネットワークボンディングモードまたは Active-Backup ネットワークボンディングモードを選択してオプションの管理ネットワークに接続できます。

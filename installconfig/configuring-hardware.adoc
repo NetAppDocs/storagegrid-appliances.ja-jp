@@ -15,10 +15,12 @@ summary: アプライアンスの電源を入れたら、StorageGRID で使用�
 
 
 
+[[required-hardware-configurations]]
 == 必要なハードウェア構成
 
 
 
+[[network-connections]]
 === ネットワーク接続
 
 すべてのアプライアンスについて、必要なネットワーク接続を設定し、確認する必要があります：
@@ -30,6 +32,7 @@ summary: アプライアンスの電源を入れたら、StorageGRID で使用�
 
 
 
+[[bmc-interface]]
 === BMCインターフェイス
 
 次のいずれかのアプライアンスを設置する場合は、link:../installconfig/configuring-bmc-interface.html["ベースボード管理コントローラ（BMC）インターフェイスを設定します"]必要があります：
@@ -54,10 +57,12 @@ BMCで使用できる機能の詳細については、link:../commonhardware/use
 
 
 
+[[optional-hardware-configurations]]
 == オプションのハードウェア構成
 
 
 
+[[santricity-system-manager]]
 === SANtricity システムマネージャ
 
 次のいずれかのアプライアンスをお持ちの場合、link:../installconfig/accessing-and-configuring-santricity-system-manager.html["SANtricity System Managerを設定する"]できます：
@@ -81,12 +86,14 @@ SANtricity System Managerソフトウェアを使用すると、次のことが�
 
 
 
+[[enable-node-or-drive-encryption]]
 === ノードまたはドライブの暗号化を有効にする
 
 link:../installconfig/optional-enabling-node-encryption.html["ノードまたはドライブの暗号化を有効にする"]を使用して、アプライアンス内のドライブとディスクを保護できます。
 
 
 
+[[change-raid-mode]]
 === RAIDモードを変更する
 
 link:../installconfig/optional-changing-raid-mode.html["ストレージアプライアンスのRAIDモードを変更する"]ストレージとリカバリのニーズに対応できます。
@@ -103,6 +110,7 @@ link:../installconfig/optional-changing-raid-mode.html["ストレージアプラ
 
 
 
+[[remap-network-ports]]
 === ネットワークポートを再マッピングします
 
 link:../installconfig/optional-remapping-network-ports-for-appliance.html["アプライアンスのネットワーク ポートを再マッピングする"]を使用してネットワーク接続を最適化できます。

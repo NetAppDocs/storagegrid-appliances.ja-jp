@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-storagegrid-appliance-installer.html 
 sidebar: sidebar 
 keywords: appliance installer, installer, access, accessing, start, starting 
-summary: インストーラのバージョンを確認し、アプライアンスと 3 つの StorageGRID ネットワーク（グリッドネットワーク、管理ネットワーク、（オプション \ ）、クライアントネットワーク（オプション \ ））の間の接続を設定するには、 StorageGRID アプライアンスインストーラにアクセスする必要があります。 
+summary: StorageGRID Appliance Installer にアクセスして、インストーラーのバージョンを確認し、アプライアンスと 3 つの StorageGRID ネットワーク（グリッドネットワーク、管理ネットワーク（オプション）、およびクライアントネットワーク（オプション））間の接続を設定する必要があります。 
 ---
 = StorageGRID アプライアンスインストーラへのアクセス
 :allow-uri-read: 

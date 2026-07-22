@@ -15,6 +15,7 @@ StorageGRID システムのメンテナンスには、次の手順を使用し�
 
 
 
+[[about-these-instructions]]
 == これらの手順について
 
 ここでは、ソフトウェアホットフィックスの適用、グリッドノードのリカバリ、障害が発生したサイトのリカバリ、グリッドノードまたはサイト全体の運用停止、ネットワークメンテナンスの実行、ホストレベルおよびミドルウェアのメンテナンス手順の実行、グリッドノードの手順の実行など、すべてのノードに共通の手順について説明します。
@@ -24,6 +25,7 @@ NOTE: ここで説明する「Linux」とは、Red Hat®Enterprise Linux®、Ubu
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * StorageGRID システムを幅広く理解している。
@@ -34,6 +36,7 @@ NOTE: ここで説明する「Linux」とは、Red Hat®Enterprise Linux®、Ubu
 
 
 
+[[maintenance-procedures-for-appliances]]
 == アプライアンスのメンテナンス手順
 
 StorageGRID アプライアンスのタイプごとに固有のメンテナンス手順については、アプライアンスのメンテナンスセクションを参照してください。

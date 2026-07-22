@@ -31,11 +31,12 @@ NetApp StorageGRID ツールを使用すると、StorageGRID アプライアン�
 
 
 
+[[automation-options]]
 == 自動化オプション
 
 アプライアンスのインストールと設定を自動化するには、次のオプションを1つ以上使用します。
 
-* 設定の詳細を含むJSONファイルを生成します。を使用するには、ネットアッププロフェッショナルサービスのコンサルタントにご相談ください link:https://configbuilder.netapp.com/index.aspx["NetApp ConfigBuilderツール"^] 次の手順を実行します。
+* 構成の詳細を含むJSONファイルを生成します。NetApp Professional Servicesのコンサルタントと協力してlink:https://configbuilder.netapp.com/Index.aspx["NetApp ConfigBuilderツール"^]（ログインが必要です）を使用し、これらの手順を完了します：
 +
 .. 受注確認番号については、NetAppプロフェッショナルサービスにお問い合わせください。
 .. ConfigBuilderからワークブックを入手する。
@@ -69,6 +70,8 @@ NOTE: Python スクリプトを StorageGRID 自動化で直接使用すること
 
 
 
+[[automate-appliance-configuration-using-storagegrid-appliance-installer]]
+[[automate-with-appliance-installer]]
 == StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する
 
 JSONファイルを生成したら、StorageGRID アプライアンスインストーラを使用してJSONファイルをアップロードすることで、1つ以上のアプライアンスの設定を自動化できます。
@@ -109,6 +112,8 @@ NOTE: ファイルが有効でない場合、ファイル名は赤色で表示�
 
 
 
+[[automate-appliance-installation-and-configuration-using-configure-sga-py-script]]
+[[automate-with-configure-sga-py-script]]
 == configure-sga.pyスクリプトを使用して、アプライアンスのインストールと設定を自動化します
 
 上級ユーザは、を使用できます `configure-sga.py` プライマリ管理ノードのインストールや設定など、StorageGRID アプライアンスノードのインストールタスクや設定タスクの多くを自動化するスクリプトです。このスクリプトは、設定するアプライアンスが多数ある場合に役立ちます。

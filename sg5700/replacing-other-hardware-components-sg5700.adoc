@@ -25,6 +25,7 @@ E2800コントローラのバッテリを交換するには、次の手順を参
 
 
 
+[[sg5712-component-replacement-instructions]]
 == SG5712 コンポーネントの交換手順
 
 [cols="1a,3a"]
@@ -47,6 +48,7 @@ link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supe
 |===
 
 
+[[sg5760-component-replacement-instructions]]
 == SG5760 のコンポーネントの交換手順
 
 [cols="1a,3a"]

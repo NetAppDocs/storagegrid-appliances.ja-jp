@@ -15,6 +15,7 @@ summary: メンテナンスのためにアプライアンスのカバーを取�
 
 
 
+[[step-1-remove-cover]]
 == ステップ1：カバーを外す
 
 .手順
@@ -31,6 +32,7 @@ image:../media/drw_s2025_cover_replace_ieops-2559.svg["機器カバーのロッ�
 
 
 
+[[step-2-reinstall-cover]]
 == 手順2：カバーを再度取り付ける
 
 .手順

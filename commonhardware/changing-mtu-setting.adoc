@@ -26,6 +26,7 @@ NOTE: ネットワークのパフォーマンスを最大限に高めるには�
 
 
 
+[[change-the-mtu-setting-using-the-change-ip-tool]]
 == IP 変更ツールを使用して MTU 設定を変更します
 
 .作業を開始する前に
@@ -36,6 +37,7 @@ IP変更ツールにアクセスし、MTU設定を更新します（を参照）
 
 
 
+[[change-the-mtu-setting-using-maintenance-mode]]
 == メンテナンスモードを使用して MTU 設定を変更します
 
 IP 変更ツールでこれらの設定にアクセスできない場合は、メンテナンスモードを使用して MTU 設定を変更してください。

@@ -2,7 +2,7 @@
 permalink: sg6200/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6260.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6260, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
-summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているストレージコントローラの場合、アップグレードを適用するにはメンテナンスモードの手順 を使用する必要があります。 
+summary: 08.42.20.00 （ 11.42 ）より前の SANtricity OS を使用しているストレージコントローラの場合、メンテナンスモード手順 を使用してアップグレードを適用する必要があります。 
 ---
 = メンテナンス モードを使用した SG6260 ストレージ コントローラでの SANtricity OS のアップグレード
 :allow-uri-read: 

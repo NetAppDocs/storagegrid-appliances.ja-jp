@@ -2,7 +2,7 @@
 permalink: installconfig/overview-of-installation-rest-apis.html 
 sidebar: sidebar 
 keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
-summary: StorageGRID には、インストールタスクを実行するための REST API として、 StorageGRID インストール API と StorageGRID アプライアンスインストーラ API の 2 つが用意されています。 
+summary: StorageGRID は、インストールタスクを実行するための 2 つの REST API を提供します。StorageGRID インストール API と StorageGRID アプライアンスインストーラー API です。 
 ---
 = StorageGRIDインストールREST API
 :allow-uri-read: 
@@ -22,6 +22,7 @@ CAUTION: API Docs Web ページを使用して実行する API 処理はすべ�
 
 
 
+[[storagegrid-installation-api]]
 == StorageGRID インストール API
 
 StorageGRID インストールAPIは、StorageGRID システムを最初に設定するとき、およびプライマリ管理ノードのリカバリを実行する必要がある場合にのみ使用できます。インストール API には、 Grid Manager から HTTPS 経由でアクセスできます。
@@ -37,10 +38,12 @@ StorageGRID インストール API には次のセクションがあります。
 * * recovery *：プライマリ管理ノードのリカバリ処理。情報のリセット、リカバリパッケージのアップロード、リカバリの開始、およびリカバリ処理のステータスの表示を行うことができます。
 * * recovery-package *：リカバリパッケージをダウンロードする処理。
 * * sites *：サイトレベルの設定操作。サイトを作成、表示、削除、および変更できます。
+* *temporary-password*: インストール中に mgmt-api を保護するための一時パスワードに対する操作。
 
 
 
 
+[[storagegrid-appliance-installer-api]]
 == StorageGRID アプライアンスインストーラ API
 
 StorageGRID アプライアンスインストーラAPIには、からHTTPS経由でアクセスできます `_Controller_IP_:8443`。

@@ -15,6 +15,7 @@ Fibre Channel HBAが適切に機能しない場合や障害が発生した場合
 
 
 
+[[verify-fibre-channel-hba-to-replace]]
 == 交換するファイバチャネル HBA を確認します
 
 交換する Fibre Channel Host Bus Adapter （ HBA ；ホストバスアダプタ）が不明な場合は、この手順 を確認してください。
@@ -52,6 +53,7 @@ image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[ファイ�
 
 
 
+[[remove-fibre-channel-hba]]
 == ファイバチャネル HBA を取り外します
 
 SG6000-CN コントローラが適切に機能しない場合や障害が発生した場合は、 SG6000-CN コントローラの Fibre Channel Host Bus Adapter （ HBA ；ホストバスアダプタ）の交換が必要となることがあります。
@@ -100,6 +102,7 @@ link:reinstalling-fibre-channel-hba.html["交換用ファイバチャネルHBA�
 
 
 
+[[reinstall-fibre-channel-hba]]
 == Fibre Channel HBA を再度取り付けます
 
 交換用のファイバチャネル HBA は、取り外した HBA と同じ場所に取り付けます。

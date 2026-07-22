@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5700.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 次の表を使用して、アプライアンスに接続する各ネットワークに必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。 
 ---
 = SG5700のネットワーク情報を収集する
@@ -18,6 +18,7 @@ TIP: 表を使用する代わりに、ConfigBuilderに付属のワークブッ�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e2800-controller]]
 == E2800 コントローラの SANtricity System Manager に接続するために必要な情報
 
 E2800シリーズコントローラは、SANtricity System Managerで使用する管理ネットワークに接続します。
@@ -90,6 +91,7 @@ IPv6の場合：
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-admin-network]]
 == E5700SG コントローラを管理ネットワークに接続するために必要な情報
 
 StorageGRID の管理ネットワークは、システムの管理とメンテナンスに使用するオプションのネットワークです。アプライアンスは、 E5700SG コントローラの 1GbE 管理ポートを使用して管理ネットワークに接続しています。
@@ -162,6 +164,7 @@ DHCP によって管理ポート 1 に割り当てられた IP アドレス（�
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-e5700sg-controller]]
 == E5700SG コントローラの 10 / 25GbE ポートの接続と設定に必要な情報
 
 E5700SG コントローラの 4 つの 10 / 25GbE ポートは、 StorageGRID のグリッドネットワークおよびクライアントネットワークに接続しています。
@@ -223,6 +226,7 @@ NOTE: を参照してください link:gathering-installation-information-sg5700
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-grid-network]]
 == E5700SG コントローラをグリッドネットワークに接続するために必要な情報
 
 StorageGRID のグリッドネットワークは、内部のすべての StorageGRID トラフィックに使用される必須のネットワークです。アプライアンスは、 E5700SG コントローラの 10 / 25GbE ポートを使用してグリッドネットワークに接続しています。
@@ -295,6 +299,7 @@ VLANタグ（VLANタギングが有効な場合）
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-client-network]]
 == E5700SG コントローラをクライアントネットワークに接続するために必要な情報
 
 StorageGRID のクライアントネットワークは、一般にグリッドへのクライアントプロトコルアクセスを可能にするために使用する、オプションのネットワークです。アプライアンスは、 E5700SG コントローラの 10 / 25GbE ポートを使用してクライアントネットワークに接続しています。
@@ -370,12 +375,14 @@ VLAN タグ
 |===
 
 
+[[port-bond-modes]]
 == ポートボンディングモード
 
 いつ link:configuring-network-links.html["ネットワークリンクを設定しています"] E5700SGコントローラでは、グリッドネットワークとオプションのクライアントネットワークに接続する10 / 25GbEポート、およびオプションの管理ネットワークに接続する1GbE管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。
 
 
 
+[[network-bond-modes-for-1025-gbe-ports]]
 === 10 / 25GbE ポートのネットワークボンディングモード
 
 E5700SG コントローラの 10 / 25GbE ネットワークポートは、グリッドネットワークおよびクライアントネットワーク接続用に、 Fixed または Aggregate のポートボンディングモードをサポートしています。
@@ -449,6 +456,7 @@ NOTE: 4 つのポート全部を使用しない場合は、 StorageGRID をイ�
 
 
 
+[[network-bond-modes-for-1-gbe-management-ports]]
 === 1GbE 管理ポートのネットワークボンディングモード
 
 E5700SG コントローラの 2 つの 1GbE 管理ポートでは、 Independent ネットワークボンディングモードまたは Active-Backup ネットワークボンディングモードを選択してオプションの管理ネットワークに接続できます。

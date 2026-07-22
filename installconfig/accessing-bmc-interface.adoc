@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, access, open, login 
-summary: 次のアプライアンスモデルでは、BMC管理ポートのDHCPまたは静的IPアドレスを使用してBMCインターフェイスにアクセスできます。  
+summary: 一部のアプライアンスモデルでは、BMC管理ポートのDHCPまたは静的IPアドレスを使用してBMCインターフェイスにアクセスできます。 
 ---
 = StorageGRID アプライアンスの BMC インターフェイスにアクセスします
 :allow-uri-read: 

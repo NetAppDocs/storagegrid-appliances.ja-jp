@@ -2,7 +2,7 @@
 permalink: sg6200/replace-nic-in-sg6200.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6200, storage node, storage appliance, Replacing, replace, NIC, network interface card 
-summary: SGF6212のネットワークインターフェースカード（NIC）が最適に機能していない場合、または故障している場合は、交換する必要があるかもしれません。 
+summary: SGF6212のネットワークインターフェースカード（NIC）が最適に機能していない場合、または故障している場合は、NICを交換する必要があります。 
 ---
 = SGF6212またはSG6200-CNの内蔵NICを交換します
 :allow-uri-read: 
@@ -34,10 +34,47 @@ NOTE: ラックからアプライアンスを取り外す前に、link:power-sg6
 +
 image:../media/drw_s2025_io_numbers_ieops-2554.svg["アプライアンス内のNICの場所"]
 
++
+[cols="1a,3a,5a"]
+|===
+|  | デバイス名またはパーツ名 | 説明 
+
+
+ a| 
+1.
+ a| 
+1スロットライザーアセンブリ内のNIC 1
+ a| 
+グリッドネットワークおよびクライアントネットワーク用の10/25GbEイーサネットネットワークポート
+
+
+
+ a| 
+2.
+ a| 
+1スロットライザーアセンブリ内のNIC 2
+ a| 
+管理ネットワーク用の1/10-GbE イーサネットネットワークポート
+
+
+
+ a| 
+3.
+ a| 
+1スロットライザーアセンブリ内のNIC 3
+ a| 
+グリッドネットワークおよびクライアントネットワーク用の10/25GbEイーサネットネットワークポート
+
+|===
++
+
+NOTE: 一部の機器はより高速なネットワークポートをサポートしており、より高速な NIC が搭載されている場合があります。
 
 
 
 
+
+[[step-1-remove-the-nic]]
 == ステップ1：NICを取り外す
 
 [role="tabbed-block"]
@@ -82,6 +119,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["ライザーアセン�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == ステップ2：内蔵NICを再インストールする
 
 取り外したNICと同じ場所に交換用NICを取り付けます。

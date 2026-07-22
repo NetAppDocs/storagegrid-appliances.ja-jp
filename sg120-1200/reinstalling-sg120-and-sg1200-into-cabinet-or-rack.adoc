@@ -25,6 +25,8 @@ CAUTION: 電源スイッチを使用してアプライアンスをシャット�
 
 
 
+[[step-1-remove-sg120-or-sg1200-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 手順1：SG120またはSG1200をキャビネットまたはラックから取り外します
 
 .手順
@@ -51,6 +53,7 @@ NOTE: キャビネットやラックから機器を完全に取り外す場合�
 
 
 
+[[step-2-reinstall-sg120-or-sg1200-into-cabinet-or-rack]]
 == ステップ2：SG120またはSG1200をキャビネットまたはラックに再設置します
 
 .手順

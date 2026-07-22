@@ -21,6 +21,7 @@ summary: この手順 を使用して、システム基板のCMOSコイン型電
 
 
 
+[[remove-the-cmos-battery]]
 == CMOSバッテリを取り外します
 
 .作業を開始する前に
@@ -70,6 +71,7 @@ image::../media/sg6060_riser_assembly_location.jpg[ライザーアセンブリ�
 
 
 
+[[reinstall-the-cmos-battery]]
 == CMOSバッテリを取り付け直します
 
 交換用CMOSバッテリをシステム基板のソケットに取り付けます。

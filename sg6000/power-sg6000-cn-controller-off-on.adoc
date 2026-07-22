@@ -15,6 +15,7 @@ summary: メンテナンスを実施するために、SG6000-CNコントロー�
 
 
 
+[[shut-down-sg6000-cn-controller]]
 == SG6000-CN コントローラをシャットダウンします
 
 ハードウェアのメンテナンスを実行するには、 SG6000-CN コントローラをシャットダウンします。
@@ -83,6 +84,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 電源制御ペー
 
 
 
+[[poweronpower-on-sg6000-cn-controller-and-verify-operation]]
 == [[poweron]]SG6000-CNコントローラの電源をオンにして動作を確認
 
 メンテナンスが完了したら、コントローラの電源をオンにします。

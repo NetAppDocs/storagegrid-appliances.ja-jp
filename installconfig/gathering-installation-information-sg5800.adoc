@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5800.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 次の表を使用して、アプライアンスに接続する各ネットワークに必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。 
 ---
 = SG5800のネットワーク情報を収集する
@@ -18,6 +18,7 @@ TIP: 表を使用する代わりに、ConfigBuilderに付属のワークブッ�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e4000-controller]]
 == E4000コントローラのSANtricity System Managerへの接続に必要な情報
 
 SANtricityシステムマネージャを使用して、E4000シリーズコントローラを管理ネットワークに接続します。
@@ -90,6 +91,7 @@ IPv6の場合：
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-admin-network]]
 == SG5800コントローラを管理ネットワークに接続するために必要な情報
 
 StorageGRID の管理ネットワークは、システムの管理とメンテナンスに使用するオプションのネットワークです。アプライアンスは、SG5800コントローラの1GbE管理ポートを使用して管理ネットワークに接続します。
@@ -145,6 +147,7 @@ DHCP によって管理ポート 1 に割り当てられた IP アドレス（�
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg5800-controller]]
 == SG5800コントローラの10 / 25GbEポートの接続と設定に必要な情報
 
 SG5800コントローラの4つの10 / 25GbEポートは、StorageGRIDのグリッドネットワークとクライアントネットワークに接続します。
@@ -205,6 +208,7 @@ NOTE: を参照してください link:gathering-installation-information-sg5800
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-grid-network]]
 == SG5800コントローラをグリッドネットワークに接続するために必要な情報
 
 StorageGRID のグリッドネットワークは、内部のすべての StorageGRID トラフィックに使用される必須のネットワークです。アプライアンスは、SG5800コントローラの10 / 25GbEポートを使用してグリッドネットワークに接続します。
@@ -275,6 +279,7 @@ VLANタグ（VLANタギングが有効な場合）
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-client-network]]
 == SG5800コントローラをクライアントネットワークに接続するために必要な情報
 
 StorageGRID のクライアントネットワークは、一般にグリッドへのクライアントプロトコルアクセスを可能にするために使用する、オプションのネットワークです。アプライアンスは、SG5800コントローラの10 / 25GbEポートを使用してクライアントネットワークに接続します。
@@ -350,12 +355,14 @@ VLAN タグ
 |===
 
 
+[[port-bond-modes]]
 == ポートボンディングモード
 
 いつ link:configuring-network-links.html["ネットワークリンクを設定しています"] SG5800コントローラでは、グリッドネットワークおよびオプションのクライアントネットワークに接続する10 / 25GbEポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。SG5800コントローラの10 / 25GbEネットワークポートは、グリッドネットワーク接続とクライアントネットワーク接続用に、固定ポートボンディングモードまたはアグリゲートポートボンディングモードをサポートします。
 
 
 
+[[fixed-port-bond-mode]]
 === Fixed ポートボンディングモード
 
 固定モードは、 10 / 25GbE ネットワークポートのデフォルトの設定です。
@@ -391,6 +398,7 @@ NOTE: 冗長接続が必要ない場合は、ネットワークごとに1つの�
 
 
 
+[[aggregate-port-bond-mode]]
 === Aggregate ポートボンディングモード
 
 アグリゲートポートボンディングモードを使用すると、各 StorageGRID ネットワークのスループットが大幅に向上し、追加のフェイルオーバーパスも確保されます。

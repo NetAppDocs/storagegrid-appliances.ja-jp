@@ -46,6 +46,7 @@ image:../media/manage_drives_tab_details.png["[Manage Drives]タブドライブ�
 
 
 
+[[turn-locator-light-on-or-off]]
 == ロケーターライトをオンまたはオフにする
 
 アプライアンス内のドライブの場所を物理的に確認するには
@@ -66,6 +67,7 @@ image:../media/manage_drives_tab_details.png["[Manage Drives]タブドライブ�
 
 
 
+[[logically-replace-drivelogically-replace-drive]]
 == [[logically-replace-drive]]ドライブの論理的な交換
 
 ストレージアプライアンスのドライブをリビルドまたは再初期化する必要がある場合は、次の手順を実行します。
@@ -83,6 +85,7 @@ image:../media/manage_drives_tab_details.png["[Manage Drives]タブドライブ�
 
 
 
+[[fail-drive]]
 == ドライブを使用停止にする
 
 トラブルシューティングのために、障害が発生していると思われるドライブを手動で「使用停止」することができます。この場合、システムはそのドライブなしで動作します。

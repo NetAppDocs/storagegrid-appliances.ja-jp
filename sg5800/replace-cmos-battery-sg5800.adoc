@@ -18,6 +18,7 @@ CMOS バッテリを交換すると、アプライアンスの Storage Node に�
 
 
 
+[[step-1-shut-down-the-sg5800-controller]]
 == ステップ1：SG5800コントローラをシャットダウンする
 
 .手順
@@ -40,6 +41,7 @@ rootとしてログインすると、プロンプトがから変わります `$`
 
 
 
+[[step-2-remove-the-controller-from-the-appliance]]
 == ステップ2：アプライアンスからコントローラを取り外す
 
 .手順
@@ -64,6 +66,7 @@ image::../media/drw_sg5800_open_controller_module_cover_IEOPS-695.svg[SG5800コ�
 
 
 
+[[step-3-replace-the-cmos-battery]]
 == ステップ3：CMOSバッテリーを交換する
 
 .手順
@@ -89,6 +92,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 
 
 
+[[step-4-reinstall-the-controller-into-the-appliance]]
 == ステップ4：コントローラをアプライアンスに再インストールする
 
 .手順

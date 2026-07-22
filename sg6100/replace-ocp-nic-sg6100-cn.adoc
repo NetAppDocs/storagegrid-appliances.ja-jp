@@ -2,7 +2,7 @@
 permalink: sg6100/replace-ocp-nic-sg6100-cn.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
-summary: SG6100-CNが適切に機能していない場合や障害が発生した場合は、SG6100-CNのネットワークインターフェイスカード\（NIC\）の交換が必要になることがあります。 
+summary: SG6100-CNのネットワークインターフェースカード（NIC）が最適に機能していない場合、または故障している場合は、交換が必要になることがあります。 
 ---
 = SG6100-CNの外部NICを交換する
 :allow-uri-read: 
@@ -42,6 +42,7 @@ CAUTION: オブジェクトのコピーを1つだけ作成するILMルールを�
 
 
 
+[[remove-the-external-nic]]
 == 外部NICを取り外します。
 
 .手順
@@ -56,6 +57,7 @@ CAUTION: この手順では、ホットスワップは*サポートされてい�
 
 
 
+[[reinstall-the-external-nic]]
 == 外付けNICを取り付け直します。
 
 .手順
