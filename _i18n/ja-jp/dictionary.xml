@@ -3460,7 +3460,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="ac4aec48ca363c61bde0b90a6357d2e0" category="list-text">新しいコントローラを開封し、静電気防止処置を施した平らな場所に置きます。</block>
   <block id="71e69069470b78afcfd4256b5538ddde" category="paragraph">梱包材は、障害が発生したコントローラを発送するときのために保管しておいてください。</block>
   <block id="e5a03effd8c40e9251d96a430d99a606" category="list-text">交換用コントローラの背面にある MAC アドレスと FRU パーツ番号のラベルを確認します。</block>
-  <block id="e8eb7bc58567e1c605a82158f0f62428" category="list-text">コントローラを取り外す準備をします。これらの手順を実行するには、 SANtricity System Manager を使用します。</block>
   <block id="270d6e2086af600326a1899c14eefca1" category="list-text">障害が発生したコントローラの交換パーツ番号が交換用コントローラの FRU パーツ番号と同じであることを確認します。</block>
   <block id="3a3cd7aeaa367cf5f0aa0b6e9c59f5d6" category="paragraph">コントローラに障害が発生しているため交換が必要な場合は、 Recovery Guru の詳細領域に交換パーツ番号が表示されます。この番号を手動で確認する必要がある場合は、コントローラの * Base * タブを参照してください。</block>
   <block id="96f2b7281e6f62383360de5bc3626f95" category="admonition">*データアクセスが失われる可能性があります&amp;#8212;* 2つのパーツ番号が同じでない場合は、この手順 を使用しないでください。</block>
@@ -3734,7 +3733,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="b2f9b08b9c77fd0d4c43b02ecac55483" category="paragraph">交換用コントローラを設置し、コントローラがグリッドに再参加したことを確認します。</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">コントローラシェルフの電源をオンにします。</block>
   <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">手順1：交換用コントローラを準備する</block>
-  <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">障害が発生したコントローラを取り外してオフラインにする準備をします。</block>
   <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">交換したアプライアンスでSEDドライブでハードウェアドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">交換したアプライアンスでSEDドライブでドライブ暗号化が有効になっている場合は、次の手順を実行する必要があります。 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 交換用アプライアンスの初回起動時に暗号化されたドライブにアクセスするには、次の手順を実行します。</block>
   <block id="f98925abc6cb4377ae64ff1ac4820659" category="paragraph">障害が発生したコントローラにホストインターフェイスカード（HIC）が搭載されている場合は、障害が発生したコントローラから交換用コントローラにHICを移動します。</block>
@@ -4792,7 +4790,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="4172e18c4b5f5ded61ea837b6d174a70" category="paragraph">E4000コントローラが適切に機能しない場合や障害が発生した場合は、交換が必要になることがあります。</block>
   <block id="58bdf6822075a4522e563db052cfb6b5" category="list-text">Grid Managerのアラートにストレージコントローラの障害が示され、SANtricity System ManagerのGrid ManagerまたはRecovery Guruからコントローラの交換を指示されます。</block>
   <block id="6699424a5a659b766310c519be0f253d" category="paragraph">交換用E4000コントローラを準備します。</block>
-  <block id="360f56d807bee32cc6fcc9d9bfb9b6f5" category="paragraph">障害が発生したコントローラを取り外してオフラインにする準備をします。これらの手順は、SANtricityシステムマネージャを使用して実行できます。</block>
   <block id="fe4869120ffec76b394daa282d99bd5b" category="paragraph">コントローラキャニスターを取り外します。</block>
   <block id="1a2315b8628ae30414325b0eac31bb35" category="paragraph">障害のあるコントローラからバッテリを取り外し、必要に応じて交換用コントローラに取り付けます。</block>
   <block id="29f964bec5ac520e4a2bd92eb3884f71" category="list-text">バッテリを交換用コントローラキャニスターに移動して取り付けます。</block>
@@ -5568,7 +5565,6 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="9cb2effa5447f497640162f9043211b9" category="section-title">クライアントネットワークはIPアドレスなしで構成できます</block>
   <block id="9b21fb91c113bca08c0dafc981fbde3c" category="paragraph">IP アドレスを指定せずにクライアント ネットワークを有効にできるようになりました。これにより、クライアント ネットワークは、インターフェイス自体に追加の IP アドレスを必要とせずに、 StorageGRIDで VLAN インターフェイスを構成できるようになります。。 <block ref="eed0824756b778339518fbc737f79ca8" category="inline-link-macro-rx"></block> 。</block>
   <block id="35fbd63802091eabd711a8d6c290ea7e" category="section-title">StorageGRIDソフトウェアとアプライアンスインストーラのバージョン番号が一致しました</block>
-  <block id="07df4015289344b98ba5f422f4375357" category="paragraph">StorgeGRID バージョン 12.0 では、 StorageGRIDアプライアンス インストーラーのバージョン番号はStorageGRIDソフトウェアのバージョンと一致します。ユーザーは、どのバージョンが連携して動作するかを把握する必要がなくなりました。。 <block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block> 。</block>
   <block id="cc40ed7be5c299ae5a8b275911b0f977" category="paragraph">StorageGRIDアプライアンスのBMCインターフェイスの使用に関する詳細情報が利用可能になりました。。 <block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block> 。</block>
   <block id="7fb4dbe99c9c5f63516376b6bf611317" category="sidebar">StorageGRID 12.0 ドキュメント</block>
   <block id="ca92eb1bedb20765e52302f985f5f837" category="sidebar">ドライブファームウェアのアップグレード（自動再起動方式）</block>
@@ -6599,4 +6595,8 @@ Grid Managerで、* configuration *&gt;* Security *&gt;* Security settings *&gt;
   <block id="04d321322c8bed5ea3ecf52d0cc925ff" category="paragraph">StorageGRID 12.1 システムの設定方法と使用方法については、<block ref="96bdbd25d3882b5d0b14b10ec28bb02d" category="inline-link-rx"></block>を参照してください。</block>
   <block id="db37c78d5faa7061d7b5039209b440c1" category="list-text"><block ref="db37c78d5faa7061d7b5039209b440c1" category="inline-link-rx"></block></block>
   <block id="d70a1ab70742f2af598f9acb795fc0f2" category="sidebar">StorageGRID 12.1 ドキュメント</block>
+  <block id="773b50832a8313c20ea7f7ec3cb3c5e4" category="paragraph">障害が発生したコントローラを取り外し、オフラインにする準備をします。これらの手順は、SANtricity System Managerを使用して実行します。</block>
+  <block id="5e4e9f34966ee54cc6cc4af50cd4835c" category="paragraph">E4000コントローラーが最適に機能していない場合、または故障している場合は、交換が必要になる可能性があります。</block>
+  <block id="d23e59635824c5cc5d1b8b63a31f939f" category="paragraph">故障したコントローラを取り外し、オフラインにする準備をしてください。これらの手順を実行するには、SANtricity System Managerを使用できます。</block>
+  <block id="46d7056058f07da95a8d94d297493eb9" category="paragraph">StorageGRIDバージョン12.0では、StorageGRID Appliance Installerのバージョン番号がStorageGRIDソフトウェアのバージョンと一致します。ユーザーは、どのバージョンが連携して動作するかを調べる必要がなくなりました。<block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>

@@ -49,7 +49,7 @@ IP アドレスを指定せずにクライアント ネットワークを有効�
 [[version-numbers-for-storagegrid-software-and-appliance-installer-aligned]]
 == StorageGRIDソフトウェアとアプライアンスインストーラのバージョン番号が一致しました
 
-StorgeGRID バージョン 12.0 では、 StorageGRIDアプライアンス インストーラーのバージョン番号はStorageGRIDソフトウェアのバージョンと一致します。ユーザーは、どのバージョンが連携して動作するかを把握する必要がなくなりました。。 link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします"] 。
+StorageGRIDバージョン12.0では、StorageGRID Appliance Installerのバージョン番号がStorageGRIDソフトウェアのバージョンと一致します。ユーザーは、どのバージョンが連携して動作するかを調べる必要がなくなりました。link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします"]を参照してください。
 
 
 
